@@ -1,0 +1,82 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : { },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "ff1d0ef1-eac7-11ee-9512-1748ff314dba"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "ff1dab30-eac7-11ee-9512-1748ff314dba"
+    },
+    "label" : null,
+    "name" : "Silo C",
+    "softwareId" : null,
+    "type" : "sayac"
+  },
+  "credentials" : {
+    "credentialsId" : "J2XhbDtQvwmgMLRMrEBb",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1711386143245,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "aeration",
+      "lastUpdateTs" : 1711387297532,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1711386143244,
+      "longValue" : 1711386143243,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 41.068098572716806,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1711387066455,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 28.088206654035456,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1711387066455,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

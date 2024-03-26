@@ -1,0 +1,40 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "PHN2ZyBpZD0ic3ZnMiIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iODAwIiB3aWR0aD0iMTYwMCIgdmVyc2lvbj0iMS4xIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDE1OTkuOTk5OCA3OTkuOTk5OTgiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiA8ZGVmcyBpZD0iZGVmczQiPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyR3JhZGllbnQ0MTQ0IiB5Mj0iNjUyLjM2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDI9IjE2MDAiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4wMDYyIDAgMCAxLjAxMjUgLTQuOTk3MSAtMjYwLjUyKSIgeTE9IjY1Mi4zNiIgeDE9Ii0uMDAwMjQ0MTQiPgogICA8c3RvcCBpZD0ic3RvcDQxNDAiIHN0b3AtY29sb3I9IiM1NjcyOGEiIG9mZnNldD0iMCIvPgogICA8c3RvcCBpZD0ic3RvcDQxNDIiIHN0b3AtY29sb3I9IiMxZDJlNTkiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiA8L2RlZnM+CiA8ZyBpZD0ibGF5ZXIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSguMDAwMTgzMTEgLjAwMDAyMzU5NSkiPgogIDxyZWN0IGlkPSJyZWN0NDEzNiIgaGVpZ2h0PSI4MDguMTEiIHdpZHRoPSIxNjA4LjEiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiB5PSItNC4wNTMzIiB4PSItNC4wNTM1IiBzdHJva2Utd2lkdGg9IjEuODkzNSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudDQxNDQpIi8+CiA8L2c+Cjwvc3ZnPgo=",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 1600,
+      "height" : 800,
+      "size" : 902,
+      "etag" : "d0e1ad5f376823a4ee0de575c4101d618a031dab04d0cff17c8cce6ade37cfde",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 1600,
+        "height" : 800,
+        "size" : 902,
+        "etag" : "d0e1ad5f376823a4ee0de575c4101d618a031dab04d0cff17c8cce6ade37cfde"
+      }
+    },
+    "etag" : "d0e1ad5f376823a4ee0de575c4101d618a031dab04d0cff17c8cce6ade37cfde",
+    "externalId" : null,
+    "fileName" : "silo_i_zleme_2_dashboard_default_background.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "663d8190-ead3-11ee-9512-1748ff314dba"
+    },
+    "link" : "/api/images/tenant/silo_i_zleme_2_dashboard_default_background.svg",
+    "name" : "\"Silo İzleme - 2\" dashboard default background",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/ROrk5vFttuHk7fj3KnAL2UqOZMQQEgpB",
+    "publicResourceKey" : "ROrk5vFttuHk7fj3KnAL2UqOZMQQEgpB",
+    "resourceKey" : "silo_i_zleme_2_dashboard_default_background.svg",
+    "resourceType" : "IMAGE",
+    "title" : "\"Silo İzleme - 2\" dashboard default background"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

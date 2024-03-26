@@ -1,0 +1,204 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "b9821790-eacd-11ee-9512-1748ff314dba"
+    },
+    "name" : "Sim - Silo",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 4,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 5,
+      "type" : "Post attributes"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 55,
+        "layoutY" : 208
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {\n    \"cropLevel\": 60.69999999999997,\n    \"humidity\": 72.13,\n    \"outdoorTemperature\": 31.39,\n    \"temperature\": 36.24\n};\n\nfunction getRandomFluctuation(value) {\n    var percentageChange = (Math.random() * 10 - 5) / 100; // Random fluctuation within +/-5%\n    var newValue = value * (1 + percentageChange);\n    return newValue.toFixed(2); // Limiting digits after decimal to 2 and converting to string\n}\n\n// Apply random fluctuations to numeric values in msg object\nfor (var key in msg) {\n    if (typeof msg[key] === 'number') {\n        msg[key] = getRandomFluctuation(msg[key]);\n    }\n}\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : null,
+        "originatorId" : "ff206a50-eac7-11ee-9512-1748ff314dba",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ce798610-eacd-11ee-9512-1748ff314dba"
+      },
+      "name" : "Silo",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 55,
+        "layoutY" : 261
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {\n    \"cropLevel\": 60.69999999999997,\n    \"humidity\": 72.13,\n    \"outdoorTemperature\": 31.39,\n    \"temperature\": 36.24\n};\n\nfunction getRandomFluctuation(value) {\n    var percentageChange = (Math.random() * 10 - 5) / 100; // Random fluctuation within +/-5%\n    var newValue = value * (1 + percentageChange);\n    return newValue.toFixed(2); // Limiting digits after decimal to 2 and converting to string\n}\n\n// Apply random fluctuations to numeric values in msg object\nfor (var key in msg) {\n    if (typeof msg[key] === 'number') {\n        msg[key] = getRandomFluctuation(msg[key]);\n    }\n}\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : null,
+        "originatorId" : "ff204340-eac7-11ee-9512-1748ff314dba",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ce79ad20-eacd-11ee-9512-1748ff314dba"
+      },
+      "name" : "Silo",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 53,
+        "layoutY" : 314
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {\n    \"cropLevel\": 60.69999999999997,\n    \"humidity\": 72.13,\n    \"outdoorTemperature\": 31.39,\n    \"temperature\": 36.24\n};\n\nfunction getRandomFluctuation(value) {\n    var percentageChange = (Math.random() * 10 - 5) / 100; // Random fluctuation within +/-5%\n    var newValue = value * (1 + percentageChange);\n    return newValue.toFixed(2); // Limiting digits after decimal to 2 and converting to string\n}\n\n// Apply random fluctuations to numeric values in msg object\nfor (var key in msg) {\n    if (typeof msg[key] === 'number') {\n        msg[key] = getRandomFluctuation(msg[key]);\n    }\n}\n\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : null,
+        "originatorId" : "ff1dab30-eac7-11ee-9512-1748ff314dba",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ce79d430-eacd-11ee-9512-1748ff314dba"
+      },
+      "name" : "Silo",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 340,
+        "layoutY" : 260
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ce79d431-eacd-11ee-9512-1748ff314dba"
+      },
+      "name" : "message type switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 666,
+        "layoutY" : 218
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "skipLatestPersistence" : false,
+        "useServerTs" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ce79fb40-eacd-11ee-9512-1748ff314dba"
+      },
+      "name" : "save timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 664,
+        "layoutY" : 307
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ce79fb41-eacd-11ee-9512-1748ff314dba"
+      },
+      "name" : "save attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

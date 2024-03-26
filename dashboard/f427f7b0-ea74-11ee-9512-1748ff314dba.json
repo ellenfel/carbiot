@@ -1,0 +1,896 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "f4009a78-44ec-a5f5-6366-9b28c8832cf5" : {
+          "type" : "latest",
+          "sizeX" : 120,
+          "sizeY" : 4,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "8439176e-3199-4b6e-f448-fb43e8208175",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9711087146704198
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1689498991252,
+                  "endTimeMs" : 1689585391252
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(245, 245, 245, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class=\"navbar\">\n    <a id='homeId' class=\"active\">\n        <i id='homeId' class=\"material-icons\">pie_chart</i>\n        <div id='homeId' class=\"menutext\">Nemport</div>\n    </a>\n    <a id='settingsId'>\n        <i id='settingsId' class=\"material-icons\">settings</i>\n        <div id='settingsId' class=\"menutext\">Manevralar</div>\n    </a>\n    <a id='chartsId'>\n        <i id='chartsId' class=\"material-icons\">timeline</i>\n        <div id='chartsId' class=\"menutext\">Enerji Tüketimi</div>\n    </a>\n    <a id='maintenanceId'>\n        <i id='maintenanceId' class=\"material-icons\">build</i>\n        <div id='maintenanceId' class=\"menutext\">Onarım</div>\n    </a>\n    <a id='historyId'>\n        <i id='historyId' class=\"material-icons\">list</i>\n        <div id='historyId' class=\"menutext\">Raporlama</div>\n    </a>\n    <a id='mmsId'>\n        <i id='mmsId' class=\"material-icons\">device_hub</i>\n        <div id='mmsId' class=\"menutext\">LoRa WAN</div>\n    </a>\n    <a id='documentsId'>\n        <i id='documentsId' class=\"material-icons\">attachment</i>\n        <div id='documentsId' class=\"menutext\">Dökümanlar</div>\n    </a>\n    <!-- Add the 8th element with pie_chart icon -->\n    <a id='maneuverEnergyId'>\n        <i id='maneuverEnergyId' class=\"material-icons\">insert_chart</i>\n        <div id='newElementId' class=\"menutext\">Manevra Enerji Takibi</div>\n    </a>\n</div>\n",
+              "cardCss" : ".navbar {\n    list-style-type: none;\n    height: 100%;\n}\n\n.navbar a {\n    height: 100%;\n    float: left;\n    padding: 0 15px 0 15px;\n    margin: 0 5px 0 5px;\n    color: black;\n    color: rgba(0, 0, 0, 0.87);\n    text-decoration: none;\n    text-align: center;\n    text-transform: uppercase;\n    display:flex;\n    justify-content:center;\n    align-items:center;\n}\n\n.navbar a:hover {\n    color: black;\n    color: rgba(0, 0, 0, 0.87);\n    background-color: #e0e0e0;\n    -moz-border-radius: 5px 5px 5px 5px;\n    -webkit-border-radius: 5px 5px 5px 5px;\n    border-radius: 5px 5px 5px 5px;\n    border: 0 solid #e0e0e0;\n}\n\n.active {\n    color: #fafafa !important;\n    background-color: #003366 !important;\n    -moz-border-radius: 5px 5px 5px 5px;\n    -webkit-border-radius: 5px 5px 5px 5px;\n    border-radius: 5px 5px 5px 5px;\n}\n\n.material-icons {\n    font-size: 20px;\n    padding-right: 5px;\n}\n\n[data-md-tooltip] {\n    position: relative;\n}\n\n@media screen and (max-width : 960px){\n    .menutext {\n        display: none;\n    }\n\n    [data-md-tooltip]:before {\n        content: attr(data-md-tooltip);\n        position: absolute;\n        bottom: -35px;\n        left: 50%;\n        padding: 8px;\n        transform: translateX(-50%) scale(0);\n        transition: transform 0.3s ease-in-out;\n        transform-origin: top;\n        background: #616161e6;\n        color: white;\n        border-radius: 2px;\n        font-size: 12px;\n    }\n\n    [data-md-tooltip]:hover:before {\n        transform: translateX(-50%) scale(1);\n    }\n    \n    .material-icons {\n        font-size: 28px;\n    }\n}\n"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "border-radius" : "10px 10px 10px 10px",
+              "-moz-border-radius" : "10px 10px 10px 10px",
+              "-webkit-border-radius" : "10px 10px 10px 10px",
+              "border" : "0px hidden #000000"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "headerButton" : [ ],
+              "elementClick" : [ {
+                "name" : "mmsId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "lora",
+                "setEntityId" : true,
+                "stateEntityParamName" : "mu",
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d3710d00-ae4d-9c0b-4762-a5bf3590c6da"
+              }, {
+                "name" : "settingsId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "manevra",
+                "setEntityId" : false,
+                "stateEntityParamName" : "tool",
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "182ec0f4-82d2-4e1f-1f6f-3ee4419c145c"
+              }, {
+                "name" : "chartsId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "default",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "039cf6ca-1b2a-8b16-839f-6ce5b8e0c3c7"
+              }, {
+                "name" : "maintenanceId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "onarim",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "4bf29254-8f81-bbad-4dac-f88a17630030"
+              }, {
+                "name" : "documentsId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "ayarlar",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "663f127a-9a2c-afbb-e2f5-3eec1d414065"
+              }, {
+                "name" : "homeId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "nemport",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "858f01a5-8cb7-82a9-872e-7c885251d9ab"
+              }, {
+                "name" : "historyId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "raporlama",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "667e289e-3ef4-e3bd-544c-56a5b92b71ff"
+              }, {
+                "name" : "maneuverEnergyId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "maneuverenergyid",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "6451a520-a6b1-90ff-1169-879b03ce57a0"
+              } ]
+            },
+            "displayTimewindow" : true,
+            "decimals" : null,
+            "enableDataExport" : false,
+            "titleTooltip" : ""
+          },
+          "id" : "f4009a78-44ec-a5f5-6366-9b28c8832cf5",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "964f30fd-aaad-5e58-3ce3-cb78dc192b6e" : {
+          "type" : "static",
+          "sizeX" : 5,
+          "sizeY" : 5.5,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "hidePicker" : false,
+              "onePanel" : true,
+              "autoConfirm" : false,
+              "showTemplate" : false,
+              "firstDayOfWeek" : 1,
+              "hideInterval" : false,
+              "initialInterval" : "week",
+              "hideStepSize" : true,
+              "hideLabels" : false,
+              "useSessionStorage" : true
+            },
+            "title" : "Tarih Aralığı Seçici",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "Onayla",
+                "icon" : "done",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "return widgetContext;",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "6fd77f2a-3743-56b8-2c4f-5a5ad45ad25b"
+              } ]
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "964f30fd-aaad-5e58-3ce3-cb78dc192b6e",
+          "typeFullFqn" : "system.date.date_range_navigator"
+        },
+        "277375d5-ef12-af49-2481-fde5ca54d182" : {
+          "typeFullFqn" : "system.cards.html_card",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class=\"navbar\">\n    <a id='homeId' class=\"active\">\n        <i id='homeId' class=\"material-icons\">attachment</i>\n        <div id='homeId' class=\"menutext\">Anlık Sayaç Değerleri Raporlaması</div>\n    </a>\n</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "HTML Card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "borderRadius" : "10px",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "277375d5-ef12-af49-2481-fde5ca54d182"
+        },
+        "cef7b069-bea2-da12-6fd1-2152bfc79fee" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "8439176e-3199-4b6e-f448-fb43e8208175",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "date",
+                "type" : "attribute",
+                "label" : "date",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5662158624467764
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1709220847077,
+                  "endTimeMs" : 1709307247077
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Rapor Tarihi",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true,
+            "borderRadius" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "cef7b069-bea2-da12-6fd1-2152bfc79fee",
+          "typeFullFqn" : "system.input_widgets.update_server_date_attribute"
+        },
+        "bd18885b-ab22-e6fd-9d8c-01e4b2794025" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "8439176e-3199-4b6e-f448-fb43e8208175",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "type",
+                "type" : "attribute",
+                "label" : "type",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.3521209608750686
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1709225069705,
+                  "endTimeMs" : 1709311469705
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showResultMessage" : true,
+              "trueValue" : "Günlük - seçildi",
+              "falseValue" : "Aylık - seçildi"
+            },
+            "title" : "New Update server boolean attribute",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true,
+            "borderRadius" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "bd18885b-ab22-e6fd-9d8c-01e4b2794025",
+          "typeFullFqn" : "system.input_widgets.update_server_boolean_attribute"
+        },
+        "2c421c9c-7392-a07d-67f5-67412d8efba9" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "8439176e-3199-4b6e-f448-fb43e8208175",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "reportFlag",
+                "type" : "attribute",
+                "label" : "reportFlag",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8486876534327767
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1705568996262,
+                  "endTimeMs" : 1705655396262
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showResultMessage" : true,
+              "trueValue" : "Rapor Üretiliyor...",
+              "falseValue" : "Rapor Üret"
+            },
+            "title" : "New Update server boolean attribute",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true,
+            "borderRadius" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2c421c9c-7392-a07d-67f5-67412d8efba9",
+          "typeFullFqn" : "system.input_widgets.update_server_boolean_attribute"
+        },
+        "422ddc70-25ed-4215-4585-aab1eb036ad6" : {
+          "type" : "rpc",
+          "sizeX" : 4,
+          "sizeY" : 2,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "#e6e7e8",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "buttonText" : "Update device attribute",
+              "entityAttributeType" : "SERVER_SCOPE",
+              "entityParameters" : "{}",
+              "styleButton" : {
+                "isRaised" : true,
+                "isPrimary" : false
+              }
+            },
+            "title" : "New Update device attribute",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "targetDeviceAliases" : [ ],
+            "datasources" : [ ],
+            "targetDevice" : {
+              "type" : "entity",
+              "entityAliasId" : "8439176e-3199-4b6e-f448-fb43e8208175"
+            },
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "422ddc70-25ed-4215-4585-aab1eb036ad6",
+          "typeFullFqn" : "system.control_widgets.update_attributes"
+        },
+        "a6ed8a65-8f96-4c37-4f5f-9b21870a484c" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "8439176e-3199-4b6e-f448-fb43e8208175",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "year",
+                "type" : "attribute",
+                "label" : "year",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.01089720647498127
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1709456409510,
+                  "endTimeMs" : 1709542809510
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showLabel" : true,
+              "isRequired" : true,
+              "showResultMessage" : true,
+              "labelValue" : "Yıl"
+            },
+            "title" : "New Update server integer attribute",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true,
+            "borderRadius" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a6ed8a65-8f96-4c37-4f5f-9b21870a484c",
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute"
+        },
+        "dde28e61-6368-14e4-bc02-8c6c0c12f9fa" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "8439176e-3199-4b6e-f448-fb43e8208175",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "month",
+                "type" : "attribute",
+                "label" : "month",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.635755544852922
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1709456380618,
+                  "endTimeMs" : 1709542780618
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showLabel" : true,
+              "isRequired" : true,
+              "showResultMessage" : true,
+              "labelValue" : "Ay"
+            },
+            "title" : "New Update server integer attribute",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true,
+            "borderRadius" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "dde28e61-6368-14e4-bc02-8c6c0c12f9fa",
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Reporting",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "f4009a78-44ec-a5f5-6366-9b28c8832cf5" : {
+                  "sizeX" : 48,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "964f30fd-aaad-5e58-3ce3-cb78dc192b6e" : {
+                  "sizeX" : 10,
+                  "sizeY" : 12,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "277375d5-ef12-af49-2481-fde5ca54d182" : {
+                  "sizeX" : 10,
+                  "sizeY" : 2,
+                  "row" : 1,
+                  "col" : 11
+                },
+                "cef7b069-bea2-da12-6fd1-2152bfc79fee" : {
+                  "sizeX" : 10,
+                  "sizeY" : 2,
+                  "row" : 3,
+                  "col" : 11
+                },
+                "bd18885b-ab22-e6fd-9d8c-01e4b2794025" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 5,
+                  "col" : 11
+                },
+                "2c421c9c-7392-a07d-67f5-67412d8efba9" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 5,
+                  "col" : 16
+                },
+                "422ddc70-25ed-4215-4585-aab1eb036ad6" : {
+                  "sizeX" : 10,
+                  "sizeY" : 2,
+                  "row" : 7,
+                  "col" : 11
+                },
+                "a6ed8a65-8f96-4c37-4f5f-9b21870a484c" : {
+                  "sizeX" : 10,
+                  "sizeY" : 2,
+                  "row" : 9,
+                  "col" : 11
+                },
+                "dde28e61-6368-14e4-bc02-8c6c0c12f9fa" : {
+                  "sizeX" : 10,
+                  "sizeY" : 2,
+                  "row" : 11,
+                  "col" : 11
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 48,
+                "margin" : 5,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : false,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "8439176e-3199-4b6e-f448-fb43e8208175" : {
+          "id" : "8439176e-3199-4b6e-f448-fb43e8208175",
+          "alias" : "report",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "9a66b6c0-ea75-11ee-9512-1748ff314dba"
+            }
+          }
+        },
+        "4aa5a3ca-3b69-0f73-cdc0-13364e771b60" : {
+          "id" : "4aa5a3ca-3b69-0f73-cdc0-13364e771b60",
+          "alias" : "Assets",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET",
+            "entityList" : [ "66a36c90-2494-11ee-9c0b-a53a7980c9e6", "525fbdb0-2494-11ee-9c0b-a53a7980c9e6", "61098e40-2494-11ee-9c0b-a53a7980c9e6", "58c417f0-2494-11ee-9c0b-a53a7980c9e6", "3d5b9da0-2497-11ee-9c0b-a53a7980c9e6", "fd578360-47f3-11ee-ba8c-4f68eb1681f6", "d07da220-47f8-11ee-ba8c-4f68eb1681f6", "f429f700-47f3-11ee-ba8c-4f68eb1681f6", "af96c820-47f8-11ee-ba8c-4f68eb1681f6" ]
+          }
+        },
+        "ed79c1f4-158c-dc06-1beb-45311520adc2" : {
+          "id" : "ed79c1f4-158c-dc06-1beb-45311520adc2",
+          "alias" : "ug67",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "87fc84a0-41c5-11ee-a5d9-5d300dfdbc78"
+            }
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 1,
+        "history" : {
+          "historyType" : 1,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1710795600000,
+            "endTimeMs" : 1711400399999
+          },
+          "interval" : 1210000
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "f427f7b0-ea74-11ee-9512-1748ff314dba"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Reporting",
+    "title" : "Reporting"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

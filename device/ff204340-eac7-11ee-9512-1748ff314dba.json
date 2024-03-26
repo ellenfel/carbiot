@@ -1,0 +1,82 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : { },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "ff1d0ef1-eac7-11ee-9512-1748ff314dba"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "ff204340-eac7-11ee-9512-1748ff314dba"
+    },
+    "label" : null,
+    "name" : "Silo B",
+    "softwareId" : null,
+    "type" : "sayac"
+  },
+  "credentials" : {
+    "credentialsId" : "5sOV5q17WTV4YJZKxkJ8",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1711386143243,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "aeration",
+      "lastUpdateTs" : 1711387289319,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1711386143243,
+      "longValue" : 1711386143243,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 41.06791314303283,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1711387059222,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 28.076620926340084,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1711387059222,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

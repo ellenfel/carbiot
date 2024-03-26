@@ -1,0 +1,2422 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "widgets" : {
+        "36022029-3417-8677-b555-0cd334bb5b6a" : {
+          "type" : "latest",
+          "sizeX" : 14,
+          "sizeY" : 18,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "timeseries",
+                "label" : "EA 1 - kWh",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.6854576191620223
+              } ],
+              "name" : "Smart Meter A",
+              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "timeseries",
+                "label" : "EA 2 - kWh",
+                "color" : "#29b6f6",
+                "settings" : { },
+                "_hash" : 0.701924322622457
+              } ],
+              "name" : "Smart Meter B",
+              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "timeseries",
+                "label" : "EA 3 - kWh",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5069094081366117
+              } ],
+              "name" : "Smart Meter C",
+              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930106,
+                  "endTimeMs" : 1711433330106
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 1, 0.04)",
+            "color" : "rgb(255, 254, 254)",
+            "padding" : "8px",
+            "settings" : {
+              "radius" : 1,
+              "fontColor" : "#545454",
+              "fontSize" : 10,
+              "innerRadius" : 0.4,
+              "showLabels" : true,
+              "stroke" : {
+                "width" : 5,
+                "color" : "#182a5b"
+              },
+              "tilt" : 1,
+              "animatedPie" : false
+            },
+            "title" : "Enerji Tüketimi",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "20px",
+              "fontWeight" : "bold",
+              "opacity" : "0.87"
+            },
+            "mobileOrder" : 2,
+            "mobileHeight" : 4,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 3,
+          "col" : 20,
+          "id" : "36022029-3417-8677-b555-0cd334bb5b6a",
+          "typeFullFqn" : "system.charts.pie"
+        },
+        "ba61cc92-ef44-850b-a53c-75e7a46decf4" : {
+          "type" : "timeseries",
+          "sizeX" : 28,
+          "sizeY" : 14,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "voltage",
+                "type" : "timeseries",
+                "label" : "Gerilim A",
+                "color" : "#2196f3",
+                "settings" : {
+                  "showLines" : true,
+                  "fillLines" : false,
+                  "showPoints" : false,
+                  "showPointsRadius" : 3,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left"
+                },
+                "_hash" : 0.39793047055863084
+              } ],
+              "name" : "Smart Meter A",
+              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "voltage",
+                "type" : "timeseries",
+                "label" : "Gerilim B",
+                "color" : "#4caf50",
+                "settings" : {
+                  "showLines" : true,
+                  "fillLines" : false,
+                  "showPoints" : false,
+                  "showPointsRadius" : 3,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left"
+                },
+                "_hash" : 0.41268391072546295
+              } ],
+              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "voltage",
+                "type" : "timeseries",
+                "label" : "Gerilim C",
+                "color" : "#f44336",
+                "settings" : {
+                  "showLines" : true,
+                  "fillLines" : false,
+                  "showPoints" : false,
+                  "showPointsRadius" : 3,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left"
+                },
+                "_hash" : 0.7581541882986371
+              } ],
+              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 1, 0.04)",
+            "color" : "rgb(255, 254, 254)",
+            "padding" : "8px",
+            "settings" : {
+              "fontColor" : "#ffffff",
+              "fontSize" : 10,
+              "xaxis" : {
+                "showLabels" : true,
+                "color" : "#ffffff"
+              },
+              "yaxis" : {
+                "showLabels" : true,
+                "color" : "#ffffff",
+                "title" : "Gerilim, Volt",
+                "titleAngle" : 90,
+                "tickDecimals" : 0
+              },
+              "grid" : {
+                "color" : "#ffffff",
+                "tickColor" : "rgba(255, 255, 255, 0.05)",
+                "verticalLines" : false,
+                "horizontalLines" : true,
+                "outlineWidth" : 0
+              },
+              "shadowSize" : 8,
+              "stack" : false,
+              "timeForComparison" : "days",
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "showLabels" : false
+              },
+              "comparisonEnabled" : false,
+              "smoothLines" : false,
+              "tooltipIndividual" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "showTooltip" : true,
+              "customLegendEnabled" : false,
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "row",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : true,
+                "showMax" : true,
+                "showAvg" : true,
+                "showTotal" : false
+              }
+            },
+            "title" : "Gerilim",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "20px",
+              "fontWeight" : "bold",
+              "opacity" : "0.87"
+            },
+            "mobileOrder" : 3,
+            "mobileHeight" : 4,
+            "units" : "Volt",
+            "decimals" : 2,
+            "useDashboardTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { },
+            "enableDataExport" : true,
+            "widgetCss" : "",
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 13,
+          "col" : 0,
+          "id" : "ba61cc92-ef44-850b-a53c-75e7a46decf4",
+          "typeFullFqn" : "system.charts.basic_timeseries"
+        },
+        "d7b1e19b-8241-b1da-f5df-e8882e6d0c0c" : {
+          "type" : "timeseries",
+          "sizeX" : 28,
+          "sizeY" : 18,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "amperage",
+                "type" : "timeseries",
+                "label" : "Enerji Analizörü - A",
+                "color" : "#2196f3",
+                "settings" : {
+                  "showLines" : true,
+                  "fillLines" : true,
+                  "showPoints" : false,
+                  "showPointsRadius" : 3,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left",
+                  "showPointShape" : "circle",
+                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                  "showPointsLineWidth" : 5,
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : false
+                  }
+                },
+                "_hash" : 0.9757212246183018
+              } ],
+              "name" : "Smart Meter A",
+              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "amperage",
+                "type" : "timeseries",
+                "label" : "Enerji Analizörü - B",
+                "color" : "#4caf50",
+                "settings" : {
+                  "showLines" : true,
+                  "fillLines" : true,
+                  "showPoints" : false,
+                  "showPointsRadius" : 3,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left",
+                  "showPointShape" : "circle",
+                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                  "showPointsLineWidth" : 5,
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : false
+                  },
+                  "excludeFromStacking" : false
+                },
+                "_hash" : 0.18158696673297126
+              } ],
+              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "amperage",
+                "type" : "timeseries",
+                "label" : "Enerji Analizörü - C",
+                "color" : "#f44336",
+                "settings" : {
+                  "showLines" : true,
+                  "fillLines" : true,
+                  "showPoints" : false,
+                  "showPointsRadius" : 3,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left",
+                  "showPointShape" : "circle",
+                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                  "showPointsLineWidth" : 5,
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : false
+                  }
+                },
+                "_hash" : 0.16773624716205826
+              } ],
+              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 1, 0.04)",
+            "color" : "rgb(255, 254, 254)",
+            "padding" : "8px",
+            "settings" : {
+              "shadowSize" : 8,
+              "fontColor" : "#ffffff",
+              "fontSize" : 10,
+              "xaxis" : {
+                "showLabels" : true,
+                "color" : "#ffffff"
+              },
+              "yaxis" : {
+                "showLabels" : true,
+                "color" : "#ffffff",
+                "title" : "Akım, A",
+                "titleAngle" : 90,
+                "tickDecimals" : 0
+              },
+              "grid" : {
+                "color" : "#ffffff",
+                "tickColor" : "rgba(255, 255, 255, 0.05)",
+                "verticalLines" : false,
+                "horizontalLines" : true,
+                "outlineWidth" : 0
+              },
+              "stack" : true,
+              "timeForComparison" : "months",
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "showLabels" : true
+              },
+              "comparisonEnabled" : true,
+              "smoothLines" : true,
+              "tooltipIndividual" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "showTooltip" : true,
+              "customLegendEnabled" : false,
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "row",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : true,
+                "showMax" : true,
+                "showAvg" : true,
+                "showTotal" : false
+              }
+            },
+            "title" : "Akım (A)",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "20px",
+              "fontWeight" : "bold",
+              "opacity" : "0.87"
+            },
+            "mobileOrder" : 4,
+            "mobileHeight" : 4,
+            "units" : "A",
+            "decimals" : 2,
+            "useDashboardTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { },
+            "enableDataExport" : true,
+            "widgetCss" : "",
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 3,
+          "col" : 30,
+          "id" : "d7b1e19b-8241-b1da-f5df-e8882e6d0c0c",
+          "typeFullFqn" : "system.charts.basic_timeseries"
+        },
+        "5b2192ca-0586-7a31-1fc8-aca1a85d8a96" : {
+          "type" : "static",
+          "sizeX" : 14,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(33, 150, 243, 0.25)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>Enerji Analizörü A</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 24px;\n    color: #81fbf6;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "Enerji Analizörü A",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 5,
+            "mobileHeight" : 1,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { }
+          },
+          "row" : 13,
+          "col" : 20,
+          "id" : "5b2192ca-0586-7a31-1fc8-aca1a85d8a96",
+          "typeFullFqn" : "system.cards.html_card"
+        },
+        "fb451b81-334c-a039-d317-16d7f68c989e" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "voltage",
+                "type" : "timeseries",
+                "label" : "Voltage",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5926485341996204
+              } ],
+              "name" : "Smart Meter A",
+              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(33, 150, 243, 0.25)",
+            "color" : "rgb(255, 254, 254)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 500,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal",
+                "color" : "#ffffff"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : true,
+              "gaugeColor" : "#0c1730",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 100,
+              "dashThickness" : 1.2,
+              "title" : "Gerilim",
+              "unitTitle" : "Volt",
+              "defaultColor" : "#87fcff",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear"
+            },
+            "title" : "Gerilim: Sayaç A",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 6,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "decimals" : 1,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 15,
+          "col" : 20,
+          "id" : "fb451b81-334c-a039-d317-16d7f68c989e",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "fd2237b9-8927-4be9-43c4-9a75723c3f07" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "frequency",
+                "type" : "timeseries",
+                "label" : "Frequency",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5259041270929596
+              } ],
+              "name" : "Smart Meter A",
+              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(33, 150, 243, 0.25)",
+            "color" : "rgb(255, 254, 254)",
+            "padding" : "0px",
+            "settings" : {
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal",
+                "color" : "#ffffff"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : true,
+              "gaugeColor" : "#0c1730",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "dashThickness" : 1.2,
+              "unitTitle" : "Hz",
+              "title" : "Frekans",
+              "defaultColor" : "#87fcff",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "maxValue" : 52,
+              "minValue" : 45
+            },
+            "title" : "Frekans: Enerji Analizörü A",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 7,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 15,
+          "col" : 23,
+          "id" : "fd2237b9-8927-4be9-43c4-9a75723c3f07",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "4a26ce29-ab18-69ad-24f2-cfbd622a42a1" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "power",
+                "type" : "timeseries",
+                "label" : "P",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.933199150672452
+              } ],
+              "name" : "Smart Meter A",
+              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(33, 150, 243, 0.25)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : true,
+              "gaugeWidthScale" : 1,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 14
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 1.5,
+              "gaugeType" : "donut",
+              "title" : "Güç",
+              "showTitle" : true,
+              "showUnitTitle" : true,
+              "unitTitle" : "kW",
+              "defaultColor" : "#87fcff",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "maxValue" : 20000,
+              "minValue" : 0
+            },
+            "title" : "Güç: Enerji Analizörü A",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 8,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 15,
+          "col" : 26,
+          "id" : "4a26ce29-ab18-69ad-24f2-cfbd622a42a1",
+          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
+        },
+        "7faa8b82-4600-e9cb-6884-f3fd54603b4a" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "amperage",
+                "type" : "timeseries",
+                "label" : "Current",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6716245284376843
+              } ],
+              "name" : "Smart Meter A",
+              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(33, 150, 243, 0.25)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 200,
+              "minValue" : 0,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : true,
+              "gaugeWidthScale" : 0.5,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 16
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 0,
+              "gaugeType" : "donut",
+              "gaugeColor" : "rgba(0, 0, 0, 0)",
+              "roundedLineCap" : true,
+              "showTitle" : true,
+              "title" : "Akım",
+              "defaultColor" : "#87fcff",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "showUnitTitle" : true,
+              "unitTitle" : "A"
+            },
+            "title" : "Current: Smart Meter A",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 9,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 19,
+          "col" : 26,
+          "id" : "7faa8b82-4600-e9cb-6884-f3fd54603b4a",
+          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
+        },
+        "33746cd2-2201-0abf-c163-7aeeab07c8ac" : {
+          "type" : "static",
+          "sizeX" : 14,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(76, 175, 80, 0.25)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>Enerji Analizörü B</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 24px;\n    color: #b1feb5;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "Enerji Analizörü B",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 10,
+            "mobileHeight" : 1,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { }
+          },
+          "row" : 13,
+          "col" : 30,
+          "id" : "33746cd2-2201-0abf-c163-7aeeab07c8ac",
+          "typeFullFqn" : "system.cards.html_card"
+        },
+        "77e85f3d-9c3d-1ca9-d80e-0a15376213e7" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "voltage",
+                "type" : "timeseries",
+                "label" : "Voltage",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.39398391439849156
+              } ],
+              "name" : "Smart Meter B",
+              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(76, 175, 80, 0.25)",
+            "color" : "rgb(255, 254, 254)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 500,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal",
+                "color" : "#ffffff"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : true,
+              "gaugeColor" : "#0c1730",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 100,
+              "dashThickness" : 1.2,
+              "title" : "Gerilim",
+              "unitTitle" : "Volt",
+              "defaultColor" : "#b2ffb6",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear"
+            },
+            "title" : "Gerilim: Enerji Analizörü B",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 11,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 15,
+          "col" : 30,
+          "id" : "77e85f3d-9c3d-1ca9-d80e-0a15376213e7",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "f78891d7-fd3d-39d4-03a4-8ac3d60f275c" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "frequency",
+                "type" : "timeseries",
+                "label" : "Frequency",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8855071581269516
+              } ],
+              "name" : "Smart Meter B",
+              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(76, 175, 80, 0.25)",
+            "color" : "rgb(255, 254, 254)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 52,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal",
+                "color" : "#ffffff"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : true,
+              "gaugeColor" : "#0c1730",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 45,
+              "dashThickness" : 1.2,
+              "unitTitle" : "Hz",
+              "title" : "Frekans",
+              "defaultColor" : "#b2ffb6",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear"
+            },
+            "title" : "Frekans: Enerji Analizörü B",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 12,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 15,
+          "col" : 33,
+          "id" : "f78891d7-fd3d-39d4-03a4-8ac3d60f275c",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "ef1eb053-9b40-5244-573c-0707f2fc3b5e" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "power",
+                "type" : "timeseries",
+                "label" : "P",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.41704840982594327
+              } ],
+              "name" : "Smart Meter B",
+              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(76, 175, 80, 0.25)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 20000,
+              "minValue" : 0,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : true,
+              "gaugeWidthScale" : 1,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 14
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 1.5,
+              "gaugeType" : "donut",
+              "title" : "Güç",
+              "showTitle" : true,
+              "showUnitTitle" : true,
+              "unitTitle" : "kW",
+              "defaultColor" : "#b2ffb6",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear"
+            },
+            "title" : "Güç: Enerji Analizörü B",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 13,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 15,
+          "col" : 36,
+          "id" : "ef1eb053-9b40-5244-573c-0707f2fc3b5e",
+          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
+        },
+        "4c31c7a8-cf6c-a920-59a2-b942056b06a4" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "amperage",
+                "type" : "timeseries",
+                "label" : "Current",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5933860912310476
+              } ],
+              "name" : "Smart Meter B",
+              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(76, 175, 80, 0.25)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 200,
+              "minValue" : 0,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : true,
+              "gaugeWidthScale" : 0.5,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 16
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 0,
+              "gaugeType" : "donut",
+              "gaugeColor" : "rgba(0, 0, 0, 0)",
+              "roundedLineCap" : true,
+              "showTitle" : true,
+              "title" : "Akım",
+              "defaultColor" : "#b2ffb6",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "showUnitTitle" : true,
+              "unitTitle" : "A"
+            },
+            "title" : "Akım: Eneji Analizörü B",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 14,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 19,
+          "col" : 36,
+          "id" : "4c31c7a8-cf6c-a920-59a2-b942056b06a4",
+          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
+        },
+        "d1004dbe-d8cc-ff93-8e15-06da5a6b8e3e" : {
+          "type" : "static",
+          "sizeX" : 14,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(244, 67, 54, 0.25)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>Enerji Analizörü C</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 24px;\n    color: #ff9c93;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "Enerji Analizörü C",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 15,
+            "mobileHeight" : 1,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { }
+          },
+          "row" : 13,
+          "col" : 40,
+          "id" : "d1004dbe-d8cc-ff93-8e15-06da5a6b8e3e",
+          "typeFullFqn" : "system.cards.html_card"
+        },
+        "fbfcee0a-8408-2719-d3a3-a54fb3cc0741" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "voltage",
+                "type" : "timeseries",
+                "label" : "Voltage",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.4906904582578355
+              } ],
+              "name" : "Smart Meter C",
+              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(244, 67, 54, 0.25)",
+            "color" : "rgb(255, 254, 254)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 500,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal",
+                "color" : "#ffffff"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : true,
+              "gaugeColor" : "#0c1730",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 100,
+              "dashThickness" : 1.2,
+              "title" : "Gerilim",
+              "defaultColor" : "#fe9e9a",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "unitTitle" : "Volt"
+            },
+            "title" : "Voltaj: Enerji Analizörü C",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 16,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 15,
+          "col" : 40,
+          "id" : "fbfcee0a-8408-2719-d3a3-a54fb3cc0741",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "e62ea3c5-0594-9056-1584-2a68fdfd5433" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "frequency",
+                "type" : "timeseries",
+                "label" : "Frequency",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5083592068812213
+              } ],
+              "name" : "Smart Meter C",
+              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(244, 67, 54, 0.25)",
+            "color" : "rgb(255, 254, 254)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 52,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal",
+                "color" : "#ffffff"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : true,
+              "gaugeColor" : "#0c1730",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 45,
+              "dashThickness" : 1.2,
+              "unitTitle" : "Hz",
+              "title" : "Frekans",
+              "defaultColor" : "#fe9e9a",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear"
+            },
+            "title" : "Frekans: Enerji Analizörü C",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 17,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 15,
+          "col" : 43,
+          "id" : "e62ea3c5-0594-9056-1584-2a68fdfd5433",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "500ac11e-3a3a-c28d-5aed-35f2a1a65e13" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "power",
+                "type" : "timeseries",
+                "label" : "P",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2536496420761616
+              } ],
+              "name" : "Smart Meter C",
+              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(244, 67, 54, 0.25)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 20000,
+              "minValue" : 0,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : true,
+              "gaugeWidthScale" : 1,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 14
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 1.5,
+              "gaugeType" : "donut",
+              "title" : "Güç",
+              "showTitle" : true,
+              "showUnitTitle" : true,
+              "unitTitle" : "kW",
+              "defaultColor" : "#fe9e9a",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear"
+            },
+            "title" : "Güç: Enerji Analizörü C",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 18,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 15,
+          "col" : 46,
+          "id" : "500ac11e-3a3a-c28d-5aed-35f2a1a65e13",
+          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
+        },
+        "d080b293-ba48-fb5b-737b-d39cc92d08ab" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "amperage",
+                "type" : "timeseries",
+                "label" : "Current",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.30646961564504793
+              } ],
+              "name" : "Smart Meter C",
+              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711346930107,
+                  "endTimeMs" : 1711433330107
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(244, 67, 54, 0.25)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 200,
+              "minValue" : 0,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : true,
+              "gaugeWidthScale" : 0.5,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "RobotoDraft",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "RobotoDraft",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "RobotoDraft",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 16
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 0,
+              "gaugeType" : "donut",
+              "gaugeColor" : "rgba(0, 0, 0, 0)",
+              "roundedLineCap" : true,
+              "showTitle" : true,
+              "title" : "Akım",
+              "defaultColor" : "#fe9e9a",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "showUnitTitle" : true,
+              "unitTitle" : "A"
+            },
+            "title" : "Akım: Enerji Analizörü C",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 19,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 19,
+          "col" : 46,
+          "id" : "d080b293-ba48-fb5b-737b-d39cc92d08ab",
+          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage"
+        },
+        "d8b49c9a-3f50-25e1-fdcb-5f26f2152e18" : {
+          "type" : "timeseries",
+          "sizeX" : 28,
+          "sizeY" : 18,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "timeseries",
+                "label" : "Enerji Analizörü A",
+                "color" : "#2196f3",
+                "settings" : {
+                  "excludeFromStacking" : false,
+                  "hideDataByDefault" : false,
+                  "disableDataHiding" : false,
+                  "removeFromLegend" : false,
+                  "showLines" : false,
+                  "fillLines" : false,
+                  "showPoints" : false,
+                  "showPointShape" : "circle",
+                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                  "showPointsLineWidth" : 5,
+                  "showPointsRadius" : 3,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left",
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : true
+                  }
+                },
+                "_hash" : 0.6405508039996675
+              } ],
+              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "timeseries",
+                "label" : "Enerji Analizörü B",
+                "color" : "#4caf50",
+                "settings" : {
+                  "excludeFromStacking" : false,
+                  "hideDataByDefault" : false,
+                  "disableDataHiding" : false,
+                  "removeFromLegend" : false,
+                  "showLines" : false,
+                  "fillLines" : false,
+                  "showPoints" : false,
+                  "showPointShape" : "circle",
+                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                  "showPointsLineWidth" : 5,
+                  "showPointsRadius" : 3,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left",
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : true
+                  }
+                },
+                "_hash" : 0.23756016148648484
+              } ],
+              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "timeseries",
+                "label" : "Enerji Analizörü C",
+                "color" : "#f44336",
+                "settings" : {
+                  "excludeFromStacking" : false,
+                  "hideDataByDefault" : false,
+                  "disableDataHiding" : false,
+                  "removeFromLegend" : false,
+                  "showLines" : false,
+                  "fillLines" : false,
+                  "showPoints" : false,
+                  "showPointShape" : "circle",
+                  "pointShapeFormatter" : "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                  "showPointsLineWidth" : 5,
+                  "showPointsRadius" : 3,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left",
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : true
+                  }
+                },
+                "_hash" : 0.15536567239514887
+              } ],
+              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "interval" : 60000,
+                "timewindowMs" : 7200000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 1, 0.04)",
+            "color" : "rgb(255, 255, 255)",
+            "padding" : "8px",
+            "settings" : {
+              "shadowSize" : 4,
+              "fontColor" : "#545454",
+              "fontSize" : 10,
+              "xaxis" : {
+                "showLabels" : true,
+                "color" : "#ffffff"
+              },
+              "yaxis" : {
+                "showLabels" : true,
+                "color" : "#ffffff",
+                "tickDecimals" : 0
+              },
+              "grid" : {
+                "color" : "#808080",
+                "tickColor" : "#808080",
+                "verticalLines" : true,
+                "horizontalLines" : true,
+                "outlineWidth" : 1
+              },
+              "stack" : true,
+              "tooltipIndividual" : false,
+              "defaultBarWidth" : 600,
+              "timeForComparison" : "months",
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "showLabels" : true
+              },
+              "tooltipCumulative" : false,
+              "barAlignment" : "left",
+              "hideZeros" : false,
+              "showTooltip" : true,
+              "comparisonEnabled" : false,
+              "customLegendEnabled" : false,
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "row",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : true,
+                "showMax" : true,
+                "showAvg" : true,
+                "showTotal" : true
+              }
+            },
+            "title" : "Tüketilen Enerji",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "20px",
+              "fontWeight" : "bold",
+              "opacity" : "0.87"
+            },
+            "mobileHeight" : null,
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : true,
+            "units" : "kWh",
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "noDataDisplayMessage" : ""
+          },
+          "id" : "d8b49c9a-3f50-25e1-fdcb-5f26f2152e18",
+          "typeFullFqn" : "system.charts.timeseries_bars_flot"
+        }
+      },
+      "timewindow" : {
+        "hideInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "timewindowMs" : 7200000,
+          "quickInterval" : "CURRENT_DAY",
+          "interval" : 300000
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 200
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Akıllı Enerji İzleme - 2",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "36022029-3417-8677-b555-0cd334bb5b6a" : {
+                  "sizeX" : 10,
+                  "sizeY" : 12,
+                  "row" : 0,
+                  "col" : 19,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 2
+                },
+                "ba61cc92-ef44-850b-a53c-75e7a46decf4" : {
+                  "sizeX" : 19,
+                  "sizeY" : 10,
+                  "row" : 12,
+                  "col" : 0,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 3
+                },
+                "d7b1e19b-8241-b1da-f5df-e8882e6d0c0c" : {
+                  "sizeX" : 19,
+                  "sizeY" : 12,
+                  "row" : 0,
+                  "col" : 29,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 4
+                },
+                "5b2192ca-0586-7a31-1fc8-aca1a85d8a96" : {
+                  "sizeX" : 10,
+                  "sizeY" : 2,
+                  "row" : 12,
+                  "col" : 19,
+                  "mobileHeight" : 1,
+                  "mobileOrder" : 5
+                },
+                "fb451b81-334c-a039-d317-16d7f68c989e" : {
+                  "sizeX" : 3,
+                  "sizeY" : 8,
+                  "row" : 14,
+                  "col" : 19,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 6
+                },
+                "fd2237b9-8927-4be9-43c4-9a75723c3f07" : {
+                  "sizeX" : 3,
+                  "sizeY" : 8,
+                  "row" : 14,
+                  "col" : 22,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 7
+                },
+                "4a26ce29-ab18-69ad-24f2-cfbd622a42a1" : {
+                  "sizeX" : 4,
+                  "sizeY" : 4,
+                  "row" : 14,
+                  "col" : 25,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 8
+                },
+                "7faa8b82-4600-e9cb-6884-f3fd54603b4a" : {
+                  "sizeX" : 4,
+                  "sizeY" : 4,
+                  "row" : 18,
+                  "col" : 25,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 9
+                },
+                "33746cd2-2201-0abf-c163-7aeeab07c8ac" : {
+                  "sizeX" : 10,
+                  "sizeY" : 2,
+                  "row" : 12,
+                  "col" : 29,
+                  "mobileHeight" : 1,
+                  "mobileOrder" : 10
+                },
+                "77e85f3d-9c3d-1ca9-d80e-0a15376213e7" : {
+                  "sizeX" : 3,
+                  "sizeY" : 8,
+                  "row" : 14,
+                  "col" : 29,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 11
+                },
+                "f78891d7-fd3d-39d4-03a4-8ac3d60f275c" : {
+                  "sizeX" : 3,
+                  "sizeY" : 8,
+                  "row" : 14,
+                  "col" : 32,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 12
+                },
+                "ef1eb053-9b40-5244-573c-0707f2fc3b5e" : {
+                  "sizeX" : 4,
+                  "sizeY" : 4,
+                  "row" : 14,
+                  "col" : 35,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 13
+                },
+                "4c31c7a8-cf6c-a920-59a2-b942056b06a4" : {
+                  "sizeX" : 4,
+                  "sizeY" : 4,
+                  "row" : 18,
+                  "col" : 35,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 14
+                },
+                "d1004dbe-d8cc-ff93-8e15-06da5a6b8e3e" : {
+                  "sizeX" : 9,
+                  "sizeY" : 2,
+                  "row" : 12,
+                  "col" : 39,
+                  "mobileHeight" : 1,
+                  "mobileOrder" : 15
+                },
+                "fbfcee0a-8408-2719-d3a3-a54fb3cc0741" : {
+                  "sizeX" : 3,
+                  "sizeY" : 8,
+                  "row" : 14,
+                  "col" : 39,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 16
+                },
+                "e62ea3c5-0594-9056-1584-2a68fdfd5433" : {
+                  "sizeX" : 3,
+                  "sizeY" : 8,
+                  "row" : 14,
+                  "col" : 42,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 17
+                },
+                "500ac11e-3a3a-c28d-5aed-35f2a1a65e13" : {
+                  "sizeX" : 3,
+                  "sizeY" : 4,
+                  "row" : 14,
+                  "col" : 45,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 18
+                },
+                "d080b293-ba48-fb5b-737b-d39cc92d08ab" : {
+                  "sizeX" : 3,
+                  "sizeY" : 4,
+                  "row" : 18,
+                  "col" : 45,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 19
+                },
+                "d8b49c9a-3f50-25e1-fdcb-5f26f2152e18" : {
+                  "sizeX" : 19,
+                  "sizeY" : 12,
+                  "mobileHeight" : null,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "rgb(20, 37, 81)",
+                "columns" : 48,
+                "backgroundImageUrl" : "tb-image:YWvEsWxsxLFfZW5lcmppX2lfemxlbWVfMl9kYXNoYm9hcmRfZGVmYXVsdF9iYWNrZ3JvdW5kLnN2Zw==:IkFrxLFsbMSxIEVuZXJqaSDEsHpsZW1lIC0gMiIgZGFzaGJvYXJkIGRlZmF1bHQgYmFja2dyb3VuZA==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnODY5MCIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iODMuNzg1bW0iIHdpZHRoPSIxNjkuMzNtbSIgdmVyc2lvbj0iMS4xIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDU5OS45OTk5OCAyOTYuODc1IiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iPgogPGRlZnMgaWQ9ImRlZnM4NjkyIj4KICA8cmFkaWFsR3JhZGllbnQgaWQ9InJhZGlhbEdyYWRpZW50OTI0OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN5PSI4MDguMjciIGN4PSItODQ0LjI5IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTQxMyAtLjAxMjgzMSAuMDA3ODM0NCAuNjk2ODUgMTEyLjk1IDIzMS4yOCkiIHI9IjMwMCI+CiAgIDxzdG9wIGlkPSJzdG9wOTI0MiIgc3RvcC1jb2xvcj0iIzFjMzA2NyIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIGlkPSJzdG9wOTI0NCIgc3RvcC1jb2xvcj0iIzEwMjA0NyIgb2Zmc2V0PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KIDwvZGVmcz4KIDxnIGlkPSJsYXllcjIiPgogIDxyZWN0IGlkPSJyZWN0OTIzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE0MCAtNjU0LjA2KSIgaGVpZ2h0PSIyOTYuODgiIHdpZHRoPSI2MDAiIHk9IjY1NC4wNiIgeD0iLTExNDAiIGZpbGw9InVybCgjcmFkaWFsR3JhZGllbnQ5MjQ4KSIvPgogPC9nPgo8L3N2Zz4K",
+                "backgroundSizeMode" : "cover",
+                "color" : "rgba(1,1,1,0.87)",
+                "autoFillHeight" : true,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70,
+                "margin" : 5,
+                "outerMargin" : true
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "f6bd11cc-beed-46c7-d972-672e7dddb5da" : {
+          "id" : "f6bd11cc-beed-46c7-d972-672e7dddb5da",
+          "alias" : "Enerji Analizörü A",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "8c143350-ea88-11ee-9512-1748ff314dba"
+            }
+          }
+        },
+        "dd8154f4-08cc-f620-e4db-dd4491c65b8a" : {
+          "id" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a",
+          "alias" : "Enerji Analizörü B",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "952e85d0-ea88-11ee-9512-1748ff314dba"
+            }
+          }
+        },
+        "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5" : {
+          "id" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5",
+          "alias" : "Enerji Analizörü C",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "aa1ec860-ea88-11ee-9512-1748ff314dba"
+            }
+          }
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : false,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : false,
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.87)",
+        "showFilters" : true,
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ""
+      },
+      "filters" : { }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "583aa0f0-eb37-11ee-9512-1748ff314dba"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Sim - Smart energy monitoring 2",
+    "title" : "Sim - Smart energy monitoring 2"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

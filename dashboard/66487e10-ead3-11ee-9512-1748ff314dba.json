@@ -1,0 +1,2144 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "widgets" : {
+        "359e022a-9503-cd4c-1bfc-8827c54260a3" : {
+          "type" : "timeseries",
+          "sizeX" : 17,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "Silo A Sıcaklık",
+                "color" : "#9ec748",
+                "settings" : {
+                  "showLines" : true,
+                  "fillLines" : false,
+                  "showPoints" : false,
+                  "showPointsRadius" : 3,
+                  "axisPosition" : "left"
+                },
+                "_hash" : 0.1543817519979509
+              } ],
+              "entityAliasId" : "d96af07a-edc4-4e3c-4008-0bb1513a0cd7"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "Silo B Sıcaklık",
+                "color" : "#0f8ffd",
+                "settings" : {
+                  "showLines" : true,
+                  "fillLines" : false,
+                  "showPoints" : false,
+                  "showPointsRadius" : 3,
+                  "axisPosition" : "left"
+                },
+                "_hash" : 0.894278359173202
+              } ],
+              "entityAliasId" : "705c4302-121c-d70a-3669-aafe9ebf8338"
+            }, {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "Silo C Sıcaklık",
+                "color" : "#e05aef",
+                "settings" : {
+                  "showLines" : true,
+                  "fillLines" : false,
+                  "showPoints" : false,
+                  "showPointsRadius" : 3,
+                  "axisPosition" : "left"
+                },
+                "_hash" : 0.8364317058852573
+              } ],
+              "entityAliasId" : "77631e3b-8c45-7925-18be-7ab851a6f3e4"
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(255, 254, 254, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "shadowSize" : 10,
+              "fontColor" : "#fffefe",
+              "fontSize" : 10,
+              "xaxis" : {
+                "showLabels" : true
+              },
+              "yaxis" : {
+                "showLabels" : true,
+                "tickDecimals" : 0
+              },
+              "grid" : {
+                "color" : "rgba(77, 129, 193, 0.24)",
+                "verticalLines" : false,
+                "horizontalLines" : true,
+                "outlineWidth" : 1,
+                "tickColor" : "rgba(77, 129, 193, 0.24)"
+              },
+              "stack" : false,
+              "tooltipIndividual" : false,
+              "timeForComparison" : "days",
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "showLabels" : true
+              },
+              "smoothLines" : false,
+              "comparisonEnabled" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "showTooltip" : true,
+              "customLegendEnabled" : false,
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "row",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : true,
+                "showMax" : true,
+                "showAvg" : true,
+                "showTotal" : false
+              }
+            },
+            "title" : "Silo Sıcaklıkları",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "20px",
+              "fontWeight" : "bold",
+              "opacity" : "0.87"
+            },
+            "mobileHeight" : 4,
+            "useDashboardTimewindow" : true,
+            "units" : "°C",
+            "mobileOrder" : 2,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 9,
+          "col" : 0,
+          "id" : "359e022a-9503-cd4c-1bfc-8827c54260a3",
+          "typeFullFqn" : "system.charts.basic_timeseries"
+        },
+        "f5728fc8-d311-dfb5-6f62-d2a9c55de5ae" : {
+          "type" : "latest",
+          "sizeX" : 8,
+          "sizeY" : 9,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "d96af07a-edc4-4e3c-4008-0bb1513a0cd7",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cropLevel",
+                "type" : "timeseries",
+                "label" : "Silo A",
+                "color" : "#9ec748",
+                "settings" : { },
+                "_hash" : 0.9743665322802828,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "705c4302-121c-d70a-3669-aafe9ebf8338",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cropLevel",
+                "type" : "timeseries",
+                "label" : "Silo B",
+                "color" : "#0f8ffd",
+                "settings" : { },
+                "_hash" : 0.19892349980472246,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "77631e3b-8c45-7925-18be-7ab851a6f3e4",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cropLevel",
+                "type" : "timeseries",
+                "label" : "Silo C",
+                "color" : "#e05aef",
+                "settings" : { },
+                "_hash" : 0.9712196285003363,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517685,
+                  "endTimeMs" : 1711386917685
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(255, 254, 254, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "radius" : 1,
+              "fontColor" : "#545454",
+              "fontSize" : 10,
+              "innerRadius" : 0.4,
+              "showLabels" : true,
+              "stroke" : {
+                "width" : 5,
+                "color" : "#2d3b48"
+              },
+              "tilt" : 1,
+              "animatedPie" : false
+            },
+            "title" : "Silo Ağırlıkları",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "20px",
+              "fontWeight" : "bold",
+              "opacity" : "0.87"
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "units" : "TON",
+            "mobileOrder" : 4,
+            "mobileHeight" : 4,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 0,
+          "col" : 15,
+          "id" : "f5728fc8-d311-dfb5-6f62-d2a9c55de5ae",
+          "typeFullFqn" : "system.charts.pie"
+        },
+        "dab20650-2263-86a4-7a01-ac1eaea2f3af" : {
+          "type" : "static",
+          "sizeX" : 9,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(45, 59, 72)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>Silo A</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 24px;\n    color: #9ec748;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "Silo A",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 6,
+            "mobileHeight" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false
+          },
+          "row" : 0,
+          "col" : 23,
+          "id" : "dab20650-2263-86a4-7a01-ac1eaea2f3af",
+          "typeFullFqn" : "system.cards.html_card"
+        },
+        "234fc7e8-805b-bf56-264c-f0598f569b63" : {
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "temperature",
+                "color" : "#9ec748",
+                "settings" : { },
+                "_hash" : 0.7140177624748909
+              } ],
+              "entityAliasId" : "d96af07a-edc4-4e3c-4008-0bb1513a0cd7"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517686,
+                  "endTimeMs" : 1711386917686
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 30,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : false,
+              "gaugeColor" : "#39461e",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 10,
+              "dashThickness" : 1,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "title" : "Sıcaklık",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "title" : "New Digital vertical bar",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "°C",
+            "decimals" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "mobileOrder" : 7,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 2,
+          "col" : 23,
+          "id" : "234fc7e8-805b-bf56-264c-f0598f569b63",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "f4a75996-3c1d-e227-752f-62ebd43efe7e" : {
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "humidity",
+                "color" : "#9ec748",
+                "settings" : { },
+                "_hash" : 0.004571840281637707
+              } ],
+              "entityAliasId" : "d96af07a-edc4-4e3c-4008-0bb1513a0cd7"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517686,
+                  "endTimeMs" : 1711386917686
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 100,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : false,
+              "gaugeColor" : "#39461e",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 0,
+              "dashThickness" : 1,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "title" : "Nem",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "title" : "New Digital vertical bar",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "%",
+            "decimals" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "mobileOrder" : 8,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 2,
+          "col" : 26,
+          "id" : "f4a75996-3c1d-e227-752f-62ebd43efe7e",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "6da3c3fd-abf4-7daa-921f-9c5527d944c6" : {
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "d96af07a-edc4-4e3c-4008-0bb1513a0cd7",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cropLevel",
+                "type" : "timeseries",
+                "label" : "weight",
+                "color" : "#9ec748",
+                "settings" : { },
+                "_hash" : 0.9484071673101928,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517686,
+                  "endTimeMs" : 1711386917686
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 200,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : false,
+              "gaugeColor" : "#39461e",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 0,
+              "dashThickness" : 1,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "title" : "Ağırlık",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "title" : "New Digital vertical bar",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "TON",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "mobileOrder" : 9,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 2,
+          "col" : 29,
+          "id" : "6da3c3fd-abf4-7daa-921f-9c5527d944c6",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "ad86df52-d5b6-8368-4781-719e8fb3f780" : {
+          "type" : "static",
+          "sizeX" : 9,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(45, 59, 72)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>Silo B</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 24px;\n    color: #0f8ffd;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "Silo A",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 10,
+            "mobileHeight" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false
+          },
+          "row" : 0,
+          "col" : 32,
+          "id" : "ad86df52-d5b6-8368-4781-719e8fb3f780",
+          "typeFullFqn" : "system.cards.html_card"
+        },
+        "373613c3-dd30-f332-c03c-06125778b995" : {
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "temperature",
+                "color" : "#0f8ffd",
+                "settings" : { },
+                "_hash" : 0.7760388897867059
+              } ],
+              "entityAliasId" : "705c4302-121c-d70a-3669-aafe9ebf8338"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517686,
+                  "endTimeMs" : 1711386917686
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 30,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : false,
+              "gaugeColor" : "#153650",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "dashThickness" : 1,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "title" : "Sıcaklık",
+              "minValue" : 10,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "title" : "New Digital vertical bar",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "°C",
+            "decimals" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "mobileOrder" : 11,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 2,
+          "col" : 32,
+          "id" : "373613c3-dd30-f332-c03c-06125778b995",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "ebae7e96-a342-6015-e563-e056c10296b4" : {
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "humidity",
+                "color" : "#0f8ffd",
+                "settings" : { },
+                "_hash" : 0.7594525031114538
+              } ],
+              "entityAliasId" : "705c4302-121c-d70a-3669-aafe9ebf8338"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517686,
+                  "endTimeMs" : 1711386917686
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 100,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : false,
+              "gaugeColor" : "#153650",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 0,
+              "dashThickness" : 1,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "title" : "Nem",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "title" : "New Digital vertical bar",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "%",
+            "decimals" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "mobileOrder" : 12,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 2,
+          "col" : 35,
+          "id" : "ebae7e96-a342-6015-e563-e056c10296b4",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "a55940e1-8ae4-9ba5-3dc3-ced96c35c225" : {
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "705c4302-121c-d70a-3669-aafe9ebf8338",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cropLevel",
+                "type" : "timeseries",
+                "label" : "weight",
+                "color" : "#0f8ffd",
+                "settings" : { },
+                "_hash" : 0.14125071698762537,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517686,
+                  "endTimeMs" : 1711386917686
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 200,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : false,
+              "gaugeColor" : "#153650",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 0,
+              "dashThickness" : 1,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "title" : "Ağırlık",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "title" : "New Digital vertical bar",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "TON",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "mobileOrder" : 13,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 2,
+          "col" : 38,
+          "id" : "a55940e1-8ae4-9ba5-3dc3-ced96c35c225",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "943ec0ea-a49d-8618-6897-a37ad4a2f1f5" : {
+          "type" : "static",
+          "sizeX" : 9,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(45, 59, 72)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>Silo C</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 24px;\n    color: #e05aef;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "Silo A",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileOrder" : 14,
+            "mobileHeight" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false
+          },
+          "row" : 0,
+          "col" : 41,
+          "id" : "943ec0ea-a49d-8618-6897-a37ad4a2f1f5",
+          "typeFullFqn" : "system.cards.html_card"
+        },
+        "4dd83d4e-7fa9-dd6b-8c38-5ec54ef64b7c" : {
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "temperature",
+                "color" : "#e05aef",
+                "settings" : { },
+                "_hash" : 0.13370006231494758
+              } ],
+              "entityAliasId" : "77631e3b-8c45-7925-18be-7ab851a6f3e4"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517686,
+                  "endTimeMs" : 1711386917686
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 30,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : false,
+              "gaugeColor" : "#3b243e",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "dashThickness" : 1,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "title" : "Sıcaklık",
+              "minValue" : 10,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "title" : "New Digital vertical bar",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "°C",
+            "decimals" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "mobileOrder" : 15,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 2,
+          "col" : 41,
+          "id" : "4dd83d4e-7fa9-dd6b-8c38-5ec54ef64b7c",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "7e99541a-fd0f-c8cf-6752-8facffa419ae" : {
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "humidity",
+                "color" : "#e05aef",
+                "settings" : { },
+                "_hash" : 0.435399230297854
+              } ],
+              "entityAliasId" : "77631e3b-8c45-7925-18be-7ab851a6f3e4"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517687,
+                  "endTimeMs" : 1711386917687
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 100,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : false,
+              "gaugeColor" : "#3b243e",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 0,
+              "dashThickness" : 1,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "title" : "Nem",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "title" : "New Digital vertical bar",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "%",
+            "decimals" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "mobileOrder" : 16,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 2,
+          "col" : 44,
+          "id" : "7e99541a-fd0f-c8cf-6752-8facffa419ae",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "96b5fb77-6292-530e-5083-0fa1b1b22efe" : {
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 7,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "77631e3b-8c45-7925-18be-7ab851a6f3e4",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cropLevel",
+                "type" : "timeseries",
+                "label" : "weight",
+                "color" : "#e05aef",
+                "settings" : { },
+                "_hash" : 0.773270624760956,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517687,
+                  "endTimeMs" : 1711386917687
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "maxValue" : 200,
+              "donutStartAngle" : 90,
+              "showValue" : true,
+              "showMinMax" : false,
+              "gaugeWidthScale" : 0.75,
+              "levelColors" : [ ],
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "style" : "normal",
+                "weight" : "500",
+                "size" : 12
+              },
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal"
+              },
+              "neonGlowBrightness" : 0,
+              "showUnitTitle" : false,
+              "gaugeColor" : "#3b243e",
+              "gaugeType" : "verticalBar",
+              "showTitle" : true,
+              "minValue" : 0,
+              "dashThickness" : 1,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "title" : "Ağırlık",
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "title" : "New Digital vertical bar",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "TON",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "mobileOrder" : 17,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { }
+          },
+          "row" : 2,
+          "col" : 47,
+          "id" : "96b5fb77-6292-530e-5083-0fa1b1b22efe",
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar"
+        },
+        "01c2a59f-0aa1-ffcc-2f4f-e3bf69b1a13d" : {
+          "type" : "latest",
+          "sizeX" : 15,
+          "sizeY" : 9,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "2cec688f-28a4-7d70-5584-49d0ab4bf5c8",
+              "dataKeys" : [ {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "humidity",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.5515097660616433
+              }, {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "temperature",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.9021564359621168
+              }, {
+                "name" : "weight",
+                "type" : "timeseries",
+                "label" : "weight",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.11182138635564898
+              }, {
+                "name" : "latitude",
+                "type" : "attribute",
+                "label" : "latitude",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.23362311481922382
+              }, {
+                "name" : "longitude",
+                "type" : "attribute",
+                "label" : "longitude",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.07601088660015409
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711300517687,
+                  "endTimeMs" : 1711386917687
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "fitMapBounds" : false,
+              "latKeyName" : "latitude",
+              "lngKeyName" : "longitude",
+              "showLabel" : true,
+              "label" : "<div style='position: relative; white-space: nowrap; text-align: center; font-size: 16px; top: -5px;'><span style='margin-left: -500%;'></span><span style='border: solid #ff3d00; border-radius: 10px; color: #ff3d00; background-color: #fff; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px;'>${entityName}</span><span style='margin-right: -500%;'></span></div>",
+              "tooltipPattern" : "<div style=\"color: rgba(0,0,0,0.87);\"><b>Ağırlık:</b> ${weight:0} TON<br/><b>Sıcaklık:</b> ${temperature} °C<br/><b>Nem:</b> ${humidity}%</div>",
+              "markerImageSize" : 60,
+              "useColorFunction" : false,
+              "markerImages" : [ "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfMC5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgMA==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjI5LjcxNSIgY3k9IjQ2OC42MSIgY3g9IjM2My4zNCIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iIzllYzc0OCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfMS5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgMQ==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjgyLjc0OCIgY3k9IjQ1MC45MyIgY3g9IjM2My4zNCIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iIzllYzc0OCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfMi5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgMg==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjExNC4wNiIgY3k9IjQxOS42MiIgY3g9IjM2My4zNCIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iIzllYzc0OCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfMy5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgMw==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjE2OC4xMSIgY3k9IjM2NS41OCIgY3g9IjM2My4zNCIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iIzllYzc0OCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfNC5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgNA==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjI5LjcxNSIgY3k9IjQ2OC42MSIgY3g9IjM2My4zNCIgZmlsbD0iIzBmOGZmZCIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iIzBmOGZmZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfNS5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgNQ==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjY0Ljg5MSIgY3k9IjQzNi42NSIgY3g9IjM2My4zNCIgZmlsbD0iIzBmOGZmZCIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iIzBmOGZmZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfNi5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgNg==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9Ijk5LjUzNCIgY3k9IjQwMiIgY3g9IjM2My4zNCIgZmlsbD0iIzBmOGZmZCIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iIzBmOGZmZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfNy5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgNw==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjE2OC4xMSIgY3k9IjM2NS41OCIgY3g9IjM2My4zNCIgZmlsbD0iIzBmOGZmZCIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iIzBmOGZmZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfOC5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgOA==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjM3LjI5MSIgY3k9IjQ3Mi4xNSIgY3g9IjM2My4zNCIgZmlsbD0iI2UwNWFlZiIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iI2UwNWFlZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfOS5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgOQ==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjY5LjExMSIgY3k9IjQ0MC4zMyIgY3g9IjM2My4zNCIgZmlsbD0iI2UwNWFlZiIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iI2UwNWFlZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfMTAuc3Zn:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgMTA=;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjEwMy40NiIgY3k9IjQwNS45OCIgY3g9IjM2My4zNCIgZmlsbD0iI2UwNWFlZiIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iI2UwNWFlZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K", "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX3dpZGdldF9uZXdfb3BlbnN0cmVldG1hcF9tYXJrZXJfaW1hZ2VfMTEuc3Zn:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCB3aWRnZXQgIk5ldyBPcGVuU3RyZWV0TWFwIiBtYXJrZXIgaW1hZ2UgMTE=;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMzk1OTgiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjExNS4zN21tIiB3aWR0aD0iMTE1LjUzbW0iIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgNDA5LjM3MTYyIDQwOC43ODEyNCI+CiA8ZyBpZD0ibGF5ZXI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQuNzUyIC00Mi44MjYpIj4KICA8ZWxsaXBzZSBpZD0icGF0aDQwMzQxLTQiIHJ4PSIyMDIuMzkiIHJ5PSIyMDIuNzUiIGN5PSIyNDYuMzMiIGN4PSIyNDcuMTQiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuODMgLTE1NC4wNCkiPgogIDxlbGxpcHNlIGlkPSJwYXRoNDAzNDEiIHJ4PSIxNTcuMyIgcnk9IjE1MS45NCIgY3k9IjM1Ny40OSIgY3g9IjM2My4zNCIgZmlsbD0iI2UwNWFlZiIvPgogPC9nPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS44MyAtMTU0LjA0KSI+CiAgPHBhdGggaWQ9InBhdGg0MDM0MS03IiBkPSJtMzY2LjgxIDE1Ni4wNGMtMTExLjc4IDAuMDAwMDMtMjAyLjM5IDkwLjYxMy0yMDIuMzkgMjAyLjM5IDAuMDAwMDIgMTExLjc4IDkwLjYxMyAyMDIuMzkgMjAyLjM5IDIwMi4zOSAxMTEuNzgtMC4wMDAwMyAyMDIuMzktOTAuNjEzIDIwMi4zOS0yMDIuMzkgMC0xMTEuNzctOTAuNjEtMjAyLjM5LTIwMi4zOS0yMDIuMzl6bS0wLjIyMjY2IDU2LjE5MWM2MS4yNSAwLjE1MTIyIDcyLjczMiAzMS42MjkgNzIuNzMyIDMxLjYyOXYyOS44NHMtMzcuOTA2IDQuNDQyOC03Mi4yODMgNC41MDM5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjguNDM5czkuODU1OS0zMS42OTkgNzMuNTk2LTMxLjYyOXptNzIuNzMyIDEwNS43OXMtMzcuOTA2IDQuNDQ0OC03Mi4yODMgNC41MDU5Yy0zMy43NzIgMC4wNTk5LTc0LjA0NS01LjkwNDMtNzQuMDQ1LTUuOTA0M3YtMjUuNzg0czQ2LjQ4NCA0LjY0OTIgNzMuNzE5IDQuOTQ5MWMyNy41NDkgMC4zMDM0MSA3Mi42NzMtNC45NDkxIDcyLjY3My00Ljk0OTF6bS0xNDYuNDggMTcuMTA3czQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODZzLTM3LjkwNiA0LjQ0MjktNzIuMjgzIDQuNTAzOWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTAgNDQuNTAyczQ2LjQ4NiA0LjY0OSA3My43MjEgNC45NDljMjcuNTQ5IDAuMzAzMzggNzIuNjA3LTQuOTQ5IDcyLjYwNy00Ljk0OXYyNy4xODJzLTM3LjkwNiA0LjQ0NDgtNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN6bTE0Ni4zMyA3MC45MDZzLTM3LjkwNiA0LjQ0NDktNzIuMjgzIDQuNTA1OWMtMzMuNzcyIDAuMDU5OS03NC4wNDUtNS45MDQzLTc0LjA0NS01LjkwNDN2LTI1Ljc4M3M0Ni40ODYgNC42NDkgNzMuNzIxIDQuOTQ5YzI3LjU0OSAwLjMwMzQxIDcyLjYwNy00Ljk0OSA3Mi42MDctNC45NDl2MjcuMTgxbS0xNDYuMTcgMTcuMzA3czQ2LjQ4NCA0LjY0OSA3My43MTkgNC45NDljMjcuNTQ5IDAuMzAzNDEgNzIuNjA5LTQuOTQ5IDcyLjYwOS00Ljk0OXYyMi44MTVoLTE0Ni4zM3oiIHN0cm9rZT0iI2UwNWFlZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9IiNmZmYiLz4KIDwvZz4KIDxnIGlkPSJsYXllcjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NC43NTIgLTQyLjgyNikiIGRpc3BsYXk9Im5vbmUiPgogIDxwYXRoIGlkPSJwYXRoNDAxNDgiIGQ9Im0zNjYuODEgMTExLjIyYTI0OS43MyAyNDkuNzMgMCAwIDAgLTI0OS43MyAyNDkuNzMgMjQ5LjczIDI0OS43MyAwIDAgMCAxNTYuNTYgMjMxLjU2bDkzLjE3NiAyMDUuNzUgOTMuMjA1LTIwNS44MWEyNDkuNzMgMjQ5LjczIDAgMCAwIDE1Ni41MiAtMjMxLjUgMjQ5LjczIDI0OS43MyAwIDAgMCAtMjQ5LjczIC0yNDkuNzN6bTAgNTUuNWExOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDE5NC4yMyAwIDAgMSAtMTk0LjIzIDE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIC0xOTQuMjMgLTE5NC4yMyAxOTQuMjMgMTk0LjIzIDAgMCAxIDE5NC4yMyAtMTk0LjIzeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNy4wOCAtMTExLjIyKSIgZmlsbD0iIzllYzc0OCIvPgogPC9nPgo8L3N2Zz4K" ],
+              "useMarkerImageFunction" : true,
+              "colorFunction" : "var type = dsData[dsIndex]['type'];\nif (type == 'colorpin') {\n\tvar temperature = dsData[dsIndex]['temperature'];\n\tif (typeof temperature !== undefined) {\n\t    var percent = (temperature + 60)/120 * 100;\n\t    return tinycolor.mix('blue', 'red', amount = percent).toHexString();\n\t}\n\treturn 'blue';\n}\n",
+              "markerImageFunction" : "var weight = dsData[dsIndex]['weight'] || 0;\nvar index = Math.floor((weight / 200) * 4);\nif (index > 3) index = 3;\nindex = dsIndex*4 + index;\nreturn {\n  size: 60,\n  url: images[index]\n};",
+              "color" : "#fe7569",
+              "mapProvider" : "OpenStreetMap.Mapnik",
+              "showTooltip" : true,
+              "autocloseTooltip" : false,
+              "tooltipFunction" : "var deviceType = dsData[dsIndex]['deviceType'];\r\nif (typeof deviceType !== undefined) {\r\n    if (deviceType == \"energy meter\") {\r\n        return '<b>${entityName}</b><br/><b>Energy:</b> ${energy:2} kWt<br/>';\r\n    } else if (deviceType == \"thermometer\") {\r\n        return '<b>${entityName}</b><br/><b>Temperature:</b> ${temperature:2} °C<br/>';\r\n    }\r\n}",
+              "defaultZoomLevel" : 15,
+              "useLabelFunction" : true,
+              "labelFunction" : "var colors = [\"#85b129\", \"#228efc\", \"#e05aef\"];\nvar colorIndex = dsIndex % colors.length;\nvar color = colors[colorIndex];\nreturn \"<div style='position: relative; white-space: nowrap; text-align: center; font-size: 16px; top: -5px;'><span style='margin-left: -500%;'></span><span style='border: solid \"+color+\"; border-radius: 10px; color: \"+color+\"; background-color: #fff; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px;'>${entityName}</span><span style='margin-right: -500%;'></span></div>\";",
+              "defaultCenterPosition" : [ 0, 0 ],
+              "customProviderTileUrl" : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "showTooltipAction" : "click",
+              "polygonKeyName" : "coordinates",
+              "polygonOpacity" : 0.5,
+              "polygonStrokeOpacity" : 1,
+              "polygonStrokeWeight" : 1
+            },
+            "title" : "New OpenStreetMap",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "01c2a59f-0aa1-ffcc-2f4f-e3bf69b1a13d",
+          "typeFullFqn" : "system.maps_v2.openstreetmap"
+        },
+        "73bed662-0b77-b25b-6e1f-bd4baa60f374" : {
+          "type" : "alarm",
+          "sizeX" : 10.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 60480000000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#2d3b48",
+            "color" : "#ebeaea",
+            "padding" : "4px",
+            "settings" : {
+              "enableSelection" : true,
+              "enableSearch" : true,
+              "displayDetails" : true,
+              "allowAcknowledgment" : true,
+              "allowClear" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "-createdTime",
+              "enableSelectColumnDisplay" : true,
+              "enableStickyAction" : false,
+              "enableFilter" : true
+            },
+            "title" : "New Alarms table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "alarmSource" : {
+              "type" : "entity",
+              "name" : "alarms",
+              "entityAliasId" : "fb2f951e-e6c0-e97d-ab5f-0e8c4a635c23",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "type" : "alarm",
+                "label" : "Oluşma zamanı",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.013711670397704268
+              }, {
+                "name" : "originator",
+                "type" : "alarm",
+                "label" : "Kaynak",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.2066179041840912
+              }, {
+                "name" : "type",
+                "type" : "alarm",
+                "label" : "Tip",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.2506056387243927
+              }, {
+                "name" : "severity",
+                "type" : "alarm",
+                "label" : "Şiddet",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.3928246574128844
+              } ]
+            },
+            "alarmsPollingInterval" : 5,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { },
+            "datasources" : [ ],
+            "enableDataExport" : true,
+            "alarmFilterConfig" : {
+              "statusList" : [ ],
+              "severityList" : [ ],
+              "typeList" : [ ],
+              "searchPropagatedAlarms" : false
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "73bed662-0b77-b25b-6e1f-bd4baa60f374",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table"
+        },
+        "9e52ddc1-cfb8-e6aa-a39f-76d21abe9958" : {
+          "type" : "timeseries",
+          "sizeX" : 17,
+          "sizeY" : 11,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "d96af07a-edc4-4e3c-4008-0bb1513a0cd7",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cropLevel",
+                "type" : "timeseries",
+                "label" : "Silo A Seviye",
+                "color" : "#9ec748",
+                "settings" : {
+                  "hideDataByDefault" : false,
+                  "disableDataHiding" : false,
+                  "removeFromLegend" : false,
+                  "excludeFromStacking" : false,
+                  "showLines" : true,
+                  "lineWidth" : 1,
+                  "fillLines" : true,
+                  "showPoints" : false,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left",
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : true,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  },
+                  "thresholds" : [ ]
+                },
+                "_hash" : 0.1543817519979509,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "latestDataKeys" : null
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "705c4302-121c-d70a-3669-aafe9ebf8338",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cropLevel",
+                "type" : "timeseries",
+                "label" : "Silo B Seviye",
+                "color" : "#0f8ffd",
+                "settings" : {
+                  "hideDataByDefault" : false,
+                  "disableDataHiding" : false,
+                  "removeFromLegend" : false,
+                  "excludeFromStacking" : false,
+                  "showLines" : true,
+                  "lineWidth" : 1,
+                  "fillLines" : true,
+                  "showPoints" : false,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left",
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : true,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  },
+                  "thresholds" : [ ]
+                },
+                "_hash" : 0.894278359173202,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "latestDataKeys" : null
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "77631e3b-8c45-7925-18be-7ab851a6f3e4",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cropLevel",
+                "type" : "timeseries",
+                "label" : "Silo C Seviye",
+                "color" : "#e05aef",
+                "settings" : {
+                  "hideDataByDefault" : false,
+                  "disableDataHiding" : false,
+                  "removeFromLegend" : false,
+                  "excludeFromStacking" : false,
+                  "showLines" : true,
+                  "lineWidth" : 1,
+                  "fillLines" : true,
+                  "showPoints" : false,
+                  "showSeparateAxis" : false,
+                  "axisPosition" : "left",
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : true,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  },
+                  "thresholds" : [ ]
+                },
+                "_hash" : 0.8364317058852573,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "latestDataKeys" : null
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#2d3b48",
+            "color" : "rgba(255, 254, 254, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "shadowSize" : 10,
+              "fontColor" : "#fffefe",
+              "fontSize" : 10,
+              "xaxis" : {
+                "showLabels" : true
+              },
+              "yaxis" : {
+                "showLabels" : true,
+                "tickDecimals" : 0
+              },
+              "grid" : {
+                "color" : "rgba(77, 129, 193, 0.24)",
+                "verticalLines" : false,
+                "horizontalLines" : true,
+                "outlineWidth" : 1,
+                "tickColor" : "rgba(77, 129, 193, 0.24)"
+              },
+              "stack" : false,
+              "tooltipIndividual" : false,
+              "timeForComparison" : "days",
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "showLabels" : true
+              },
+              "smoothLines" : false,
+              "comparisonEnabled" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "showTooltip" : true,
+              "customLegendEnabled" : false,
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "row",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : true,
+                "showMax" : true,
+                "showAvg" : true,
+                "showTotal" : false
+              }
+            },
+            "title" : "Silo Seviyeleri",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "20px",
+              "fontWeight" : "bold",
+              "opacity" : "0.87"
+            },
+            "mobileHeight" : 4,
+            "useDashboardTimewindow" : true,
+            "units" : "%",
+            "mobileOrder" : 2,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "pageSize" : 1024
+          },
+          "row" : 9,
+          "col" : 0,
+          "id" : "9e52ddc1-cfb8-e6aa-a39f-76d21abe9958",
+          "typeFullFqn" : "system.charts.basic_timeseries"
+        }
+      },
+      "timewindow" : {
+        "hideInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "timewindowMs" : 18000000,
+          "quickInterval" : "CURRENT_DAY",
+          "interval" : 300000
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 200
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Silo İzleme - 2",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "359e022a-9503-cd4c-1bfc-8827c54260a3" : {
+                  "sizeX" : 16,
+                  "sizeY" : 11,
+                  "row" : 9,
+                  "col" : 0,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 2
+                },
+                "f5728fc8-d311-dfb5-6f62-d2a9c55de5ae" : {
+                  "sizeX" : 8,
+                  "sizeY" : 9,
+                  "row" : 0,
+                  "col" : 13,
+                  "mobileHeight" : 4,
+                  "mobileOrder" : 4
+                },
+                "dab20650-2263-86a4-7a01-ac1eaea2f3af" : {
+                  "sizeX" : 9,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 21,
+                  "mobileHeight" : 1,
+                  "mobileOrder" : 6
+                },
+                "234fc7e8-805b-bf56-264c-f0598f569b63" : {
+                  "sizeX" : 3,
+                  "sizeY" : 7,
+                  "row" : 2,
+                  "col" : 21,
+                  "mobileOrder" : 7
+                },
+                "f4a75996-3c1d-e227-752f-62ebd43efe7e" : {
+                  "sizeX" : 3,
+                  "sizeY" : 7,
+                  "row" : 2,
+                  "col" : 24,
+                  "mobileOrder" : 8
+                },
+                "6da3c3fd-abf4-7daa-921f-9c5527d944c6" : {
+                  "sizeX" : 3,
+                  "sizeY" : 7,
+                  "row" : 2,
+                  "col" : 27,
+                  "mobileOrder" : 9
+                },
+                "ad86df52-d5b6-8368-4781-719e8fb3f780" : {
+                  "sizeX" : 9,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 30,
+                  "mobileHeight" : 1,
+                  "mobileOrder" : 10
+                },
+                "373613c3-dd30-f332-c03c-06125778b995" : {
+                  "sizeX" : 3,
+                  "sizeY" : 7,
+                  "row" : 2,
+                  "col" : 30,
+                  "mobileOrder" : 11
+                },
+                "ebae7e96-a342-6015-e563-e056c10296b4" : {
+                  "sizeX" : 3,
+                  "sizeY" : 7,
+                  "row" : 2,
+                  "col" : 33,
+                  "mobileOrder" : 12
+                },
+                "a55940e1-8ae4-9ba5-3dc3-ced96c35c225" : {
+                  "sizeX" : 3,
+                  "sizeY" : 7,
+                  "row" : 2,
+                  "col" : 36,
+                  "mobileOrder" : 13
+                },
+                "943ec0ea-a49d-8618-6897-a37ad4a2f1f5" : {
+                  "sizeX" : 9,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 39,
+                  "mobileHeight" : 1,
+                  "mobileOrder" : 14
+                },
+                "4dd83d4e-7fa9-dd6b-8c38-5ec54ef64b7c" : {
+                  "sizeX" : 3,
+                  "sizeY" : 7,
+                  "row" : 2,
+                  "col" : 39,
+                  "mobileOrder" : 15
+                },
+                "7e99541a-fd0f-c8cf-6752-8facffa419ae" : {
+                  "sizeX" : 3,
+                  "sizeY" : 7,
+                  "row" : 2,
+                  "col" : 42,
+                  "mobileOrder" : 16
+                },
+                "96b5fb77-6292-530e-5083-0fa1b1b22efe" : {
+                  "sizeX" : 3,
+                  "sizeY" : 7,
+                  "row" : 2,
+                  "col" : 45,
+                  "mobileOrder" : 17
+                },
+                "01c2a59f-0aa1-ffcc-2f4f-e3bf69b1a13d" : {
+                  "sizeX" : 13,
+                  "sizeY" : 9,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "73bed662-0b77-b25b-6e1f-bd4baa60f374" : {
+                  "sizeX" : 16,
+                  "sizeY" : 11,
+                  "row" : 9,
+                  "col" : 32,
+                  "mobileOrder" : 1
+                },
+                "9e52ddc1-cfb8-e6aa-a39f-76d21abe9958" : {
+                  "sizeX" : 16,
+                  "sizeY" : 11,
+                  "mobileOrder" : 2,
+                  "mobileHeight" : 4,
+                  "row" : 9,
+                  "col" : 16
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "rgba(0,0,0,0)",
+                "columns" : 48,
+                "backgroundSizeMode" : "cover",
+                "backgroundImageUrl" : "tb-image:c2lsb19pX3psZW1lXzJfZGFzaGJvYXJkX2RlZmF1bHRfYmFja2dyb3VuZC5zdmc=:IlNpbG8gxLB6bGVtZSAtIDIiIGRhc2hib2FyZCBkZWZhdWx0IGJhY2tncm91bmQ=;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMiIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iODAwIiB3aWR0aD0iMTYwMCIgdmVyc2lvbj0iMS4xIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDE1OTkuOTk5OCA3OTkuOTk5OTgiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiA8ZGVmcyBpZD0iZGVmczQiPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyR3JhZGllbnQ0MTQ0IiB5Mj0iNjUyLjM2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDI9IjE2MDAiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4wMDYyIDAgMCAxLjAxMjUgLTQuOTk3MSAtMjYwLjUyKSIgeTE9IjY1Mi4zNiIgeDE9Ii0uMDAwMjQ0MTQiPgogICA8c3RvcCBpZD0ic3RvcDQxNDAiIHN0b3AtY29sb3I9IiM1NjcyOGEiIG9mZnNldD0iMCIvPgogICA8c3RvcCBpZD0ic3RvcDQxNDIiIHN0b3AtY29sb3I9IiMxZDJlNTkiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiA8L2RlZnM+CiA8ZyBpZD0ibGF5ZXIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSguMDAwMTgzMTEgLjAwMDAyMzU5NSkiPgogIDxyZWN0IGlkPSJyZWN0NDEzNiIgaGVpZ2h0PSI4MDguMTEiIHdpZHRoPSIxNjA4LjEiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiB5PSItNC4wNTMzIiB4PSItNC4wNTM1IiBzdHJva2Utd2lkdGg9IjEuODkzNSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudDQxNDQpIi8+CiA8L2c+Cjwvc3ZnPgo=",
+                "color" : "rgba(0,0,0,0.870588)",
+                "autoFillHeight" : true,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70,
+                "margin" : 5,
+                "outerMargin" : true
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "2a81382a-9f12-62f0-85f9-b15bbda3311e" : {
+          "id" : "2a81382a-9f12-62f0-85f9-b15bbda3311e",
+          "alias" : "Silo Dispatcher",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "6eb2f040-7a26-11ed-aeaa-b7268336535c"
+            }
+          }
+        },
+        "d96af07a-edc4-4e3c-4008-0bb1513a0cd7" : {
+          "id" : "d96af07a-edc4-4e3c-4008-0bb1513a0cd7",
+          "alias" : "Silo A",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "ff206a50-eac7-11ee-9512-1748ff314dba"
+            }
+          }
+        },
+        "705c4302-121c-d70a-3669-aafe9ebf8338" : {
+          "id" : "705c4302-121c-d70a-3669-aafe9ebf8338",
+          "alias" : "Silo B",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "ff204340-eac7-11ee-9512-1748ff314dba"
+            }
+          }
+        },
+        "77631e3b-8c45-7925-18be-7ab851a6f3e4" : {
+          "id" : "77631e3b-8c45-7925-18be-7ab851a6f3e4",
+          "alias" : "Silo C",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "ff1dab30-eac7-11ee-9512-1748ff314dba"
+            }
+          }
+        },
+        "2cec688f-28a4-7d70-5584-49d0ab4bf5c8" : {
+          "id" : "2cec688f-28a4-7d70-5584-49d0ab4bf5c8",
+          "alias" : "Silos",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "ff206a50-eac7-11ee-9512-1748ff314dba", "ff204340-eac7-11ee-9512-1748ff314dba", "ff1dab30-eac7-11ee-9512-1748ff314dba" ]
+          }
+        },
+        "fb2f951e-e6c0-e97d-ab5f-0e8c4a635c23" : {
+          "id" : "fb2f951e-e6c0-e97d-ab5f-0e8c4a635c23",
+          "alias" : "Silos1",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceNameFilter" : "",
+            "deviceTypes" : [ "silo" ]
+          }
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : false,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : false,
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(255, 254, 254, 0.87)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ""
+      },
+      "filters" : { }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "66487e10-ead3-11ee-9512-1748ff314dba"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Sim - Silo İzleme 2",
+    "title" : "Sim - Silo İzleme 2"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

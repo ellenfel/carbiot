@@ -1,0 +1,40 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "PHN2ZyBpZD0ic3ZnODY5MCIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iODMuNzg1bW0iIHdpZHRoPSIxNjkuMzNtbSIgdmVyc2lvbj0iMS4xIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDU5OS45OTk5OCAyOTYuODc1IiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iPgogPGRlZnMgaWQ9ImRlZnM4NjkyIj4KICA8cmFkaWFsR3JhZGllbnQgaWQ9InJhZGlhbEdyYWRpZW50OTI0OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN5PSI4MDguMjciIGN4PSItODQ0LjI5IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTQxMyAtLjAxMjgzMSAuMDA3ODM0NCAuNjk2ODUgMTEyLjk1IDIzMS4yOCkiIHI9IjMwMCI+CiAgIDxzdG9wIGlkPSJzdG9wOTI0MiIgc3RvcC1jb2xvcj0iIzFjMzA2NyIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIGlkPSJzdG9wOTI0NCIgc3RvcC1jb2xvcj0iIzEwMjA0NyIgb2Zmc2V0PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KIDwvZGVmcz4KIDxnIGlkPSJsYXllcjIiPgogIDxyZWN0IGlkPSJyZWN0OTIzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE0MCAtNjU0LjA2KSIgaGVpZ2h0PSIyOTYuODgiIHdpZHRoPSI2MDAiIHk9IjY1NC4wNiIgeD0iLTExNDAiIGZpbGw9InVybCgjcmFkaWFsR3JhZGllbnQ5MjQ4KSIvPgogPC9nPgo8L3N2Zz4K",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 599,
+      "height" : 296,
+      "size" : 837,
+      "etag" : "d907b8828f4f020f84ce2298b4594a85e1d576c8e8b66c37f1240968860b3380",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 599,
+        "height" : 296,
+        "size" : 837,
+        "etag" : "d907b8828f4f020f84ce2298b4594a85e1d576c8e8b66c37f1240968860b3380"
+      }
+    },
+    "etag" : "d907b8828f4f020f84ce2298b4594a85e1d576c8e8b66c37f1240968860b3380",
+    "externalId" : null,
+    "fileName" : "akıllı_enerji_i_zleme_2_dashboard_default_background.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "583a04b0-eb37-11ee-9512-1748ff314dba"
+    },
+    "link" : "/api/images/tenant/akıllı_enerji_i_zleme_2_dashboard_default_background.svg",
+    "name" : "\"Akıllı Enerji İzleme - 2\" dashboard default background",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/r7OxK89fjMBYiK3wu9RnYoezRZRnfhrB",
+    "publicResourceKey" : "r7OxK89fjMBYiK3wu9RnYoezRZRnfhrB",
+    "resourceKey" : "akıllı_enerji_i_zleme_2_dashboard_default_background.svg",
+    "resourceType" : "IMAGE",
+    "title" : "\"Akıllı Enerji İzleme - 2\" dashboard default background"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
