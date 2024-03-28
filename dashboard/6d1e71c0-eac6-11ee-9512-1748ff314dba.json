@@ -526,16 +526,6 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "fd666ec9-cd5a-af01-47e1-b7e53911f87a"
-              }, {
-                "name" : "try-it-now",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "localStorage.removeItem('jwt_token');\nlocalStorage.removeItem('jwt_token_expiration');\nlocalStorage.removeItem('refresh_token');\nlocalStorage.removeItem('refresh_token_expiration');\nwindow.open('https://demo.thingsboard.io/signup', '_blank');\n",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "f6422a64-4cd4-506d-d03e-fafbf62db69b"
               } ]
             }
           },
