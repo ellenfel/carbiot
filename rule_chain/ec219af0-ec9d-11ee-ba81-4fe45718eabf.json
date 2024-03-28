@@ -87,7 +87,7 @@
         "scriptLang" : "JS",
         "jsScript" : "return { msg:{}, metadata:{}, msgType: \"POST_TELEMETRY_REQUEST\"};",
         "tbelScript" : "return { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : "5c5f08f0-df94-11ee-a8f2-674fc522c738",
+        "originatorId" : "f5498200-ec9d-11ee-ba81-4fe45718eabf",
         "originatorType" : "ASSET"
       },
       "configurationVersion" : 1,
