@@ -26,6 +26,22 @@
       "toIndex" : 2,
       "type" : "Success"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 5,
+      "type" : "Alarm Cleared"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 5,
+      "type" : "Alarm Created"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 5,
+      "type" : "Alarm Severity Updated"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 5,
+      "type" : "Alarm Updated"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 3,
       "type" : "Post attributes"
@@ -156,6 +172,28 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 898,
+        "layoutY" : 405
+      },
+      "configuration" : {
+        "ruleChainId" : "9078d310-ed53-11ee-8c66-236439036083"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a7306820-ed53-11ee-8c66-236439036083"
+      },
+      "name" : "Alarm",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },
