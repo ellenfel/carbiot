@@ -19,7 +19,35 @@
   "metaData" : {
     "connections" : null,
     "firstNodeIndex" : null,
-    "nodes" : [ ],
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 178,
+        "layoutY" : 377
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 10,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {\n    \"giris-basinc\": Math.random() * 100, // Input Pressure (0-100)\n    \"cikis-basinc\": Math.random() * 100, // Output Pressure (0-100)\n    \"klor-olcum-degeri\": Math.random() * 10, // Chlorine Measurement Value\n    \"faz-kaybi\": Math.random() * 10, // Phase Loss\n    \"vana-aciklik-yuzdesi-0-100\": Math.random() * 100, // Valve Opening Percentage (0-100)\n    \"anlik-tork-0-120\": Math.random() * 120, // Instantaneous Torque (0-120)\n    \"vana-oransal-kontrol-komutu-0-100\": Math.random() * 100, // Valve Proportional Control Command (0-100)\n    \"aku-besleniyor\": Math.random() < 0.5 ? false : true,\n    \"aku-ariza\": Math.random() < 0.5 ? false : true,\n    \"dc-ariza\": Math.random() < 0.5 ? false : true,\n    \"rtu-uzak-konumda\": Math.random() < 0.5 ? false : true,\n    \"sebeke-yok-3-faz-ariza\": Math.random() < 0.5 ? false : true,\n    \"parafudr-ariza\": Math.random() < 0.5 ? false : true,\n    \"aktuator-besleme-ariza\": Math.random() < 0.5 ? false : true,\n    \"rtu-pano-kapisi-acik\": Math.random() < 0.5 ? false : true,\n    \"cikis-basinci-arttir\": Math.random() < 0.5 ? false : true,\n    \"cikis-basinci-azalt\": Math.random() < 0.5 ? false : true,\n    \"acil-kapama\": Math.random() < 0.5 ? false : true,\n    \"dma-odasi-kapi-acik\": Math.random() < 0.5 ? false : true,\n    \"dma-odasi-su-baskin-alarm\": Math.random() < 0.5 ? false : true,\n    \"fan-termostat-devrede\": Math.random() < 0.5 ? false : true,\n    \"anlik-debi-m-s\": Math.random() < 0.5 ? false : true,\n    \"vana-pozisyonu\": Math.random() < 0.5 ? false : true,\n    \"haberlesme-hatasi\": Math.random() < 0.5 ? false : true,\n    \"aktuator-hareket-ediyor\": Math.random() < 0.5 ? false : true,\n    \"vana-kapali\": Math.random() < 0.5 ? false : true,\n    \"vana-acik\": Math.random() < 0.5 ? false : true,\n    \"vana-kapaniyor\": Math.random() < 0.5 ? false : true,\n    \"vana-aciliyor\": Math.random() < 0.5 ? false : true,\n    \"aktuator-uzak-konumda\": Math.random() < 0.5 ? false : true,\n    \"aktuator-yakin-bekle-konumunda\": Math.random() < 0.5 ? false : true,\n    \"aktuator-yakin-konumda\": Math.random() < 0.5 ? false : true,\n    \"termik-ariza\": Math.random() < 0.5 ? false : true,\n    \"vana-engellendi\": Math.random() < 0.5 ? false : true,\n    \"vana-sikisti\": Math.random() < 0.5 ? false : true,\n    \"vana-elle-kontrol\": Math.random() < 0.5 ? false : true,\n    \"aktuator-hareket-ettirilemez\": Math.random() < 0.5 ? false : true,\n    \"oransal-kontrol-aktif\": Math.random() < 0.5 ? false : true,\n    \"aktuator-dahili-ariza\": Math.random() < 0.5 ? false : true,\n    \"genel-alarm\": Math.random() < 0.5 ? false : true,\n    \"vana-durdur-komutu\": Math.random() < 0.5 ? false : true,\n    \"vana-kapat-komutu\": Math.random() < 0.5 ? false : true,\n    \"vana-ac-komutu\": Math.random() < 0.5 ? false : true,\n    \"vana-acil-durum-komutu\": Math.random() < 0.5 ? false : true,\n    \"rtu-pano-ici-nem-rh\": Math.random() * 100, // RTU Panel Inside Humidity (%RH)\n    \"rtu-pano-ici-sicaklik-c\": Math.random() * 100, // RTU Panel Inside Temperature (°C)\n    \"dijital-giris-sinyali-ariza\": Math.random() < 0.5 ? false : true,\n    \"analog-giris-sinyali-ariza\": Math.random() < 0.5 ? false : true,\n    \"zaman-senkronizasyon-hatasi\": Math.random() < 0.5 ? false : true,\n    \"test-modu-aktif\": Math.random() < 0.5 ? false : true,\n    \"modem-haberlesmesi-aktif\": Math.random() < 0.5 ? false : true,\n    \"operator-panel-haberlesmesi-aktif\": Math.random() < 0.5 ? false : true,\n    \"ana-kontrolcu-ariza\": Math.random() < 0.5 ? false : true,\n    \"rtu-yeniden-baslatma-komutu\": Math.random() < 0.5 ? false : true,\n    \"rtu-enerjisinin-kesme-komutu\": Math.random() < 0.5 ? false : true\n};\n\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\n// Return the generated signals\nreturn { msg: msg, msgType: msgType };\n",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : "64e73800-ed52-11ee-8c66-236439036083",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "26836d80-ed53-11ee-8c66-236439036083"
+      },
+      "name" : "Diski",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    } ],
     "ruleChainConnections" : null
   },
   "relations" : [ ],
