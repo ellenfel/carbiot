@@ -6336,8 +6336,8 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "ThingsBoard IoT Gateways",
-    "title" : "ThingsBoard IoT Gateways"
+    "name" : "Carbiot IoT Gateways",
+    "title" : "Carbiot IoT Gateways"
   },
   "relations" : [ ],
   "attributes" : {
