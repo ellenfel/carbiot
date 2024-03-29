@@ -15,9 +15,217 @@
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : null,
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 6,
+      "type" : "Success"
+    } ],
     "firstNodeIndex" : null,
-    "nodes" : [ ],
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 282,
+        "layoutY" : 121
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 300,
+        "jsScript" : "var msg = {\r\n             \ttemperature: (40 + 5 * Math.random()).toFixed(1),\r\n             \troomtemp: (15 + 5 * Math.random()).toFixed(1),\r\n             \thumidity: (40 + 5 * Math.random()).toFixed(1),\r\n             \t\r\n             };\r\n             \r\n             return {\r\n             \tmsg: msg,\r\n             \tmetadata: {\r\n             \t\tdeviceType: \"termostat\"\r\n             \t},\r\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\r\n             };",
+        "originatorId" : "6e5eb5c0-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5eb066e0-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Kabin A",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 281,
+        "layoutY" : 186
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 300,
+        "jsScript" : "var msg = {\r\n             \ttemperature: (50 + 5 * Math.random()).toFixed(1),\r\n             \thumidity: (40 + 5 * Math.random()).toFixed(1),\r\n             \t\r\n             };\r\n             \r\n             return {\r\n             \tmsg: msg,\r\n             \tmetadata: {\r\n             \t\tdeviceType: \"termostat\"\r\n             \t},\r\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\r\n             };",
+        "originatorId" : "6e8836c0-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5eb23ba0-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Kabin B",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 280,
+        "layoutY" : 247
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 300,
+        "jsScript" : "var msg = {\r\n             \ttemperature: (60 + 5 * Math.random()).toFixed(1),\r\n             \thumidity: (40 + 5 * Math.random()).toFixed(1),\r\n             \t\r\n             };\r\n             \r\n             return {\r\n             \tmsg: msg,\r\n             \tmetadata: {\r\n             \t\tdeviceType: \"termostat\"\r\n             \t},\r\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\r\n             };",
+        "originatorId" : "6e972ae0-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5eb289c0-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Kabin C",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 276,
+        "layoutY" : 356
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 300,
+        "jsScript" : "var msg = {\r\n             \tv12: (34.100 + 0.4 * Math.random()).toFixed(3),\r\n             \tv23: (34.100 + 0.4 * Math.random()).toFixed(3),\r\n             \tv13: (34.100 + 0.4 * Math.random()).toFixed(3),\r\n             \ti1: (5 + 3 * Math.random()).toFixed(1),\r\n             \ti2: (5 + 3 * Math.random()).toFixed(1),\r\n             \ti3: (5 + 3 * Math.random()).toFixed(1),\r\n             \tp: (200 + 100 * Math.random()).toFixed(2),\r\n             \tq: (2 + 3 * Math.random()).toFixed(2),\r\n             \tfre: (49.8 + 0.4 * Math.random()).toFixed(1),\r\n             \tcosfi: (0.97 + 0.02 * Math.random()).toFixed(2),\r\n             };\r\n             \r\n             return {\r\n             \tmsg: msg,\r\n             \tmetadata: {\r\n             \t\tdeviceType: \"röle\"\r\n             \t},\r\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\r\n             };",
+        "originatorId" : "6e7aa230-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5eb2b0d0-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Koruma Rölesi",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 786,
+        "layoutY" : 293,
+        "ruleChainNodeId" : "rule-chain-node-6"
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5eb2fef0-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 786,
+        "layoutY" : 293,
+        "ruleChainNodeId" : "rule-chain-node-6"
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5eb32600-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 786,
+        "layoutY" : 293,
+        "ruleChainNodeId" : "rule-chain-node-6"
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5eb37420-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 786,
+        "layoutY" : 293,
+        "ruleChainNodeId" : "rule-chain-node-6"
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5eb3e950-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    } ],
     "ruleChainConnections" : null
   },
   "relations" : [ ],
