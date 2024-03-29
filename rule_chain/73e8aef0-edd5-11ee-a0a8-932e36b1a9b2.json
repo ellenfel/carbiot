@@ -15,9 +15,383 @@
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : null,
+    "connections" : [ {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 2,
+      "type" : "Success"
+    } ],
     "firstNodeIndex" : null,
-    "nodes" : [ ],
+    "nodes" : [ {
+      "additionalInfo" : {
+        "layoutX" : 1003,
+        "layoutY" : 219,
+        "ruleChainNodeId" : "rule-chain-node-8"
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73ead1d0-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1003,
+        "layoutY" : 219,
+        "ruleChainNodeId" : "rule-chain-node-8"
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73eaf8e0-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1003,
+        "layoutY" : 219,
+        "ruleChainNodeId" : "rule-chain-node-8"
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73eb1ff0-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1003,
+        "layoutY" : 219,
+        "ruleChainNodeId" : "rule-chain-node-8"
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73eb1ff1-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1003,
+        "layoutY" : 219,
+        "ruleChainNodeId" : "rule-chain-node-8"
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73eb4700-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1003,
+        "layoutY" : 219
+      },
+      "configuration" : {
+        "ruleChainId" : "554420e0-7a1a-11ed-8c68-714f5adb03e1"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73eb6e10-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Root Rule Chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 596,
+        "layoutY" : 480
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ ],
+        "latestTsKeyNames" : [ "cropLevel" ],
+        "getLatestValueWithTs" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73eb9520-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "get metadata cropLevel",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 972,
+        "layoutY" : 483
+      },
+      "configuration" : {
+        "jsScript" : "if( Number(metadata.cropLevel) > 80 || metadata.cropLevel == undefined) {\n    metadata.cropLevel = 0;\n} \n\nmsg.cropLevel = Number(metadata.cropLevel) + msg.cropLevel;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73ebe340-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "cropLevel",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 291,
+        "layoutY" : 447
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 300,
+        "jsScript" : "var msg = {\n             \ttemperature: (15 + 5 * Math.random()).toFixed(2),\n             \thumidity: (50 + 10 * Math.random()).toFixed(2),\n             \toutdoorTemperature: (17 + 5 * Math.random()).toFixed(2),\n             \tcropLevel: Number((0.4 + 2 * Math.random()).toFixed(1)),\n             \t             };\n             \n             return {\n             \tmsg: msg,\n             \tmetadata: {\n             \t\tdeviceType: \"Demo Cihaz\"\n             \t},\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\n             };",
+        "originatorId" : "70145500-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73ec0a50-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Silo A",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 292,
+        "layoutY" : 534
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 600,
+        "jsScript" : "var msg = {\r\n             \ttemperature: (15 + 5 * Math.random()).toFixed(2),\r\n             \thumidity: (50 + 10 * Math.random()).toFixed(2),\r\n             \toutdoorTemperature: (17 + 5 * Math.random()).toFixed(2),\r\n             \tcropLevel: Number((0.4 + 2 * Math.random()).toFixed(1)),\r\n             \t             };\r\n             \r\n             return {\r\n             \tmsg: msg,\r\n             \tmetadata: {\r\n             \t\tdeviceType: \"Demo Cihaz\"\r\n             \t},\r\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\r\n             };",
+        "originatorId" : "6e34e6a0-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73ec0a51-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Silo B",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 289,
+        "layoutY" : 616
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "jsScript" : "var msg = {\r\n             \ttemperature: (15 + 5 * Math.random()).toFixed(2),\r\n             \thumidity: (50 + 10 * Math.random()).toFixed(2),\r\n             \toutdoorTemperature: (17 + 5 * Math.random()).toFixed(2),\r\n             \tcropLevel: Number((0.4 + 2 * Math.random()).toFixed(1)),\r\n             \t             };\r\n             \r\n             return {\r\n             \tmsg: msg,\r\n             \tmetadata: {\r\n             \t\tdeviceType: \"Demo Cihaz\"\r\n             \t},\r\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\r\n             };",
+        "originatorId" : "6e50fa20-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73ec3160-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Silo C",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 287,
+        "layoutY" : 201
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 300,
+        "jsScript" : "var msg = {\r\n             \tenergy: (180 + 90 * Math.random()).toFixed(1),\r\n             \tvoltage: (380 + 25 * Math.random()).toFixed(1),\r\n             \tfrequency: (48 + 4 * Math.random()).toFixed(2),\r\n             \tpower: (800 + 200 * Math.random()).toFixed(1),\r\n             \tamperage: (150 + 25 * Math.random()).toFixed(1)\r\n             };\r\n             \r\n             return {\r\n             \tmsg: msg,\r\n             \tmetadata: {\r\n             \t\tdeviceType: \"sayac\"\r\n             \t},\r\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\r\n             };",
+        "originatorId" : "6f2fe870-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73ec3161-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Sayac A",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 289,
+        "layoutY" : 262
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 300,
+        "jsScript" : "var msg = {\r\n             \tenergy: (180 + 90 * Math.random()).toFixed(1),\r\n             \tvoltage: (380 + 25 * Math.random()).toFixed(1),\r\n             \tfrequency: (48 + 4 * Math.random()).toFixed(2),\r\n             \tpower: (800 + 200 * Math.random()).toFixed(1),\r\n             \tamperage: (100 + 25 * Math.random()).toFixed(1)\r\n             };\r\n             \r\n             return {\r\n             \tmsg: msg,\r\n             \tmetadata: {\r\n             \t\tdeviceType: \"sayac\"\r\n             \t},\r\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\r\n             };",
+        "originatorId" : "6f2253e0-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73ec5870-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Sayac B",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 291,
+        "layoutY" : 331
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 300,
+        "jsScript" : "var msg = {\r\n             \tenergy: (180 + 90 * Math.random()).toFixed(1),\r\n             \tvoltage: (380 + 25 * Math.random()).toFixed(1),\r\n             \tfrequency: (48 + 4 * Math.random()).toFixed(2),\r\n             \tpower: (800 + 200 * Math.random()).toFixed(1),\r\n             \tamperage: (200 + 25 * Math.random()).toFixed(1)\r\n             };\r\n             \r\n             return {\r\n             \tmsg: msg,\r\n             \tmetadata: {\r\n             \t\tdeviceType: \"sayac\"\r\n             \t},\r\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\r\n             };",
+        "originatorId" : "6ef92100-7a26-11ed-aeaa-b7268336535c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73ec5871-edd5-11ee-a0a8-932e36b1a9b2"
+      },
+      "name" : "Sayac C",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    } ],
     "ruleChainConnections" : null
   },
   "relations" : [ ],
