@@ -7,10 +7,7 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : {
-      "entityType" : "RULE_NODE",
-      "id" : "c1f13c10-ede5-11ee-ba81-4fe45718eabf"
-    },
+    "firstRuleNodeId" : null,
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "c192a150-ede5-11ee-ba81-4fe45718eabf"
@@ -122,11 +119,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 18,
-      "toIndex" : 14,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 19,
-      "toIndex" : 14,
+      "toIndex" : 27,
       "type" : "Success"
     }, {
       "fromIndex" : 19,
@@ -134,15 +127,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 20,
-      "toIndex" : 14,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 20,
       "toIndex" : 27,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 21,
-      "toIndex" : 14,
       "type" : "Success"
     }, {
       "fromIndex" : 21,
@@ -150,15 +135,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 22,
-      "toIndex" : 14,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 22,
       "toIndex" : 27,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 23,
-      "toIndex" : 14,
       "type" : "Success"
     }, {
       "fromIndex" : 23,
@@ -176,8 +153,12 @@
       "fromIndex" : 26,
       "toIndex" : 27,
       "type" : "Success"
+    }, {
+      "fromIndex" : 27,
+      "toIndex" : 14,
+      "type" : "Success"
     } ],
-    "firstNodeIndex" : 14,
+    "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : null,
@@ -633,7 +614,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"battery\": Math.floor(Math.random() * 101), // Random integer between 0 and 100\n    \"fuelHeight\": Math.floor(Math.random() * 301), // Random integer between 0 and 300\n    \"fuelLevel\": parseFloat((Math.random() * 4).toFixed(2)), // Random float between 0.00 and 4.00 with 2 decimal \n    \"temperature\": parseFloat((Math.random() * (35.0 - 2.0) + 2.0).toFixed(1)) // Random float between 2.0 and 35.\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
         "tbelScript" : null,
@@ -661,7 +642,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"battery\": Math.floor(Math.random() * 101), // Random integer between 0 and 100\n    \"fuelHeight\": Math.floor(Math.random() * 301), // Random integer between 0 and 300\n    \"fuelLevel\": parseFloat((Math.random() * 4).toFixed(2)), // Random float between 0.00 and 4.00 with 2 decimal \n    \"temperature\": parseFloat((Math.random() * (35.0 - 2.0) + 2.0).toFixed(1)) // Random float between 2.0 and 35.\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
         "tbelScript" : null,
@@ -689,7 +670,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"battery\": Math.floor(Math.random() * 101), // Random integer between 0 and 100\n    \"fuelHeight\": Math.floor(Math.random() * 301), // Random integer between 0 and 300\n    \"fuelLevel\": parseFloat((Math.random() * 4).toFixed(2)), // Random float between 0.00 and 4.00 with 2 decimal \n    \"temperature\": parseFloat((Math.random() * (35.0 - 2.0) + 2.0).toFixed(1)) // Random float between 2.0 and 35.\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
         "tbelScript" : null,
@@ -717,7 +698,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"battery\": Math.floor(Math.random() * 101), // Random integer between 0 and 100\n    \"fuelHeight\": Math.floor(Math.random() * 301), // Random integer between 0 and 300\n    \"fuelLevel\": parseFloat((Math.random() * 4).toFixed(2)), // Random float between 0.00 and 4.00 with 2 decimal \n    \"temperature\": parseFloat((Math.random() * (35.0 - 2.0) + 2.0).toFixed(1)) // Random float between 2.0 and 35.\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
         "tbelScript" : null,
@@ -745,7 +726,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"battery\": Math.floor(Math.random() * 101), // Random integer between 0 and 100\n    \"fuelHeight\": Math.floor(Math.random() * 301), // Random integer between 0 and 300\n    \"fuelLevel\": parseFloat((Math.random() * 4).toFixed(2)), // Random float between 0.00 and 4.00 with 2 decimal \n    \"temperature\": parseFloat((Math.random() * (35.0 - 2.0) + 2.0).toFixed(1)) // Random float between 2.0 and 35.\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
         "tbelScript" : null,
@@ -773,7 +754,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"battery\": Math.floor(Math.random() * 101), // Random integer between 0 and 100\n    \"fuelHeight\": Math.floor(Math.random() * 301), // Random integer between 0 and 300\n    \"fuelLevel\": parseFloat((Math.random() * 4).toFixed(2)), // Random float between 0.00 and 4.00 with 2 decimal \n    \"temperature\": parseFloat((Math.random() * (35.0 - 2.0) + 2.0).toFixed(1)) // Random float between 2.0 and 35.\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
         "tbelScript" : null,
