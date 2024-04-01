@@ -262,6 +262,361 @@
           "row" : 0,
           "col" : 0,
           "id" : "c5a0a4b2-4c75-4e2f-1c20-9297fbbdb0df"
+        },
+        "9a5a4897-ff97-ca98-b5fc-8bb8c1917fdb" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "034ff714-a0c3-65a9-b137-154b66c1567a",
+              "filterId" : null,
+              "dataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711314229001,
+                  "endTimeMs" : 1711400629001
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#ffffff",
+            "color" : "#757575",
+            "padding" : "0px",
+            "settings" : {
+              "cardCss" : ".card,\n.card * {\n    width: 100%;\n    height: 100%;\n    \n}    \n.card {\n    min-width: 90%;\n    height: 90%;\n}\n.card .content {\n    width: 100%;\n    margin: 0;\n    height: 70%;\n    color: #757575;\n    position: relative;\n    top: 50%;\n    transform: translateY(-50%);\n    \n}\n\nh1 {\n    font-weight: 600;\n    font-size: 2.7vh;\n    text-align: center;\n    margin: auto;\n    \n}\n",
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n       <div class='upper-bar'>\n           <div class='image-shade'>\n                <h1>${entityLabel}</h1>\n            </div>\n       </div>\n    </div>\n</div>"
+            },
+            "title" : "Energy consumed card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "borderBottom" : "solid 1px #aaa",
+              "borderRight" : "solid 1px #aaa"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "9a5a4897-ff97-ca98-b5fc-8bb8c1917fdb",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "1d6a4b4a-4b2d-e9a1-83fe-c6839f89ed32" : {
+          "typeFullFqn" : "tenant.list",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "308f1183-2519-20b4-138d-fe7c93cb3d17",
+              "dataKeys" : [ {
+                "name" : "Active",
+                "type" : "timeseries",
+                "label" : "Active",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8570372495709195
+              }, {
+                "name" : "Active Enegy-Ex",
+                "type" : "timeseries",
+                "label" : "Active Enegy-Ex",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.17438711571510046
+              }, {
+                "name" : "Active Enegy-Im",
+                "type" : "timeseries",
+                "label" : "Active Enegy-Im",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.6078160313696119
+              }, {
+                "name" : "Active Energy",
+                "type" : "timeseries",
+                "label" : "Active Energy",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.05398675563491184
+              }, {
+                "name" : "Active Power",
+                "type" : "timeseries",
+                "label" : "Active Power",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.5447476046376258
+              }, {
+                "name" : "binaryKey",
+                "type" : "timeseries",
+                "label" : "binaryKey",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.4251403708244361
+              }, {
+                "name" : "Cos Phi",
+                "type" : "timeseries",
+                "label" : "Cos Phi",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.007637846439293883
+              }, {
+                "name" : "Current L1",
+                "type" : "timeseries",
+                "label" : "Current L1",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.8998428040601822
+              }, {
+                "name" : "Current L2",
+                "type" : "timeseries",
+                "label" : "Current L2",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.12617692719100204
+              }, {
+                "name" : "Current L3",
+                "type" : "timeseries",
+                "label" : "Current L3",
+                "color" : "#ffeb3b",
+                "settings" : { },
+                "_hash" : 0.6907846288633652
+              }, {
+                "name" : "Reactive EnergyIn",
+                "type" : "timeseries",
+                "label" : "Reactive EnergyIn",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.7501778332202487
+              }, {
+                "name" : "Reactive EnergyKa",
+                "type" : "timeseries",
+                "label" : "Reactive EnergyKa",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.41871847120799055
+              }, {
+                "name" : "Reactive Power",
+                "type" : "timeseries",
+                "label" : "Reactive Power",
+                "color" : "#673ab7",
+                "settings" : { },
+                "_hash" : 0.7990284449041452
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711320495204,
+                  "endTimeMs" : 1711406895204
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Attributes card",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "1d6a4b4a-4b2d-e9a1-83fe-c6839f89ed32"
+        },
+        "2c949e45-8a09-6a43-283f-6914e65f530f" : {
+          "typeFullFqn" : "tenant.list",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "308f1183-2519-20b4-138d-fe7c93cb3d17",
+              "dataKeys" : [ {
+                "name" : "Active",
+                "type" : "timeseries",
+                "label" : "Active",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8570372495709195
+              }, {
+                "name" : "Active Enegy-Ex",
+                "type" : "timeseries",
+                "label" : "Active Enegy-Ex",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.17438711571510046
+              }, {
+                "name" : "Active Enegy-Im",
+                "type" : "timeseries",
+                "label" : "Active Enegy-Im",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.6078160313696119
+              }, {
+                "name" : "Active Energy",
+                "type" : "timeseries",
+                "label" : "Active Energy",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.05398675563491184
+              }, {
+                "name" : "Active Power",
+                "type" : "timeseries",
+                "label" : "Active Power",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.5447476046376258
+              }, {
+                "name" : "binaryKey",
+                "type" : "timeseries",
+                "label" : "binaryKey",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.4251403708244361
+              }, {
+                "name" : "Cos Phi",
+                "type" : "timeseries",
+                "label" : "Cos Phi",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.007637846439293883
+              }, {
+                "name" : "Current L1",
+                "type" : "timeseries",
+                "label" : "Current L1",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.8998428040601822
+              }, {
+                "name" : "Current L2",
+                "type" : "timeseries",
+                "label" : "Current L2",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.12617692719100204
+              }, {
+                "name" : "Current L3",
+                "type" : "timeseries",
+                "label" : "Current L3",
+                "color" : "#ffeb3b",
+                "settings" : { },
+                "_hash" : 0.6907846288633652
+              }, {
+                "name" : "Reactive EnergyIn",
+                "type" : "timeseries",
+                "label" : "Reactive EnergyIn",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.7501778332202487
+              }, {
+                "name" : "Reactive EnergyKa",
+                "type" : "timeseries",
+                "label" : "Reactive EnergyKa",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.41871847120799055
+              }, {
+                "name" : "Reactive Power",
+                "type" : "timeseries",
+                "label" : "Reactive Power",
+                "color" : "#673ab7",
+                "settings" : { },
+                "_hash" : 0.7990284449041452
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1711320495204,
+                  "endTimeMs" : 1711406895204
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Attributes card",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2c949e45-8a09-6a43-283f-6914e65f530f"
         }
       },
       "states" : {
@@ -273,15 +628,33 @@
               "widgets" : {
                 "a8818a2d-750c-740d-5f3e-f3fe9fca4791" : {
                   "sizeX" : 57,
-                  "sizeY" : 12,
+                  "sizeY" : 13,
                   "row" : 0,
                   "col" : 0
                 },
                 "c5a0a4b2-4c75-4e2f-1c20-9297fbbdb0df" : {
                   "sizeX" : 57,
-                  "sizeY" : 19,
-                  "row" : 12,
+                  "sizeY" : 18,
+                  "row" : 13,
                   "col" : 0
+                },
+                "9a5a4897-ff97-ca98-b5fc-8bb8c1917fdb" : {
+                  "sizeX" : 18,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 57
+                },
+                "1d6a4b4a-4b2d-e9a1-83fe-c6839f89ed32" : {
+                  "sizeX" : 18,
+                  "sizeY" : 10,
+                  "row" : 3,
+                  "col" : 57
+                },
+                "2c949e45-8a09-6a43-283f-6914e65f530f" : {
+                  "sizeX" : 18,
+                  "sizeY" : 19,
+                  "row" : 13,
+                  "col" : 57
                 }
               },
               "gridSettings" : {
@@ -309,6 +682,32 @@
             "singleEntity" : {
               "entityType" : "DEVICE",
               "id" : "64e73800-ed52-11ee-8c66-236439036083"
+            }
+          }
+        },
+        "034ff714-a0c3-65a9-b137-154b66c1567a" : {
+          "id" : "034ff714-a0c3-65a9-b137-154b66c1567a",
+          "alias" : "Current Entity",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "6faf2a90-7a26-11ed-aeaa-b7268336535c"
+            }
+          }
+        },
+        "308f1183-2519-20b4-138d-fe7c93cb3d17" : {
+          "id" : "308f1183-2519-20b4-138d-fe7c93cb3d17",
+          "alias" : "Entity",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "55103fa0-7a1a-11ed-8c68-714f5adb03e1"
             }
           }
         }
