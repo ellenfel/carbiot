@@ -30,6 +30,13 @@
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.3632395886530504
+              }, {
+                "name" : "coordinates-2",
+                "type" : "attribute",
+                "label" : "coordinates-2",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.08106281744621846
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
