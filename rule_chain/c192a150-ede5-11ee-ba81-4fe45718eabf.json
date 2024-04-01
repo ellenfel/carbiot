@@ -109,6 +109,14 @@
       "toIndex" : 7,
       "type" : "Success"
     }, {
+      "fromIndex" : 16,
+      "toIndex" : 10,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
       "fromIndex" : 17,
       "toIndex" : 11,
       "type" : "Success"
@@ -275,8 +283,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 355,
-        "layoutY" : 682
+        "layoutX" : 74,
+        "layoutY" : 699
       },
       "configuration" : {
         "alarmsCountMappings" : [ {
