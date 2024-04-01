@@ -3763,7 +3763,7 @@
       "settings" : {
         "stateControllerId" : "entity",
         "showTitle" : false,
-        "showDashboardsSelect" : false,
+        "showDashboardsSelect" : true,
         "showEntitiesSelect" : false,
         "showDashboardTimewindow" : false,
         "showDashboardExport" : true,
