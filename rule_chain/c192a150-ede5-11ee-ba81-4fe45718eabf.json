@@ -613,9 +613,9 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 900,
+        "periodInSeconds" : 1,
         "scriptLang" : "JS",
-        "jsScript" : "var msg = {     amperage: (15 + 3 * Math.random()).toFixed(1),\n             \tenergy: (300 + 700 * Math.random()).toFixed(1),\n                frequency: (48 + 2 * Math.random()).toFixed(1),\n                power: (2500 + 2500 * Math.random()).toFixed(1),\n                voltage: (220 + 10 * Math.random()).toFixed(1),\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "jsScript" : "var msg = {\n    \"battery\": Math.floor(Math.random() * 101), // Random integer between 0 and 100\n    \"fuelHeight\": Math.floor(Math.random() * 301), // Random integer between 0 and 300\n    \"fuelLevel\": parseFloat((Math.random() * 4).toFixed(2)), // Random float between 0.00 and 4.00 with 2 decimal \n    \"temperature\": parseFloat((Math.random() * (35.0 - 2.0) + 2.0).toFixed(1)) // Random float between 2.0 and 35.\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
         "tbelScript" : null,
         "originatorId" : "4a8049d1-efb3-11ee-ba81-4fe45718eabf",
         "originatorType" : "DEVICE"
