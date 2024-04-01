@@ -1,0 +1,40 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIyNyIgaGVpZ2h0PSIyNyIgcng9IjMuNSIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTcgMjEuNDAwM1Y3LjE3MTg4SDIxTDIwLjgzOTEgMjEuNzIwMUMyMC41MTcyIDIyLjQ2NjEgMTkgMjQuMjc4IDE0LjA4MDUgMjQuMjc4QzkuNDM4OTIgMjQuMjc4IDcuNDI5MTIgMjIuNDY2MSA3IDIxLjQwMDNaIiBmaWxsPSIjMTk4MDM4IiBzdHJva2U9IndoaXRlIi8+CjxlbGxpcHNlIGN4PSIxNCIgY3k9IjYuODU0NjQiIHJ4PSI3IiByeT0iMi44NTQ2NCIgZmlsbD0iIzE5ODAzOCIgc3Ryb2tlPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNyAxNS41QzkuNjY2NjcgMTYuNSAxNi4yIDE3LjkgMjEgMTUuNSIgc3Ryb2tlPSJ3aGl0ZSIvPgo8cmVjdCB4PSIxNiIgeT0iNiIgd2lkdGg9IjIiIGhlaWdodD0iMSIgcng9IjAuNSIgZmlsbD0id2hpdGUiLz4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIyNyIgaGVpZ2h0PSIyNyIgcng9IjMuNSIgc3Ryb2tlPSIjMTk4MDM4Ii8+Cjwvc3ZnPgo=",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 28,
+      "height" : 28,
+      "size" : 620,
+      "etag" : "96836fcdee0799a87ce38dca34fef98d250503b1d56150d1232648041f6bcab1",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 28,
+        "height" : 28,
+        "size" : 620,
+        "etag" : "96836fcdee0799a87ce38dca34fef98d250503b1d56150d1232648041f6bcab1"
+      }
+    },
+    "etag" : "96836fcdee0799a87ce38dca34fef98d250503b1d56150d1232648041f6bcab1",
+    "externalId" : null,
+    "fileName" : "fuel_level_monitoring_dashboard_widget_marker_image_0.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "8a514660-ede5-11ee-ba81-4fe45718eabf"
+    },
+    "link" : "/api/images/tenant/fuel_level_monitoring_dashboard_widget_marker_image_0.svg",
+    "name" : "\"Fuel Level Monitoring\" dashboard widget \"\" marker image 0",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/4i089IurMbF9I7F3O8IJ9uxS8SKT2FHX",
+    "publicResourceKey" : "4i089IurMbF9I7F3O8IJ9uxS8SKT2FHX",
+    "resourceKey" : "fuel_level_monitoring_dashboard_widget_marker_image_0.svg",
+    "resourceType" : "IMAGE",
+    "title" : "\"Fuel Level Monitoring\" dashboard widget \"\" marker image 0"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

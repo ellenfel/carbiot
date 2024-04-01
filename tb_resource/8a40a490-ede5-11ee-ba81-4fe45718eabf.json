@@ -1,0 +1,40 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxIDYuOTk5ODRMOSAxOC45OTk4TDMuNSAxMy40OTk4TDQuOTEgMTIuMDg5OEw5IDE2LjE2OThMMTkuNTkgNS41ODk4NEwyMSA2Ljk5OTg0WiIgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMC44NyIvPgo8cGF0aCBkPSJNOC42NDY4OCAxNi41MjM4TDkuMDAwMjcgMTYuODc2NEw5LjM1MzM5IDE2LjUyMzZMMTkuNTg5OCA2LjI5Njc4TDIwLjI5MjkgNi45OTk4NEw5IDE4LjI5MjdMNC4yMDcxMSAxMy40OTk4TDQuOTEwNDMgMTIuNzk2NUw4LjY0Njg4IDE2LjUyMzhaIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utb3BhY2l0eT0iMC44NyIvPgo8L3N2Zz4K",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 24,
+      "height" : 24,
+      "size" : 420,
+      "etag" : "83ae98ccb12bd407d48afdf876cc20e3fdf1cda1fe81227de2d1fca0d7aec532",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 24,
+        "height" : 24,
+        "size" : 420,
+        "etag" : "83ae98ccb12bd407d48afdf876cc20e3fdf1cda1fe81227de2d1fca0d7aec532"
+      }
+    },
+    "etag" : "83ae98ccb12bd407d48afdf876cc20e3fdf1cda1fe81227de2d1fca0d7aec532",
+    "externalId" : null,
+    "fileName" : "fuel_level_monitoring_dashboard_widget_filter_custom_icon.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "8a40a490-ede5-11ee-ba81-4fe45718eabf"
+    },
+    "link" : "/api/images/tenant/fuel_level_monitoring_dashboard_widget_filter_custom_icon.svg",
+    "name" : "\"Fuel Level Monitoring\" dashboard widget \"Filter\" custom icon",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/R7SGmvmWq2AAWwSNv6VCIcYlDtQPnV77",
+    "publicResourceKey" : "R7SGmvmWq2AAWwSNv6VCIcYlDtQPnV77",
+    "resourceKey" : "fuel_level_monitoring_dashboard_widget_filter_custom_icon.svg",
+    "resourceType" : "IMAGE",
+    "title" : "\"Fuel Level Monitoring\" dashboard widget \"Filter\" custom icon"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

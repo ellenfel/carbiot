@@ -1,0 +1,40 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3LjUwMDUgMTNWN0gxOS41MDA1VjEzSDE3LjUwMDVaTTE3LjUwMDUgMTdWMTVIMTkuNTAwNVYxN0gxNy41MDA1Wk0xMy41MDA1IDEzVjVDMTMuNTAwNSAzLjMgMTIuMjAwNSAyIDEwLjUwMDUgMkM4LjgwMDUyIDIgNy41MDA1MiAzLjMgNy41MDA1MiA1VjEzQzUuMzAwNTIgMTQuNyA0LjgwMDUzIDE3LjggNi41MDA1MyAyMEM4LjIwMDUzIDIyLjIgMTEuMzAwNSAyMi43IDEzLjUwMDUgMjFDMTUuNzAwNSAxOS4zIDE2LjIwMDUgMTYuMiAxNC41MDA1IDE0QzE0LjIwMDUgMTMuNiAxMy45MDA1IDEzLjMgMTMuNTAwNSAxM1pNMTAuNTAwNSA0QzExLjEwMDUgNCAxMS41MDA1IDQuNCAxMS41MDA1IDVWOEg5LjUwMDUyVjVDOS41MDA1MiA0LjQgOS45MDA1MyA0IDEwLjUwMDUgNFoiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuODciLz4KPHBhdGggZD0iTTEzLjAwMDUgMTNWMTMuMjVMMTMuMjAwNSAxMy40QzEzLjU2MjYgMTMuNjcxNiAxMy44MjkgMTMuOTM3OSAxNC4xMDA1IDE0LjNMMTQuMTAwNSAxNC4zTDE0LjEwNDkgMTQuMzA1N0MxNS42MjQ3IDE2LjI3MjUgMTUuMTkxMyAxOS4wNjE2IDEzLjE5NDggMjAuNjA0NEMxMS4yMjggMjIuMTI0MSA4LjQzODkyIDIxLjY5MDggNi44OTYxNyAxOS42OTQzQzUuMzc2MzkgMTcuNzI3NSA1LjgwOTc0IDE0LjkzODQgNy44MDYyNSAxMy4zOTU2TDguMDAwNTIgMTMuMjQ1NVYxM1Y1QzguMDAwNTIgMy41NzYxNCA5LjA3NjY3IDIuNSAxMC41MDA1IDIuNUMxMS45MjQ0IDIuNSAxMy4wMDA1IDMuNTc2MTQgMTMuMDAwNSA1VjEzWk0xMS41MDA1IDguNUgxMi4wMDA1VjhWNUMxMi4wMDA1IDQuNTg2MzggMTEuODYwNSA0LjIwMjg0IDExLjU3OTEgMy45MjE0NUMxMS4yOTc3IDMuNjQwMDYgMTAuOTE0MSAzLjUgMTAuNTAwNSAzLjVDMTAuMDg2OSAzLjUgOS43MDMzNiAzLjY0MDA2IDkuNDIxOTcgMy45MjE0NUM5LjE0MDU4IDQuMjAyODQgOS4wMDA1MiA0LjU4NjM4IDkuMDAwNTIgNVY4VjguNUg5LjUwMDUySDExLjUwMDVaTTE4LjAwMDUgMTIuNVY3LjVIMTkuMDAwNVYxMi41SDE4LjAwMDVaTTE4LjAwMDUgMTYuNVYxNS41SDE5LjAwMDVWMTYuNUgxOC4wMDA1WiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLW9wYWNpdHk9IjAuODciLz4KPC9zdmc+Cg==",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 25,
+      "height" : 24,
+      "size" : 1231,
+      "etag" : "d7f8d23fdfa6e301adeb5f3449e853b14b8541f9274a40f19385bf2cf1744a06",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 25,
+        "height" : 24,
+        "size" : 1231,
+        "etag" : "d7f8d23fdfa6e301adeb5f3449e853b14b8541f9274a40f19385bf2cf1744a06"
+      }
+    },
+    "etag" : "d7f8d23fdfa6e301adeb5f3449e853b14b8541f9274a40f19385bf2cf1744a06",
+    "externalId" : null,
+    "fileName" : "fuel_level_monitoring_dashboard_widget_filter_custom_icon_(4).svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "8a4d27b0-ede5-11ee-ba81-4fe45718eabf"
+    },
+    "link" : "/api/images/tenant/fuel_level_monitoring_dashboard_widget_filter_custom_icon_(4).svg",
+    "name" : "\"Fuel Level Monitoring\" dashboard widget \"Filter\" custom icon",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/3JO8clglZBZ96zCBovFurKlFhg42WrMd",
+    "publicResourceKey" : "3JO8clglZBZ96zCBovFurKlFhg42WrMd",
+    "resourceKey" : "fuel_level_monitoring_dashboard_widget_filter_custom_icon_(4).svg",
+    "resourceType" : "IMAGE",
+    "title" : "\"Fuel Level Monitoring\" dashboard widget \"Filter\" custom icon"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
