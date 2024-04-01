@@ -2147,14 +2147,15 @@
               "letterSpacing" : "0.25px"
             },
             "widgetStyle" : { },
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "actions" : { },
             "showTitleIcon" : false,
             "titleTooltip" : "",
             "enableDataExport" : true,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
