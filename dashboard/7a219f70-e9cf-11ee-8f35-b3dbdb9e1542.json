@@ -971,7 +971,8 @@
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70,
                 "margin" : 10,
-                "outerMargin" : true
+                "outerMargin" : true,
+                "backgroundImageUrl" : null
               }
             }
           }
@@ -1016,11 +1017,18 @@
       "settings" : {
         "stateControllerId" : "entity",
         "showTitle" : false,
-        "showDashboardsSelect" : true,
+        "showDashboardsSelect" : false,
         "showEntitiesSelect" : true,
         "showDashboardTimewindow" : true,
         "showDashboardExport" : true,
-        "toolbarAlwaysOpen" : true
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ""
       },
       "filters" : { }
     },
