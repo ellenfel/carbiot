@@ -858,8 +858,8 @@
         "history" : {
           "historyType" : 1,
           "fixedTimewindow" : {
-            "startTimeMs" : 1710795600000,
-            "endTimeMs" : 1711400399999
+            "startTimeMs" : 1711400400000,
+            "endTimeMs" : 1712005199999
           },
           "interval" : 1210000
         },
@@ -871,11 +871,18 @@
       "settings" : {
         "stateControllerId" : "entity",
         "showTitle" : false,
-        "showDashboardsSelect" : true,
+        "showDashboardsSelect" : false,
         "showEntitiesSelect" : true,
         "showDashboardTimewindow" : true,
         "showDashboardExport" : true,
-        "toolbarAlwaysOpen" : true
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ""
       }
     },
     "externalId" : null,
