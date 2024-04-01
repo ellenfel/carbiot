@@ -121,10 +121,6 @@
       "toIndex" : 11,
       "type" : "Success"
     }, {
-      "fromIndex" : 18,
-      "toIndex" : 14,
-      "type" : "Success"
-    }, {
       "fromIndex" : 19,
       "toIndex" : 27,
       "type" : "Success"
