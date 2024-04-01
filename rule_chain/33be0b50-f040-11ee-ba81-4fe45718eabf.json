@@ -7,7 +7,10 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "3408cff0-f040-11ee-ba81-4fe45718eabf"
+    },
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "33be0b50-f040-11ee-ba81-4fe45718eabf"
@@ -17,9 +20,1355 @@
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : null,
-    "firstNodeIndex" : null,
-    "nodes" : [ ],
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 43,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 42,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 33,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 32,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 4,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 0,
+      "type" : "Daily Consumption Email"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 1,
+      "type" : "Weekly Consumption Email"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 2,
+      "type" : "Daily Consumption SMS"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 3,
+      "type" : "Weekly Consumption SMS"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 34,
+      "type" : "Leakage Detected SMS"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 35,
+      "type" : "Device Inactive SMS"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 36,
+      "type" : "Low Temperature SMS"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 37,
+      "type" : "Low Battery SMS"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 38,
+      "type" : "Leakage Detected Email"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 39,
+      "type" : "Device Inactive Email"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 40,
+      "type" : "Low Temperature Email"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 41,
+      "type" : "Low Battery Email"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 19,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 20,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 4,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 22,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 4,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 24,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 27,
+      "toIndex" : 4,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 27,
+      "toIndex" : 26,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 29,
+      "toIndex" : 4,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 29,
+      "toIndex" : 28,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 4,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 30,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 32,
+      "toIndex" : 27,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 33,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 34,
+      "toIndex" : 31,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 35,
+      "toIndex" : 23,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 36,
+      "toIndex" : 25,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 38,
+      "toIndex" : 21,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 39,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 40,
+      "toIndex" : 12,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 41,
+      "toIndex" : 14,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 42,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 43,
+      "toIndex" : 18,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 16,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 681,
+        "layoutY" : 28
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "name" : "deviceName"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3402b570-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Fetch Device Name",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 680,
+        "layoutY" : 102
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "name" : "deviceName"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "34032aa0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Fetch Device Name",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 678,
+        "layoutY" : 852
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "name" : "deviceName"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340351b0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Fetch Device Name",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 677,
+        "layoutY" : 926
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "name" : "deviceName"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340378c0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Fetch Device Name",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1497,
+        "layoutY" : 1114
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "34039fd0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Ack Messages without phone number",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbAckNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1278,
+        "layoutY" : 553
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "phoneNumber" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3403c6e0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Phone Number",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1601,
+        "layoutY" : 551
+      },
+      "configuration" : {
+        "numbersToTemplate" : "${ss_phoneNumber}",
+        "smsMessageTemplate" : "Device ${deviceName} has low battery!",
+        "useSystemSmsSettings" : true,
+        "smsProviderConfiguration" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "34048a30-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send SMS",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.sms.TbSendSmsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1280,
+        "layoutY" : 102
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "email" : "userEmail"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3404b140-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1577,
+        "layoutY" : 103
+      },
+      "configuration" : {
+        "fromTemplate" : "",
+        "toTemplate" : "${userEmail}",
+        "ccTemplate" : null,
+        "bccTemplate" : null,
+        "subjectTemplate" : "Device ${deviceName} reports high weekly water consumption!",
+        "bodyTemplate" : "The device consumed $[details.data]m3 of water which exceeds configured weekly threshold!"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3404ff60-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1578,
+        "layoutY" : 329
+      },
+      "configuration" : {
+        "fromTemplate" : "",
+        "toTemplate" : "${userEmail}",
+        "ccTemplate" : null,
+        "bccTemplate" : null,
+        "subjectTemplate" : "Device ${deviceName} is inactive!",
+        "bodyTemplate" : "The device is not sending any data for a while."
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3404ff61-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1278,
+        "layoutY" : 329
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "email" : "userEmail"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "34052670-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1579,
+        "layoutY" : 255
+      },
+      "configuration" : {
+        "fromTemplate" : "",
+        "toTemplate" : "${userEmail}",
+        "ccTemplate" : null,
+        "bccTemplate" : null,
+        "subjectTemplate" : "Device ${deviceName} has low water temperature!",
+        "bodyTemplate" : "Water temperature is $[details.data]%."
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "34052671-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1280,
+        "layoutY" : 256
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "email" : "userEmail"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "34054d80-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1580,
+        "layoutY" : 177
+      },
+      "configuration" : {
+        "fromTemplate" : "",
+        "toTemplate" : "${userEmail}",
+        "ccTemplate" : null,
+        "bccTemplate" : null,
+        "subjectTemplate" : "Device ${deviceName} has low battery!",
+        "bodyTemplate" : "Device battery level is $[details.data]%."
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "34054d81-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1279,
+        "layoutY" : 179
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "email" : "userEmail"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "34059ba0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 358,
+        "layoutY" : 481
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "var relations = [];\n\nswitch (msg.type) {\n    case 'Low Battery':\n        if (metadata.lowBattEmailEnabled === 'true'){\n            relations.push('Low Battery Email');\n        }\n        if (metadata.lowBattSmsEnabled === 'true'){\n            relations.push('Low Battery SMS');\n        }\n        break;\n    case 'Low Temperature':\n        if (metadata.lowTempEmailEnabled === 'true'){\n            relations.push('Low Temperature Email');\n        }\n        if (metadata.lowTempSmsEnabled === 'true'){\n            relations.push('Low Temperature SMS');\n        }\n        break;\n    case 'Device Inactive':\n        if (metadata.inactivityEmailEnabled === 'true'){\n            relations.push('Device Inactive Email');\n        }\n        if (metadata.inactivitySmsEnabled === 'true'){\n            relations.push('Device Inactive SMS');\n        }\n        break;        \n    case 'Daily Consumption Threshold Exceeded':\n        if (metadata.dailyConsumptionEmailEnabled === 'true'){\n            relations.push('Daily Consumption Email');\n        }\n        if (metadata.dailyConsumptionSmsEnabled === 'true'){\n            relations.push('Daily Consumption SMS');\n        }\n        break; \n    case 'Weekly Consumption Threshold Exceeded':\n        if (metadata.weeklyConsumptionEmailEnabled === 'true'){\n            relations.push('Weekly Consumption Email');\n        }\n        if (metadata.weeklyConsumptionSmsEnabled === 'true'){\n            relations.push('Weekly Consumption SMS');\n        }\n        break;\n    case 'Leakage Detected':\n        if (metadata.leakageEmailEnabled === 'true'){\n            relations.push('Leakage Detected Email');\n        }\n        if (metadata.leakageSmsEnabled === 'true'){\n            relations.push('Leakage Detected SMS');\n        }\n        break;        \n    default:\n        relations.push('Other');\n}\n\nreturn relations;",
+        "tbelScript" : "var relations = [];\n\nif (msg.type == 'Low Battery') {\n    \n    if (metadata.lowBattEmailEnabled === 'true'){\n        relations.push('Low Battery Email');\n    }\n    if (metadata.lowBattSmsEnabled === 'true'){\n        relations.push('Low Battery SMS');\n    }\n        \n} else if (msg.type == 'Low Temperature') {\n    \n    if (metadata.lowTempEmailEnabled === 'true'){\n        relations.push('Low Temperature Email');\n    }\n    if (metadata.lowTempSmsEnabled === 'true'){\n        relations.push('Low Temperature SMS');\n    }\n        \n} else if (msg.type == 'Device Inactive') {\n    \n    if (metadata.inactivityEmailEnabled === 'true'){\n        relations.push('Device Inactive Email');\n    }\n    if (metadata.inactivitySmsEnabled === 'true'){\n        relations.push('Device Inactive SMS');\n    }\n    \n} else if (msg.type == 'Daily Consumption Threshold Exceeded') {\n    \n    if (metadata.dailyConsumptionEmailEnabled === 'true'){\n        relations.push('Daily Consumption Email');\n    }\n    if (metadata.dailyConsumptionSmsEnabled === 'true'){\n        relations.push('Daily Consumption SMS');\n    }\n    \n} else if (msg.type == 'Weekly Consumption Threshold Exceeded') {\n    \n    if (metadata.weeklyConsumptionEmailEnabled === 'true'){\n        relations.push('Weekly Consumption Email');\n    }\n    if (metadata.weeklyConsumptionSmsEnabled === 'true'){\n        relations.push('Weekly Consumption SMS');\n    }\n\n} else if (msg.type == 'Leakage Detected') {\n    \n    if (metadata.leakageEmailEnabled === 'true'){\n        relations.push('Leakage Detected Email');\n    }\n    if (metadata.leakageSmsEnabled === 'true'){\n        relations.push('Leakage Detected SMS');\n    }\n    \n} else {\n    relations.push('Other');\n}\n\nreturn relations;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3405e9c0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Switch Alarm Type",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 61,
+        "layoutY" : 482
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "lowTempEmailEnabled" : "lowTempEmailEnabled",
+          "lowBattEmailEnabled" : "lowBattEmailEnabled",
+          "inactivityEmailEnabled" : "inactivityEmailEnabled",
+          "dailyConsumptionEmailEnabled" : "dailyConsumptionEmailEnabled",
+          "weeklyConsumptionEmailEnabled" : "weeklyConsumptionEmailEnabled",
+          "lowTempSmsEnabled" : "lowTempSmsEnabled",
+          "lowBattSmsEnabled" : "lowBattSmsEnabled",
+          "inactivitySmsEnabled" : "inactivitySmsEnabled",
+          "dailyConsumptionSmsEnabled" : "dailyConsumptionSmsEnabled",
+          "weeklyConsumptionSmsEnabled" : "weeklyConsumptionSmsEnabled"
+        },
+        "dataToFetch" : "ATTRIBUTES",
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3408cff0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load Tenant Settings",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTenantAttributeNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1862,
+        "layoutY" : 205
+      },
+      "configuration" : {
+        "useSystemSmtpSettings" : true,
+        "smtpHost" : "localhost",
+        "smtpPort" : 25,
+        "username" : null,
+        "password" : null,
+        "smtpProtocol" : "smtp",
+        "timeout" : 10000,
+        "enableTls" : false,
+        "tlsVersion" : "TLSv1.2",
+        "enableProxy" : false,
+        "proxyHost" : null,
+        "proxyPort" : null,
+        "proxyUser" : null,
+        "proxyPassword" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3409ba50-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.mail.TbSendEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1278,
+        "layoutY" : 26
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "email" : "userEmail"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3409e160-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1579,
+        "layoutY" : 28
+      },
+      "configuration" : {
+        "fromTemplate" : "",
+        "toTemplate" : "${userEmail}",
+        "ccTemplate" : null,
+        "bccTemplate" : null,
+        "subjectTemplate" : "Device ${deviceName} reports high daily water consumption!",
+        "bodyTemplate" : "The device consumed $[details.data]m3 of water which exceeds configured daily threshold!"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340a0870-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1575,
+        "layoutY" : 402
+      },
+      "configuration" : {
+        "fromTemplate" : "",
+        "toTemplate" : "${userEmail}",
+        "ccTemplate" : null,
+        "bccTemplate" : null,
+        "subjectTemplate" : "Device ${deviceName} reports leakage!",
+        "bodyTemplate" : "The device ${deviceName} reports leakage in the pipe!"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340a7da0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1277,
+        "layoutY" : 402
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "email" : "userEmail"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340a7da1-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1600,
+        "layoutY" : 700
+      },
+      "configuration" : {
+        "numbersToTemplate" : "${ss_phoneNumber}",
+        "smsMessageTemplate" : "Device ${deviceName} is inactive!",
+        "useSystemSmsSettings" : true,
+        "smsProviderConfiguration" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340acbc0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send SMS",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.sms.TbSendSmsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1278,
+        "layoutY" : 703
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "phoneNumber" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340acbc1-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Phone Number",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1603,
+        "layoutY" : 625
+      },
+      "configuration" : {
+        "numbersToTemplate" : "${ss_phoneNumber}",
+        "smsMessageTemplate" : "Device ${deviceName} has low water temperature!",
+        "useSystemSmsSettings" : true,
+        "smsProviderConfiguration" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340c0440-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send SMS",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.sms.TbSendSmsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1278,
+        "layoutY" : 628
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "phoneNumber" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340c5260-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Phone Number",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1602,
+        "layoutY" : 924
+      },
+      "configuration" : {
+        "numbersToTemplate" : "${ss_phoneNumber}",
+        "smsMessageTemplate" : "Device ${deviceName} reports high weekly water consumption!",
+        "useSystemSmsSettings" : true,
+        "smsProviderConfiguration" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340c7970-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send SMS",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.sms.TbSendSmsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1280,
+        "layoutY" : 928
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "phoneNumber" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340c7971-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Phone Number",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1601,
+        "layoutY" : 850
+      },
+      "configuration" : {
+        "numbersToTemplate" : "${ss_phoneNumber}",
+        "smsMessageTemplate" : "Device ${deviceName} reports high daily water consumption!",
+        "useSystemSmsSettings" : true,
+        "smsProviderConfiguration" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340ca080-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send SMS",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.sms.TbSendSmsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1279,
+        "layoutY" : 852
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "phoneNumber" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340ca081-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Phone Number",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1601,
+        "layoutY" : 776
+      },
+      "configuration" : {
+        "numbersToTemplate" : "${ss_phoneNumber}",
+        "smsMessageTemplate" : "Device ${deviceName} reports leakage!",
+        "useSystemSmsSettings" : true,
+        "smsProviderConfiguration" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340cc790-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Send SMS",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.sms.TbSendSmsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1278,
+        "layoutY" : 778
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "phoneNumber" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340cc791-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Load User Phone Number",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 976,
+        "layoutY" : 925
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340d3cc0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 974,
+        "layoutY" : 852
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340d8ae0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 974,
+        "layoutY" : 777
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340db1f0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 974,
+        "layoutY" : 703
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340e2720-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 975,
+        "layoutY" : 628
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340e7540-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 975,
+        "layoutY" : 551
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340ec360-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 978,
+        "layoutY" : 403
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340f1180-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 976,
+        "layoutY" : 330
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340f5fa0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 977,
+        "layoutY" : 259
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340fadc0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 976,
+        "layoutY" : 176
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "340fd4d0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 976,
+        "layoutY" : 101
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "341022f0-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 977,
+        "layoutY" : 26
+      },
+      "configuration" : {
+        "searchEntityGroupForTenantOnly" : true,
+        "groupType" : "USER",
+        "groupName" : "Tenant Administrators"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "34107110-f040-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "To All Tenant Administrators",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupByNameNode"
+    } ],
     "ruleChainConnections" : null
   },
   "relations" : [ ],
