@@ -4925,31 +4925,31 @@
             "main" : {
               "widgets" : {
                 "2cbc9189-b947-2d31-e748-c928f036ff96" : {
-                  "sizeX" : 14,
-                  "sizeY" : 8,
+                  "sizeX" : 17,
+                  "sizeY" : 10,
                   "mobileOrder" : 8,
                   "mobileHeight" : 4,
                   "row" : 1,
-                  "col" : 0
+                  "col" : 27
                 },
                 "80ac9372-6c45-28e7-6c88-baf76fe78318" : {
-                  "sizeX" : 16,
-                  "sizeY" : 6,
+                  "sizeX" : 19,
+                  "sizeY" : 7,
                   "mobileOrder" : 9,
                   "mobileHeight" : 4,
                   "row" : 3,
-                  "col" : 14
+                  "col" : 0
                 },
                 "94d73536-d206-eb83-651a-36691a0abc2e" : {
-                  "sizeX" : 30,
-                  "sizeY" : 10,
+                  "sizeX" : 17,
+                  "sizeY" : 13,
                   "mobileOrder" : 10,
                   "mobileHeight" : 4,
-                  "row" : 9,
+                  "row" : 11,
                   "col" : 0
                 },
                 "251d21ce-9e8b-5ca7-2f73-037ede2cdb99" : {
-                  "sizeX" : 5,
+                  "sizeX" : 6,
                   "sizeY" : 1,
                   "mobileOrder" : 1,
                   "mobileHeight" : 1,
@@ -4957,70 +4957,71 @@
                   "col" : 0
                 },
                 "bc571516-ba90-ae54-66d0-ed9c2568ec34" : {
-                  "sizeX" : 5,
+                  "sizeX" : 6,
                   "sizeY" : 1,
                   "mobileOrder" : 2,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 5
+                  "col" : 6
                 },
                 "20e020b4-4030-4f44-b4fd-a755f80c7655" : {
-                  "sizeX" : 5,
+                  "sizeX" : 6,
                   "sizeY" : 1,
                   "mobileOrder" : 3,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 10
+                  "col" : 12
                 },
                 "3e16be85-537b-efc5-8a98-82f124103bcf" : {
-                  "sizeX" : 5,
+                  "sizeX" : 6,
                   "sizeY" : 1,
                   "mobileOrder" : 4,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 20
+                  "col" : 24
                 },
                 "265668f3-eeba-ab67-ffc2-014bdf20a6ae" : {
-                  "sizeX" : 5,
+                  "sizeX" : 6,
                   "sizeY" : 1,
                   "mobileOrder" : 5,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 25
+                  "col" : 30
                 },
                 "bfe2aa3e-8453-29f4-2e16-13c23c032a38" : {
-                  "sizeX" : 8,
+                  "sizeX" : 10,
                   "sizeY" : 2,
                   "row" : 1,
-                  "col" : 22,
+                  "col" : 0,
                   "mobileOrder" : 7,
                   "mobileHeight" : 2
                 },
                 "e615cae0-75da-c2bd-54de-1571431b9be8" : {
-                  "sizeX" : 8,
+                  "sizeX" : 10,
                   "sizeY" : 2,
                   "row" : 1,
-                  "col" : 14,
+                  "col" : 17,
                   "mobileOrder" : 6,
                   "mobileHeight" : 2
                 },
                 "2792252e-764a-0a47-a6d9-9c21ddbab32f" : {
-                  "sizeX" : 5,
+                  "sizeX" : 6,
                   "sizeY" : 1,
                   "row" : 0,
-                  "col" : 15
+                  "col" : 18
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "#f2f2f2",
                 "color" : "rgba(0,0,0,0.870588)",
-                "columns" : 30,
+                "columns" : 36,
                 "backgroundSizeMode" : "100%",
                 "autoFillHeight" : true,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70,
                 "margin" : 8,
-                "outerMargin" : true
+                "outerMargin" : true,
+                "backgroundImageUrl" : null
               }
             }
           }
