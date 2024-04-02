@@ -5485,6 +5485,60 @@
           },
           "id" : "b9a96677-ae8d-387a-72be-4867f4f3ac42",
           "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "ccfc0d40-a2d3-874d-d8bd-62ba03c6eecf" : {
+          "type" : "static",
+          "sizeX" : 4,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 5px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n   transition: background-color 0.5s;\n}\n\n.card .content:hover {\n    background-color: #ddd;\n}\n\n.card .description {\n    font-size: 0.75em;\n    font-weight: normal;\n    line-height: 2;\n    color: #333333;\n    text-transform: uppercase;\n}\n",
+              "cardHtml" : "<div class='card'>\n    <div class='content' id='customers'>\n        <div class='description' id='customers'>\n            Customers\n        </div>\n    </div>\n</div>"
+            },
+            "title" : "Navigation:  Customers",
+            "dropShadow" : false,
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "Navigate to the list of customers",
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : {
+              "border" : "1px solid #E0E0E0"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "customers",
+                "icon" : "more_horiz",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "customers",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : null,
+                "id" : "b5eba137-4ca4-ec3d-f9a0-8b59e2d98207"
+              } ]
+            }
+          },
+          "id" : "ccfc0d40-a2d3-874d-d8bd-62ba03c6eecf",
+          "typeFullFqn" : "system.cards.html_card"
         }
       },
       "states" : {
@@ -5725,7 +5779,7 @@
             "main" : {
               "widgets" : {
                 "5b171713-09c1-5b9a-2572-8b8b731d180d" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "mobileOrder" : 1,
                   "mobileHeight" : 1,
@@ -5733,32 +5787,32 @@
                   "col" : 0
                 },
                 "7bf92548-b95f-2874-92c4-6675571878ad" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "mobileOrder" : 3,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 12
+                  "col" : 10
                 },
                 "e91e4167-68c3-5d5d-efc5-a19ec8fb999c" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "mobileOrder" : 4,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 18
+                  "col" : 20
                 },
                 "be3eb9bd-21f7-250c-ccf5-1d2dd67b73e2" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "mobileOrder" : 5,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 24
+                  "col" : 25
                 },
                 "291ab4b2-f371-9897-6856-385e5745f430" : {
                   "sizeX" : 18,
-                  "sizeY" : 15,
+                  "sizeY" : 14,
                   "mobileOrder" : 6,
                   "mobileHeight" : 5,
                   "row" : 1,
@@ -5773,12 +5827,18 @@
                   "col" : 18
                 },
                 "aaac5e71-96c4-6304-9a4d-4f28f1b86636" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "mobileOrder" : 2,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 6
+                  "col" : 5
+                },
+                "ccfc0d40-a2d3-874d-d8bd-62ba03c6eecf" : {
+                  "sizeX" : 5,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 15
                 }
               },
               "gridSettings" : {
