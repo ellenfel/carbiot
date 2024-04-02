@@ -6793,8 +6793,8 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Water Metering User Dashboard",
-    "title" : "Water Metering User Dashboard"
+    "name" : "Sim - Water Metering User Dashboard",
+    "title" : "Sim - Water Metering User Dashboard"
   },
   "relations" : [ ],
   "attributes" : {
