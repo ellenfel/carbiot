@@ -560,7 +560,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "Sensors",
-              "entityAliasId" : "e8bf7353-e2d4-1343-d6d7-32e74bd260db",
+              "entityAliasId" : "344a75d6-53ba-2e66-0ef7-a58322d3b1df",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "dailyConsumption",
@@ -588,7 +588,10 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              } ]
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "realtime" : {
