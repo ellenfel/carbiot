@@ -3982,154 +3982,6 @@
           "id" : "629dcd1a-9569-ba67-0ffd-638051f4ea97",
           "typeFullFqn" : "system.input_widgets.markers_placement_openstreetmap"
         },
-        "41f3bd64-9293-91b4-60aa-eeb4971f96bd" : {
-          "type" : "latest",
-          "sizeX" : 7,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : null,
-              "entityAliasId" : "e8bf7353-e2d4-1343-d6d7-32e74bd260db",
-              "filterId" : null,
-              "dataKeys" : [ {
-                "name" : "weeklyConsumption",
-                "type" : "timeseries",
-                "label" : "weeklyConsumption",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.6873469556096485,
-                "postFuncBody" : "return value || 0;"
-              } ]
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1678090071280,
-                  "endTimeMs" : 1678176471280
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 1px solid #E0E0E0;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 22px 30px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .value {\n    font-size: 1.5em;\n    font-weight: bold;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n.card .description {\n    font-size: 1em;\n    font-weight: normal;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n@media (min-width: 960px) and (max-width: 1200px) {\n    .card .value {\n        font-size: 1.2em;\n        line-height: 1;\n    }\n    \n    .card .description {\n        font-size: 0.8em;\n        line-height: 1;\n    }\n}\n",
-              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='value'>\n            ${weeklyConsumption:2} m<sup>3</sup>\n        </div> \n        <div class='description'>\n            Consumed per current week\n        </div>\n    </div>\n</div>"
-            },
-            "title" : "Water Consumption",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : null,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "enableDataExport" : false,
-            "displayTimewindow" : true
-          },
-          "id" : "41f3bd64-9293-91b4-60aa-eeb4971f96bd",
-          "typeFullFqn" : "system.cards.html_value_card"
-        },
-        "ef333025-00fe-50b8-400d-65f4347bb538" : {
-          "type" : "latest",
-          "sizeX" : 7,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : null,
-              "entityAliasId" : "e8bf7353-e2d4-1343-d6d7-32e74bd260db",
-              "filterId" : null,
-              "dataKeys" : [ {
-                "name" : "dailyConsumption",
-                "type" : "timeseries",
-                "label" : "dailyConsumption",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.6873469556096485,
-                "postFuncBody" : "return value || 0;"
-              } ]
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1678090071280,
-                  "endTimeMs" : 1678176471280
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 1px solid #E0E0E0;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 22px 30px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .value {\n    font-size: 1.5em;\n    font-weight: bold;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n.card .description {\n    font-size: 1em;\n    font-weight: normal;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n@media (min-width: 960px) and (max-width: 1200px) {\n    .card .value {\n        font-size: 1.2em;\n        line-height: 1;\n    }\n    \n    .card .description {\n        font-size: 0.8em;\n        line-height: 1;\n    }\n}\n",
-              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='value'>\n            ${dailyConsumption:2} m<sup>3</sup>\n        </div> \n        <div class='description'>\n            Consumed per day\n        </div>\n    </div>\n</div>"
-            },
-            "title" : "Water Consumption",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : null,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "enableDataExport" : false,
-            "displayTimewindow" : true
-          },
-          "id" : "ef333025-00fe-50b8-400d-65f4347bb538",
-          "typeFullFqn" : "system.cards.html_value_card"
-        },
         "aaac5e71-96c4-6304-9a4d-4f28f1b86636" : {
           "type" : "static",
           "sizeX" : 6,
@@ -5328,6 +5180,311 @@
           },
           "id" : "b8d61751-ce6a-3aff-fa6a-855763ea0ecb",
           "typeFullFqn" : "system.cards.html_card"
+        },
+        "62637cb5-b6e3-d1f8-cecb-a4b1854926f9" : {
+          "type" : "latest",
+          "sizeX" : 8,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "inactiveDevicesNumber",
+                "type" : "attribute",
+                "label" : "inactiveDevicesNumber",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2857686772503587,
+                "postFuncBody" : "return value || 0;"
+              } ],
+              "entityAliasId" : "2e10e186-b069-3fa0-cad9-cf4b87249bca"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1678090031166,
+                  "endTimeMs" : 1678176431166
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 1px solid #E0E0E0;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 22px 30px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .value {\n    font-size: 1.5em;\n    font-weight: bold;\n    line-height: 1.5;\n    color: #EB5757;\n    text-align: center;\n}\n\n.card .description {\n    font-size: 1em;\n    font-weight: normal;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n@media (min-width: 960px) and (max-width: 1200px) {\n    .card .value {\n        font-size: 1.2em;\n        line-height: 1;\n    }\n    \n    .card .description {\n        font-size: 0.8em;\n        line-height: 1;\n    }\n}",
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='value'>\n            ${inactiveDevicesNumber:0}\n        </div> \n        <div class='description'>\n            Inactive devices\n        </div>\n    </div>\n</div>"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "62637cb5-b6e3-d1f8-cecb-a4b1854926f9",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "98b03093-b79e-3d81-7199-44d59eab781f" : {
+          "type" : "latest",
+          "sizeX" : 8,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "lowBatteryDevicesNumber",
+                "type" : "attribute",
+                "label" : "lowBatteryDevicesNumber",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9365559121113138,
+                "postFuncBody" : "return value || 0;"
+              } ],
+              "entityAliasId" : "2e10e186-b069-3fa0-cad9-cf4b87249bca"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1678090031166,
+                  "endTimeMs" : 1678176431166
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 1px solid #E0E0E0;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 22px 30px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .value {\n    font-size: 1.5em;\n    font-weight: bold;\n    line-height: 1.5;\n    color: #F2994A;\n    text-align: center;\n}\n\n.card .description {\n    font-size: 1em;\n    font-weight: normal;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n@media (min-width: 960px) and (max-width: 1200px) {\n    .card .value {\n        font-size: 1.2em;\n        line-height: 1;\n    }\n    \n    .card .description {\n        font-size: 0.8em;\n        line-height: 1;\n    }\n}",
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='value'>\n            ${lowBatteryDevicesNumber:0}\n        </div> \n        <div class='description'>\n            Low battery devices\n        </div>\n    </div>\n</div>"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "98b03093-b79e-3d81-7199-44d59eab781f",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "e361c9fc-415f-567c-deff-d100dccf1e16" : {
+          "type" : "latest",
+          "sizeX" : 8,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : "",
+              "entityAliasId" : "344a75d6-53ba-2e66-0ef7-a58322d3b1df",
+              "filterId" : "0f281f78-15d8-7dba-00c7-742482cb4467",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "activeDevicesNumber",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.7404827038869322,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1678090031165,
+                  "endTimeMs" : 1678176431165
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 1px solid #E0E0E0;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 22px 30px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .value {\n    font-size: 1.5em;\n    font-weight: bold;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n.card .description {\n    font-size: 1em;\n    font-weight: normal;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n@media (min-width: 960px) and (max-width: 1200px) {\n    .card .value {\n        font-size: 1.2em;\n        line-height: 1;\n    }\n    \n    .card .description {\n        font-size: 0.8em;\n        line-height: 1;\n    }\n}",
+              "cardHtml" : "<div class='card' id=\"activeDevices\">\n    <div class='content' id=\"activeDevices\">\n        <div class='value' id=\"activeDevices\">\n            ${activeDevicesNumber:0}\n        </div> \n        <div class='description' id=\"activeDevices\">\n            Active devices\n        </div>\n    </div>\n</div>"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "activeDevices",
+                "icon" : "more_horiz",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "active_devices",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "id" : "ecee0df6-b0d9-9636-3665-870c35044b42"
+              } ]
+            },
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "e361c9fc-415f-567c-deff-d100dccf1e16",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "b9a96677-ae8d-387a-72be-4867f4f3ac42" : {
+          "type" : "latest",
+          "sizeX" : 8,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "weeklyConsumption",
+                "type" : "timeseries",
+                "label" : "weeklyConsumption",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.6873469556096485,
+                "postFuncBody" : "return value || 0;"
+              } ],
+              "entityAliasId" : "2e10e186-b069-3fa0-cad9-cf4b87249bca"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1678090031166,
+                  "endTimeMs" : 1678176431166
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 1px solid #E0E0E0;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 22px 30px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .value {\n    font-size: 1.5em;\n    font-weight: bold;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n.card .description {\n    font-size: 1em;\n    font-weight: normal;\n    line-height: 1.5;\n    color: #333333;\n    text-align: center;\n}\n\n@media (min-width: 960px) and (max-width: 1200px) {\n    .card .value {\n        font-size: 1.2em;\n        line-height: 1;\n    }\n    \n    .card .description {\n        font-size: 0.8em;\n        line-height: 1;\n    }\n}\n",
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='value'>\n            ${weeklyConsumption:2} m<sup>3</sup>\n        </div> \n        <div class='description'>\n            Consumed per current week\n        </div>\n    </div>\n</div>"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "b9a96677-ae8d-387a-72be-4867f4f3ac42",
+          "typeFullFqn" : "system.cards.html_value_card"
         }
       },
       "states" : {
@@ -5460,23 +5617,23 @@
             "main" : {
               "widgets" : {
                 "e931ad52-49d0-d235-aa13-57de58615b97" : {
-                  "sizeX" : 9,
-                  "sizeY" : 15,
-                  "row" : 1,
-                  "col" : 21,
+                  "sizeX" : 8,
+                  "sizeY" : 14,
+                  "row" : 3,
+                  "col" : 23,
                   "mobileOrder" : 9,
                   "mobileHeight" : 4
                 },
                 "ccc94584-ce53-cdfc-ea3b-ecd21fa19abf" : {
-                  "sizeX" : 21,
-                  "sizeY" : 12,
+                  "sizeX" : 23,
+                  "sizeY" : 14,
                   "mobileHeight" : 5,
-                  "row" : 4,
+                  "row" : 3,
                   "col" : 0,
                   "mobileOrder" : 10
                 },
                 "a864701f-57f3-e665-21bc-a3ad1f8438da" : {
-                  "sizeX" : 5,
+                  "sizeX" : 6,
                   "sizeY" : 1,
                   "mobileOrder" : 1,
                   "mobileHeight" : 1,
@@ -5489,7 +5646,7 @@
                   "mobileOrder" : 2,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 5
+                  "col" : 6
                 },
                 "d3ea68cf-4dd0-a261-a04f-7008b3d2eed4" : {
                   "sizeX" : 5,
@@ -5497,7 +5654,7 @@
                   "mobileOrder" : 3,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 10
+                  "col" : 11
                 },
                 "117490c6-fa7f-34cf-1de9-dfbc6068bbdb" : {
                   "sizeX" : 5,
@@ -5505,7 +5662,7 @@
                   "mobileOrder" : 4,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 20
+                  "col" : 21
                 },
                 "66e7a232-0011-b462-e359-c5d99a2a9c56" : {
                   "sizeX" : 5,
@@ -5513,41 +5670,50 @@
                   "mobileOrder" : 5,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 25
-                },
-                "41f3bd64-9293-91b4-60aa-eeb4971f96bd" : {
-                  "sizeX" : 10,
-                  "sizeY" : 3,
-                  "row" : 1,
-                  "col" : 11,
-                  "mobileOrder" : 7,
-                  "mobileHeight" : 2
-                },
-                "ef333025-00fe-50b8-400d-65f4347bb538" : {
-                  "sizeX" : 11,
-                  "sizeY" : 3,
-                  "row" : 1,
-                  "col" : 0,
-                  "mobileOrder" : 6,
-                  "mobileHeight" : 2
+                  "col" : 26
                 },
                 "b8d61751-ce6a-3aff-fa6a-855763ea0ecb" : {
                   "sizeX" : 5,
                   "sizeY" : 1,
                   "row" : 0,
-                  "col" : 15
+                  "col" : 16
+                },
+                "62637cb5-b6e3-d1f8-cecb-a4b1854926f9" : {
+                  "sizeX" : 7,
+                  "sizeY" : 2,
+                  "row" : 1,
+                  "col" : 24
+                },
+                "98b03093-b79e-3d81-7199-44d59eab781f" : {
+                  "sizeX" : 8,
+                  "sizeY" : 2,
+                  "row" : 1,
+                  "col" : 16
+                },
+                "e361c9fc-415f-567c-deff-d100dccf1e16" : {
+                  "sizeX" : 8,
+                  "sizeY" : 2,
+                  "row" : 1,
+                  "col" : 8
+                },
+                "b9a96677-ae8d-387a-72be-4867f4f3ac42" : {
+                  "sizeX" : 8,
+                  "sizeY" : 2,
+                  "row" : 1,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "#f2f2f2",
                 "color" : "rgba(0,0,0,0.870588)",
-                "columns" : 30,
+                "columns" : 36,
                 "backgroundSizeMode" : "100%",
                 "autoFillHeight" : true,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70,
                 "margin" : 8,
-                "outerMargin" : true
+                "outerMargin" : true,
+                "backgroundImageUrl" : null
               }
             }
           }
