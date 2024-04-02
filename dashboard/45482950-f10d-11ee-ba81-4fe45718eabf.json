@@ -6431,8 +6431,8 @@
             "type" : "singleEntity",
             "resolveMultiple" : false,
             "singleEntity" : {
-              "entityType" : "CURRENT_CUSTOMER",
-              "id" : "bf0a9f30-f10c-11ee-8fd5-f77236ee7afe"
+              "entityType" : "CUSTOMER",
+              "id" : "01f1ae40-f114-11ee-ba81-4fe45718eabf"
             }
           }
         },
