@@ -6050,6 +6050,110 @@
           },
           "id" : "3528bc63-96cc-e16b-4317-678e6e8699f5",
           "typeFullFqn" : "system.cards.html_card"
+        },
+        "cb92297a-b70b-f807-e981-dc3da07aa9fc" : {
+          "type" : "static",
+          "sizeX" : 6,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 5px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n   transition: background-color 0.5s;\n}\n\n.card .content:hover {\n    background-color: #ddd;\n}\n\n.card .description {\n    font-size: 0.75em;\n    font-weight: normal;\n    line-height: 2;\n    color: #333333;\n    text-transform: uppercase;\n}\n",
+              "cardHtml" : "<div class='card'>\n    <div class='content' id=\"settings\">\n        <div class='description' id=\"settings\">\n            Settings\n        </div>\n    </div>\n</div>"
+            },
+            "title" : "Navigation:  Settings",
+            "dropShadow" : false,
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : {
+              "border" : "1px solid #E0E0E0"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ {
+                "id" : "b5eba137-4ca4-ec3d-f9a0-8b59e2d98207",
+                "name" : "settings",
+                "icon" : "more_horiz",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "settings",
+                "setEntityId" : false
+              } ]
+            }
+          },
+          "id" : "cb92297a-b70b-f807-e981-dc3da07aa9fc",
+          "typeFullFqn" : "system.cards.html_card"
+        },
+        "e63d243d-349d-439d-b1c1-3c7b97a70e89" : {
+          "type" : "static",
+          "sizeX" : 6,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 5px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n   transition: background-color 0.5s;\n}\n\n.card .content:hover {\n    background-color: #ddd;\n}\n\n.card .description {\n    font-size: 0.75em;\n    font-weight: normal;\n    line-height: 2;\n    color: #333333;\n    text-transform: uppercase;\n}\n",
+              "cardHtml" : "<div class='card'>\n    <div class='content' id=\"settings\">\n        <div class='description' id=\"settings\">\n            Settings\n        </div>\n    </div>\n</div>"
+            },
+            "title" : "Navigation:  Settings",
+            "dropShadow" : false,
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : {
+              "border" : "1px solid #E0E0E0"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ {
+                "id" : "b5eba137-4ca4-ec3d-f9a0-8b59e2d98207",
+                "name" : "settings",
+                "icon" : "more_horiz",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "settings",
+                "setEntityId" : false
+              } ]
+            }
+          },
+          "id" : "e63d243d-349d-439d-b1c1-3c7b97a70e89",
+          "typeFullFqn" : "system.cards.html_card"
         }
       },
       "states" : {
@@ -6752,6 +6856,18 @@
                   "sizeY" : 1,
                   "row" : 0,
                   "col" : 12
+                },
+                "cb92297a-b70b-f807-e981-dc3da07aa9fc" : {
+                  "sizeX" : 4,
+                  "sizeY" : 0,
+                  "row" : 7,
+                  "col" : 0
+                },
+                "e63d243d-349d-439d-b1c1-3c7b97a70e89" : {
+                  "sizeX" : 4,
+                  "sizeY" : 0,
+                  "row" : 7,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
