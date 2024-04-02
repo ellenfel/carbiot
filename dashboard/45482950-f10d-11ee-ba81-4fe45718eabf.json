@@ -5281,7 +5281,7 @@
               "widgets" : {
                 "2cbc9189-b947-2d31-e748-c928f036ff96" : {
                   "sizeX" : 27,
-                  "sizeY" : 8,
+                  "sizeY" : 9,
                   "mobileOrder" : 8,
                   "mobileHeight" : 4,
                   "row" : 3,
@@ -5289,18 +5289,18 @@
                 },
                 "80ac9372-6c45-28e7-6c88-baf76fe78318" : {
                   "sizeX" : 19,
-                  "sizeY" : 7,
+                  "sizeY" : 6,
                   "mobileOrder" : 9,
                   "mobileHeight" : 4,
-                  "row" : 11,
+                  "row" : 12,
                   "col" : 17
                 },
                 "94d73536-d206-eb83-651a-36691a0abc2e" : {
                   "sizeX" : 17,
-                  "sizeY" : 7,
+                  "sizeY" : 6,
                   "mobileOrder" : 10,
                   "mobileHeight" : 4,
-                  "row" : 11,
+                  "row" : 12,
                   "col" : 0
                 },
                 "251d21ce-9e8b-5ca7-2f73-037ede2cdb99" : {
@@ -5375,7 +5375,7 @@
                 },
                 "3faa6666-6bf7-ade0-4b48-6d2e9963e63f" : {
                   "sizeX" : 9,
-                  "sizeY" : 8,
+                  "sizeY" : 9,
                   "row" : 3,
                   "col" : 27
                 }
