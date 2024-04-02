@@ -620,6 +620,90 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 52,
+        "layoutY" : 238
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {     \n    \"battery\": String(Math.floor(Math.random() * 101)), // Random integer between 0 and 100\n    \"dailyConsumption\": String((Math.random() * 100000).toFixed(2)), // Random float for daily consumption\n    \"leakage\": Math.random() < 0.5 ? \"false\" : \"true\", // Random boolean for leakage\n    \"meterReadingDelta\": String((Math.random() * 20000).toFixed(2)), // Random float for meter\n    \"pulseCounter\": String((Math.random() * 20000).toFixed(2)), // Random float for pulse counter\n    \"temperature\": String((Math.random() * (30.0 - 5.0) + 5.0).toFixed(1)), // Random float between\n    \"weeklyConsumption\": String((Math.random() * 100000).toFixed(2)) // Random float for weekly\n\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : null,
+        "originatorId" : "2c82d1b0-f043-11ee-ba81-4fe45718eabf",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "db5e7800-f116-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "watermeter 1",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 52,
+        "layoutY" : 337
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {     amperage: (15 + 3 * Math.random()).toFixed(1),\n             \tenergy: (300 + 700 * Math.random()).toFixed(1),\n                frequency: (48 + 2 * Math.random()).toFixed(1),\n                power: (2500 + 2500 * Math.random()).toFixed(1),\n                voltage: (220 + 10 * Math.random()).toFixed(1),\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : null,
+        "originatorId" : "2c7d7a80-f043-11ee-ba81-4fe45718eabf",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "db5e7801-f116-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "watermeter 3",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 52,
+        "layoutY" : 288
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {     amperage: (15 + 3 * Math.random()).toFixed(1),\n             \tenergy: (300 + 700 * Math.random()).toFixed(1),\n                frequency: (48 + 2 * Math.random()).toFixed(1),\n                power: (2500 + 2500 * Math.random()).toFixed(1),\n                voltage: (220 + 10 * Math.random()).toFixed(1),\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : null,
+        "originatorId" : "2c7d0550-f043-11ee-ba81-4fe45718eabf",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "db5e9f10-f116-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "watermeter 2",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
     } ],
     "ruleChainConnections" : null
   },
