@@ -113,8 +113,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 635,
-        "layoutY" : 146
+        "layoutX" : 776,
+        "layoutY" : 332
       },
       "configuration" : {
         "persistAlarmRulesState" : false,
@@ -135,8 +135,8 @@
       "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 1394,
-        "layoutY" : 214
+        "layoutX" : 1535,
+        "layoutY" : 400
       },
       "configuration" : {
         "timeoutInSeconds" : 60
@@ -156,8 +156,8 @@
       "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 906,
-        "layoutY" : 145
+        "layoutX" : 1047,
+        "layoutY" : 331
       },
       "configuration" : {
         "version" : 0
@@ -177,8 +177,8 @@
       "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 1394,
-        "layoutY" : 69
+        "layoutX" : 1535,
+        "layoutY" : 255
       },
       "configuration" : {
         "scope" : "CLIENT_SCOPE",
@@ -202,8 +202,8 @@
     }, {
       "additionalInfo" : {
         "description" : null,
-        "layoutX" : 1392,
-        "layoutY" : 142
+        "layoutX" : 1533,
+        "layoutY" : 328
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -224,8 +224,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 304,
-        "layoutY" : 148
+        "layoutX" : 445,
+        "layoutY" : 334
       },
       "configuration" : {
         "inputValueKey" : "pulseCounter",
@@ -253,8 +253,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1050,
-        "layoutY" : 592
+        "layoutX" : 1400,
+        "layoutY" : 736
       },
       "configuration" : {
         "inputValueKey" : "meterReadingDelta",
@@ -298,8 +298,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1045,
-        "layoutY" : 459
+        "layoutX" : 1395,
+        "layoutY" : 603
       },
       "configuration" : {
         "inputValueKey" : "meterReadingDelta",
@@ -343,8 +343,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1049,
-        "layoutY" : 532
+        "layoutX" : 1399,
+        "layoutY" : 676
       },
       "configuration" : {
         "inputValueKey" : "meterReadingDelta",
@@ -388,8 +388,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1046,
-        "layoutY" : 397
+        "layoutX" : 1396,
+        "layoutY" : 541
       },
       "configuration" : {
         "inputValueKey" : "meterReadingDelta",
@@ -433,8 +433,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 742,
-        "layoutY" : 508
+        "layoutX" : 1092,
+        "layoutY" : 652
       },
       "configuration" : {
         "originatorSource" : "TENANT",
@@ -464,8 +464,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 740,
-        "layoutY" : 431
+        "layoutX" : 1090,
+        "layoutY" : 575
       },
       "configuration" : {
         "originatorSource" : "CUSTOMER",
@@ -495,8 +495,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 158,
-        "layoutY" : 431
+        "layoutX" : 508,
+        "layoutY" : 575
       },
       "configuration" : {
         "inputValueKey" : "meterReadingDelta",
@@ -537,8 +537,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 160,
-        "layoutY" : 509
+        "layoutX" : 510,
+        "layoutY" : 653
       },
       "configuration" : {
         "inputValueKey" : "meterReadingDelta",
@@ -579,8 +579,8 @@
     }, {
       "additionalInfo" : {
         "description" : "Forwards message to the \"Water Metering Solution Customer Alarm Routing\" rule chain",
-        "layoutX" : 907,
-        "layoutY" : 290
+        "layoutX" : 1048,
+        "layoutY" : 476
       },
       "configuration" : {
         "ruleChainId" : "13848fb0-f03d-11ee-8fd5-f77236ee7afe"
@@ -601,8 +601,8 @@
     }, {
       "additionalInfo" : {
         "description" : "Forwards message to the \"Water Metering Solution Tenant Alarm Routing\" rule chain",
-        "layoutX" : 905,
-        "layoutY" : 231
+        "layoutX" : 1046,
+        "layoutY" : 417
       },
       "configuration" : {
         "ruleChainId" : "13704460-f03d-11ee-8fd5-f77236ee7afe"
