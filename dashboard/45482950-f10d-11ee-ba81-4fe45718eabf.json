@@ -325,7 +325,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : null,
-              "entityAliasId" : "98886949-dba9-9fcf-7b4f-9d3937df249a",
+              "entityAliasId" : "f7bed459-ea25-5a39-bfc1-a3bb8c941d8d",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "dailyConsumption",
@@ -352,7 +352,10 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              } ]
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "realtime" : {
@@ -5904,20 +5907,10 @@
           "id" : "f7bed459-ea25-5a39-bfc1-a3bb8c941d8d",
           "alias" : "Sensors",
           "filter" : {
-            "type" : "deviceSearchQuery",
+            "type" : "entityList",
             "resolveMultiple" : true,
-            "rootStateEntity" : true,
-            "stateEntityParamName" : "",
-            "defaultStateEntity" : {
-              "entityType" : "CURRENT_CUSTOMER",
-              "id" : "61f141d0-ed58-11ee-ba81-4fe45718eabf"
-            },
-            "rootEntity" : null,
-            "direction" : "FROM",
-            "maxLevel" : 1,
-            "fetchLastLevelOnly" : null,
-            "relationType" : "Owns",
-            "deviceTypes" : [ "Water Meter" ]
+            "entityType" : "DEVICE",
+            "entityList" : [ "2c82d1b0-f043-11ee-ba81-4fe45718eabf", "2c7d0550-f043-11ee-ba81-4fe45718eabf", "2c7d7a80-f043-11ee-ba81-4fe45718eabf" ]
           }
         },
         "2754dd92-28a3-a689-d65c-ab9001a86f73" : {
