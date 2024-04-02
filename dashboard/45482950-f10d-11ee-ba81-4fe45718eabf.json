@@ -5593,6 +5593,60 @@
           },
           "id" : "024994e4-f45e-8a91-cd77-afb7c2a4caa3",
           "typeFullFqn" : "system.cards.html_card"
+        },
+        "72fd6bd7-4447-8432-2856-36b83b7e6a12" : {
+          "type" : "static",
+          "sizeX" : 4,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 5px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   box-sizing: border-box;\n   transition: background-color 0.5s;\n}\n\n.card .content:hover {\n    background-color: #ddd;\n}\n\n.card .description {\n    font-size: 0.75em;\n    font-weight: normal;\n    line-height: 2;\n    color: #333333;\n    text-transform: uppercase;\n}\n",
+              "cardHtml" : "<div class='card'>\n    <div class='content' id='customers'>\n        <div class='description' id='customers'>\n            Customers\n        </div>\n    </div>\n</div>"
+            },
+            "title" : "Navigation:  Customers",
+            "dropShadow" : false,
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "Navigate to the list of customers",
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : {
+              "border" : "1px solid #E0E0E0"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "customers",
+                "icon" : "more_horiz",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "customers",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : null,
+                "id" : "b5eba137-4ca4-ec3d-f9a0-8b59e2d98207"
+              } ]
+            }
+          },
+          "id" : "72fd6bd7-4447-8432-2856-36b83b7e6a12",
+          "typeFullFqn" : "system.cards.html_card"
         }
       },
       "states" : {
@@ -5999,7 +6053,7 @@
             "main" : {
               "widgets" : {
                 "b85b4e51-42dd-1ea6-84a6-14d701fd8875" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "row" : 0,
                   "col" : 0,
@@ -6007,26 +6061,26 @@
                   "mobileHeight" : 1
                 },
                 "05cb8c19-3d4f-b147-a377-8ab72aa3057d" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "row" : 0,
-                  "col" : 12,
+                  "col" : 10,
                   "mobileOrder" : 3,
                   "mobileHeight" : 1
                 },
                 "70b3ca21-cc98-46ea-1676-16d3edea2a65" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "row" : 0,
-                  "col" : 18,
+                  "col" : 20,
                   "mobileOrder" : 5,
                   "mobileHeight" : 1
                 },
                 "936cf52c-f762-628e-00e8-363b53e1af4f" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "row" : 0,
-                  "col" : 24,
+                  "col" : 25,
                   "mobileOrder" : 6,
                   "mobileHeight" : 1
                 },
@@ -6055,12 +6109,18 @@
                   "mobileHeight" : 5
                 },
                 "9ab57b9b-a948-22b7-0846-8844c129c748" : {
-                  "sizeX" : 6,
+                  "sizeX" : 5,
                   "sizeY" : 1,
                   "mobileOrder" : 2,
                   "mobileHeight" : 1,
                   "row" : 0,
-                  "col" : 6
+                  "col" : 5
+                },
+                "72fd6bd7-4447-8432-2856-36b83b7e6a12" : {
+                  "sizeX" : 5,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 15
                 }
               },
               "gridSettings" : {
