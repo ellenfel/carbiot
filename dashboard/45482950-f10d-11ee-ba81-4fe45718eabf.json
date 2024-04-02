@@ -4731,7 +4731,7 @@
             "datasources" : [ {
               "type" : "entityCount",
               "name" : "",
-              "entityAliasId" : "344a75d6-53ba-2e66-0ef7-a58322d3b1df",
+              "entityAliasId" : "f7bed459-ea25-5a39-bfc1-a3bb8c941d8d",
               "filterId" : "0f281f78-15d8-7dba-00c7-742482cb4467",
               "dataKeys" : [ {
                 "name" : "count",
@@ -4745,7 +4745,10 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              } ]
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
