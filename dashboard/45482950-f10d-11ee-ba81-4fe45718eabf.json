@@ -2911,6 +2911,7 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "2754dd92-28a3-a689-d65c-ab9001a86f73",
               "dataKeys" : [ {
                 "name" : "address",
                 "type" : "attribute",
@@ -2947,7 +2948,9 @@
                 "settings" : { },
                 "_hash" : 0.2924585860274258
               } ],
-              "entityAliasId" : "2754dd92-28a3-a689-d65c-ab9001a86f73"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
