@@ -6682,12 +6682,18 @@
       "settings" : {
         "stateControllerId" : "entity",
         "showTitle" : false,
-        "showDashboardsSelect" : false,
+        "showDashboardsSelect" : true,
         "showEntitiesSelect" : false,
         "showDashboardTimewindow" : true,
         "showDashboardExport" : false,
         "toolbarAlwaysOpen" : true,
-        "titleColor" : "rgba(0,0,0,0.870588)"
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ""
       },
       "filters" : {
         "64001b0d-a238-a976-8a27-baf5dce7871a" : {
