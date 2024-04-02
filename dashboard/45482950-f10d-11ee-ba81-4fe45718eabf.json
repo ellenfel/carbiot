@@ -359,9 +359,18 @@
               }
             } ],
             "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
               "realtime" : {
-                "interval" : 43200000,
-                "timewindowMs" : 604800000
+                "realtimeType" : 0,
+                "timewindowMs" : 604800000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 43200000
               },
               "aggregation" : {
                 "type" : "SUM",
@@ -424,7 +433,7 @@
             "widgetStyle" : {
               "border" : "1px solid #E0E0E0"
             },
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : null,
