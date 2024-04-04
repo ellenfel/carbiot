@@ -1,0 +1,74 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : { },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "d975e950-f2c0-11ee-ba81-4fe45718eabf"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "b920ef10-f2c0-11ee-ba81-4fe45718eabf"
+    },
+    "label" : null,
+    "name" : "Apartman A1",
+    "type" : "building"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1712262004883,
+      "longValue" : null,
+      "strValue" : "Simitçi Sk. 9-1- 34435 Beyoğlu/İstanbul"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 17.456,
+      "jsonValue" : null,
+      "key" : "energy",
+      "lastUpdateTs" : 1712262004883,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 34.912,
+      "jsonValue" : null,
+      "key" : "gas",
+      "lastUpdateTs" : 1712262004883,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 41.036678,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1712262004883,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 28.976761,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1712262004883,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 12.046,
+      "jsonValue" : null,
+      "key" : "water",
+      "lastUpdateTs" : 1712262004883,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
