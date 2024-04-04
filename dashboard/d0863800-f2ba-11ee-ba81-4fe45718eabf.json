@@ -6298,8 +6298,8 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Sim - Districts",
-    "title" : "Sim - Districts"
+    "name" : "Sim - Smart Meter",
+    "title" : "Sim - Smart Meter"
   },
   "relations" : [ ],
   "attributes" : {
