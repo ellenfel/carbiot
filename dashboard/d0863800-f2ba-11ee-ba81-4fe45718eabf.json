@@ -4637,6 +4637,8 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "name" : "Bus A",
+              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f",
               "dataKeys" : [ {
                 "name" : "energy",
                 "type" : "attribute",
@@ -4646,8 +4648,9 @@
                 "_hash" : 0.8697880324807963,
                 "decimals" : 3
               } ],
-              "name" : "Bus A",
-              "entityAliasId" : "a0d761f6-2084-ba89-6484-99699eab4f7a"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -4800,6 +4803,8 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "name" : "Bus A",
+              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f",
               "dataKeys" : [ {
                 "name" : "water",
                 "type" : "attribute",
@@ -4809,8 +4814,9 @@
                 "_hash" : 0.4680464719681914,
                 "decimals" : 3
               } ],
-              "name" : "Bus A",
-              "entityAliasId" : "a0d761f6-2084-ba89-6484-99699eab4f7a"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
