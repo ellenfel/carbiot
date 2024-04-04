@@ -21,6 +21,14 @@
       "fromIndex" : 1,
       "toIndex" : 0,
       "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 1,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
@@ -68,8 +76,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 144,
-        "layoutY" : 303
+        "layoutX" : 162,
+        "layoutY" : 219
       },
       "configuration" : {
         "msgCount" : 0,
@@ -96,8 +104,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 145,
-        "layoutY" : 357
+        "layoutX" : 163,
+        "layoutY" : 273
       },
       "configuration" : {
         "msgCount" : 0,
