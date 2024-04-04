@@ -3520,7 +3520,7 @@
               "showTooltipAction" : "click",
               "autocloseTooltip" : true,
               "useTooltipFunction" : false,
-              "tooltipPattern" : "<div style=\"padding: 5px;\">\n    <b>${entityName}</b><br/><br/>\n    <img width=\"100\" src=\"${image}\" alt=\"Image\"><br/><br/>\n    <b>${address}</b><br/><br/>\n    <link-act name='apartments'>Link text</link-act><br/>\n</div>\n",
+              "tooltipPattern" : "<div style=\"padding: 5px;\">\n    <b>${entityName}</b><br/><br/>\n    <img width=\"100\" src=\"${image}\" alt=\"Image\"><br/><br/>\n    <b>${address}</b><br/><br/>\n    <link-act name='apartments'>Apartment details</link-act><br/>\n</div>\n",
               "tooltipFunction" : null,
               "tooltipOffsetX" : 0,
               "tooltipOffsetY" : -1,
