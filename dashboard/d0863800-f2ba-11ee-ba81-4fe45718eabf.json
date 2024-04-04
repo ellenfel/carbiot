@@ -2759,332 +2759,6 @@
           "id" : "7ef7debd-e9db-0471-1f4d-e3bd07290ba2",
           "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
         },
-        "9c514403-3b34-0b7a-73b2-d6b457365fc6" : {
-          "type" : "latest",
-          "sizeX" : 6,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "dataKeys" : [ {
-                "name" : "energy",
-                "type" : "attribute",
-                "label" : "energy",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.8697880324807963
-              } ],
-              "name" : "Bus A",
-              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f"
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1693912272085,
-                  "endTimeMs" : 1693998672085
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 2500
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(253, 191, 105)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "maxValue" : 100000,
-              "startAngle" : 60,
-              "showBorder" : true,
-              "needleCircleSize" : 7,
-              "highlights" : [ {
-                "from" : 0,
-                "to" : 40000,
-                "color" : "#ffffff"
-              }, {
-                "from" : 40000,
-                "to" : 50000,
-                "color" : "#ffe0b2"
-              }, {
-                "from" : 50000,
-                "to" : 60000,
-                "color" : "#ffb74d"
-              }, {
-                "from" : 60000,
-                "to" : 70000,
-                "color" : "#ff9800"
-              }, {
-                "from" : 70000,
-                "to" : 80000,
-                "color" : "#f57c00"
-              }, {
-                "from" : 80000,
-                "to" : 90000,
-                "color" : "#e65100"
-              }, {
-                "from" : 90000,
-                "to" : 100000,
-                "color" : "#bf360c"
-              } ],
-              "showUnitTitle" : true,
-              "colorPlate" : "#e6e6e6",
-              "colorMajorTicks" : "#263238",
-              "colorMinorTicks" : "#263238",
-              "valueInt" : 3,
-              "minValue" : 0,
-              "valueBox" : true,
-              "animation" : true,
-              "animationDuration" : 500,
-              "animationRule" : "dequad",
-              "colorNeedleShadowUp" : "rgba(2, 255, 255, 0)",
-              "colorNeedleShadowDown" : "rgba(188, 143, 143, 0.78)",
-              "majorTicksCount" : 10,
-              "numbersFont" : {
-                "family" : "RobotoDraft",
-                "size" : 22,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "rgba(1, 1, 1, 0)"
-              },
-              "titleFont" : {
-                "family" : "Material Icons",
-                "size" : 80,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#263238"
-              },
-              "unitsFont" : {
-                "family" : "RobotoDraft",
-                "size" : 28,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#263238"
-              },
-              "valueFont" : {
-                "size" : 25,
-                "style" : "normal",
-                "weight" : "normal",
-                "shadowColor" : "rgba(0, 0, 0, 0.49)",
-                "color" : "#37474f",
-                "family" : "Segment7Standard"
-              },
-              "colorValueBoxRect" : "#455a64",
-              "colorValueBoxRectEnd" : "#455a64",
-              "colorValueBoxBackground" : "#eceff1",
-              "colorValueBoxShadow" : "rgba(0,0,0,1)",
-              "ticksAngle" : 240,
-              "unitTitle" : "flash_on",
-              "highlightsWidth" : 15,
-              "minorTicks" : 2,
-              "defaultColor" : "#ff3d00"
-            },
-            "title" : "Energy, kWh",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "mobileHeight" : 4,
-            "units" : "Energy, kWh",
-            "decimals" : 0,
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "widgetStyle" : {
-              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
-              "backgroundSize" : "cover"
-            },
-            "actions" : { },
-            "alarmSearchStatus" : "ACTIVE",
-            "alarmsPollingInterval" : 1
-          },
-          "row" : 16,
-          "col" : 0,
-          "id" : "9c514403-3b34-0b7a-73b2-d6b457365fc6",
-          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
-        },
-        "f042a2ed-6ad1-ff98-ed16-4d5015ce8462" : {
-          "type" : "latest",
-          "sizeX" : 6,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "dataKeys" : [ {
-                "name" : "water",
-                "type" : "attribute",
-                "label" : "water",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.4680464719681914
-              } ],
-              "name" : "Bus A",
-              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f"
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1693912272085,
-                  "endTimeMs" : 1693998672085
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 2500
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "maxValue" : 100000,
-              "startAngle" : 60,
-              "showBorder" : true,
-              "defaultColor" : "#ff3d00",
-              "needleCircleSize" : 7,
-              "highlights" : [ {
-                "from" : 0,
-                "to" : 10000,
-                "color" : "#e1f5fe"
-              }, {
-                "from" : 10000,
-                "to" : 20000,
-                "color" : "#b3e5fc"
-              }, {
-                "from" : 20000,
-                "to" : 30000,
-                "color" : "#81d4fa"
-              }, {
-                "from" : 30000,
-                "to" : 40000,
-                "color" : "#4fc3f7"
-              }, {
-                "from" : 40000,
-                "to" : 50000,
-                "color" : "#29b6f6"
-              }, {
-                "from" : 50000,
-                "to" : 60000,
-                "color" : "#03a9f4"
-              }, {
-                "from" : 60000,
-                "to" : 70000,
-                "color" : "#039be5"
-              }, {
-                "from" : 70000,
-                "to" : 80000,
-                "color" : "#0288d1"
-              }, {
-                "from" : 80000,
-                "to" : 90000,
-                "color" : "#0277bd"
-              }, {
-                "from" : 90000,
-                "to" : 100000,
-                "color" : "#0169a9"
-              } ],
-              "showUnitTitle" : true,
-              "colorPlate" : "#546e7a",
-              "colorMajorTicks" : "#263238",
-              "colorMinorTicks" : "#263238",
-              "minorTicks" : 2,
-              "valueInt" : 3,
-              "minValue" : 0,
-              "highlightsWidth" : 15,
-              "valueBox" : true,
-              "animation" : true,
-              "animationDuration" : 500,
-              "animationRule" : "dequad",
-              "numbersFont" : {
-                "family" : "RobotoDraft",
-                "size" : 22,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "rgba(1, 1, 1, 0)"
-              },
-              "titleFont" : {
-                "family" : "Material Icons",
-                "size" : 80,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#eceff1"
-              },
-              "unitsFont" : {
-                "family" : "RobotoDraft",
-                "size" : 28,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#eceff1"
-              },
-              "valueFont" : {
-                "size" : 25,
-                "style" : "normal",
-                "weight" : "normal",
-                "shadowColor" : "rgba(0, 0, 0, 0.49)",
-                "color" : "#37474f",
-                "family" : "Segment7Standard"
-              },
-              "colorValueBoxRect" : "#eceff1",
-              "colorValueBoxRectEnd" : "#eceff1",
-              "colorValueBoxBackground" : "#eceff1",
-              "colorValueBoxShadow" : "rgba(0,0,0,1)",
-              "ticksAngle" : 240,
-              "unitTitle" : "pool",
-              "colorNeedleShadowUp" : "#ff3d00",
-              "colorNeedleShadowDown" : "rgba(188,143,143,0.45)",
-              "majorTicksCount" : 10
-            },
-            "title" : "Water, gal",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "mobileHeight" : 4,
-            "units" : "Water, gal",
-            "decimals" : 0,
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "widgetStyle" : {
-              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
-              "backgroundSize" : "cover"
-            },
-            "actions" : { },
-            "alarmSearchStatus" : "ACTIVE",
-            "alarmsPollingInterval" : 1
-          },
-          "row" : 16,
-          "col" : 0,
-          "id" : "f042a2ed-6ad1-ff98-ed16-4d5015ce8462",
-          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
-        },
         "baaff0d2-5385-78f7-3f9d-30bb733e6041" : {
           "type" : "latest",
           "sizeX" : 6,
@@ -3804,39 +3478,110 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "fitMapBounds" : false,
+              "provider" : "openstreet-map",
+              "gmApiKey" : "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
+              "gmDefaultMapType" : "roadmap",
+              "mapProvider" : "OpenStreetMap.HOT",
+              "useCustomProvider" : false,
+              "customProviderTileUrl" : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "mapProviderHere" : "HERE.normalDay",
+              "credentials" : {
+                "useV3" : true,
+                "app_id" : "AhM6TzD9ThyK78CT3ptx",
+                "app_code" : "p6NPiITB3Vv0GMUFnkLOOg",
+                "apiKey" : "kVXykxAfZ6LS4EbCTO02soFVfjA7HoBzNVVH9u7nzoE"
+              },
+              "mapImageUrl" : "tb-image:aGVyZV9tYXBfc3lzdGVtX3dpZGdldF9tYXBfaW1hZ2Uuc3Zn:IkhFUkUgTWFwIiBzeXN0ZW0gd2lkZ2V0IG1hcCBpbWFnZQ==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMiIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwIiB3aWR0aD0iMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtOTUyLjM2KSI+CiAgPHJlY3QgaWQ9InJlY3Q0Njg0IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBoZWlnaHQ9Ijk5LjAxIiB3aWR0aD0iOTkuMDEiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiB5PSI5NTIuODYiIHg9Ii40OTUwNSIgc3Ryb2tlLXdpZHRoPSIuOTkwMTAiIGZpbGw9IiNlZWUiLz4KICA8dGV4dCBpZD0idGV4dDQ2ODYiIHN0eWxlPSJ3b3JkLXNwYWNpbmc6MHB4O2xldHRlci1zcGFjaW5nOjBweDt0ZXh0LWFuY2hvcjptaWRkbGU7dGV4dC1hbGlnbjpjZW50ZXIiIGZvbnQtd2VpZ2h0PSJib2xkIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmb250LXNpemU9IjEwcHgiIGxpbmUtaGVpZ2h0PSIxMjUlIiB5PSI5NzAuNzI4MDkiIHg9IjQ5LjM5NjQ3NyIgZm9udC1mYW1pbHk9IlJvYm90byIgZmlsbD0iIzY2NjY2NiI+PHRzcGFuIGlkPSJ0c3BhbjQ2OTAiIHg9IjUwLjY0NjQ3NyIgeT0iOTcwLjcyODA5Ij5JbWFnZSBiYWNrZ3JvdW5kIDwvdHNwYW4+PHRzcGFuIGlkPSJ0c3BhbjQ2OTIiIHg9IjQ5LjM5NjQ3NyIgeT0iOTgzLjIyODA5Ij5pcyBub3QgY29uZmlndXJlZDwvdHNwYW4+PC90ZXh0PgogIDxyZWN0IGlkPSJyZWN0NDY5NCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgaGVpZ2h0PSIxOS4zNiIgd2lkdGg9IjY5LjM2IiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgeT0iOTkyLjY4IiB4PSIxNS4zMiIgc3Ryb2tlLXdpZHRoPSIuNjM5ODYiIGZpbGw9Im5vbmUiLz4KIDwvZz4KPC9zdmc+Cg==",
+              "imageEntityAlias" : "",
+              "imageUrlAttribute" : "",
+              "tmApiKey" : "84d6d83e0e51e481e50454ccbe8986b",
+              "tmDefaultMapType" : "roadmap",
               "latKeyName" : "latitude",
               "lngKeyName" : "longitude",
-              "showLabel" : true,
-              "label" : "<div style=\"position: relative; white-space: nowrap; text-align: center; font-size: 16px; top: 5px;\"><span style=\"margin-left: -500%;\"></span><span style=\"border: solid #ff3d00; border-radius: 10px; color: #ff3d00; background-color: #fff; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px;\">${entityName}</span><span style=\"margin-right: -500%;\"></span></div>",
-              "tooltipPattern" : "<div style=\"padding: 5px;\"><b>${entityName}</b><br/><br/><img width=\"100\" src=\"${image}\"></img><br/><br/><b>${address}</b><br/><br/><link-act name='apartments'>Building details</link-act><br/></div>",
-              "markerImageSize" : 65,
-              "useColorFunction" : true,
-              "markerImages" : [ ],
-              "useMarkerImageFunction" : false,
-              "color" : "#fe7569",
-              "mapProvider" : "OpenStreetMap.HOT",
-              "showTooltip" : true,
-              "autocloseTooltip" : true,
+              "xPosKeyName" : "xPos",
+              "yPosKeyName" : "yPos",
               "defaultZoomLevel" : 16,
-              "markerImage" : "tb-image:ZGlzdHJpY3RzX2Rhc2hib2FyZF93aWRnZXRfZGlzdHJpY3RfbWFwX21hcmtlcl9pbWFnZS5zdmc=:IkRpc3RyaWN0cyIgZGFzaGJvYXJkIHdpZGdldCAiRGlzdHJpY3QgTWFwIiBtYXJrZXIgaW1hZ2U=;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnNDQwOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTUwIDE1MCI+CiAgPHN0eWxlPgogICAgLnN0MHtvcGFjaXR5OjAuODkyO2VuYWJsZS1iYWNrZ3JvdW5kOm5ldyA7fSAuc3Qxe2ZpbGw6dXJsKCNTVkdJRF8xXyk7fSAuc3Qye2ZpbGw6I0ZGM0UwMTt9IC5zdDN7ZmlsbDojRkZGRkZGO30KICA8L3N0eWxlPgogIDxnIGlkPSJsYXllcjEiPgogICAgPGcgaWQ9InBhdGg2ODgxLTMtNS01LTEtOC00LTQtNy04IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQ2LjQzOCAtMjc2LjAyOCkiIGNsYXNzPSJzdDAiPgogICAgICA8cmFkaWFsR3JhZGllbnQgaWQ9IlNWR0lEXzFfIiBjeD0iMTc0My42ODkiIGN5PSItMTQ3MC44OTEiIHI9IjQ5LjkwMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguNjc5MyAuMDA3NiAuNTA5IC0uNTYxMiAtMTkwLjQ4MiAtNDQzLjI0MikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjAiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjE4OCIvPgogICAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjg1LjYgMzg4LjVjMTAuMy0xMi40IDQuNC0yMi40LTE0LjQtMjIuNC0xOC45IDAtNDIuNCAxMC01My45IDIyLjQtMTYuOCAxOCAuNCAyMy41LS4yIDM1LS4xIDEuOCAzLjkgMS44IDcgMCAxOS44LTExLjUgNDYuNS0xNyA2MS41LTM1Ii8+CiAgICA8L2c+CiAgICA8cGF0aCBpZD0icGF0aDY4ODEtMy01LTUtMS04LTQtNCIgY2xhc3M9InN0MiIgZD0iTTEyNC43IDY5LjFjLS45LTI3LjUtMjIuMy00OS44LTQ5LjgtNDkuOHMtNDkgMjIuMy00OS44IDQ5LjhjLTEuMyA0MC4xIDMwLjcgNTIuMiA0NC43IDc4IDIuMiA0IDggNCAxMC4xIDAgMTQuMS0yNS44IDQ2LjEtMzcuOSA0NC44LTc4Ii8+CiAgPC9nPgogIDxnIGlkPSJnNDkyOCI+CiAgICA8Y2lyY2xlIGlkPSJwYXRoNDk3OCIgY2xhc3M9InN0MiIgY3g9Ijc0LjkiIGN5PSI2OS4xIiByPSI0OS45Ii8+CiAgICA8ZyBpZD0iZzQ5MTUiPgogICAgICA8cGF0aCBpZD0icGF0aDY4ODMtMi0zLTUtMi00LTktNC05IiBjbGFzcz0ic3QzIiBkPSJNNzQuOCAxMDYuNGMtMjAuNiAwLTM3LjQtMTYuNy0zNy40LTM3LjQgMC0yMC42IDE2LjctMzcuNCAzNy40LTM3LjQgMjAuNiAwIDM3LjQgMTYuNyAzNy40IDM3LjRzLTE2LjcgMzcuNC0zNy40IDM3LjQiLz4KICAgIDwvZz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTgzLjUgOTYuNlY0OC43YzAtLjEtLjEtLjMtLjItLjNoLTEuNnYtMS44YzAtLjEtLjEtLjMtLjItLjNoLTIuMXYtMS43YzAtLjEtLjEtLjMtLjItLjNoLTIuNnYtMS4xYzAtLjMtLjEtLjQtLjMtLjRoLS43bC0uMS02LjhjMC0uMi0uMS0uMy0uMi0uM3MtLjMuMS0uMy4zbC0uMSA2LjhoLS43Yy0uMiAwLS4zLjItLjMuNHYxLjFoLTIuNmMtLjEgMC0uMi4xLS4yLjN2MS43SDY5Yy0uMSAwLS4yLjEtLjIuM3YxLjhoLTEuNmMtLjEgMC0uMi4xLS4yLjN2NDcuOWgtMnYxLjloMjAuOXYtMS45aC0yLjR6bS00LjktNDUuMWgyLjJ2My4zaC0yLjJ2LTMuM3ptMCA1LjZoMi4ydjMuM2gtMi4ydi0zLjN6bTAgNS42aDIuMlY2NmgtMi4ydi0zLjN6bTAgNS41aDIuMnYzLjNoLTIuMnYtMy4zem0wIDUuNmgyLjJ2My4zaC0yLjJ2LTMuM3ptMCA1LjZoMi4ydjMuM2gtMi4ydi0zLjN6bTAgNS42aDIuMnYzLjNoLTIuMlY4NXptMCA1LjVoMi4ydjMuM2gtMi4ydi0zLjN6bS00LjgtMzlINzZ2My4zaC0yLjJ2LTMuM3ptMCA1LjZINzZ2My4zaC0yLjJ2LTMuM3ptMCA1LjZINzZWNjZoLTIuMnYtMy4zem0wIDUuNUg3NnYzLjNoLTIuMnYtMy4zem0wIDUuNkg3NnYzLjNoLTIuMnYtMy4zem0wIDUuNkg3NnYzLjNoLTIuMnYtMy4zem0wIDUuNkg3NnYzLjNoLTIuMlY4NXptMCA1LjVINzZ2My4zaC0yLjJ2LTMuM3ptLTQuOC0zOWgyLjJ2My4zSDY5di0zLjN6bTAgNS42aDIuMnYzLjNINjl2LTMuM3ptMCA1LjZoMi4yVjY2SDY5di0zLjN6bTAgNS41aDIuMnYzLjNINjl2LTMuM3ptMCA1LjZoMi4ydjMuM0g2OXYtMy4zem0wIDUuNmgyLjJ2My4zSDY5di0zLjN6bTAgNS42aDIuMnYzLjNINjlWODV6bTAgNS41aDIuMnYzLjNINjl2LTMuM3oiLz4KPC9zdmc+Cg==",
               "defaultCenterPosition" : "0,0",
-              "provider" : "openstreet-map",
-              "showTooltipAction" : "click",
-              "useCustomProvider" : false,
+              "disableScrollZooming" : false,
+              "disableDoubleClickZooming" : false,
+              "disableZoomControl" : false,
+              "fitMapBounds" : false,
               "useDefaultCenterPosition" : false,
               "mapPageSize" : 16384,
-              "draggableMarker" : false,
-              "disableScrollZooming" : false,
-              "disableZoomControl" : false,
-              "useLabelFunction" : false,
-              "useTooltipFunction" : false,
-              "tooltipOffsetX" : 0,
-              "tooltipOffsetY" : -1,
               "markerOffsetX" : 0.5,
               "markerOffsetY" : 1,
+              "draggableMarker" : false,
+              "showLabel" : true,
+              "useLabelFunction" : false,
+              "label" : "<div style=\"position: relative; white-space: nowrap; text-align: center; font-size: 16px; top: 5px;\"><span style=\"margin-left: -500%;\"></span><span style=\"border: solid #ff3d00; border-radius: 10px; color: #ff3d00; background-color: #fff; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px;\">${entityName}</span><span style=\"margin-right: -500%;\"></span></div>",
+              "showTooltip" : true,
+              "showTooltipAction" : "click",
+              "autocloseTooltip" : true,
+              "useTooltipFunction" : true,
+              "tooltipFunction" : null,
+              "tooltipOffsetX" : 0,
+              "tooltipOffsetY" : -1,
+              "color" : "#fe7569",
+              "useColorFunction" : true,
+              "colorFunction" : null,
+              "useMarkerImageFunction" : false,
+              "markerImage" : "tb-image:ZGlzdHJpY3RzX2Rhc2hib2FyZF93aWRnZXRfZGlzdHJpY3RfbWFwX21hcmtlcl9pbWFnZS5zdmc=:IkRpc3RyaWN0cyIgZGFzaGJvYXJkIHdpZGdldCAiRGlzdHJpY3QgTWFwIiBtYXJrZXIgaW1hZ2U=;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnNDQwOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTUwIDE1MCI+CiAgPHN0eWxlPgogICAgLnN0MHtvcGFjaXR5OjAuODkyO2VuYWJsZS1iYWNrZ3JvdW5kOm5ldyA7fSAuc3Qxe2ZpbGw6dXJsKCNTVkdJRF8xXyk7fSAuc3Qye2ZpbGw6I0ZGM0UwMTt9IC5zdDN7ZmlsbDojRkZGRkZGO30KICA8L3N0eWxlPgogIDxnIGlkPSJsYXllcjEiPgogICAgPGcgaWQ9InBhdGg2ODgxLTMtNS01LTEtOC00LTQtNy04IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQ2LjQzOCAtMjc2LjAyOCkiIGNsYXNzPSJzdDAiPgogICAgICA8cmFkaWFsR3JhZGllbnQgaWQ9IlNWR0lEXzFfIiBjeD0iMTc0My42ODkiIGN5PSItMTQ3MC44OTEiIHI9IjQ5LjkwMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguNjc5MyAuMDA3NiAuNTA5IC0uNTYxMiAtMTkwLjQ4MiAtNDQzLjI0MikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjAiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjE4OCIvPgogICAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjg1LjYgMzg4LjVjMTAuMy0xMi40IDQuNC0yMi40LTE0LjQtMjIuNC0xOC45IDAtNDIuNCAxMC01My45IDIyLjQtMTYuOCAxOCAuNCAyMy41LS4yIDM1LS4xIDEuOCAzLjkgMS44IDcgMCAxOS44LTExLjUgNDYuNS0xNyA2MS41LTM1Ii8+CiAgICA8L2c+CiAgICA8cGF0aCBpZD0icGF0aDY4ODEtMy01LTUtMS04LTQtNCIgY2xhc3M9InN0MiIgZD0iTTEyNC43IDY5LjFjLS45LTI3LjUtMjIuMy00OS44LTQ5LjgtNDkuOHMtNDkgMjIuMy00OS44IDQ5LjhjLTEuMyA0MC4xIDMwLjcgNTIuMiA0NC43IDc4IDIuMiA0IDggNCAxMC4xIDAgMTQuMS0yNS44IDQ2LjEtMzcuOSA0NC44LTc4Ii8+CiAgPC9nPgogIDxnIGlkPSJnNDkyOCI+CiAgICA8Y2lyY2xlIGlkPSJwYXRoNDk3OCIgY2xhc3M9InN0MiIgY3g9Ijc0LjkiIGN5PSI2OS4xIiByPSI0OS45Ii8+CiAgICA8ZyBpZD0iZzQ5MTUiPgogICAgICA8cGF0aCBpZD0icGF0aDY4ODMtMi0zLTUtMi00LTktNC05IiBjbGFzcz0ic3QzIiBkPSJNNzQuOCAxMDYuNGMtMjAuNiAwLTM3LjQtMTYuNy0zNy40LTM3LjQgMC0yMC42IDE2LjctMzcuNCAzNy40LTM3LjQgMjAuNiAwIDM3LjQgMTYuNyAzNy40IDM3LjRzLTE2LjcgMzcuNC0zNy40IDM3LjQiLz4KICAgIDwvZz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTgzLjUgOTYuNlY0OC43YzAtLjEtLjEtLjMtLjItLjNoLTEuNnYtMS44YzAtLjEtLjEtLjMtLjItLjNoLTIuMXYtMS43YzAtLjEtLjEtLjMtLjItLjNoLTIuNnYtMS4xYzAtLjMtLjEtLjQtLjMtLjRoLS43bC0uMS02LjhjMC0uMi0uMS0uMy0uMi0uM3MtLjMuMS0uMy4zbC0uMSA2LjhoLS43Yy0uMiAwLS4zLjItLjMuNHYxLjFoLTIuNmMtLjEgMC0uMi4xLS4yLjN2MS43SDY5Yy0uMSAwLS4yLjEtLjIuM3YxLjhoLTEuNmMtLjEgMC0uMi4xLS4yLjN2NDcuOWgtMnYxLjloMjAuOXYtMS45aC0yLjR6bS00LjktNDUuMWgyLjJ2My4zaC0yLjJ2LTMuM3ptMCA1LjZoMi4ydjMuM2gtMi4ydi0zLjN6bTAgNS42aDIuMlY2NmgtMi4ydi0zLjN6bTAgNS41aDIuMnYzLjNoLTIuMnYtMy4zem0wIDUuNmgyLjJ2My4zaC0yLjJ2LTMuM3ptMCA1LjZoMi4ydjMuM2gtMi4ydi0zLjN6bTAgNS42aDIuMnYzLjNoLTIuMlY4NXptMCA1LjVoMi4ydjMuM2gtMi4ydi0zLjN6bS00LjgtMzlINzZ2My4zaC0yLjJ2LTMuM3ptMCA1LjZINzZ2My4zaC0yLjJ2LTMuM3ptMCA1LjZINzZWNjZoLTIuMnYtMy4zem0wIDUuNUg3NnYzLjNoLTIuMnYtMy4zem0wIDUuNkg3NnYzLjNoLTIuMnYtMy4zem0wIDUuNkg3NnYzLjNoLTIuMnYtMy4zem0wIDUuNkg3NnYzLjNoLTIuMlY4NXptMCA1LjVINzZ2My4zaC0yLjJ2LTMuM3ptLTQuOC0zOWgyLjJ2My4zSDY5di0zLjN6bTAgNS42aDIuMnYzLjNINjl2LTMuM3ptMCA1LjZoMi4yVjY2SDY5di0zLjN6bTAgNS41aDIuMnYzLjNINjl2LTMuM3ptMCA1LjZoMi4ydjMuM0g2OXYtMy4zem0wIDUuNmgyLjJ2My4zSDY5di0zLjN6bTAgNS42aDIuMnYzLjNINjlWODV6bTAgNS41aDIuMnYzLjNINjl2LTMuM3oiLz4KPC9zdmc+Cg==",
+              "markerImageSize" : 65,
               "showPolygon" : false,
-              "useClusterMarkers" : false
+              "polygonKeyName" : "perimeter",
+              "editablePolygon" : false,
+              "showPolygonLabel" : false,
+              "usePolygonLabelFunction" : false,
+              "polygonLabel" : "${entityName}",
+              "polygonLabelFunction" : null,
+              "showPolygonTooltip" : false,
+              "showPolygonTooltipAction" : "click",
+              "autoClosePolygonTooltip" : true,
+              "usePolygonTooltipFunction" : false,
+              "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "polygonTooltipFunction" : null,
+              "polygonColor" : "#3388ff",
+              "polygonOpacity" : 0.2,
+              "usePolygonColorFunction" : false,
+              "polygonColorFunction" : null,
+              "polygonStrokeColor" : "#3388ff",
+              "polygonStrokeOpacity" : 1,
+              "polygonStrokeWeight" : 3,
+              "usePolygonStrokeColorFunction" : false,
+              "polygonStrokeColorFunction" : null,
+              "showCircle" : false,
+              "circleKeyName" : "perimeter",
+              "editableCircle" : false,
+              "showCircleLabel" : false,
+              "useCircleLabelFunction" : false,
+              "circleLabel" : "${entityName}",
+              "circleLabelFunction" : null,
+              "showCircleTooltip" : false,
+              "showCircleTooltipAction" : "click",
+              "autoCloseCircleTooltip" : true,
+              "useCircleTooltipFunction" : false,
+              "circleTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "circleTooltipFunction" : null,
+              "circleFillColor" : "#3388ff",
+              "circleFillColorOpacity" : 0.2,
+              "useCircleFillColorFunction" : false,
+              "circleFillColorFunction" : null,
+              "circleStrokeColor" : "#3388ff",
+              "circleStrokeOpacity" : 1,
+              "circleStrokeWeight" : 3,
+              "useCircleStrokeColorFunction" : false,
+              "circleStrokeColorFunction" : null,
+              "useClusterMarkers" : false,
+              "zoomOnClick" : true,
+              "maxZoom" : null,
+              "maxClusterRadius" : 80,
+              "animate" : true,
+              "spiderfyOnMaxZoom" : false,
+              "showCoverageOnHover" : true,
+              "chunkedLoading" : false,
+              "removeOutsideVisibleBounds" : true,
+              "useIconCreateFunction" : false,
+              "clusterMarkerFunction" : null
             },
             "title" : "District Map",
             "dropShadow" : true,
@@ -4707,6 +4452,598 @@
           "col" : 0,
           "id" : "35d0a298-1318-8486-94f4-850909f07781",
           "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
+        },
+        "8f0ca641-4bfe-49e0-075d-c476583d6302" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f",
+              "dataKeys" : [ {
+                "name" : "gas",
+                "type" : "attribute",
+                "label" : "Gaz",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5391107679096465
+              }, {
+                "name" : "gas",
+                "type" : "attribute",
+                "label" : "gasText",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5482220366183825,
+                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697718290753,
+                  "endTimeMs" : 1697804690753
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardCss" : ".card,\n.card * {\n    box-sizing: border-box;\n}    \n.card {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.card .content {\n    height: 100%;\n}\n.card .upper-bar {\n    position: relative;\n    z-index: 0;\n    overflow: hidden;\n    height: 70%;\n    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);\n    color: #fff;\n}\n.card .lower-bar {\n    height: 30%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.card .image-shade {\n    width: 100%;\n    height: 100%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background-color: rgb(0, 148, 133, .5);\n    z-index: 0;\n}\n.card h1 {\n    margin: 0;\n    font-size: 20px;\n    font-weight: bold;\n    line-height: 30px;\n}\n.card .icon-container {\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n    border: 3px solid rgb(0, 148, 133);\n    text-align: center;\n}\n.card .description {\n    margin-left: 16px;\n    font-size: 20px;\n    font-weight: 500;\n    color: rgb(0, 148, 133);\n}\n.card .value {\n    font-size: 40px;\n    font-weight: 300;\n    letter-spacing: -2px;\n}\n.card .icon {\n    line-height: 36px;\n    color: rgb(0, 148, 133);\n}\n.card video {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    width: 100%;\n    z-index: -1;\n    transform: translateY(-50%);\n}",
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n       <div class='upper-bar'>\n           <video loop muted autoplay>\n               <source src=\"https://static.videezy.com/system/resources/previews/000/045/419/original/smoke_4__282_29.mp4\" type=\"video/mp4\">\n           </video>\n            <div class='image-shade'>\n                <h1>${entityName}</h1>\n                <div class='value'>${gasText} m3</div>\n            </div>\n       </div>\n       <div class='lower-bar'>\n           <div class='icon-container'>\n               <div class='material-icons icon'>whatshot</div>\n           </div>\n           <div class='description'>Gaz Tüketimi</div>\n       </div>\n    </div>\n</div>"
+            },
+            "title" : "Gas consumed card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "8f0ca641-4bfe-49e0-075d-c476583d6302",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "9ee26a24-d98e-d519-c639-2d5c703ff5a4" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "Bus A",
+              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f",
+              "dataKeys" : [ {
+                "name" : "gas",
+                "type" : "attribute",
+                "label" : "gas",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8697880324807963,
+                "decimals" : 3
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697718290753,
+                  "endTimeMs" : 1697804690753
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(253, 191, 105)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "maxValue" : 100,
+              "startAngle" : 60,
+              "showBorder" : true,
+              "needleCircleSize" : 7,
+              "highlights" : [ {
+                "from" : 0,
+                "to" : 40,
+                "color" : "#ffffff"
+              }, {
+                "from" : 40,
+                "to" : 50,
+                "color" : "#dff1f1"
+              }, {
+                "from" : 50,
+                "to" : 60,
+                "color" : "#b2dfdb"
+              }, {
+                "from" : 60,
+                "to" : 70,
+                "color" : "#80cbc4"
+              }, {
+                "from" : 70,
+                "to" : 80,
+                "color" : "#4eb7ac"
+              }, {
+                "from" : 80,
+                "to" : 90,
+                "color" : "#009485"
+              }, {
+                "from" : 90,
+                "to" : 100,
+                "color" : "#008a7c"
+              } ],
+              "showUnitTitle" : true,
+              "colorPlate" : "#e6e6e6",
+              "colorMajorTicks" : "#263238",
+              "colorMinorTicks" : "#263238",
+              "valueInt" : 3,
+              "minValue" : 0,
+              "valueBox" : true,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "dequad",
+              "colorNeedleShadowUp" : "rgba(2, 255, 255, 0)",
+              "colorNeedleShadowDown" : "rgba(188, 143, 143, 0.78)",
+              "majorTicksCount" : 10,
+              "numbersFont" : {
+                "family" : "RobotoDraft",
+                "size" : 22,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "rgba(1, 1, 1, 0)"
+              },
+              "titleFont" : {
+                "family" : "Material Icons",
+                "size" : 80,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#263238"
+              },
+              "unitsFont" : {
+                "family" : "RobotoDraft",
+                "size" : 28,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#263238"
+              },
+              "valueFont" : {
+                "size" : 25,
+                "style" : "normal",
+                "weight" : "normal",
+                "shadowColor" : "rgba(0, 0, 0, 0.49)",
+                "color" : "#37474f",
+                "family" : "Segment7Standard"
+              },
+              "colorValueBoxRect" : "#455a64",
+              "colorValueBoxRectEnd" : "#455a64",
+              "colorValueBoxBackground" : "#eceff1",
+              "colorValueBoxShadow" : "rgba(0,0,0,1)",
+              "ticksAngle" : 240,
+              "unitTitle" : "whatshot",
+              "highlightsWidth" : 15,
+              "minorTicks" : 2,
+              "defaultColor" : "#ff3d00"
+            },
+            "title" : "Gas, m3",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : 4,
+            "units" : "Gaz, m3",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : {
+              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
+              "backgroundSize" : "cover"
+            },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "whatshot",
+            "iconColor" : "rgb(0, 121, 107)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "row" : 16,
+          "col" : 0,
+          "id" : "9ee26a24-d98e-d519-c639-2d5c703ff5a4",
+          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
+        },
+        "1de775e2-8ad4-9c62-ce52-53eafdfa4707" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "Bus A",
+              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "attribute",
+                "label" : "energy",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8697880324807963,
+                "decimals" : 3
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697718290753,
+                  "endTimeMs" : 1697804690753
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(253, 191, 105)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "maxValue" : 100,
+              "startAngle" : 60,
+              "showBorder" : true,
+              "needleCircleSize" : 7,
+              "highlights" : [ {
+                "from" : 0,
+                "to" : 40,
+                "color" : "#ffffff"
+              }, {
+                "from" : 40,
+                "to" : 50,
+                "color" : "#ffe0b2"
+              }, {
+                "from" : 50,
+                "to" : 60,
+                "color" : "#ffb74d"
+              }, {
+                "from" : 60,
+                "to" : 70,
+                "color" : "#ff9800"
+              }, {
+                "from" : 70,
+                "to" : 80,
+                "color" : "#f57c00"
+              }, {
+                "from" : 80,
+                "to" : 90,
+                "color" : "#e65100"
+              }, {
+                "from" : 90,
+                "to" : 100,
+                "color" : "#bf360c"
+              } ],
+              "showUnitTitle" : true,
+              "colorPlate" : "#e6e6e6",
+              "colorMajorTicks" : "#263238",
+              "colorMinorTicks" : "#263238",
+              "valueInt" : 3,
+              "minValue" : 0,
+              "valueBox" : true,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "dequad",
+              "colorNeedleShadowUp" : "rgba(2, 255, 255, 0)",
+              "colorNeedleShadowDown" : "rgba(188, 143, 143, 0.78)",
+              "majorTicksCount" : 10,
+              "numbersFont" : {
+                "family" : "RobotoDraft",
+                "size" : 22,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "rgba(1, 1, 1, 0)"
+              },
+              "titleFont" : {
+                "family" : "Material Icons",
+                "size" : 80,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#263238"
+              },
+              "unitsFont" : {
+                "family" : "RobotoDraft",
+                "size" : 28,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#263238"
+              },
+              "valueFont" : {
+                "size" : 25,
+                "style" : "normal",
+                "weight" : "normal",
+                "shadowColor" : "rgba(0, 0, 0, 0.49)",
+                "color" : "#37474f",
+                "family" : "Segment7Standard"
+              },
+              "colorValueBoxRect" : "#455a64",
+              "colorValueBoxRectEnd" : "#455a64",
+              "colorValueBoxBackground" : "#eceff1",
+              "colorValueBoxShadow" : "rgba(0,0,0,1)",
+              "ticksAngle" : 240,
+              "unitTitle" : "flash_on",
+              "highlightsWidth" : 15,
+              "minorTicks" : 2,
+              "defaultColor" : "#ff3d00"
+            },
+            "title" : "Energy, kWh",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : 4,
+            "units" : "Enerji, kWh",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : {
+              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
+              "backgroundSize" : "cover"
+            },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "row" : 16,
+          "col" : 0,
+          "id" : "1de775e2-8ad4-9c62-ce52-53eafdfa4707",
+          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
+        },
+        "c2feea43-551c-217d-7d84-31827912dc1d" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "Bus A",
+              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f",
+              "dataKeys" : [ {
+                "name" : "water",
+                "type" : "attribute",
+                "label" : "water",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.4680464719681914,
+                "decimals" : 3
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697718290753,
+                  "endTimeMs" : 1697804690753
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "maxValue" : 100,
+              "startAngle" : 60,
+              "showBorder" : true,
+              "defaultColor" : "#ff3d00",
+              "needleCircleSize" : 7,
+              "highlights" : [ {
+                "from" : 0,
+                "to" : 10,
+                "color" : "#e1f5fe"
+              }, {
+                "from" : 10,
+                "to" : 20,
+                "color" : "#b3e5fc"
+              }, {
+                "from" : 20,
+                "to" : 30,
+                "color" : "#81d4fa"
+              }, {
+                "from" : 30,
+                "to" : 40,
+                "color" : "#4fc3f7"
+              }, {
+                "from" : 40,
+                "to" : 50,
+                "color" : "#29b6f6"
+              }, {
+                "from" : 50,
+                "to" : 60,
+                "color" : "#03a9f4"
+              }, {
+                "from" : 60,
+                "to" : 70,
+                "color" : "#039be5"
+              }, {
+                "from" : 70,
+                "to" : 80,
+                "color" : "#0288d1"
+              }, {
+                "from" : 80,
+                "to" : 90,
+                "color" : "#0277bd"
+              }, {
+                "from" : 90,
+                "to" : 100,
+                "color" : "#0169a9"
+              } ],
+              "showUnitTitle" : true,
+              "colorPlate" : "#546e7a",
+              "colorMajorTicks" : "#263238",
+              "colorMinorTicks" : "#263238",
+              "minorTicks" : 2,
+              "valueInt" : 3,
+              "minValue" : 0,
+              "highlightsWidth" : 15,
+              "valueBox" : true,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "dequad",
+              "numbersFont" : {
+                "family" : "RobotoDraft",
+                "size" : 22,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "rgba(1, 1, 1, 0)"
+              },
+              "titleFont" : {
+                "family" : "Material Icons",
+                "size" : 80,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#eceff1"
+              },
+              "unitsFont" : {
+                "family" : "RobotoDraft",
+                "size" : 28,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#eceff1"
+              },
+              "valueFont" : {
+                "size" : 25,
+                "style" : "normal",
+                "weight" : "normal",
+                "shadowColor" : "rgba(0, 0, 0, 0.49)",
+                "color" : "#37474f",
+                "family" : "Segment7Standard"
+              },
+              "colorValueBoxRect" : "#eceff1",
+              "colorValueBoxRectEnd" : "#eceff1",
+              "colorValueBoxBackground" : "#eceff1",
+              "colorValueBoxShadow" : "rgba(0,0,0,1)",
+              "ticksAngle" : 240,
+              "unitTitle" : "pool",
+              "colorNeedleShadowUp" : "#ff3d00",
+              "colorNeedleShadowDown" : "rgba(188,143,143,0.45)",
+              "majorTicksCount" : 10
+            },
+            "title" : "Water, gal",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : 4,
+            "units" : "Su, gal",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : {
+              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
+              "backgroundSize" : "cover"
+            },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "row" : 16,
+          "col" : 0,
+          "id" : "c2feea43-551c-217d-7d84-31827912dc1d",
+          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
         }
       },
       "states" : {
@@ -4814,34 +5151,18 @@
                   "mobileOrder" : 2
                 },
                 "82141141-1972-9de6-e7b4-1057778b642e" : {
-                  "sizeX" : 6,
+                  "sizeX" : 4,
                   "sizeY" : 3,
                   "row" : 6,
                   "col" : 12,
                   "mobileOrder" : 3
                 },
                 "b9d4adec-1794-e065-aa6d-42a455b46e82" : {
-                  "sizeX" : 6,
+                  "sizeX" : 4,
                   "sizeY" : 3,
                   "row" : 6,
-                  "col" : 18,
+                  "col" : 16,
                   "mobileOrder" : 5
-                },
-                "9c514403-3b34-0b7a-73b2-d6b457365fc6" : {
-                  "sizeX" : 6,
-                  "sizeY" : 3,
-                  "mobileHeight" : 4,
-                  "row" : 9,
-                  "col" : 12,
-                  "mobileOrder" : 4
-                },
-                "f042a2ed-6ad1-ff98-ed16-4d5015ce8462" : {
-                  "sizeX" : 6,
-                  "sizeY" : 3,
-                  "mobileHeight" : 4,
-                  "row" : 9,
-                  "col" : 18,
-                  "mobileOrder" : 6
                 },
                 "9ad53a5c-7cf6-bb04-19a3-55e263ede1ee" : {
                   "sizeX" : 12,
@@ -4849,6 +5170,33 @@
                   "mobileOrder" : 0,
                   "row" : 0,
                   "col" : 0
+                },
+                "8f0ca641-4bfe-49e0-075d-c476583d6302" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "row" : 6,
+                  "col" : 20
+                },
+                "9ee26a24-d98e-d519-c639-2d5c703ff5a4" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "mobileHeight" : 4,
+                  "row" : 9,
+                  "col" : 20
+                },
+                "1de775e2-8ad4-9c62-ce52-53eafdfa4707" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "mobileHeight" : 4,
+                  "row" : 9,
+                  "col" : 12
+                },
+                "c2feea43-551c-217d-7d84-31827912dc1d" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "mobileHeight" : 4,
+                  "row" : 9,
+                  "col" : 16
                 }
               },
               "gridSettings" : {
