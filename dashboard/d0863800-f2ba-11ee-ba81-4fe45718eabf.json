@@ -6037,8 +6037,8 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Districts",
-    "title" : "Districts"
+    "name" : "Sim - Districts",
+    "title" : "Sim - Districts"
   },
   "relations" : [ ],
   "attributes" : {
