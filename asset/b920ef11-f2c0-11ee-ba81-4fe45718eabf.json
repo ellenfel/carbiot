@@ -4,7 +4,7 @@
     "additionalInfo" : { },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "f947e2d0-f2be-11ee-ba81-4fe45718eabf"
+      "id" : "d975e950-f2c0-11ee-ba81-4fe45718eabf"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -17,10 +17,58 @@
     },
     "label" : null,
     "name" : "Apartman A2",
-    "type" : "apartment"
+    "type" : "building"
   },
   "relations" : [ ],
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1712262004892,
+      "longValue" : null,
+      "strValue" : "Babacan Sk. 5-1- 34435 Beyoğlu/İstanbul"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 17.949,
+      "jsonValue" : null,
+      "key" : "energy",
+      "lastUpdateTs" : 1712262004892,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 35.898,
+      "jsonValue" : null,
+      "key" : "gas",
+      "lastUpdateTs" : 1712262004892,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 41.037423,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1712262004892,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 28.978065,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1712262004892,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 17.489,
+      "jsonValue" : null,
+      "key" : "water",
+      "lastUpdateTs" : 1712262004892,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
