@@ -27,7 +27,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 3,
+      "toIndex" : 4,
       "type" : "Success"
     } ],
     "firstNodeIndex" : null,
@@ -83,7 +83,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 900,
+        "periodInSeconds" : 9,
         "scriptLang" : "JS",
         "jsScript" : "return { msg:{}, metadata:{}, msgType: \"POST_TELEMETRY_REQUEST\"};",
         "tbelScript" : "return { msg: msg, metadata: metadata, msgType: msgType };",
@@ -149,6 +149,39 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainOutputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 909,
+        "layoutY" : 438
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "entityType" : "ASSET",
+        "entityNamePattern" : "rest",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ]
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "0a2788b0-f2cb-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "change originator",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
     } ],
     "ruleChainConnections" : null
   },
