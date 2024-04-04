@@ -5393,7 +5393,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "Bus A",
-              "entityAliasId" : "b92f34c9-739d-c87e-8778-03c12306d814",
+              "entityAliasId" : "fe5e1b21-f71c-df37-a13d-ef5f6e6e1fcd",
               "dataKeys" : [ {
                 "name" : "gas",
                 "type" : "attribute",
@@ -5558,7 +5558,7 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "b92f34c9-739d-c87e-8778-03c12306d814",
+              "entityAliasId" : "fe5e1b21-f71c-df37-a13d-ef5f6e6e1fcd",
               "dataKeys" : [ {
                 "name" : "gas",
                 "type" : "attribute",
