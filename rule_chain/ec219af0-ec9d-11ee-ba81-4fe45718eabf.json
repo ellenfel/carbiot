@@ -162,7 +162,7 @@
       "configuration" : {
         "originatorSource" : "ENTITY",
         "entityType" : "ASSET",
-        "entityNamePattern" : "rest",
+        "entityNamePattern" : "weather",
         "relationsQuery" : {
           "direction" : "FROM",
           "maxLevel" : 1,
