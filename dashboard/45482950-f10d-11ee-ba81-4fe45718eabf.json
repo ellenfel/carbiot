@@ -4832,6 +4832,7 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "f7bed459-ea25-5a39-bfc1-a3bb8c941d8d",
               "dataKeys" : [ {
                 "name" : "weeklyConsumption",
                 "type" : "timeseries",
@@ -4839,9 +4840,16 @@
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.6873469556096485,
-                "postFuncBody" : "return value || 0;"
+                "postFuncBody" : "return value/10 || 0;",
+                "usePostProcessing" : true,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null
               } ],
-              "entityAliasId" : "2e10e186-b069-3fa0-cad9-cf4b87249bca"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
