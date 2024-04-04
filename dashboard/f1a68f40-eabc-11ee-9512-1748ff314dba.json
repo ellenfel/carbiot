@@ -1839,9 +1839,9 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "timewindowMs" : 300000,
+                "timewindowMs" : 18000000,
                 "quickInterval" : "CURRENT_DAY",
-                "interval" : 10000
+                "interval" : 60000
               },
               "aggregation" : {
                 "type" : "AVG",
@@ -2050,7 +2050,7 @@
               "fontWeight" : 700,
               "padding" : "5px 10px 5px 0px"
             },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
