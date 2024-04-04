@@ -4465,6 +4465,248 @@
           "col" : 0,
           "id" : "4a746a87-4c26-bdf1-7d22-fe3c17047281",
           "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
+        },
+        "b7719ec7-9ab1-af18-0a47-86fc60c6c810" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "gas",
+                "type" : "attribute",
+                "label" : "Gaz",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5391107679096465
+              }, {
+                "name" : "gas",
+                "type" : "attribute",
+                "label" : "gasText",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5482220366183825,
+                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
+              } ],
+              "entityAliasId" : "a0d761f6-2084-ba89-6484-99699eab4f7a"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697718290753,
+                  "endTimeMs" : 1697804690753
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardCss" : ".card,\n.card * {\n    box-sizing: border-box;\n}    \n.card {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.card .content {\n    height: 100%;\n}\n.card .upper-bar {\n    position: relative;\n    z-index: 0;\n    overflow: hidden;\n    height: 70%;\n    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);\n    color: #fff;\n}\n.card .lower-bar {\n    height: 30%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.card .image-shade {\n    width: 100%;\n    height: 100%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background-color: rgb(0, 148, 133, .5);\n    z-index: 0;\n}\n.card h1 {\n    margin: 0;\n    font-size: 20px;\n    font-weight: bold;\n    line-height: 30px;\n}\n.card .icon-container {\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n    border: 3px solid rgb(0, 148, 133);\n    text-align: center;\n}\n.card .description {\n    margin-left: 16px;\n    font-size: 20px;\n    font-weight: 500;\n    color: rgb(0, 148, 133);\n}\n.card .value {\n    font-size: 40px;\n    font-weight: 300;\n    letter-spacing: -2px;\n}\n.card .icon {\n    line-height: 36px;\n    color: rgb(0, 148, 133);\n}\n.card video {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    width: 100%;\n    z-index: -1;\n    transform: translateY(-50%);\n}",
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n       <div class='upper-bar'>\n           <video loop muted autoplay>\n               <source src=\"https://static.videezy.com/system/resources/previews/000/045/419/original/smoke_4__282_29.mp4\" type=\"video/mp4\">\n           </video>\n            <div class='image-shade'>\n                <h1>${entityName}</h1>\n                <div class='value'>${gasText} m3</div>\n            </div>\n       </div>\n       <div class='lower-bar'>\n           <div class='icon-container'>\n               <div class='material-icons icon'>whatshot</div>\n           </div>\n           <div class='description'>Gaz Tüketimi</div>\n       </div>\n    </div>\n</div>"
+            },
+            "title" : "Gas consumed card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "b7719ec7-9ab1-af18-0a47-86fc60c6c810",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "35d0a298-1318-8486-94f4-850909f07781" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "gas",
+                "type" : "attribute",
+                "label" : "gas",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8697880324807963,
+                "decimals" : 3
+              } ],
+              "name" : "Bus A",
+              "entityAliasId" : "a0d761f6-2084-ba89-6484-99699eab4f7a"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697718290753,
+                  "endTimeMs" : 1697804690753
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(253, 191, 105)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "maxValue" : 100,
+              "startAngle" : 60,
+              "showBorder" : true,
+              "needleCircleSize" : 7,
+              "highlights" : [ {
+                "from" : 0,
+                "to" : 40,
+                "color" : "#ffffff"
+              }, {
+                "from" : 40,
+                "to" : 50,
+                "color" : "#dff1f1"
+              }, {
+                "from" : 50,
+                "to" : 60,
+                "color" : "#b2dfdb"
+              }, {
+                "from" : 60,
+                "to" : 70,
+                "color" : "#80cbc4"
+              }, {
+                "from" : 70,
+                "to" : 80,
+                "color" : "#4eb7ac"
+              }, {
+                "from" : 80,
+                "to" : 90,
+                "color" : "#009485"
+              }, {
+                "from" : 90,
+                "to" : 100,
+                "color" : "#008a7c"
+              } ],
+              "showUnitTitle" : true,
+              "colorPlate" : "#e6e6e6",
+              "colorMajorTicks" : "#263238",
+              "colorMinorTicks" : "#263238",
+              "valueInt" : 3,
+              "minValue" : 0,
+              "valueBox" : true,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "dequad",
+              "colorNeedleShadowUp" : "rgba(2, 255, 255, 0)",
+              "colorNeedleShadowDown" : "rgba(188, 143, 143, 0.78)",
+              "majorTicksCount" : 10,
+              "numbersFont" : {
+                "family" : "RobotoDraft",
+                "size" : 22,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "rgba(1, 1, 1, 0)"
+              },
+              "titleFont" : {
+                "family" : "Material Icons",
+                "size" : 80,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#263238"
+              },
+              "unitsFont" : {
+                "family" : "RobotoDraft",
+                "size" : 28,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#263238"
+              },
+              "valueFont" : {
+                "size" : 25,
+                "style" : "normal",
+                "weight" : "normal",
+                "shadowColor" : "rgba(0, 0, 0, 0.49)",
+                "color" : "#37474f",
+                "family" : "Segment7Standard"
+              },
+              "colorValueBoxRect" : "#455a64",
+              "colorValueBoxRectEnd" : "#455a64",
+              "colorValueBoxBackground" : "#eceff1",
+              "colorValueBoxShadow" : "rgba(0,0,0,1)",
+              "ticksAngle" : 240,
+              "unitTitle" : "whatshot",
+              "highlightsWidth" : 15,
+              "minorTicks" : 2,
+              "defaultColor" : "#ff3d00"
+            },
+            "title" : "Gas, m3",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : 4,
+            "units" : "Gaz, m3",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : {
+              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
+              "backgroundSize" : "cover"
+            },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "whatshot",
+            "iconColor" : "rgb(0, 121, 107)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "row" : 16,
+          "col" : 0,
+          "id" : "35d0a298-1318-8486-94f4-850909f07781",
+          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
         }
       },
       "states" : {
@@ -4766,7 +5008,7 @@
                   "mobileOrder" : 2
                 },
                 "a8b3e2d2-dd42-cf82-1fc3-1989b013f8c7" : {
-                  "sizeX" : 6,
+                  "sizeX" : 4,
                   "sizeY" : 3,
                   "row" : 6,
                   "col" : 12,
@@ -4774,10 +5016,10 @@
                   "mobileHeight" : 3
                 },
                 "bc86f42d-8216-44c2-130b-cca425f59b57" : {
-                  "sizeX" : 6,
+                  "sizeX" : 4,
                   "sizeY" : 3,
                   "row" : 6,
-                  "col" : 18,
+                  "col" : 16,
                   "mobileOrder" : 5,
                   "mobileHeight" : 3
                 },
@@ -4789,7 +5031,7 @@
                   "mobileOrder" : 1
                 },
                 "7311c132-ae54-8b11-5218-07c221c11344" : {
-                  "sizeX" : 6,
+                  "sizeX" : 4,
                   "sizeY" : 3,
                   "mobileHeight" : 4,
                   "row" : 9,
@@ -4797,11 +5039,11 @@
                   "mobileOrder" : 4
                 },
                 "7ef7debd-e9db-0471-1f4d-e3bd07290ba2" : {
-                  "sizeX" : 6,
+                  "sizeX" : 4,
                   "sizeY" : 3,
                   "mobileHeight" : 4,
                   "row" : 9,
-                  "col" : 18,
+                  "col" : 16,
                   "mobileOrder" : 6
                 },
                 "9ad53a5c-7cf6-bb04-19a3-55e263ede1ee" : {
@@ -4810,6 +5052,19 @@
                   "mobileOrder" : 0,
                   "row" : 0,
                   "col" : 0
+                },
+                "b7719ec7-9ab1-af18-0a47-86fc60c6c810" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "row" : 6,
+                  "col" : 20
+                },
+                "35d0a298-1318-8486-94f4-850909f07781" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "mobileHeight" : 4,
+                  "row" : 9,
+                  "col" : 20
                 }
               },
               "gridSettings" : {
