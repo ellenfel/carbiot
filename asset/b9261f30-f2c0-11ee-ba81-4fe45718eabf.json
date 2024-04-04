@@ -1,0 +1,74 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : { },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "d975e950-f2c0-11ee-ba81-4fe45718eabf"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "b9261f30-f2c0-11ee-ba81-4fe45718eabf"
+    },
+    "label" : null,
+    "name" : "Apartman B1",
+    "type" : "building"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1712262004910,
+      "longValue" : null,
+      "strValue" : "Marmara Sitesi- Acıbadem- 34718 Kadıköy/İstanbul"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 19.546,
+      "jsonValue" : null,
+      "key" : "energy",
+      "lastUpdateTs" : 1712262004910,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 39.092,
+      "jsonValue" : null,
+      "key" : "gas",
+      "lastUpdateTs" : 1712262004910,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 41.004608,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1712262004910,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 29.043576,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1712262004910,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 11.583,
+      "jsonValue" : null,
+      "key" : "water",
+      "lastUpdateTs" : 1712262004910,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
