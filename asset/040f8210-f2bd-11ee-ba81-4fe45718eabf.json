@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "799e8cc0-e9cf-11ee-8f35-b3dbdb9e1542"
+      "id" : "812eacf0-f2bb-11ee-ba81-4fe45718eabf"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -19,10 +19,66 @@
     },
     "label" : null,
     "name" : "District B",
-    "type" : "default"
+    "type" : "district"
   },
   "relations" : [ ],
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1712260603060,
+      "longValue" : null,
+      "strValue" : "İstanbul, Kadıköy Bölgesi"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 43.131,
+      "jsonValue" : null,
+      "key" : "energy",
+      "lastUpdateTs" : 1712260617610,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 86.262,
+      "jsonValue" : null,
+      "key" : "gas",
+      "lastUpdateTs" : 1712260628918,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "image",
+      "lastUpdateTs" : 1712260641314,
+      "longValue" : null,
+      "strValue" : "https://d12dkjq56sjcos.cloudfront.net/pub/media/wysiwyg/route-images/View-Of-San-Francisco-City-Tour-Slider-Big-Bus-Tours-01.17.jpg"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 40.96935248878856,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1712260654296,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 29.225300903782824,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1712260671989,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 26.272,
+      "jsonValue" : null,
+      "key" : "water",
+      "lastUpdateTs" : 1712260692814,
+      "longValue" : null,
+      "strValue" : null
+    } ]
   }
 }
