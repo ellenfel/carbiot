@@ -115,7 +115,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var newMsg = {\n    \"outsideTemp\": msg.main.temp,\n    \"outsideMaxTemp\": msg.main.temp_max,\n    \"outsideMinTemp\": msg.main.temp_min,\n    \"outsideHumidity\": msg.main.humidity,\n    \"outsidePressure\": msg.main.pressure,\n    \"outsideWindspeed\": msg.wind.speed,\n    \"outsideWindDegree\": msg.wind.deg,\n    \n    \n    };\n    \nreturn {msg: newMsg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var newMsg = {\n    \"temperature\": msg.main.temp,\n    \"outsideMaxTemp\": msg.main.temp_max,\n    \"outsideMinTemp\": msg.main.temp_min,\n    \"outsideHumidity\": msg.main.humidity,\n    \"outsidePressure\": msg.main.pressure,\n    \"outsideWindspeed\": msg.wind.speed,\n    \"outsideWindDegree\": msg.wind.deg,\n    \n    \n    };\n    \nreturn {msg: newMsg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
