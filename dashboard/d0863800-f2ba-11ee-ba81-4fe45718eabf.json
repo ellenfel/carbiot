@@ -2759,332 +2759,6 @@
           "id" : "7ef7debd-e9db-0471-1f4d-e3bd07290ba2",
           "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
         },
-        "9c514403-3b34-0b7a-73b2-d6b457365fc6" : {
-          "type" : "latest",
-          "sizeX" : 6,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "dataKeys" : [ {
-                "name" : "energy",
-                "type" : "attribute",
-                "label" : "energy",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.8697880324807963
-              } ],
-              "name" : "Bus A",
-              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f"
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1693912272085,
-                  "endTimeMs" : 1693998672085
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 2500
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(253, 191, 105)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "maxValue" : 100000,
-              "startAngle" : 60,
-              "showBorder" : true,
-              "needleCircleSize" : 7,
-              "highlights" : [ {
-                "from" : 0,
-                "to" : 40000,
-                "color" : "#ffffff"
-              }, {
-                "from" : 40000,
-                "to" : 50000,
-                "color" : "#ffe0b2"
-              }, {
-                "from" : 50000,
-                "to" : 60000,
-                "color" : "#ffb74d"
-              }, {
-                "from" : 60000,
-                "to" : 70000,
-                "color" : "#ff9800"
-              }, {
-                "from" : 70000,
-                "to" : 80000,
-                "color" : "#f57c00"
-              }, {
-                "from" : 80000,
-                "to" : 90000,
-                "color" : "#e65100"
-              }, {
-                "from" : 90000,
-                "to" : 100000,
-                "color" : "#bf360c"
-              } ],
-              "showUnitTitle" : true,
-              "colorPlate" : "#e6e6e6",
-              "colorMajorTicks" : "#263238",
-              "colorMinorTicks" : "#263238",
-              "valueInt" : 3,
-              "minValue" : 0,
-              "valueBox" : true,
-              "animation" : true,
-              "animationDuration" : 500,
-              "animationRule" : "dequad",
-              "colorNeedleShadowUp" : "rgba(2, 255, 255, 0)",
-              "colorNeedleShadowDown" : "rgba(188, 143, 143, 0.78)",
-              "majorTicksCount" : 10,
-              "numbersFont" : {
-                "family" : "RobotoDraft",
-                "size" : 22,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "rgba(1, 1, 1, 0)"
-              },
-              "titleFont" : {
-                "family" : "Material Icons",
-                "size" : 80,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#263238"
-              },
-              "unitsFont" : {
-                "family" : "RobotoDraft",
-                "size" : 28,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#263238"
-              },
-              "valueFont" : {
-                "size" : 25,
-                "style" : "normal",
-                "weight" : "normal",
-                "shadowColor" : "rgba(0, 0, 0, 0.49)",
-                "color" : "#37474f",
-                "family" : "Segment7Standard"
-              },
-              "colorValueBoxRect" : "#455a64",
-              "colorValueBoxRectEnd" : "#455a64",
-              "colorValueBoxBackground" : "#eceff1",
-              "colorValueBoxShadow" : "rgba(0,0,0,1)",
-              "ticksAngle" : 240,
-              "unitTitle" : "flash_on",
-              "highlightsWidth" : 15,
-              "minorTicks" : 2,
-              "defaultColor" : "#ff3d00"
-            },
-            "title" : "Energy, kWh",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "mobileHeight" : 4,
-            "units" : "Energy, kWh",
-            "decimals" : 0,
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "widgetStyle" : {
-              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
-              "backgroundSize" : "cover"
-            },
-            "actions" : { },
-            "alarmSearchStatus" : "ACTIVE",
-            "alarmsPollingInterval" : 1
-          },
-          "row" : 16,
-          "col" : 0,
-          "id" : "9c514403-3b34-0b7a-73b2-d6b457365fc6",
-          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
-        },
-        "f042a2ed-6ad1-ff98-ed16-4d5015ce8462" : {
-          "type" : "latest",
-          "sizeX" : 6,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "dataKeys" : [ {
-                "name" : "water",
-                "type" : "attribute",
-                "label" : "water",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.4680464719681914
-              } ],
-              "name" : "Bus A",
-              "entityAliasId" : "c29f0afd-f447-49d1-4119-5d8c3700c88f"
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1693912272085,
-                  "endTimeMs" : 1693998672085
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 2500
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "maxValue" : 100000,
-              "startAngle" : 60,
-              "showBorder" : true,
-              "defaultColor" : "#ff3d00",
-              "needleCircleSize" : 7,
-              "highlights" : [ {
-                "from" : 0,
-                "to" : 10000,
-                "color" : "#e1f5fe"
-              }, {
-                "from" : 10000,
-                "to" : 20000,
-                "color" : "#b3e5fc"
-              }, {
-                "from" : 20000,
-                "to" : 30000,
-                "color" : "#81d4fa"
-              }, {
-                "from" : 30000,
-                "to" : 40000,
-                "color" : "#4fc3f7"
-              }, {
-                "from" : 40000,
-                "to" : 50000,
-                "color" : "#29b6f6"
-              }, {
-                "from" : 50000,
-                "to" : 60000,
-                "color" : "#03a9f4"
-              }, {
-                "from" : 60000,
-                "to" : 70000,
-                "color" : "#039be5"
-              }, {
-                "from" : 70000,
-                "to" : 80000,
-                "color" : "#0288d1"
-              }, {
-                "from" : 80000,
-                "to" : 90000,
-                "color" : "#0277bd"
-              }, {
-                "from" : 90000,
-                "to" : 100000,
-                "color" : "#0169a9"
-              } ],
-              "showUnitTitle" : true,
-              "colorPlate" : "#546e7a",
-              "colorMajorTicks" : "#263238",
-              "colorMinorTicks" : "#263238",
-              "minorTicks" : 2,
-              "valueInt" : 3,
-              "minValue" : 0,
-              "highlightsWidth" : 15,
-              "valueBox" : true,
-              "animation" : true,
-              "animationDuration" : 500,
-              "animationRule" : "dequad",
-              "numbersFont" : {
-                "family" : "RobotoDraft",
-                "size" : 22,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "rgba(1, 1, 1, 0)"
-              },
-              "titleFont" : {
-                "family" : "Material Icons",
-                "size" : 80,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#eceff1"
-              },
-              "unitsFont" : {
-                "family" : "RobotoDraft",
-                "size" : 28,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#eceff1"
-              },
-              "valueFont" : {
-                "size" : 25,
-                "style" : "normal",
-                "weight" : "normal",
-                "shadowColor" : "rgba(0, 0, 0, 0.49)",
-                "color" : "#37474f",
-                "family" : "Segment7Standard"
-              },
-              "colorValueBoxRect" : "#eceff1",
-              "colorValueBoxRectEnd" : "#eceff1",
-              "colorValueBoxBackground" : "#eceff1",
-              "colorValueBoxShadow" : "rgba(0,0,0,1)",
-              "ticksAngle" : 240,
-              "unitTitle" : "pool",
-              "colorNeedleShadowUp" : "#ff3d00",
-              "colorNeedleShadowDown" : "rgba(188,143,143,0.45)",
-              "majorTicksCount" : 10
-            },
-            "title" : "Water, gal",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "mobileHeight" : 4,
-            "units" : "Water, gal",
-            "decimals" : 0,
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "widgetStyle" : {
-              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
-              "backgroundSize" : "cover"
-            },
-            "actions" : { },
-            "alarmSearchStatus" : "ACTIVE",
-            "alarmsPollingInterval" : 1
-          },
-          "row" : 16,
-          "col" : 0,
-          "id" : "f042a2ed-6ad1-ff98-ed16-4d5015ce8462",
-          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
-        },
         "baaff0d2-5385-78f7-3f9d-30bb733e6041" : {
           "type" : "latest",
           "sizeX" : 6,
@@ -4955,6 +4629,344 @@
           "col" : 0,
           "id" : "9ee26a24-d98e-d519-c639-2d5c703ff5a4",
           "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
+        },
+        "1de775e2-8ad4-9c62-ce52-53eafdfa4707" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "attribute",
+                "label" : "energy",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8697880324807963,
+                "decimals" : 3
+              } ],
+              "name" : "Bus A",
+              "entityAliasId" : "a0d761f6-2084-ba89-6484-99699eab4f7a"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697718290753,
+                  "endTimeMs" : 1697804690753
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(253, 191, 105)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "maxValue" : 100,
+              "startAngle" : 60,
+              "showBorder" : true,
+              "needleCircleSize" : 7,
+              "highlights" : [ {
+                "from" : 0,
+                "to" : 40,
+                "color" : "#ffffff"
+              }, {
+                "from" : 40,
+                "to" : 50,
+                "color" : "#ffe0b2"
+              }, {
+                "from" : 50,
+                "to" : 60,
+                "color" : "#ffb74d"
+              }, {
+                "from" : 60,
+                "to" : 70,
+                "color" : "#ff9800"
+              }, {
+                "from" : 70,
+                "to" : 80,
+                "color" : "#f57c00"
+              }, {
+                "from" : 80,
+                "to" : 90,
+                "color" : "#e65100"
+              }, {
+                "from" : 90,
+                "to" : 100,
+                "color" : "#bf360c"
+              } ],
+              "showUnitTitle" : true,
+              "colorPlate" : "#e6e6e6",
+              "colorMajorTicks" : "#263238",
+              "colorMinorTicks" : "#263238",
+              "valueInt" : 3,
+              "minValue" : 0,
+              "valueBox" : true,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "dequad",
+              "colorNeedleShadowUp" : "rgba(2, 255, 255, 0)",
+              "colorNeedleShadowDown" : "rgba(188, 143, 143, 0.78)",
+              "majorTicksCount" : 10,
+              "numbersFont" : {
+                "family" : "RobotoDraft",
+                "size" : 22,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "rgba(1, 1, 1, 0)"
+              },
+              "titleFont" : {
+                "family" : "Material Icons",
+                "size" : 80,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#263238"
+              },
+              "unitsFont" : {
+                "family" : "RobotoDraft",
+                "size" : 28,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#263238"
+              },
+              "valueFont" : {
+                "size" : 25,
+                "style" : "normal",
+                "weight" : "normal",
+                "shadowColor" : "rgba(0, 0, 0, 0.49)",
+                "color" : "#37474f",
+                "family" : "Segment7Standard"
+              },
+              "colorValueBoxRect" : "#455a64",
+              "colorValueBoxRectEnd" : "#455a64",
+              "colorValueBoxBackground" : "#eceff1",
+              "colorValueBoxShadow" : "rgba(0,0,0,1)",
+              "ticksAngle" : 240,
+              "unitTitle" : "flash_on",
+              "highlightsWidth" : 15,
+              "minorTicks" : 2,
+              "defaultColor" : "#ff3d00"
+            },
+            "title" : "Energy, kWh",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : 4,
+            "units" : "Enerji, kWh",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : {
+              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
+              "backgroundSize" : "cover"
+            },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "row" : 16,
+          "col" : 0,
+          "id" : "1de775e2-8ad4-9c62-ce52-53eafdfa4707",
+          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
+        },
+        "c2feea43-551c-217d-7d84-31827912dc1d" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "water",
+                "type" : "attribute",
+                "label" : "water",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.4680464719681914,
+                "decimals" : 3
+              } ],
+              "name" : "Bus A",
+              "entityAliasId" : "a0d761f6-2084-ba89-6484-99699eab4f7a"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697718290753,
+                  "endTimeMs" : 1697804690753
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "maxValue" : 100,
+              "startAngle" : 60,
+              "showBorder" : true,
+              "defaultColor" : "#ff3d00",
+              "needleCircleSize" : 7,
+              "highlights" : [ {
+                "from" : 0,
+                "to" : 10,
+                "color" : "#e1f5fe"
+              }, {
+                "from" : 10,
+                "to" : 20,
+                "color" : "#b3e5fc"
+              }, {
+                "from" : 20,
+                "to" : 30,
+                "color" : "#81d4fa"
+              }, {
+                "from" : 30,
+                "to" : 40,
+                "color" : "#4fc3f7"
+              }, {
+                "from" : 40,
+                "to" : 50,
+                "color" : "#29b6f6"
+              }, {
+                "from" : 50,
+                "to" : 60,
+                "color" : "#03a9f4"
+              }, {
+                "from" : 60,
+                "to" : 70,
+                "color" : "#039be5"
+              }, {
+                "from" : 70,
+                "to" : 80,
+                "color" : "#0288d1"
+              }, {
+                "from" : 80,
+                "to" : 90,
+                "color" : "#0277bd"
+              }, {
+                "from" : 90,
+                "to" : 100,
+                "color" : "#0169a9"
+              } ],
+              "showUnitTitle" : true,
+              "colorPlate" : "#546e7a",
+              "colorMajorTicks" : "#263238",
+              "colorMinorTicks" : "#263238",
+              "minorTicks" : 2,
+              "valueInt" : 3,
+              "minValue" : 0,
+              "highlightsWidth" : 15,
+              "valueBox" : true,
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "dequad",
+              "numbersFont" : {
+                "family" : "RobotoDraft",
+                "size" : 22,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "rgba(1, 1, 1, 0)"
+              },
+              "titleFont" : {
+                "family" : "Material Icons",
+                "size" : 80,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#eceff1"
+              },
+              "unitsFont" : {
+                "family" : "RobotoDraft",
+                "size" : 28,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#eceff1"
+              },
+              "valueFont" : {
+                "size" : 25,
+                "style" : "normal",
+                "weight" : "normal",
+                "shadowColor" : "rgba(0, 0, 0, 0.49)",
+                "color" : "#37474f",
+                "family" : "Segment7Standard"
+              },
+              "colorValueBoxRect" : "#eceff1",
+              "colorValueBoxRectEnd" : "#eceff1",
+              "colorValueBoxBackground" : "#eceff1",
+              "colorValueBoxShadow" : "rgba(0,0,0,1)",
+              "ticksAngle" : 240,
+              "unitTitle" : "pool",
+              "colorNeedleShadowUp" : "#ff3d00",
+              "colorNeedleShadowDown" : "rgba(188,143,143,0.45)",
+              "majorTicksCount" : 10
+            },
+            "title" : "Water, gal",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : 4,
+            "units" : "Su, gal",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : {
+              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
+              "backgroundSize" : "cover"
+            },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "row" : 16,
+          "col" : 0,
+          "id" : "c2feea43-551c-217d-7d84-31827912dc1d",
+          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
         }
       },
       "states" : {
@@ -5075,22 +5087,6 @@
                   "col" : 16,
                   "mobileOrder" : 5
                 },
-                "9c514403-3b34-0b7a-73b2-d6b457365fc6" : {
-                  "sizeX" : 4,
-                  "sizeY" : 3,
-                  "mobileHeight" : 4,
-                  "row" : 9,
-                  "col" : 12,
-                  "mobileOrder" : 4
-                },
-                "f042a2ed-6ad1-ff98-ed16-4d5015ce8462" : {
-                  "sizeX" : 4,
-                  "sizeY" : 3,
-                  "mobileHeight" : 4,
-                  "row" : 9,
-                  "col" : 16,
-                  "mobileOrder" : 6
-                },
                 "9ad53a5c-7cf6-bb04-19a3-55e263ede1ee" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
@@ -5110,6 +5106,20 @@
                   "mobileHeight" : 4,
                   "row" : 9,
                   "col" : 20
+                },
+                "1de775e2-8ad4-9c62-ce52-53eafdfa4707" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "mobileHeight" : 4,
+                  "row" : 9,
+                  "col" : 12
+                },
+                "c2feea43-551c-217d-7d84-31827912dc1d" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "mobileHeight" : 4,
+                  "row" : 9,
+                  "col" : 16
                 }
               },
               "gridSettings" : {
