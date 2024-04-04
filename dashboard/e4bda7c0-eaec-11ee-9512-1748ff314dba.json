@@ -797,7 +797,10 @@
             "type" : "stateEntity",
             "resolveMultiple" : false,
             "stateEntityParamName" : null,
-            "defaultStateEntity" : null
+            "defaultStateEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "8c143350-ea88-11ee-9512-1748ff314dba"
+            }
           }
         }
       },
