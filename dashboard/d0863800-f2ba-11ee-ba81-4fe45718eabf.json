@@ -1497,161 +1497,6 @@
           "id" : "ca86ba9f-9426-b990-964d-bb9f31b18dc2",
           "typeFullFqn" : "system.cards.html_value_card"
         },
-        "851aaae1-e493-9eed-f2fc-7dbdc5c23c81" : {
-          "type" : "latest",
-          "sizeX" : 6,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "dataKeys" : [ {
-                "name" : "energy",
-                "type" : "attribute",
-                "label" : "energy",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.8697880324807963
-              } ],
-              "name" : "Bus A",
-              "entityAliasId" : "fe5e1b21-f71c-df37-a13d-ef5f6e6e1fcd"
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1693912272085,
-                  "endTimeMs" : 1693998672085
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 2500
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(253, 191, 105)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "maxValue" : 100000,
-              "startAngle" : 60,
-              "showBorder" : true,
-              "needleCircleSize" : 7,
-              "highlights" : [ {
-                "from" : 0,
-                "to" : 40000,
-                "color" : "#ffffff"
-              }, {
-                "from" : 40000,
-                "to" : 50000,
-                "color" : "#ffe0b2"
-              }, {
-                "from" : 50000,
-                "to" : 60000,
-                "color" : "#ffb74d"
-              }, {
-                "from" : 60000,
-                "to" : 70000,
-                "color" : "#ff9800"
-              }, {
-                "from" : 70000,
-                "to" : 80000,
-                "color" : "#f57c00"
-              }, {
-                "from" : 80000,
-                "to" : 90000,
-                "color" : "#e65100"
-              }, {
-                "from" : 90000,
-                "to" : 100000,
-                "color" : "#bf360c"
-              } ],
-              "showUnitTitle" : true,
-              "colorPlate" : "#e6e6e6",
-              "colorMajorTicks" : "#263238",
-              "colorMinorTicks" : "#263238",
-              "valueInt" : 3,
-              "minValue" : 0,
-              "valueBox" : true,
-              "animation" : true,
-              "animationDuration" : 500,
-              "animationRule" : "dequad",
-              "colorNeedleShadowUp" : "rgba(2, 255, 255, 0)",
-              "colorNeedleShadowDown" : "rgba(188, 143, 143, 0.78)",
-              "majorTicksCount" : 10,
-              "numbersFont" : {
-                "family" : "RobotoDraft",
-                "size" : 22,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "rgba(1, 1, 1, 0)"
-              },
-              "titleFont" : {
-                "family" : "Material Icons",
-                "size" : 80,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#263238"
-              },
-              "unitsFont" : {
-                "family" : "RobotoDraft",
-                "size" : 28,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#263238"
-              },
-              "valueFont" : {
-                "size" : 25,
-                "style" : "normal",
-                "weight" : "normal",
-                "shadowColor" : "rgba(0, 0, 0, 0.49)",
-                "color" : "#37474f",
-                "family" : "Segment7Standard"
-              },
-              "colorValueBoxRect" : "#455a64",
-              "colorValueBoxRectEnd" : "#455a64",
-              "colorValueBoxBackground" : "#eceff1",
-              "colorValueBoxShadow" : "rgba(0,0,0,1)",
-              "ticksAngle" : 240,
-              "unitTitle" : "flash_on",
-              "highlightsWidth" : 15,
-              "minorTicks" : 2,
-              "defaultColor" : "#ff3d00"
-            },
-            "title" : "Energy, kWh",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "mobileHeight" : 4,
-            "units" : "Energy, kWh",
-            "decimals" : 0,
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "widgetStyle" : {
-              "background" : "url(https://thingsboard.io/images/dashboards/districts/gauge-bg.jpg)",
-              "backgroundSize" : "cover"
-            },
-            "actions" : { }
-          },
-          "row" : 16,
-          "col" : 0,
-          "id" : "851aaae1-e493-9eed-f2fc-7dbdc5c23c81",
-          "typeFullFqn" : "system.analogue_gauges.speed_gauge_canvas_gauges"
-        },
         "82141141-1972-9de6-e7b4-1057778b642e" : {
           "type" : "latest",
           "sizeX" : 6,
@@ -4657,14 +4502,6 @@
                   "col" : 16,
                   "mobileOrder" : 5
                 },
-                "851aaae1-e493-9eed-f2fc-7dbdc5c23c81" : {
-                  "sizeX" : 4,
-                  "sizeY" : 3,
-                  "mobileHeight" : 4,
-                  "row" : 9,
-                  "col" : 12,
-                  "mobileOrder" : 4
-                },
                 "97e4d6e5-0058-e8d4-d8aa-1afe18c4189f" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
@@ -4696,8 +4533,8 @@
                   "sizeX" : 4,
                   "sizeY" : 3,
                   "mobileHeight" : 4,
-                  "row" : 12,
-                  "col" : 0
+                  "row" : 9,
+                  "col" : 12
                 }
               },
               "gridSettings" : {
