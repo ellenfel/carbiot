@@ -6,7 +6,7 @@
     "defaultEdgeRuleChainId" : null,
     "defaultQueueName" : null,
     "defaultRuleChainId" : null,
-    "description" : "Measuring various emissions such as CO2, methane, nitrous oxide, etc., to track the facility's carbon footprint",
+    "description" : "Measuring various emissions, to track the facility's carbon footprint",
     "externalId" : null,
     "firmwareId" : null,
     "id" : {
