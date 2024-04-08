@@ -6,7 +6,7 @@
     "defaultEdgeRuleChainId" : null,
     "defaultQueueName" : null,
     "defaultRuleChainId" : null,
-    "description" : "Measuring various emissions, to track the facility's carbon footprint",
+    "description" : "Measuring emissions, to track the facility's carbon footprint",
     "externalId" : null,
     "firmwareId" : null,
     "id" : {
