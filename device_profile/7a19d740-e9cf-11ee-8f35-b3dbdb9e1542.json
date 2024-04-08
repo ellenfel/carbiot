@@ -17,7 +17,7 @@
       "id" : "7a19d740-e9cf-11ee-8f35-b3dbdb9e1542"
     },
     "image" : null,
-    "name" : "thermostat",
+    "name" : "Environmental monitoring sensors",
     "profileData" : {
       "alarms" : [ {
         "alarmType" : "High Temperature",
