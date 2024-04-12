@@ -17,7 +17,11 @@
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : null,
+    "connections" : [ {
+      "fromIndex" : 25,
+      "toIndex" : 28,
+      "type" : "Success"
+    } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
