@@ -810,12 +810,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 763,
-        "layoutY" : 7
+        "layoutX" : 897,
+        "layoutY" : 3
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "if(msg[\"Active Energy\"]){\n\tmsg.active = true;\n\n\t// Carbon intensity factor in kgCO2/kWh (example: coal = 0.9 kgCO2/kWh)\n    // carbonIntensityFactor = 0.9;\n\n\t// Active energy consumption assumed in kWh\n\n\t// Calculation of carbon intensity in kilograms of CO2 per kilowatt-hour (kgCO2/kWh)\n\n\tmsg.emission = msg[\"Active Energy\"] * 0.9;\n\tmsg.intensity = (msg[\"Active Energy\"] * 0.9) / msg[\"Active Energy\"];\n\n\t// Output the results\n\t//console.log(\"Carbon Emissions:\", carbonEmissions, \"kgCO2\");\n\t//console.log(\"Carbon Intensity:\", carbonIntensity, \"kgCO2/kWh\");\n\n\n\treturn {msg: msg, metadata: metadata, msgType: msgType};\n}\nelse{return {msg: msg, metadata: metadata, msgType: msgType};}",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
