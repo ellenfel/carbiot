@@ -1177,7 +1177,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 530,
-        "layoutY" : 773
+        "layoutY" : 766
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1204,8 +1204,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 530,
-        "layoutY" : 825
+        "layoutX" : 532,
+        "layoutY" : 812
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1232,8 +1232,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 531,
-        "layoutY" : 875
+        "layoutX" : 533,
+        "layoutY" : 859
       },
       "configuration" : {
         "msgCount" : 0,
