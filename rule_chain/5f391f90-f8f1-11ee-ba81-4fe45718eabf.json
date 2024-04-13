@@ -1084,8 +1084,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 830,
-        "layoutY" : 648
+        "layoutX" : 850,
+        "layoutY" : 655
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1108,8 +1108,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1144,
-        "layoutY" : 642
+        "layoutX" : 1145,
+        "layoutY" : 652
       },
       "configuration" : {
         "defaultTTL" : 0,
