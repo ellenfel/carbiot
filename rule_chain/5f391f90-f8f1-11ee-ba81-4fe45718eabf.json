@@ -1162,7 +1162,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1337,7 +1337,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "\nmsg.West=msg.FW1emission+msg.FW2emission+msg.FW3emission;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.West=msg.FW1emission+msg.FW2emission+msg.FW3emission;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
