@@ -1072,8 +1072,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 529,
-        "layoutY" : 656
+        "layoutX" : 50,
+        "layoutY" : 834
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1100,8 +1100,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 850,
-        "layoutY" : 655
+        "layoutX" : 371,
+        "layoutY" : 833
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1124,8 +1124,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1145,
-        "layoutY" : 652
+        "layoutX" : 666,
+        "layoutY" : 830
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -1148,8 +1148,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 530,
-        "layoutY" : 721
+        "layoutX" : 51,
+        "layoutY" : 899
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1176,8 +1176,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 530,
-        "layoutY" : 766
+        "layoutX" : 51,
+        "layoutY" : 944
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1204,8 +1204,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 532,
-        "layoutY" : 812
+        "layoutX" : 53,
+        "layoutY" : 990
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1232,8 +1232,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 533,
-        "layoutY" : 859
+        "layoutX" : 54,
+        "layoutY" : 1037
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1260,8 +1260,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 814,
-        "layoutY" : 858
+        "layoutX" : 335,
+        "layoutY" : 1036
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1284,8 +1284,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 812,
-        "layoutY" : 814
+        "layoutX" : 333,
+        "layoutY" : 992
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1308,8 +1308,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 814,
-        "layoutY" : 770
+        "layoutX" : 335,
+        "layoutY" : 948
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1332,8 +1332,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 811,
-        "layoutY" : 726
+        "layoutX" : 332,
+        "layoutY" : 904
       },
       "configuration" : {
         "scriptLang" : "JS",
