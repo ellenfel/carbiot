@@ -139,7 +139,42 @@
               "name" : "",
               "entityAliasId" : "6ed27d35-6893-9c21-d193-39833e4920d9",
               "filterId" : null,
-              "dataKeys" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "timeseries",
+                "label" : "name",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.26354872615289326
+              }, {
+                "name" : "West",
+                "type" : "timeseries",
+                "label" : "West",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6843842042217658
+              }, {
+                "name" : "northWest",
+                "type" : "timeseries",
+                "label" : "northWest",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.4169359610111225
+              }, {
+                "name" : "East",
+                "type" : "timeseries",
+                "label" : "East",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.39828594051129085
+              }, {
+                "name" : "South",
+                "type" : "timeseries",
+                "label" : "South",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.4925865462580581
+              } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
@@ -172,8 +207,8 @@
                   "col" : 0
                 },
                 "57b0c35f-e0eb-a35d-1ff2-a51ab2741549" : {
-                  "sizeX" : 20,
-                  "sizeY" : 17,
+                  "sizeX" : 41,
+                  "sizeY" : 13,
                   "row" : 0,
                   "col" : 13
                 }
