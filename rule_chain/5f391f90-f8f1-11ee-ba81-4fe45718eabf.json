@@ -133,6 +133,18 @@
       "fromIndex" : 27,
       "toIndex" : 29,
       "type" : "Success"
+    }, {
+      "fromIndex" : 29,
+      "toIndex" : 30,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 30,
+      "toIndex" : 31,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 32,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
@@ -965,6 +977,74 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbCheckpointNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 799,
+        "layoutY" : 268
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5feec210-f940-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "synchronization start",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transaction.TbSynchronizationBeginNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 797,
+        "layoutY" : 182
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "if(msg[\"Active Energy\"]){\n\tmsg.active = true;\n\n\t// Carbon intensity factor in kgCO2/kWh (example: coal = 0.9 kgCO2/kWh)\n    // carbonIntensityFactor = 0.9;\n\n\t// Active energy consumption assumed in kWh\n\n\t// Calculation of carbon intensity in kilograms of CO2 per kilowatt-hour (kgCO2/kWh)\n\n\tmsg.emission = msg[\"Active Energy\"] * 0.9;\n\tmsg.intensity = (msg[\"Active Energy\"] * 0.9) / msg[\"Active Energy\"];\n\n\t// Output the results\n\t//console.log(\"Carbon Emissions:\", carbonEmissions, \"kgCO2\");\n\t//console.log(\"Carbon Intensity:\", carbonIntensity, \"kgCO2/kWh\");\n\n\n\treturn {msg: msg, metadata: metadata, msgType: msgType};\n}\nelse{return {msg: msg, metadata: metadata, msgType: msgType};}",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5feee920-f940-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "active - emission",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 795,
+        "layoutY" : 98
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5feee921-f940-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "synchronization end",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transaction.TbSynchronizationEndNode"
     } ],
     "ruleChainConnections" : null
   },
