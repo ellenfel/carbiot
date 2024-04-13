@@ -18,16 +18,124 @@
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 24,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
       "fromIndex" : 25,
       "toIndex" : 28,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 27,
+      "toIndex" : 29,
       "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 262,
-        "layoutY" : 10
+        "layoutX" : 52,
+        "layoutY" : 44
       },
       "configuration" : {
         "msgCount" : 0,
@@ -54,8 +162,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 262,
-        "layoutY" : 63
+        "layoutX" : 52,
+        "layoutY" : 97
       },
       "configuration" : {
         "msgCount" : 0,
@@ -82,8 +190,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 260,
-        "layoutY" : 116
+        "layoutX" : 50,
+        "layoutY" : 150
       },
       "configuration" : {
         "msgCount" : 0,
@@ -110,8 +218,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 259,
-        "layoutY" : 169
+        "layoutX" : 49,
+        "layoutY" : 203
       },
       "configuration" : {
         "msgCount" : 0,
@@ -138,8 +246,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 259,
-        "layoutY" : 222
+        "layoutX" : 49,
+        "layoutY" : 256
       },
       "configuration" : {
         "msgCount" : 0,
@@ -166,8 +274,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 257,
-        "layoutY" : 275
+        "layoutX" : 47,
+        "layoutY" : 309
       },
       "configuration" : {
         "msgCount" : 0,
@@ -194,8 +302,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 256,
-        "layoutY" : 329
+        "layoutX" : 46,
+        "layoutY" : 363
       },
       "configuration" : {
         "msgCount" : 0,
@@ -222,8 +330,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 256,
-        "layoutY" : 382
+        "layoutX" : 46,
+        "layoutY" : 416
       },
       "configuration" : {
         "msgCount" : 0,
@@ -250,8 +358,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 254,
-        "layoutY" : 435
+        "layoutX" : 44,
+        "layoutY" : 469
       },
       "configuration" : {
         "msgCount" : 0,
@@ -278,8 +386,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 254,
-        "layoutY" : 485
+        "layoutX" : 44,
+        "layoutY" : 519
       },
       "configuration" : {
         "msgCount" : 0,
@@ -306,8 +414,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 254,
-        "layoutY" : 538
+        "layoutX" : 44,
+        "layoutY" : 572
       },
       "configuration" : {
         "msgCount" : 0,
@@ -334,8 +442,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 252,
-        "layoutY" : 591
+        "layoutX" : 42,
+        "layoutY" : 625
       },
       "configuration" : {
         "msgCount" : 0,
@@ -362,8 +470,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 469,
-        "layoutY" : 51
+        "layoutX" : 259,
+        "layoutY" : 85
       },
       "configuration" : {
         "msgCount" : 0,
@@ -390,8 +498,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 469,
-        "layoutY" : 104
+        "layoutX" : 259,
+        "layoutY" : 138
       },
       "configuration" : {
         "msgCount" : 0,
@@ -418,8 +526,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 467,
-        "layoutY" : 157
+        "layoutX" : 257,
+        "layoutY" : 191
       },
       "configuration" : {
         "msgCount" : 0,
@@ -446,8 +554,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 466,
-        "layoutY" : 210
+        "layoutX" : 256,
+        "layoutY" : 244
       },
       "configuration" : {
         "msgCount" : 0,
@@ -474,8 +582,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 466,
-        "layoutY" : 263
+        "layoutX" : 256,
+        "layoutY" : 297
       },
       "configuration" : {
         "msgCount" : 0,
@@ -502,8 +610,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 464,
-        "layoutY" : 316
+        "layoutX" : 254,
+        "layoutY" : 350
       },
       "configuration" : {
         "msgCount" : 0,
@@ -530,8 +638,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 463,
-        "layoutY" : 370
+        "layoutX" : 253,
+        "layoutY" : 404
       },
       "configuration" : {
         "msgCount" : 0,
@@ -558,8 +666,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 463,
-        "layoutY" : 423
+        "layoutX" : 253,
+        "layoutY" : 457
       },
       "configuration" : {
         "msgCount" : 0,
@@ -586,8 +694,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 461,
-        "layoutY" : 476
+        "layoutX" : 251,
+        "layoutY" : 510
       },
       "configuration" : {
         "msgCount" : 0,
@@ -614,8 +722,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 461,
-        "layoutY" : 526
+        "layoutX" : 251,
+        "layoutY" : 560
       },
       "configuration" : {
         "msgCount" : 0,
@@ -642,8 +750,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 461,
-        "layoutY" : 579
+        "layoutX" : 251,
+        "layoutY" : 613
       },
       "configuration" : {
         "msgCount" : 0,
@@ -670,8 +778,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 459,
-        "layoutY" : 632
+        "layoutX" : 249,
+        "layoutY" : 666
       },
       "configuration" : {
         "msgCount" : 0,
@@ -698,8 +806,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 252,
-        "layoutY" : 639
+        "layoutX" : 42,
+        "layoutY" : 673
       },
       "configuration" : {
         "msgCount" : 0,
@@ -726,8 +834,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 470,
-        "layoutY" : 0
+        "layoutX" : 260,
+        "layoutY" : 34
       },
       "configuration" : {
         "msgCount" : 0,
@@ -754,8 +862,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 462,
-        "layoutY" : 683
+        "layoutX" : 252,
+        "layoutY" : 717
       },
       "configuration" : {
         "msgCount" : 0,
@@ -782,8 +890,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 252,
-        "layoutY" : 689
+        "layoutX" : 42,
+        "layoutY" : 723
       },
       "configuration" : {
         "msgCount" : 0,
@@ -831,6 +939,28 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 799,
+        "layoutY" : 377
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1c7e3380-f940-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "checkpoint",
+      "queueName" : "SequentialByOriginator",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbCheckpointNode"
     } ],
     "ruleChainConnections" : null
   },
