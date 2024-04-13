@@ -153,6 +153,22 @@
       "fromIndex" : 34,
       "toIndex" : 35,
       "type" : "Success"
+    }, {
+      "fromIndex" : 36,
+      "toIndex" : 43,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 42,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 38,
+      "toIndex" : 41,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 39,
+      "toIndex" : 40,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
@@ -1241,6 +1257,102 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 814,
+        "layoutY" : 858
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "\nmsg.West=msg.FW1emission+msg.FW2emission+msg.FW3emission;\nmsg.East=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.South=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.northWest=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.name=\"Manufacturing Facility\";\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2a1226a0-f995-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "add zones",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 812,
+        "layoutY" : 814
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "\nmsg.West=msg.FW1emission+msg.FW2emission+msg.FW3emission;\nmsg.East=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.South=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.northWest=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.name=\"Manufacturing Facility\";\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2a1226a1-f995-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "add zones",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 814,
+        "layoutY" : 770
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "\nmsg.West=msg.FW1emission+msg.FW2emission+msg.FW3emission;\nmsg.East=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.South=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.northWest=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.name=\"Manufacturing Facility\";\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2a124db0-f995-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "add zones",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 811,
+        "layoutY" : 726
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "\nmsg.West=msg.FW1emission+msg.FW2emission+msg.FW3emission;\nmsg.East=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.South=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.northWest=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.name=\"Manufacturing Facility\";\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2a124db1-f995-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "add zones",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
