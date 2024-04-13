@@ -1085,7 +1085,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "\nmsg.West=msg.FW1emission+msg.FW2emission+msg.FW3emission,\nmsg.East=msg.FE1emission+msg.FE2emission+msg.FE3emission,\nmsg.South=msg.FS1emission+msg.FS2emission+msg.FS3emission,\nmsg.northWest=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
