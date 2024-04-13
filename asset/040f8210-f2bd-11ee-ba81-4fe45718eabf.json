@@ -18,10 +18,34 @@
       "id" : "040f8210-f2bd-11ee-ba81-4fe45718eabf"
     },
     "label" : null,
-    "name" : "District B",
+    "name" : "Tüketim",
     "type" : "district"
   },
-  "relations" : [ ],
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "040f8210-f2bd-11ee-ba81-4fe45718eabf"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "b9261f30-f2c0-11ee-ba81-4fe45718eabf"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "040f8210-f2bd-11ee-ba81-4fe45718eabf"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "b926bb70-f2c0-11ee-ba81-4fe45718eabf"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -52,9 +76,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "image",
-      "lastUpdateTs" : 1712260641314,
+      "lastUpdateTs" : 1712263198119,
       "longValue" : null,
-      "strValue" : "https://d12dkjq56sjcos.cloudfront.net/pub/media/wysiwyg/route-images/View-Of-San-Francisco-City-Tour-Slider-Big-Bus-Tours-01.17.jpg"
+      "strValue" : "https://www.svnbluestone.com/wp-content/uploads/2017/10/View-Of-San-Francisco-City-Tour-Slider-Big-Bus-Tours-01.17.jpg"
     }, {
       "booleanValue" : null,
       "doubleValue" : 40.96935248878856,
