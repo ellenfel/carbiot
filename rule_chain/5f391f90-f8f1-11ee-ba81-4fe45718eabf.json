@@ -1068,7 +1068,7 @@
         "entityType" : "RULE_NODE",
         "id" : "e67f76a0-f97f-11ee-ba81-4fe45718eabf"
       },
-      "name" : "Enerji Analizörü",
+      "name" : "emission",
       "queueName" : "Main",
       "ruleChainId" : null,
       "singletonMode" : false,
