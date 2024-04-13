@@ -1052,8 +1052,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 784,
-        "layoutY" : 616
+        "layoutX" : 714,
+        "layoutY" : 619
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1090,7 +1090,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
