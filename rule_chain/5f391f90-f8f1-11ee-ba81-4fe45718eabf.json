@@ -1045,6 +1045,34 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transaction.TbSynchronizationEndNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 784,
+        "layoutY" : 616
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 10,
+        "scriptLang" : "JS",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar msg = {\n    \"Floor-NW-1-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-NW-2-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-NW-3-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-S-1-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-S-2-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-S-3-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-E-1-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-E-2-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-E-3-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-W-1-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-W-2-CO2-emission\": initialValue + Math.random() * increaseFactor,\n    \"Floor-W-3-CO2-emission\": initialValue + Math.random() * increaseFactor,\n};\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"SIGNAL_DATA_UPDATE\"\n};\n",
+        "tbelScript" : null,
+        "originatorId" : "4de07d10-f97d-11ee-ba81-4fe45718eabf",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e67f76a0-f97f-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "Enerji Analizörü",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
     } ],
     "ruleChainConnections" : null
   },
