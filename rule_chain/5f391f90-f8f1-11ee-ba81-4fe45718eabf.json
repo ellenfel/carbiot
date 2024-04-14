@@ -130,6 +130,10 @@
       "toIndex" : 29,
       "type" : "Success"
     }, {
+      "fromIndex" : 26,
+      "toIndex" : 44,
+      "type" : "Success"
+    }, {
       "fromIndex" : 27,
       "toIndex" : 29,
       "type" : "Success"
@@ -907,7 +911,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 900,
+        "periodInSeconds" : 9,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"Active Enegy-Ex\": 402948,\n    \"Active Enegy-Im\": 4425918,\n    \"Active Power\": 652.8,\n    \"Cos Phi\": 0.995,\n    \"Current L1\": 10.24,\n    \"Current L2\": 10.24,\n    \"Current L3\": 7.36,\n    \"Frequency\": 50,\n    \"Reactive EnergyIn\": 133.704,\n    \"Reactive EnergyKa\": 388.767,\n    \"Reactive Power\": 64,\n    \"Voltage L1-N\": 240.4,\n    \"Voltage L2-N\": 240.1,\n    \"Voltage L3-N\": 241.4,\n    \"devEUI\": \"24e124468d191551\",\n    \"devName\": \"A-MHC02\",\n    \"rssi\": -92,\n    \"snr\": 11.2,\n    \"time\": \"2023-12-08 11:44:24\",\n    \"Active\": true,\n    \"CurrentTotal\": 27.84,\n    \"Active Energy\": 4425918,\n    \"binaryKey\": generateRandomBinary(5) // Add a new key for 5-digit binary\n};\n\nfunction generateRandomBinary(length) {\n    var binaryString = \"\";\n    for (var i = 0; i < length; i++) {\n        binaryString += Math.round(Math.random()).toString();\n    }\n    return binaryString;\n}\n\nfunction getRandomFluctuation(value) {\n    var percentageChange = (Math.random() * 10 - 5) / 100; // Random fluctuation within +/-5%\n    return value * (1 + percentageChange);\n}\n\n// Apply random fluctuations to numeric values in msg object\nfor (var key in msg) {\n    if (typeof msg[key] === 'number') {\n        msg[key] = getRandomFluctuation(msg[key]);\n    }\n}\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"sayac\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
@@ -916,7 +920,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1353,6 +1357,28 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 506,
+        "layoutY" : 711
+      },
+      "configuration" : {
+        "fetchTo" : "DATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "26529540-fa53-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "credentials",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbFetchDeviceCredentialsNode"
     } ],
     "ruleChainConnections" : null
   },
