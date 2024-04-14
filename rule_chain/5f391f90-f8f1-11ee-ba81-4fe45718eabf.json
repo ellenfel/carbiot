@@ -1293,7 +1293,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.eastEmission=msg.FE1emission+msg.FE2emission+msg.FE3emission;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.westEmission=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.westGas=msg.FE3gas+msg.FE3gas+msg.FE3gas;\nmsg.westWater=msg.FE1water+msg.FE2water+msg.FE3water;\nmsg.westEnergy=msg.FE1energy+msg.FE2energy+msg.FE3energy;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
