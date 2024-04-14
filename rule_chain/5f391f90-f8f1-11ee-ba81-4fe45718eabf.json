@@ -1360,8 +1360,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 554,
-        "layoutY" : 663
+        "layoutX" : 542,
+        "layoutY" : 707
       },
       "configuration" : {
         "dataMapping" : {
