@@ -110,19 +110,23 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "4px",
             "settings" : {
-              "enableSearch" : true,
-              "enableSelectColumnDisplay" : true,
-              "enableStickyHeader" : true,
+              "entitiesTitle" : "Entities",
+              "enableSearch" : false,
+              "enableSelectColumnDisplay" : false,
+              "enableStickyHeader" : false,
               "enableStickyAction" : true,
+              "showCellActionsMenu" : false,
               "reserveSpaceForHiddenAction" : "true",
               "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
               "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
               "displayEntityType" : false,
-              "displayPagination" : true,
+              "displayPagination" : false,
               "defaultPageSize" : 10,
               "defaultSortOrder" : "name",
               "useRowStyleFunction" : false,
-              "entitiesTitle" : "Entities"
+              "rowStyleFunction" : ""
             },
             "title" : "Entities table",
             "dropShadow" : true,
@@ -141,39 +145,11 @@
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
-                "type" : "timeseries",
-                "label" : "name",
-                "color" : "#607d8b",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.26354872615289326
-              }, {
-                "name" : "West",
-                "type" : "timeseries",
-                "label" : "West",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.6843842042217658
-              }, {
-                "name" : "northWest",
-                "type" : "timeseries",
-                "label" : "northWest",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.4169359610111225
-              }, {
-                "name" : "East",
-                "type" : "timeseries",
-                "label" : "East",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.39828594051129085
-              }, {
-                "name" : "South",
-                "type" : "timeseries",
-                "label" : "South",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.4925865462580581
+                "_hash" : 0.5298235310325894
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -245,12 +221,10 @@
           "id" : "6ed27d35-6893-9c21-d193-39833e4920d9",
           "alias" : "emission-sim",
           "filter" : {
-            "type" : "singleEntity",
-            "resolveMultiple" : false,
-            "singleEntity" : {
-              "entityType" : "DEVICE",
-              "id" : "4de07d10-f97d-11ee-ba81-4fe45718eabf"
-            }
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET",
+            "entityList" : [ "93285760-f682-11ee-ba81-4fe45718eabf", "2b9f0ed0-f68d-11ee-ba81-4fe45718eabf", "08aab190-f68d-11ee-ba81-4fe45718eabf", "1d8705b0-f687-11ee-ba81-4fe45718eabf" ]
           }
         }
       },
