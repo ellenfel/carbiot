@@ -1265,7 +1265,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.Emission=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.Gas=msg.FS3gas+msg.FS3gas+msg.FS3gas;\nmsg.Water=msg.FS1water+msg.FS2water+msg.FS3water;\nmsg.Energy=msg.FS1energy+msg.FS2energy+msg.FS3energy;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.Emission=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.Gas=msg.FS3gas+msg.FS3gas+msg.FS3gas;\nmsg.Water=msg.FS1water+msg.FS2water+msg.FS3water;\nmsg.Energy=msg.FS1energy+msg.FS2energy+msg.FS3energy;\nmsg.Bill=msg.FW1totalBillPrice+msg.FW2totalBillPrice+msg.FW3totalBillPrice;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
@@ -1289,7 +1289,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.westEmission=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.westGas=msg.FE3gas+msg.FE3gas+msg.FE3gas;\nmsg.westWater=msg.FE1water+msg.FE2water+msg.FE3water;\nmsg.westEnergy=msg.FE1energy+msg.FE2energy+msg.FE3energy;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.westEmission=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.westGas=msg.FE3gas+msg.FE3gas+msg.FE3gas;\nmsg.westWater=msg.FE1water+msg.FE2water+msg.FE3water;\nmsg.westEnergy=msg.FE1energy+msg.FE2energy+msg.FE3energy;\nmsg.Bill=msg.FW1totalBillPrice+msg.FW2totalBillPrice+msg.FW3totalBillPrice;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
@@ -1313,7 +1313,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.Emission=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.Gas=msg.FNW3gas+msg.FNW3gas+msg.FNW3gas;\nmsg.Water=msg.FNW1water+msg.FNW2water+msg.FNW3water;\nmsg.Energy=msg.FNW1energy+msg.FNW2energy+msg.FNW3energy;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.Emission=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.Gas=msg.FNW3gas+msg.FNW3gas+msg.FNW3gas;\nmsg.Water=msg.FNW1water+msg.FNW2water+msg.FNW3water;\nmsg.Energy=msg.FNW1energy+msg.FNW2energy+msg.FNW3energy;\nmsg.Bill=msg.FW1totalBillPrice+msg.FW2totalBillPrice+msg.FW3totalBillPrice;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
@@ -1337,7 +1337,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.Emission=msg.FW1emission+msg.FW2emission+msg.FW3emission;\nmsg.Gas=msg.FW3gas+msg.FW3gas+msg.FW3gas;\nmsg.Water=msg.FW1water+msg.FW2water+msg.FW3water;\nmsg.Energy=msg.FW1energy+msg.FW2energy+msg.FW3energy;\nmsg.Bill=(msg.FW1totalBillPrice+msg.FW2totalBillPrice+msg.FW3totalBillPrice)*10;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.Emission=msg.FW1emission+msg.FW2emission+msg.FW3emission;\nmsg.Gas=msg.FW3gas+msg.FW3gas+msg.FW3gas;\nmsg.Water=msg.FW1water+msg.FW2water+msg.FW3water;\nmsg.Energy=msg.FW1energy+msg.FW2energy+msg.FW3energy;\nmsg.Bill=msg.FW1totalBillPrice+msg.FW2totalBillPrice+msg.FW3totalBillPrice;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
