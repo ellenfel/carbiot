@@ -1265,7 +1265,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.westEmission=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.westGas=msg.FS3gas+msg.FS3gas+msg.FS3gas;\nmsg.westWater=msg.FS1water+msg.FS2water+msg.FS3water;\nmsg.westEnergy=msg.FS1energy+msg.FS2energy+msg.FS3energy;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.Emission=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.Gas=msg.FS3gas+msg.FS3gas+msg.FS3gas;\nmsg.Water=msg.FS1water+msg.FS2water+msg.FS3water;\nmsg.Energy=msg.FS1energy+msg.FS2energy+msg.FS3energy;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
@@ -1313,7 +1313,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.westEmission=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.westGas=msg.FNW3gas+msg.FNW3gas+msg.FNW3gas;\nmsg.westWater=msg.FNW1water+msg.FNW2water+msg.FNW3water;\nmsg.westEnergy=msg.FNW1energy+msg.FNW2energy+msg.FNW3energy;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.Emission=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.Gas=msg.FNW3gas+msg.FNW3gas+msg.FNW3gas;\nmsg.Water=msg.FNW1water+msg.FNW2water+msg.FNW3water;\nmsg.Energy=msg.FNW1energy+msg.FNW2energy+msg.FNW3energy;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
