@@ -931,7 +931,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 9,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"Active Enegy-Ex\": 402948,\n    \"Active Enegy-Im\": 4425918,\n    \"Active Power\": 652.8,\n    \"Cos Phi\": 0.995,\n    \"Current L1\": 10.24,\n    \"Current L2\": 10.24,\n    \"Current L3\": 7.36,\n    \"Frequency\": 50,\n    \"Reactive EnergyIn\": 133.704,\n    \"Reactive EnergyKa\": 388.767,\n    \"Reactive Power\": 64,\n    \"Voltage L1-N\": 240.4,\n    \"Voltage L2-N\": 240.1,\n    \"Voltage L3-N\": 241.4,\n    \"devEUI\": \"24e124468d191551\",\n    \"devName\": \"A-MHC02\",\n    \"rssi\": -92,\n    \"snr\": 11.2,\n    \"time\": \"2023-12-08 11:44:24\",\n    \"Active\": true,\n    \"CurrentTotal\": 27.84,\n    \"Active Energy\": 4425918,\n    \"binaryKey\": generateRandomBinary(5) // Add a new key for 5-digit binary\n};\n\nfunction generateRandomBinary(length) {\n    var binaryString = \"\";\n    for (var i = 0; i < length; i++) {\n        binaryString += Math.round(Math.random()).toString();\n    }\n    return binaryString;\n}\n\nfunction getRandomFluctuation(value) {\n    var percentageChange = (Math.random() * 10 - 5) / 100; // Random fluctuation within +/-5%\n    return value * (1 + percentageChange);\n}\n\n// Apply random fluctuations to numeric values in msg object\nfor (var key in msg) {\n    if (typeof msg[key] === 'number') {\n        msg[key] = getRandomFluctuation(msg[key]);\n    }\n}\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"sayac\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
@@ -1153,7 +1153,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 900,
+        "periodInSeconds" : 9,
         "scriptLang" : "JS",
         "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FW3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FW1gas\": Math.random() * 100,\n    \"FW2gas\": Math.random() * 100,\n    \"FW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FW1water\": Math.random() * 1000,\n    \"FW2water\": Math.random() * 1000,\n    \"FW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FW1energy\": Math.random() * 1000,\n    \"FW2energy\": Math.random() * 1000,\n    \"FW3energy\": Math.random() * 1000\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FW\" + floor + \"gas\"] + waterReading[\"FW\" + floor + \"water\"] + energyReading[\"FW\" + floor + \"energy\"];\n    totalBillPrice[\"FW\" + floor + \"totalBillPrice\"] = total.toFixed(2);\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
@@ -1181,7 +1181,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 900,
+        "periodInSeconds" : 9,
         "scriptLang" : "JS",
         "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FNW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FNW1gas\": Math.random() * 100,\n    \"FNW2gas\": Math.random() * 100,\n    \"FNW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FNW1water\": Math.random() * 1000,\n    \"FNW2water\": Math.random() * 1000,\n    \"FNW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FNW1energy\": Math.random() * 1000,\n    \"FNW2energy\": Math.random() * 1000,\n    \"FNW3energy\": Math.random() * 1000\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FNW\" + floor + \"gas\"] + waterReading[\"FNW\" + floor + \"water\"] + energyReading[\"FNW\" + floor + \"energy\"];\n    totalBillPrice[\"FNW\" + floor + \"totalBillPrice\"] = total.toFixed(2);\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
