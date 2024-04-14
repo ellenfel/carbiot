@@ -150,6 +150,27 @@
                 "color" : "#9c27b0",
                 "settings" : { },
                 "_hash" : 0.5298235310325894
+              }, {
+                "name" : "Energy",
+                "type" : "timeseries",
+                "label" : "Energy",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.03682312740216931
+              }, {
+                "name" : "Water",
+                "type" : "timeseries",
+                "label" : "Water",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.818369696261297
+              }, {
+                "name" : "Gas",
+                "type" : "timeseries",
+                "label" : "Gas",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.6454532116635316
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
