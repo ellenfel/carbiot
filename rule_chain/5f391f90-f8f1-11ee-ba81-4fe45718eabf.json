@@ -134,6 +134,10 @@
       "toIndex" : 44,
       "type" : "Success"
     }, {
+      "fromIndex" : 26,
+      "toIndex" : 45,
+      "type" : "Success"
+    }, {
       "fromIndex" : 27,
       "toIndex" : 29,
       "type" : "Success"
@@ -1360,8 +1364,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 506,
-        "layoutY" : 711
+        "layoutX" : 555,
+        "layoutY" : 719
       },
       "configuration" : {
         "fetchTo" : "DATA"
@@ -1379,6 +1383,32 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbFetchDeviceCredentialsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 554,
+        "layoutY" : 663
+      },
+      "configuration" : {
+        "dataMapping" : {
+          "name" : "originatorName"
+        },
+        "ignoreNullStrings" : false,
+        "fetchTo" : "DATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "8b5cac00-fa53-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "originator fields",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
     } ],
     "ruleChainConnections" : null
   },
