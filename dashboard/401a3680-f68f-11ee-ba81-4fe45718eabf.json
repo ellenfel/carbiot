@@ -171,6 +171,20 @@
                 "color" : "#ffc107",
                 "settings" : { },
                 "_hash" : 0.6454532116635316
+              }, {
+                "name" : "Emission",
+                "type" : "timeseries",
+                "label" : "Emission",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.4822125791467766
+              }, {
+                "name" : "Bill",
+                "type" : "timeseries",
+                "label" : "Bill",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.7007675229338879
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
