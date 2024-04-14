@@ -131,7 +131,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 26,
-      "toIndex" : 44,
+      "toIndex" : 43,
       "type" : "Success"
     }, {
       "fromIndex" : 27,
@@ -150,28 +150,48 @@
       "toIndex" : 32,
       "type" : "Success"
     }, {
-      "fromIndex" : 33,
-      "toIndex" : 34,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 36,
-      "toIndex" : 43,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 37,
+      "fromIndex" : 35,
       "toIndex" : 42,
       "type" : "Success"
     }, {
-      "fromIndex" : 38,
+      "fromIndex" : 36,
       "toIndex" : 41,
       "type" : "Success"
     }, {
-      "fromIndex" : 39,
+      "fromIndex" : 37,
       "toIndex" : 40,
       "type" : "Success"
     }, {
-      "fromIndex" : 47,
+      "fromIndex" : 38,
+      "toIndex" : 39,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 39,
       "toIndex" : 46,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 40,
+      "toIndex" : 46,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 41,
+      "toIndex" : 46,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 42,
+      "toIndex" : 46,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 44,
+      "toIndex" : 34,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 45,
+      "toIndex" : 44,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 46,
+      "toIndex" : 45,
       "type" : "Success"
     } ],
     "firstNodeIndex" : null,
@@ -1104,32 +1124,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 371,
-        "layoutY" : 833
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "\nmsg.West=msg.FW1emission+msg.FW2emission+msg.FW3emission;\nmsg.East=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.South=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.northWest=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.name=\"Manufacturing Facility\";\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "05802b80-f980-11ee-ba81-4fe45718eabf"
-      },
-      "name" : "add zones",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 666,
-        "layoutY" : 830
+        "layoutX" : 1216,
+        "layoutY" : 959
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -1385,32 +1381,8 @@
       "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
     }, {
       "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 692,
-        "layoutY" : 902
-      },
-      "configuration" : {
-        "defaultTTL" : 0,
-        "skipLatestPersistence" : false,
-        "useServerTs" : false
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "9acfad10-fa60-11ee-ba81-4fe45718eabf"
-      },
-      "name" : "save timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 896,
-        "layoutY" : 988
+        "layoutX" : 867,
+        "layoutY" : 965
       },
       "configuration" : {
         "version" : 0
@@ -1431,8 +1403,8 @@
     }, {
       "additionalInfo" : {
         "description" : "Process incoming messages from devices with the alarm rules defined in the device profile. Dispatch all incoming messages with \"Success\" relation type.",
-        "layoutX" : 671,
-        "layoutY" : 997
+        "layoutX" : 605,
+        "layoutY" : 1038
       },
       "configuration" : {
         "persistAlarmRulesState" : false,
@@ -1451,6 +1423,28 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 604,
+        "layoutY" : 957
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "22c14fd0-fa61-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "checkpoint",
+      "queueName" : "SequentialByOriginator",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbCheckpointNode"
     } ],
     "ruleChainConnections" : null
   },
