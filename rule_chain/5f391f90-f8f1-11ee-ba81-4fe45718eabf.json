@@ -134,10 +134,6 @@
       "toIndex" : 44,
       "type" : "Success"
     }, {
-      "fromIndex" : 26,
-      "toIndex" : 45,
-      "type" : "Success"
-    }, {
       "fromIndex" : 27,
       "toIndex" : 29,
       "type" : "Success"
@@ -1361,28 +1357,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 555,
-        "layoutY" : 719
-      },
-      "configuration" : {
-        "fetchTo" : "DATA"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "26529540-fa53-11ee-ba81-4fe45718eabf"
-      },
-      "name" : "credentials",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbFetchDeviceCredentialsNode"
     }, {
       "additionalInfo" : {
         "description" : "",
