@@ -1341,7 +1341,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.westEmission=msg.FW1emission+msg.FW2emission+msg.FW3emission;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.westEmission=msg.FW1emission+msg.FW2emission+msg.FW3emission;\nmsg.westGas=msg.FW3gas+msg.FW3gas+msg.FW3gas;\nmsg.westWater=msg.FW1water+msg.FW2water+msg.FW3water;\nmsg.westEnergy=msg.FW1energy+msg.FW2energy+msg.FW3energy;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
