@@ -1289,7 +1289,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.westEmission=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.westGas=msg.FE3gas+msg.FE3gas+msg.FE3gas;\nmsg.westWater=msg.FE1water+msg.FE2water+msg.FE3water;\nmsg.westEnergy=msg.FE1energy+msg.FE2energy+msg.FE3energy;\nmsg.Bill=msg.FW1totalBillPrice+msg.FW2totalBillPrice+msg.FW3totalBillPrice;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "msg.Emission=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.Gas=msg.FE3gas+msg.FE3gas+msg.FE3gas;\nmsg.Water=msg.FE1water+msg.FE2water+msg.FE3water;\nmsg.Energy=msg.FE1energy+msg.FE2energy+msg.FE3energy;\nmsg.Bill=msg.FE1totalBillPrice+msg.FE2totalBillPrice+msg.FE3totalBillPrice;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
@@ -1426,8 +1426,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 604,
-        "layoutY" : 957
+        "layoutX" : 633,
+        "layoutY" : 923
       },
       "configuration" : {
         "version" : 0
