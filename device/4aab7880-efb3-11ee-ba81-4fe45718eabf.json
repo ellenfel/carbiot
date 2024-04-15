@@ -24,7 +24,7 @@
       "entityType" : "DEVICE",
       "id" : "4aab7880-efb3-11ee-ba81-4fe45718eabf"
     },
-    "label" : null,
+    "label" : "fuel sensor",
     "name" : "001311",
     "softwareId" : null,
     "type" : "Tank"
@@ -37,6 +37,22 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ackTs",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "acknowledged",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
@@ -49,9 +65,57 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "alarmFilter",
-      "lastUpdateTs" : 1711927118588,
+      "lastUpdateTs" : 1713116809252,
       "longValue" : null,
-      "strValue" : "offline noAlarms "
+      "strValue" : "noAlarms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "assignTs",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clearTs",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : 1713116794234,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cleared",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "createdTime",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : 1713114094240,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"data\":\"0.48%\"}",
+      "key" : "details",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "endTs",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : 1713115894234,
+      "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -59,6 +123,14 @@
       "key" : "highTemperatureAlarmsCount",
       "lastUpdateTs" : 1711926382662,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"entityType\":\"ALARM\",\"id\":\"7d29384e-03bb-44e0-911e-4b3f20e937c2\"}",
+      "key" : "id",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -81,7 +153,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isHighTemperature",
-      "lastUpdateTs" : 1711927118588,
+      "lastUpdateTs" : 1713116809252,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -89,7 +161,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isLowBattery",
-      "lastUpdateTs" : 1711927118588,
+      "lastUpdateTs" : 1713116809252,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -97,7 +169,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isLowFuel",
-      "lastUpdateTs" : 1711927118588,
+      "lastUpdateTs" : 1713116809252,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -105,7 +177,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isLowTemperature",
-      "lastUpdateTs" : 1711927118588,
+      "lastUpdateTs" : 1713116809252,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -113,7 +185,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isNoAlarms",
-      "lastUpdateTs" : 1711927118588,
+      "lastUpdateTs" : 1713116809252,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -208,6 +280,70 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "name",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : "Low Fuel Level"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"entityType\":\"DEVICE\",\"id\":\"4aab7880-efb3-11ee-ba81-4fe45718eabf\"}",
+      "key" : "originator",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "originatorLabel",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : 1311,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "originatorName",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : 1311,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "propagate",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[]",
+      "key" : "propagateRelationTypes",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "propagateToOwner",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "propagateToTenant",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "sensorDimensionUnits",
       "lastUpdateTs" : 1711926382662,
       "longValue" : null,
@@ -223,11 +359,35 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "severity",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : "CRITICAL"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
       "jsonValue" : "{\"length\":750,\"diameter\":548}",
       "key" : "sizeMeasure",
-      "lastUpdateTs" : 1711937172504,
+      "lastUpdateTs" : 1713198457145,
       "longValue" : null,
       "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "startTs",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : 1713114094228,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "status",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : "CLEARED_UNACK"
     }, {
       "booleanValue" : null,
       "doubleValue" : 765773.26,
@@ -268,6 +428,22 @@
       "lastUpdateTs" : 1711926382662,
       "longValue" : null,
       "strValue" : "Horizontal Cylinder"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"entityType\":\"TENANT\",\"id\":\"79956500-e9cf-11ee-8f35-b3dbdb9e1542\"}",
+      "key" : "tenantId",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "type",
+      "lastUpdateTs" : 1713116809252,
+      "longValue" : null,
+      "strValue" : "Low Fuel Level"
     } ],
     "SHARED_SCOPE" : [ ]
   }
