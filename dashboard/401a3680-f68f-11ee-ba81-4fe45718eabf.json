@@ -153,12 +153,12 @@
               }, {
                 "name" : "Energy",
                 "type" : "timeseries",
-                "label" : "Energy",
+                "label" : "Enerji Kullanımı",
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.03682312740216931,
                 "aggregationType" : "NONE",
-                "units" : null,
+                "units" : "kWh",
                 "decimals" : 2,
                 "funcBody" : null,
                 "usePostProcessing" : null,
@@ -171,7 +171,7 @@
                 "settings" : { },
                 "_hash" : 0.818369696261297,
                 "aggregationType" : "NONE",
-                "units" : "",
+                "units" : "m³",
                 "decimals" : 2,
                 "funcBody" : null,
                 "usePostProcessing" : null,
@@ -184,7 +184,7 @@
                 "settings" : { },
                 "_hash" : 0.6454532116635316,
                 "aggregationType" : "NONE",
-                "units" : null,
+                "units" : "m³",
                 "decimals" : 2,
                 "funcBody" : null,
                 "usePostProcessing" : null,
@@ -242,7 +242,7 @@
                   "col" : 0
                 },
                 "57b0c35f-e0eb-a35d-1ff2-a51ab2741549" : {
-                  "sizeX" : 41,
+                  "sizeX" : 37,
                   "sizeY" : 13,
                   "row" : 0,
                   "col" : 13
