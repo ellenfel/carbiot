@@ -156,28 +156,52 @@
                 "label" : "Energy",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.03682312740216931
+                "_hash" : 0.03682312740216931,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "Water",
                 "type" : "timeseries",
                 "label" : "Water",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.818369696261297
+                "_hash" : 0.818369696261297,
+                "aggregationType" : "NONE",
+                "units" : "",
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "Gas",
                 "type" : "timeseries",
                 "label" : "Gas",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.6454532116635316
+                "_hash" : 0.6454532116635316,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "Emission",
                 "type" : "timeseries",
                 "label" : "Emission",
                 "color" : "#607d8b",
                 "settings" : { },
-                "_hash" : 0.4822125791467766
+                "_hash" : 0.4822125791467766,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "Bill",
                 "type" : "timeseries",
