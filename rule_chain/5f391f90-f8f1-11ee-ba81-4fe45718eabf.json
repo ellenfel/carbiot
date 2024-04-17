@@ -193,6 +193,10 @@
       "fromIndex" : 46,
       "toIndex" : 45,
       "type" : "Success"
+    }, {
+      "fromIndex" : 47,
+      "toIndex" : 48,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
@@ -1445,6 +1449,58 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbCheckpointNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 47,
+        "layoutY" : 838
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 9,
+        "scriptLang" : "JS",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FW3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FW1gas\": Math.random() * 100,\n    \"FW2gas\": Math.random() * 100,\n    \"FW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FW1water\": Math.random() * 1000,\n    \"FW2water\": Math.random() * 1000,\n    \"FW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FW1energy\": Math.random() * 1000,\n    \"FW2energy\": Math.random() * 1000,\n    \"FW3energy\": Math.random() * 1000\n};\n\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FW\" + floor + \"gas\"] + waterReading[\"FW\" + floor + \"water\"] + energyReading[\"FW\" + floor + \"energy\"];\n    totalBillPrice[\"FW\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : null,
+        "originatorId" : "2b9f0ed0-f68d-11ee-ba81-4fe45718eabf",
+        "originatorType" : "ASSET"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6404b210-fcba-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "West",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 330,
+        "layoutY" : 842
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "msg.Emission=4*(msg.FW1emission+msg.FW2emission+msg.FW3emission);\nmsg.Gas=4*(msg.FW3gas+msg.FW3gas+msg.FW3gas);\nmsg.Water=4*(msg.FW1water+msg.FW2water+msg.FW3water);\nmsg.Energy=4*(msg.FW1energy+msg.FW2energy+msg.FW3energy);\nmsg.Bill=4*(msg.FW1totalBillPrice+msg.FW2totalBillPrice+msg.FW3totalBillPrice);\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6404d920-fcba-11ee-ba81-4fe45718eabf"
+      },
+      "name" : "add zones",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
