@@ -1211,22 +1211,27 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "6129daa3-61f0-b655-c98b-5f0255297ff6",
+              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
               "dataKeys" : [ {
-                "name" : "gas",
-                "type" : "attribute",
-                "label" : "Gaz",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.5391107679096465
-              }, {
-                "name" : "gas",
+                "name" : "Gas",
                 "type" : "attribute",
                 "label" : "gasText",
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.5482220366183825,
-                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
+                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n",
+                "usePostProcessing" : true,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null
+              }, {
+                "name" : "Gas",
+                "type" : "timeseries",
+                "label" : "Gas",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.5560250031919791
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1293,23 +1298,37 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
               "dataKeys" : [ {
-                "name" : "water",
+                "name" : "Water",
                 "type" : "attribute",
                 "label" : "water",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.5391107679096465
+                "_hash" : 0.5391107679096465,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
-                "name" : "water",
+                "name" : "Water",
                 "type" : "attribute",
                 "label" : "waterText",
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.5482220366183825,
-                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
+                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n",
+                "usePostProcessing" : true,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null
               } ],
-              "entityAliasId" : "6129daa3-61f0-b655-c98b-5f0255297ff6"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -1353,7 +1372,8 @@
             },
             "useDashboardTimewindow" : true,
             "showLegend" : false,
-            "actions" : { }
+            "actions" : { },
+            "displayTimewindow" : true
           },
           "id" : "44b4c254-153a-ea70-bef5-6a046682d8d8",
           "typeFullFqn" : "system.cards.html_value_card"
@@ -1365,23 +1385,31 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
               "dataKeys" : [ {
-                "name" : "energy",
-                "type" : "attribute",
-                "label" : "energy",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.5391107679096465
-              }, {
-                "name" : "energy",
+                "name" : "Energy",
                 "type" : "attribute",
                 "label" : "energyText",
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.5482220366183825,
-                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
+                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n",
+                "usePostProcessing" : true,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null
+              }, {
+                "name" : "Energy",
+                "type" : "timeseries",
+                "label" : "Energy",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.6718908844090252
               } ],
-              "entityAliasId" : "6129daa3-61f0-b655-c98b-5f0255297ff6"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -1425,7 +1453,8 @@
             },
             "useDashboardTimewindow" : true,
             "showLegend" : false,
-            "actions" : { }
+            "actions" : { },
+            "displayTimewindow" : true
           },
           "id" : "0221f8e7-c9b5-c542-8976-fb2e5525d6ba",
           "typeFullFqn" : "system.cards.html_value_card"
@@ -1782,15 +1811,14 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "Bus A",
-              "entityAliasId" : "6129daa3-61f0-b655-c98b-5f0255297ff6",
+              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
               "dataKeys" : [ {
-                "name" : "energy",
-                "type" : "attribute",
-                "label" : "energy",
+                "name" : "Energy",
+                "type" : "timeseries",
+                "label" : "Energy",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.8697880324807963,
-                "decimals" : 3
+                "_hash" : 0.749235991784925
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
