@@ -1203,6 +1203,232 @@
           "row" : 0,
           "col" : 0,
           "id" : "c28b6b7e-dfff-4dde-da50-96d55fd074f5"
+        },
+        "3673fc57-d615-1b1a-797e-171509642f6c" : {
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "6129daa3-61f0-b655-c98b-5f0255297ff6",
+              "dataKeys" : [ {
+                "name" : "gas",
+                "type" : "attribute",
+                "label" : "Gaz",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5391107679096465
+              }, {
+                "name" : "gas",
+                "type" : "attribute",
+                "label" : "gasText",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5482220366183825,
+                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697718290753,
+                  "endTimeMs" : 1697804690753
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardCss" : ".card,\n.card * {\n    box-sizing: border-box;\n}    \n.card {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.card .content {\n    height: 100%;\n}\n.card .upper-bar {\n    position: relative;\n    z-index: 0;\n    overflow: hidden;\n    height: 70%;\n    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);\n    color: #fff;\n}\n.card .lower-bar {\n    height: 30%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.card .image-shade {\n    width: 100%;\n    height: 100%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background-color: rgb(0, 148, 133, .5);\n    z-index: 0;\n}\n.card h1 {\n    margin: 0;\n    font-size: 20px;\n    font-weight: bold;\n    line-height: 30px;\n}\n.card .icon-container {\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n    border: 3px solid rgb(0, 148, 133);\n    text-align: center;\n}\n.card .description {\n    margin-left: 16px;\n    font-size: 20px;\n    font-weight: 500;\n    color: rgb(0, 148, 133);\n}\n.card .value {\n    font-size: 40px;\n    font-weight: 300;\n    letter-spacing: -2px;\n}\n.card .icon {\n    line-height: 36px;\n    color: rgb(0, 148, 133);\n}\n.card video {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    width: 100%;\n    z-index: -1;\n    transform: translateY(-50%);\n}",
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n       <div class='upper-bar'>\n           <video loop muted autoplay>\n               <source src=\"https://static.videezy.com/system/resources/previews/000/045/419/original/smoke_4__282_29.mp4\" type=\"video/mp4\">\n           </video>\n            <div class='image-shade'>\n                <h1>${entityName}</h1>\n                <div class='value'>${gasText} m3</div>\n            </div>\n       </div>\n       <div class='lower-bar'>\n           <div class='icon-container'>\n               <div class='material-icons icon'>whatshot</div>\n           </div>\n           <div class='description'>Gaz Tüketimi</div>\n       </div>\n    </div>\n</div>"
+            },
+            "title" : "Gas consumed card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "displayTimewindow" : true
+          },
+          "id" : "3673fc57-d615-1b1a-797e-171509642f6c",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "44b4c254-153a-ea70-bef5-6a046682d8d8" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "water",
+                "type" : "attribute",
+                "label" : "water",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5391107679096465
+              }, {
+                "name" : "water",
+                "type" : "attribute",
+                "label" : "waterText",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5482220366183825,
+                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
+              } ],
+              "entityAliasId" : "6129daa3-61f0-b655-c98b-5f0255297ff6"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1693912272085,
+                  "endTimeMs" : 1693998672085
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 2500
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n       <div class='upper-bar'>\n           <video loop muted autoplay>\n               <source src=\"https://thingsboard.io/images/dashboards/districts/water-consumed-bg.mp4\" type=\"video/mp4\">\n               <source src=\"https://thingsboard.io/images/dashboards/districts/water-consumed-bg.webm\" type=\"video/webm\">\n           </video>\n            <div class='image-shade'>\n                <h1>${entityName}</h1>\n                <div class='value'>${waterText} gal</div>\n            </div>\n       </div>\n       <div class='lower-bar'>\n           <div class='icon-container'>\n               <div class='material-icons icon'>pool</div>\n           </div>\n           <div class='description'>Su Tüketimi</div>\n       </div>\n    </div>\n</div>",
+              "cardCss" : ".card,\n.card * {\n    box-sizing: border-box;\n}    \n.card {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.card .content {\n    height: 100%;\n}\n.card .upper-bar {\n    position: relative;\n    z-index: 0;\n    overflow: hidden;\n    height: 70%;\n    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);\n    color: #fff;\n}\n.card .lower-bar {\n    height: 30%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.card .image-shade {\n    width: 100%;\n    height: 100%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background-color: rgba(0, 132, 214, .5);\n    z-index: 0;\n}\n.card h1 {\n    margin: 0;\n    font-size: 20px;\n    font-weight: bold;\n    line-height: 30px;\n}\n.card .icon-container {\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n    border: 3px solid rgb(0, 132, 214);\n    text-align: center;\n}\n.card .description {\n    margin-left: 16px;\n    font-size: 20px;\n    font-weight: 500;\n    color: rgb(0, 132, 214);\n}\n.card .value {\n    font-size: 40px;\n    font-weight: 300;\n    letter-spacing: -2px;\n}\n.card .icon {\n    line-height: 36px;\n    color: rgb(0, 132, 214);\n}\n.card video {\n    position: absolute;\n    top: 75%;\n    left: 0;\n    width: 100%;\n    z-index: -1;\n    transform: translateY(-50%);\n}"
+            },
+            "title" : "Energy consumed card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { }
+          },
+          "id" : "44b4c254-153a-ea70-bef5-6a046682d8d8",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "0221f8e7-c9b5-c542-8976-fb2e5525d6ba" : {
+          "type" : "latest",
+          "sizeX" : 6,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "attribute",
+                "label" : "energy",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5391107679096465
+              }, {
+                "name" : "energy",
+                "type" : "attribute",
+                "label" : "energyText",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5482220366183825,
+                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
+              } ],
+              "entityAliasId" : "6129daa3-61f0-b655-c98b-5f0255297ff6"
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1693912272085,
+                  "endTimeMs" : 1693998672085
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 2500
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class='content'>\n       <div class='upper-bar'>\n           <video loop muted autoplay>\n               <source src=\"https://thingsboard.io/images/dashboards/districts/energy-consumed-bg.mp4\" type=\"video/mp4\">\n               <source src=\"https://thingsboard.io/images/dashboards/districts/energy-consumed-bg.webm\" type=\"video/webm\">\n           </video>\n            <div class='image-shade'>\n                <h1>${entityName}</h1>\n                <div class='value'>${energyText} kWh</div>\n            </div>\n       </div>\n       <div class='lower-bar'>\n           <div class='icon-container'>\n               <div class='material-icons icon'>flash_on</div>\n           </div>\n           <div class='description'>Enerji Tüketimi</div>\n       </div>\n    </div>\n</div>",
+              "cardCss" : ".card,\n.card * {\n    box-sizing: border-box;\n}    \n.card {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.card .content {\n    height: 100%;\n}\n.card .upper-bar {\n    position: relative;\n    z-index: 0;\n    overflow: hidden;\n    height: 70%;\n    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);\n    color: #fff;\n}\n.card .lower-bar {\n    height: 30%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.card .image-shade {\n    width: 100%;\n    height: 100%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background-color: rgba(255, 157, 12, .5);\n    z-index: 0;\n}\n.card h1 {\n    margin: 0;\n    font-size: 20px;\n    font-weight: bold;\n    line-height: 30px;\n}\n.card .icon-container {\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n    border: 3px solid rgb(255, 157, 12);\n    text-align: center;\n}\n.card .description {\n    margin-left: 16px;\n    font-size: 20px;\n    font-weight: 500;\n    color: rgb(255, 157, 12);\n}\n.card .value {\n    font-size: 40px;\n    font-weight: 300;\n    letter-spacing: -2px;\n}\n.card .icon {\n    line-height: 36px;\n    color: rgb(255, 157, 12);\n}\n.card video {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    width: 100%;\n    z-index: -1;\n    transform: translateY(-50%);\n}"
+            },
+            "title" : "Energy consumed card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { }
+          },
+          "id" : "0221f8e7-c9b5-c542-8976-fb2e5525d6ba",
+          "typeFullFqn" : "system.cards.html_value_card"
         }
       },
       "states" : {
@@ -1213,7 +1439,7 @@
             "main" : {
               "widgets" : {
                 "57b0c35f-e0eb-a35d-1ff2-a51ab2741549" : {
-                  "sizeX" : 29,
+                  "sizeX" : 30,
                   "sizeY" : 13,
                   "row" : 2,
                   "col" : 15
@@ -1237,10 +1463,28 @@
                   "col" : 0
                 },
                 "c28b6b7e-dfff-4dde-da50-96d55fd074f5" : {
-                  "sizeX" : 20,
+                  "sizeX" : 19,
                   "sizeY" : 28,
                   "row" : 2,
-                  "col" : 44
+                  "col" : 45
+                },
+                "3673fc57-d615-1b1a-797e-171509642f6c" : {
+                  "sizeX" : 10,
+                  "sizeY" : 8,
+                  "row" : 15,
+                  "col" : 35
+                },
+                "44b4c254-153a-ea70-bef5-6a046682d8d8" : {
+                  "sizeX" : 10,
+                  "sizeY" : 8,
+                  "row" : 15,
+                  "col" : 25
+                },
+                "0221f8e7-c9b5-c542-8976-fb2e5525d6ba" : {
+                  "sizeX" : 10,
+                  "sizeY" : 8,
+                  "row" : 15,
+                  "col" : 15
                 }
               },
               "gridSettings" : {
@@ -1289,6 +1533,19 @@
             "resolveMultiple" : true,
             "entityType" : "DEVICE",
             "entityList" : [ "8c143350-ea88-11ee-9512-1748ff314dba", "952e85d0-ea88-11ee-9512-1748ff314dba", "aa1ec860-ea88-11ee-9512-1748ff314dba" ]
+          }
+        },
+        "6129daa3-61f0-b655-c98b-5f0255297ff6" : {
+          "id" : "6129daa3-61f0-b655-c98b-5f0255297ff6",
+          "alias" : "State",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : {
+              "entityType" : "ASSET",
+              "id" : "eb843e70-f2bc-11ee-ba81-4fe45718eabf"
+            }
           }
         }
       },
