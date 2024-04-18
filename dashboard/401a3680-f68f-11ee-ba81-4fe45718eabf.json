@@ -1990,7 +1990,7 @@
                 },
                 "3ff44771-d077-09ec-67f9-d47491f2e98c" : {
                   "sizeX" : 15,
-                  "sizeY" : 23,
+                  "sizeY" : 20,
                   "row" : 7,
                   "col" : 0
                 },
@@ -2002,47 +2002,47 @@
                 },
                 "c28b6b7e-dfff-4dde-da50-96d55fd074f5" : {
                   "sizeX" : 19,
-                  "sizeY" : 28,
+                  "sizeY" : 25,
                   "row" : 2,
                   "col" : 45
                 },
                 "3673fc57-d615-1b1a-797e-171509642f6c" : {
                   "sizeX" : 10,
-                  "sizeY" : 8,
-                  "row" : 15,
+                  "sizeY" : 7,
+                  "row" : 13,
                   "col" : 35
                 },
                 "44b4c254-153a-ea70-bef5-6a046682d8d8" : {
                   "sizeX" : 10,
-                  "sizeY" : 8,
-                  "row" : 15,
+                  "sizeY" : 7,
+                  "row" : 13,
                   "col" : 25
                 },
                 "0221f8e7-c9b5-c542-8976-fb2e5525d6ba" : {
                   "sizeX" : 10,
-                  "sizeY" : 8,
-                  "row" : 15,
+                  "sizeY" : 7,
+                  "row" : 13,
                   "col" : 15
                 },
                 "5022785a-e0be-bcd0-06cb-257ec6e60211" : {
                   "sizeX" : 10,
-                  "sizeY" : 6,
+                  "sizeY" : 7,
                   "mobileHeight" : 4,
-                  "row" : 24,
+                  "row" : 20,
                   "col" : 35
                 },
                 "1fd335fb-ba75-5f73-3b3d-257ddb8acd30" : {
                   "sizeX" : 10,
                   "sizeY" : 7,
                   "mobileHeight" : 4,
-                  "row" : 23,
+                  "row" : 20,
                   "col" : 25
                 },
                 "1322a3bf-0354-2d3b-33fe-707e2ab578b0" : {
                   "sizeX" : 10,
                   "sizeY" : 7,
                   "mobileHeight" : 4,
-                  "row" : 23,
+                  "row" : 20,
                   "col" : 15
                 }
               },
