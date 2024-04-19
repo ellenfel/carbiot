@@ -1034,7 +1034,7 @@
               "thresholds" : [ {
                 "type" : "constant",
                 "yAxisId" : "default",
-                "units" : "V",
+                "units" : "kWh",
                 "decimals" : 0,
                 "lineColor" : "#FF0000",
                 "lineType" : "solid",
@@ -1052,11 +1052,11 @@
                   "style" : "normal"
                 },
                 "labelColor" : null,
-                "value" : 500
+                "value" : 2000
               }, {
                 "type" : "constant",
                 "yAxisId" : "default",
-                "units" : "V",
+                "units" : "kWh",
                 "decimals" : 0,
                 "lineColor" : "#FFDB00",
                 "lineType" : "solid",
@@ -1074,11 +1074,11 @@
                   "style" : "normal"
                 },
                 "labelColor" : null,
-                "value" : 735
+                "value" : 4900
               }, {
                 "type" : "constant",
                 "yAxisId" : "default",
-                "units" : "V",
+                "units" : "kWh",
                 "decimals" : 0,
                 "lineColor" : "#FFDB00",
                 "lineType" : "solid",
@@ -1096,11 +1096,11 @@
                   "style" : "normal"
                 },
                 "labelColor" : null,
-                "value" : 735
+                "value" : 4900
               }, {
                 "type" : "constant",
                 "yAxisId" : "default",
-                "units" : "V",
+                "units" : "kWh",
                 "decimals" : 0,
                 "lineColor" : "#FF0000",
                 "lineType" : "solid",
@@ -1118,7 +1118,7 @@
                   "style" : "normal"
                 },
                 "labelColor" : null,
-                "value" : 500
+                "value" : 2000
               } ],
               "dataZoom" : true,
               "stack" : false,
@@ -1145,13 +1145,13 @@
                   "lineHeight" : "1"
                 },
                 "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                "ticksFormat" : { },
                 "showTicks" : false,
                 "ticksColor" : "rgba(0, 0, 0, 0.54)",
                 "showLine" : false,
                 "lineColor" : "rgba(0, 0, 0, 0.54)",
                 "showSplitLines" : false,
-                "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
-                "ticksFormat" : { }
+                "splitLinesColor" : "rgba(0, 0, 0, 0.12)"
               },
               "noAggregationBarWidthSettings" : {
                 "strategy" : "group",
