@@ -1388,24 +1388,24 @@
               "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
               "dataKeys" : [ {
                 "name" : "Energy",
-                "type" : "attribute",
-                "label" : "energyText",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.5482220366183825,
-                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n",
-                "usePostProcessing" : true,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null
-              }, {
-                "name" : "Energy",
                 "type" : "timeseries",
                 "label" : "Energy",
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.6718908844090252
+              }, {
+                "name" : "Energy",
+                "type" : "timeseries",
+                "label" : "Energytext",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.9515964082989485,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
