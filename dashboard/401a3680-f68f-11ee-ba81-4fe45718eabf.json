@@ -174,28 +174,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              }, {
-                "name" : "Energy",
-                "type" : "timeseries",
-                "label" : "Enerji Kullanımı",
-                "color" : "#4caf50",
-                "settings" : {
-                  "customTitle" : "",
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : "",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled"
-                },
-                "_hash" : 0.03682312740216931,
-                "aggregationType" : "NONE",
-                "units" : "kWh",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
