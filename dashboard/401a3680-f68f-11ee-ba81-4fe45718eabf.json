@@ -215,7 +215,7 @@
             "actions" : {
               "actionCellButton" : [ {
                 "name" : "Deyaları İncele",
-                "icon" : "more_horiz",
+                "icon" : "arrow_forward",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "updateDashboardState",
