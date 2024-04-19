@@ -1340,30 +1340,17 @@
               "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
               "dataKeys" : [ {
                 "name" : "Water",
-                "type" : "attribute",
-                "label" : "water",
-                "color" : "#2196f3",
+                "type" : "timeseries",
+                "label" : "waterText",
+                "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.5391107679096465,
-                "aggregationType" : null,
+                "_hash" : 0.28049890900500407,
+                "aggregationType" : "NONE",
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              }, {
-                "name" : "Water",
-                "type" : "attribute",
-                "label" : "waterText",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.5482220366183825,
-                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n",
-                "usePostProcessing" : true,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1428,10 +1415,16 @@
               "dataKeys" : [ {
                 "name" : "Energy",
                 "type" : "timeseries",
-                "label" : "Energy",
+                "label" : "energyText",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.6718908844090252
+                "_hash" : 0.6718908844090252,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "Energy",
                 "type" : "timeseries",
