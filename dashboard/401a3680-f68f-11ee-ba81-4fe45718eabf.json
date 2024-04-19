@@ -128,7 +128,7 @@
                 "color" : "#ffc107",
                 "settings" : {
                   "customTitle" : "",
-                  "columnWidth" : "0px",
+                  "columnWidth" : "500",
                   "useCellStyleFunction" : false,
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
