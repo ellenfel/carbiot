@@ -190,7 +190,7 @@
                 "color" : "#9c27b0",
                 "settings" : {
                   "customTitle" : "",
-                  "columnWidth" : "1px",
+                  "columnWidth" : "30px",
                   "useCellStyleFunction" : false,
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : false,
