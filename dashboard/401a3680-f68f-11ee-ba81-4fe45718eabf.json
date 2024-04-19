@@ -96,6 +96,28 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
+                "name" : "Energy",
+                "type" : "timeseries",
+                "label" : "Energy",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "30px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : "",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "disabled"
+                },
+                "_hash" : 0.7432612080144358,
+                "aggregationType" : "NONE",
+                "units" : "kWh",
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "Gas",
                 "type" : "timeseries",
                 "label" : "Gas",
@@ -179,28 +201,6 @@
                 "_hash" : 0.4822125791467766,
                 "aggregationType" : "NONE",
                 "units" : null,
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Energy",
-                "type" : "timeseries",
-                "label" : "Energy",
-                "color" : "#9c27b0",
-                "settings" : {
-                  "customTitle" : "",
-                  "columnWidth" : "30px",
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : "",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "disabled"
-                },
-                "_hash" : 0.7432612080144358,
-                "aggregationType" : "NONE",
-                "units" : "kWh",
                 "decimals" : 2,
                 "funcBody" : null,
                 "usePostProcessing" : null,
