@@ -102,7 +102,7 @@
                 "color" : "#4caf50",
                 "settings" : {
                   "customTitle" : "",
-                  "columnWidth" : "0",
+                  "columnWidth" : "0px",
                   "useCellStyleFunction" : false,
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : false,
@@ -137,7 +137,7 @@
                 "color" : "#ffc107",
                 "settings" : {
                   "customTitle" : "",
-                  "columnWidth" : "500",
+                  "columnWidth" : "0px",
                   "useCellStyleFunction" : false,
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
