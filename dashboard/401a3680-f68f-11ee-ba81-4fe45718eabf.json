@@ -1253,24 +1253,17 @@
               "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
               "dataKeys" : [ {
                 "name" : "Gas",
-                "type" : "attribute",
-                "label" : "gasText",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.5482220366183825,
-                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n",
-                "usePostProcessing" : true,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null
-              }, {
-                "name" : "Gas",
                 "type" : "timeseries",
-                "label" : "Gas",
+                "label" : "gasText",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.5560250031919791
+                "_hash" : 0.5560250031919791,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
