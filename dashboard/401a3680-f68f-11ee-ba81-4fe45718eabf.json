@@ -190,7 +190,7 @@
                 "color" : "#607d8b",
                 "settings" : {
                   "customTitle" : "",
-                  "columnWidth" : "0px",
+                  "columnWidth" : "01",
                   "useCellStyleFunction" : false,
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
@@ -213,18 +213,7 @@
             "displayTimewindow" : false,
             "configMode" : "advanced",
             "actions" : {
-              "actionCellButton" : [ {
-                "name" : "detay",
-                "icon" : "arrow_forward",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "updateDashboardState",
-                "targetDashboardStateId" : null,
-                "openRightLayout" : false,
-                "setEntityId" : true,
-                "stateEntityParamName" : null,
-                "id" : "2947711a-a96d-f818-c297-124b6e3e1111"
-              } ]
+              "actionCellButton" : [ ]
             },
             "showTitleIcon" : false,
             "titleIcon" : "list",
