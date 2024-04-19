@@ -213,7 +213,20 @@
             "displayTimewindow" : false,
             "configMode" : "advanced",
             "actions" : {
-              "actionCellButton" : [ ]
+              "actionCellButton" : [ {
+                "name" : "Deyaları İncele",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "wings",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d51e4451-4f9d-7505-bb10-7c2aba93c904"
+              } ]
             },
             "showTitleIcon" : false,
             "titleIcon" : "list",
