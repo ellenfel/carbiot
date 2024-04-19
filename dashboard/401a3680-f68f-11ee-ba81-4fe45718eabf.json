@@ -40,7 +40,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "4px",
             "settings" : {
-              "entitiesTitle" : "Entities",
+              "entitiesTitle" : "Usage by Area",
               "enableSearch" : false,
               "enableSelectColumnDisplay" : false,
               "enableStickyHeader" : false,
@@ -621,7 +621,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "Bar chart",
+            "title" : "Usage by Area",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
