@@ -46,7 +46,7 @@
               "enableStickyHeader" : false,
               "enableStickyAction" : true,
               "showCellActionsMenu" : false,
-              "reserveSpaceForHiddenAction" : "true",
+              "reserveSpaceForHiddenAction" : "false",
               "displayEntityName" : false,
               "entityNameColumnTitle" : "",
               "displayEntityLabel" : false,
