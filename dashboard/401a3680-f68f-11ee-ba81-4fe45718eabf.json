@@ -78,8 +78,23 @@
                 "type" : "entityField",
                 "label" : "Name",
                 "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.5298235310325894
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "return {\n    fontWeight: 600\n}",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : "",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled"
+                },
+                "_hash" : 0.5298235310325894,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "Energy",
                 "type" : "timeseries",
@@ -124,7 +139,16 @@
                 "type" : "timeseries",
                 "label" : "Emission",
                 "color" : "#607d8b",
-                "settings" : { },
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "return '<span style=\"background: rgba(111, 116, 242, 0.08); border-radius: 16px; padding: 4px 8px; color: #5553AF;\">' + (value ? parseFloat(value).toFixed(2) + ' A' : '0 A') + '</span>';\n",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : "",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled"
+                },
                 "_hash" : 0.4822125791467766,
                 "aggregationType" : "NONE",
                 "units" : null,
