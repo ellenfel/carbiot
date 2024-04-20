@@ -218,7 +218,7 @@
                 "icon" : "arrow_forward",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
-                "type" : "updateDashboardState",
+                "type" : "openDashboardState",
                 "targetDashboardStateId" : "wings",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
