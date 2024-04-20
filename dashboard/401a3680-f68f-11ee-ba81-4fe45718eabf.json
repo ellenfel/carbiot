@@ -2113,7 +2113,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "widgetContext.stateController.openState(0);",
+                "customFunction" : "widgetContext.stateController.navigatePrevState(0);",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "fd666ec9-cd5a-af01-47e1-b7e53911f87a"
