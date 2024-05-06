@@ -1749,8 +1749,8 @@
           "filter" : {
             "type" : "deviceType",
             "resolveMultiple" : true,
-            "deviceNameFilter" : "",
-            "deviceTypes" : [ "thermostat" ]
+            "deviceTypes" : [ "Environmental monitoring sensors" ],
+            "deviceNameFilter" : ""
           }
         },
         "12ae98c7-1ea2-52cf-64d5-763e9d993547" : {
