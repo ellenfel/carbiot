@@ -6,7 +6,7 @@
     "defaultEdgeRuleChainId" : null,
     "defaultQueueName" : null,
     "defaultRuleChainId" : null,
-    "description" : "",
+    "description" : "smart office demo",
     "externalId" : null,
     "firmwareId" : null,
     "id" : {
