@@ -775,6 +775,7 @@
             "showLegend" : false,
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "e73f4fd0-3136-89e7-f802-e071e6e19a6d",
               "dataKeys" : [ {
                 "name" : "type",
                 "type" : "attribute",
@@ -788,7 +789,9 @@
                 },
                 "_hash" : 0.09977301437404118
               } ],
-              "entityAliasId" : "e73f4fd0-3136-89e7-f802-e071e6e19a6d"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "enableDataExport" : true,
             "widgetStyle" : {
@@ -820,7 +823,8 @@
             "titleTooltip" : "",
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true
           },
           "id" : "27efeadc-842a-b232-fe8e-1a41bec1e630",
           "typeFullFqn" : "system.cards.entities_table"
