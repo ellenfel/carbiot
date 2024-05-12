@@ -775,19 +775,14 @@
             "showLegend" : false,
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "fe18dacb-77de-1cfd-9583-f76e4708c331",
+              "entityAliasId" : "4dd49440-57ee-0435-5dbd-f72fe063a687",
               "dataKeys" : [ {
-                "name" : "type",
-                "type" : "attribute",
-                "label" : "Type",
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
                 "color" : "#2196f3",
-                "settings" : {
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : true,
-                  "cellContentFunction" : "if (value === 'smart-sensor') {\n    return 'Smart Sensor';\n} else if (value === 'hvac') {\n    return 'HVAC';\n} else if (value === 'energy-meter') {\n    return 'Energy Meter';\n} else if (value === 'water-meter') {\n    return 'Water Meter';\n}\nreturn value;"
-                },
-                "_hash" : 0.09977301437404118
+                "settings" : { },
+                "_hash" : 0.25065053306538654
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
