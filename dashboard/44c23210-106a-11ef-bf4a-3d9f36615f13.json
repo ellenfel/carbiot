@@ -783,7 +783,7 @@
             "showLegend" : false,
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "e73f4fd0-3136-89e7-f802-e071e6e19a6d",
+              "entityAliasId" : "9a0371f5-b059-73da-4fbc-d1d73c2c0384",
               "dataKeys" : [ {
                 "name" : "name",
                 "type" : "entityField",
@@ -3875,6 +3875,16 @@
             "resolveMultiple" : false,
             "stateEntityParamName" : null,
             "defaultStateEntity" : null
+          }
+        },
+        "9a0371f5-b059-73da-4fbc-d1d73c2c0384" : {
+          "id" : "9a0371f5-b059-73da-4fbc-d1d73c2c0384",
+          "alias" : "ofis cihazları",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "467b8f20-109c-11ef-bf4a-3d9f36615f13", "46807120-109c-11ef-bf4a-3d9f36615f13", "467bdd40-109c-11ef-bf4a-3d9f36615f13", "46809830-109c-11ef-bf4a-3d9f36615f13" ]
           }
         }
       },
