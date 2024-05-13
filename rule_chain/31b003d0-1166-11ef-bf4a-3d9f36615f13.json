@@ -17,9 +17,127 @@
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : null,
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "Success"
+    } ],
     "firstNodeIndex" : null,
-    "nodes" : [ ],
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 466,
+        "layoutY" : 340
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {     amperage: (15 + 3 * Math.random()).toFixed(1),\n             \tenergy: (300 + 700 * Math.random()).toFixed(1),\n                frequency: (48 + 2 * Math.random()).toFixed(1),\n                power: (2500 + 2500 * Math.random()).toFixed(1),\n                voltage: (220 + 10 * Math.random()).toFixed(1),\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : null,
+        "originatorId" : "8c143350-ea88-11ee-9512-1748ff314dba",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3b618d40-1166-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "Enerji Analizörü 1",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 468,
+        "layoutY" : 390
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {     amperage: (15 + 3 * Math.random()).toFixed(1),\n             \tenergy: (300 + 700 * Math.random()).toFixed(1),\n                frequency: (48 + 2 * Math.random()).toFixed(1),\n                power: (2500 + 2500 * Math.random()).toFixed(1),\n                voltage: (220 + 10 * Math.random()).toFixed(1),\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : null,
+        "originatorId" : "952e85d0-ea88-11ee-9512-1748ff314dba",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3b61db60-1166-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "Enerji Analizörü 2",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 469,
+        "layoutY" : 444
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {     amperage: (15 + 3 * Math.random()).toFixed(1),\n             \tenergy: (300 + 700 * Math.random()).toFixed(1),\n                frequency: (48 + 2 * Math.random()).toFixed(1),\n                power: (2500 + 2500 * Math.random()).toFixed(1),\n                voltage: (220 + 10 * Math.random()).toFixed(1),\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : null,
+        "originatorId" : "aa1ec860-ea88-11ee-9512-1748ff314dba",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3b620270-1166-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "Enerji Analizörü 3",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 782,
+        "layoutY" : 383
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3b622980-1166-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "message type switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    } ],
     "ruleChainConnections" : null
   },
   "relations" : [ ],
