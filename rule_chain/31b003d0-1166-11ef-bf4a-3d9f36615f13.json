@@ -34,8 +34,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 466,
-        "layoutY" : 340
+        "layoutX" : 141,
+        "layoutY" : 280
       },
       "configuration" : {
         "msgCount" : 0,
@@ -54,7 +54,7 @@
         "entityType" : "RULE_NODE",
         "id" : "3b618d40-1166-11ef-bf4a-3d9f36615f13"
       },
-      "name" : "Enerji Analizörü 1",
+      "name" : "HVAC",
       "queueName" : "Main",
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -62,8 +62,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 468,
-        "layoutY" : 390
+        "layoutX" : 143,
+        "layoutY" : 330
       },
       "configuration" : {
         "msgCount" : 0,
@@ -82,7 +82,7 @@
         "entityType" : "RULE_NODE",
         "id" : "3b61db60-1166-11ef-bf4a-3d9f36615f13"
       },
-      "name" : "Enerji Analizörü 2",
+      "name" : "EA",
       "queueName" : "Main",
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -90,8 +90,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 469,
-        "layoutY" : 444
+        "layoutX" : 144,
+        "layoutY" : 384
       },
       "configuration" : {
         "msgCount" : 0,
@@ -110,7 +110,7 @@
         "entityType" : "RULE_NODE",
         "id" : "3b620270-1166-11ef-bf4a-3d9f36615f13"
       },
-      "name" : "Enerji Analizörü 3",
+      "name" : "water",
       "queueName" : "Main",
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -118,8 +118,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 782,
-        "layoutY" : 383
+        "layoutX" : 457,
+        "layoutY" : 323
       },
       "configuration" : {
         "version" : 0
@@ -137,6 +137,34 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 144,
+        "layoutY" : 434
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {     amperage: (15 + 3 * Math.random()).toFixed(1),\n             \tenergy: (300 + 700 * Math.random()).toFixed(1),\n                frequency: (48 + 2 * Math.random()).toFixed(1),\n                power: (2500 + 2500 * Math.random()).toFixed(1),\n                voltage: (220 + 10 * Math.random()).toFixed(1),\n};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : null,
+        "originatorId" : "aa1ec860-ea88-11ee-9512-1748ff314dba",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5d23ac10-1166-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "smart sensor",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
     } ],
     "ruleChainConnections" : null
   },
