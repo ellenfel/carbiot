@@ -43,8 +43,8 @@
         "scriptLang" : "JS",
         "jsScript" : "var airFlow = Math.random() * (500 - 100) + 100; // Random air flow between 100 and 500\nvar targetTemperature = Math.random() * (30 - 15) + 15; // Random target temperature between 15 and 30\nvar enabled = Math.random() < 0.5; // Random boolean value for enabled\n\nreturn {\n    msg: {\n        airFlow: parseFloat(airFlow.toFixed(1)), // Round to 1 decimal place\n        targetTemperature: parseFloat(targetTemperature.toFixed(1)), // Round to 1 decimal place\n        enabled: enabled\n    },\n    metadata: {\n        deviceType: \"hvac_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
-        "originatorId" : null,
-        "originatorType" : null
+        "originatorId" : "467b8f20-109c-11ef-bf4a-3d9f36615f13",
+        "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
