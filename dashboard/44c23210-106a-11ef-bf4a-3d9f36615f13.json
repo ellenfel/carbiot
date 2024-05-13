@@ -752,15 +752,23 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "4px",
             "settings" : {
+              "entitiesTitle" : "Devices",
               "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "entityNameColumnTitle" : "Name",
+              "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
+              "displayEntityType" : false,
               "displayPagination" : false,
               "defaultPageSize" : 10,
               "defaultSortOrder" : "entityName",
-              "displayEntityName" : true,
-              "displayEntityType" : false,
-              "entitiesTitle" : "Devices",
-              "entityNameColumnTitle" : "Name",
-              "enableSelectColumnDisplay" : true
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : ""
             },
             "title" : "New Entities table",
             "dropShadow" : false,
@@ -775,14 +783,14 @@
             "showLegend" : false,
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "4dd49440-57ee-0435-5dbd-f72fe063a687",
+              "entityAliasId" : "e73f4fd0-3136-89e7-f802-e071e6e19a6d",
               "dataKeys" : [ {
                 "name" : "name",
                 "type" : "entityField",
                 "label" : "Name",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.25065053306538654
+                "_hash" : 0.2148187963212158
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
