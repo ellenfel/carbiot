@@ -157,6 +157,7 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "9a0371f5-b059-73da-4fbc-d1d73c2c0384",
               "dataKeys" : [ {
                 "name" : "temperature",
                 "type" : "timeseries",
@@ -310,7 +311,9 @@
                 "_hash" : 0.06074376013993765,
                 "postFuncBody" : "if (value === 'smart-sensor') {\n    return 'Smart Sensor';\n} else if (value === 'hvac') {\n    return 'HVAC';\n} else if (value === 'energy-meter') {\n    return 'Energy Meter';\n} else if (value === 'water-meter') {\n    return 'Water Meter';\n}\nreturn value;"
               } ],
-              "entityAliasId" : "e73f4fd0-3136-89e7-f802-e071e6e19a6d"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -557,6 +560,7 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "entityAliasId" : "e73f4fd0-3136-89e7-f802-e071e6e19a6d",
               "dataKeys" : [ {
                 "name" : "temperature",
                 "type" : "timeseries",
@@ -573,9 +577,12 @@
                 "units" : "°C",
                 "decimals" : 1
               } ],
-              "entityAliasId" : "3c5dbaaf-e9af-bee3-891e-7202c319af16"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             }, {
               "type" : "entity",
+              "entityAliasId" : "e73f4fd0-3136-89e7-f802-e071e6e19a6d",
               "dataKeys" : [ {
                 "name" : "power",
                 "type" : "timeseries",
@@ -594,7 +601,9 @@
                 "units" : "W",
                 "decimals" : 0
               } ],
-              "entityAliasId" : "fe18dacb-77de-1cfd-9583-f76e4708c331"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "realtime" : {
@@ -669,7 +678,8 @@
             "titleTooltip" : "",
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true
           },
           "id" : "40d59849-9d6a-6de4-a023-76ea9fe29a5a",
           "typeFullFqn" : "system.charts.basic_timeseries"
