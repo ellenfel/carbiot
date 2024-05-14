@@ -3454,113 +3454,6 @@
           },
           "id" : "1a9de32a-bdd2-dd56-e09e-711969104aa6",
           "typeFullFqn" : "system.cards.entities_table"
-        },
-        "10647ecf-e011-e13c-b71d-396192a2ddd0" : {
-          "type" : "latest",
-          "sizeX" : 19,
-          "sizeY" : 11,
-          "config" : {
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 300000,
-                "timewindowMs" : 86400000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1693821090727,
-                  "endTimeMs" : 1693907490727
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "NONE",
-                "limit" : 200
-              }
-            },
-            "showTitle" : true,
-            "backgroundColor" : "rgba(255,255,255,0.15)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "4px",
-            "settings" : {
-              "enableSearch" : true,
-              "displayPagination" : false,
-              "defaultPageSize" : 10,
-              "defaultSortOrder" : "entityName",
-              "displayEntityName" : true,
-              "displayEntityType" : false,
-              "entitiesTitle" : "Devices",
-              "entityNameColumnTitle" : "Name",
-              "enableSelectColumnDisplay" : true
-            },
-            "title" : "New Entities table",
-            "dropShadow" : false,
-            "enableFullscreen" : true,
-            "titleStyle" : {
-              "fontSize" : "20px",
-              "fontWeight" : "bold",
-              "opacity" : "0.67",
-              "padding" : "5px 10px 5px 0px"
-            },
-            "useDashboardTimewindow" : false,
-            "showLegend" : false,
-            "datasources" : [ {
-              "type" : "entity",
-              "dataKeys" : [ {
-                "name" : "type",
-                "type" : "attribute",
-                "label" : "Type",
-                "color" : "#2196f3",
-                "settings" : {
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : true,
-                  "cellContentFunction" : "if (value === 'smart-sensor') {\n    return 'Smart Sensor';\n} else if (value === 'hvac') {\n    return 'HVAC';\n} else if (value === 'energy-meter') {\n    return 'Energy Meter';\n} else if (value === 'water-meter') {\n    return 'Water Meter';\n}\nreturn value;"
-                },
-                "_hash" : 0.09977301437404118
-              } ],
-              "entityAliasId" : "d208a9da-15ae-1a54-bf15-5f7259b34454"
-            } ],
-            "enableDataExport" : true,
-            "widgetStyle" : {
-              "borderBottom" : "solid 1px #aaa",
-              "borderRight" : "solid 1px #aaa",
-              "backgroundImage" : "url(https://img.thingsboard.io/dashboards/smart-building/devices-bg.jpg)",
-              "backgroundSize" : "cover"
-            },
-            "actions" : {
-              "headerButton" : [ ],
-              "actionCellButton" : [ {
-                "name" : "Navigate to Device Details",
-                "icon" : "play_arrow",
-                "type" : "custom",
-                "customFunction" : "var deviceService = widgetContext.deviceService;\n\ndeviceService.getDevice(entityId.id, {ignoreLoading: true}).subscribe(\n    function (device) {\n        var deviceType = device.type;\n        var params = {\n            entityId: entityId,\n            entityName: entityName\n        };\n        var targetDashboardStateId;\n        switch (deviceType) {\n          case \"energy-meter\":\n              targetDashboardStateId = \"energy_meter\";\n              break;\n          case \"hvac\":\n              targetDashboardStateId = \"hvac\";\n              break;\n          case \"smart-sensor\":\n              targetDashboardStateId = \"smart_sensor\";\n              break;\n          case \"water-meter\":\n              targetDashboardStateId = \"water_meter\";\n              break;\n        }\n        if (targetDashboardStateId) {\n              widgetContext.stateController.openState(targetDashboardStateId, params, false);\n        }\n    }\n);\n",
-                "id" : "f1d4aacf-d420-6ce9-1fd2-8e459258fbcc"
-              } ],
-              "rowClick" : [ {
-                "name" : "Navigate to Device Details",
-                "icon" : "more_horiz",
-                "type" : "custom",
-                "customFunction" : "var deviceService = widgetContext.deviceService;\n\ndeviceService.getDevice(entityId.id, {ignoreLoading: true}).subscribe(\n    function (device) {\n        var deviceType = device.type;\n        var params = {\n            entityId: entityId,\n            entityName: entityName\n        };\n        var targetDashboardStateId;\n        switch (deviceType) {\n          case \"energy-meter\":\n              targetDashboardStateId = \"energy_meter\";\n              break;\n          case \"hvac\":\n              targetDashboardStateId = \"hvac\";\n              break;\n          case \"smart-sensor\":\n              targetDashboardStateId = \"smart_sensor\";\n              break;\n          case \"water-meter\":\n              targetDashboardStateId = \"water_meter\";\n              break;\n        }\n        if (targetDashboardStateId) {\n              widgetContext.stateController.openState(targetDashboardStateId, params, false);\n        }\n    }\n);\n",
-                "id" : "c1120dc4-a51a-d4f6-b403-96ad6255fcb9"
-              } ]
-            },
-            "showTitleIcon" : false,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "id" : "10647ecf-e011-e13c-b71d-396192a2ddd0",
-          "typeFullFqn" : "system.cards.entities_table"
         }
       },
       "states" : {
@@ -3893,12 +3786,6 @@
                   "sizeY" : 11,
                   "row" : 0,
                   "col" : 7
-                },
-                "10647ecf-e011-e13c-b71d-396192a2ddd0" : {
-                  "sizeX" : 19,
-                  "sizeY" : 11,
-                  "row" : 23,
-                  "col" : 0
                 }
               },
               "gridSettings" : {
