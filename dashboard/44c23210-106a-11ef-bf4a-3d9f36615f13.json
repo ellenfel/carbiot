@@ -3427,8 +3427,12 @@
               "actionCellButton" : [ {
                 "name" : "Navigate to Device Details",
                 "icon" : "play_arrow",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
-                "customFunction" : "var deviceService = widgetContext.deviceService;\n\ndeviceService.getDevice(entityId.id, {ignoreLoading: true}).subscribe(\n    function (device) {\n        var deviceType = device.type;\n        var params = {\n            entityId: entityId,\n            entityName: entityName\n        };\n        var targetDashboardStateId;\n        switch (deviceType) {\n          case \"energy-meter\":\n              targetDashboardStateId = \"energy_meter\";\n              break;\n          case \"hvac\":\n              targetDashboardStateId = \"hvac\";\n              break;\n          case \"smart-sensor\":\n              targetDashboardStateId = \"smart_sensor\";\n              break;\n          case \"water-meter\":\n              targetDashboardStateId = \"water_meter\";\n              break;\n        }\n        if (targetDashboardStateId) {\n              widgetContext.stateController.openState(targetDashboardStateId, params, false);\n        }\n    }\n);\n",
+                "customFunction" : "var deviceService = widgetContext.deviceService;\n\ndeviceService.getDevice(entityId.id, {ignoreLoading: true}).subscribe(\n    function (device) {\n        var deviceType = device.type;\n        var params = {\n            entityId: entityId,\n            entityName: entityName\n        };\n        var targetDashboardStateId;\n        switch (deviceType) {\n          case \"energy-meter\":\n              targetDashboardStateId = \"energy_meter\";\n              break;\n          case \"hvac\":\n              targetDashboardStateId = \"hvac\";\n              break;\n          case \"water-meter\":\n              targetDashboardStateId = \"water-meter\";\n              break;\n          case \"smart_sensor\":\n              targetDashboardStateId = \"smart_sensor\";\n              break;\n        }\n        if (targetDashboardStateId) {\n              widgetContext.stateController.openState(targetDashboardStateId, params, false);\n        }\n    }\n);\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
                 "id" : "f1d4aacf-d420-6ce9-1fd2-8e459258fbcc"
               } ],
               "rowClick" : [ {
