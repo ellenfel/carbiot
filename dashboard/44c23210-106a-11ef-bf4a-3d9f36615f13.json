@@ -3945,7 +3945,7 @@
               "keyFilterPredicate" : {
                 "operation" : "STARTS_WITH",
                 "value" : {
-                  "defaultValue" : "smart",
+                  "defaultValue" : "energy",
                   "dynamicValue" : null
                 },
                 "ignoreCase" : true,
