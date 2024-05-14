@@ -3931,6 +3931,26 @@
             "relationType" : "Contains",
             "deviceTypes" : [ "hvac", "water-meter", "smart-sensor", "energy-meter" ]
           }
+        },
+        "c3671797-abb7-6041-961c-3c31d2bbaf24" : {
+          "id" : "c3671797-abb7-6041-961c-3c31d2bbaf24",
+          "alias" : "hvac",
+          "filter" : {
+            "type" : "deviceSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : {
+              "entityType" : "ASSET",
+              "id" : "6e8dbce0-109c-11ef-bf4a-3d9f36615f13"
+            },
+            "direction" : "FROM",
+            "maxLevel" : 3,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "Contains",
+            "deviceTypes" : [ "hvac" ]
+          }
         }
       },
       "timewindow" : {
