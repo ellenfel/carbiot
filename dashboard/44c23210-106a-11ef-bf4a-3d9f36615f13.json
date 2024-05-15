@@ -546,8 +546,8 @@
             "datasources" : [ ],
             "enableDataExport" : true,
             "targetDevice" : {
-              "type" : "entity",
-              "entityAliasId" : "e1d6944f-e5b9-224b-9496-a0d48d46f4ce"
+              "type" : "device",
+              "deviceId" : "467b8f20-109c-11ef-bf4a-3d9f36615f13"
             }
           },
           "id" : "e6421a08-76a7-5fbb-c9be-42d00154a468",
