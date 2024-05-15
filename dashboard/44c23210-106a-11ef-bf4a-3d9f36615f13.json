@@ -3397,7 +3397,7 @@
             "showLegend" : false,
             "datasources" : [ {
               "type" : "entity",
-              "entityAliasId" : "e73f4fd0-3136-89e7-f802-e071e6e19a6d",
+              "entityAliasId" : "85b4ec63-db11-e0ed-b911-0a83161366b4",
               "dataKeys" : [ {
                 "name" : "type",
                 "type" : "attribute",
@@ -3920,7 +3920,7 @@
           "id" : "85b4ec63-db11-e0ed-b911-0a83161366b4",
           "alias" : "Office Devices1",
           "filter" : {
-            "type" : "deviceSearchQuery",
+            "type" : "relationsQuery",
             "resolveMultiple" : true,
             "rootStateEntity" : false,
             "stateEntityParamName" : null,
@@ -3931,9 +3931,8 @@
             },
             "direction" : "FROM",
             "maxLevel" : 1,
-            "fetchLastLevelOnly" : null,
-            "relationType" : "Contains",
-            "deviceTypes" : [ "hvac", "water-meter", "smart-sensor", "energy-meter" ]
+            "fetchLastLevelOnly" : true,
+            "filters" : [ ]
           }
         },
         "c3671797-abb7-6041-961c-3c31d2bbaf24" : {
