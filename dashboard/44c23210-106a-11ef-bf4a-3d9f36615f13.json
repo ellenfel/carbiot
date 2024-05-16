@@ -3761,7 +3761,7 @@
             }
           }
         },
-        "water-meter" : {
+        "water_meter" : {
           "name" : "Water Meter: ${entityName}",
           "root" : false,
           "layouts" : {
