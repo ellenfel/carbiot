@@ -3441,6 +3441,18 @@
                 "type" : "custom",
                 "customFunction" : "var deviceService = widgetContext.deviceService;\n\ndeviceService.getDevice(entityId.id, {ignoreLoading: true}).subscribe(\n    function (device) {\n        var deviceType = device.type;\n        var params = {\n            entityId: entityId,\n            entityName: entityName\n        };\n        var targetDashboardStateId;\n        switch (deviceType) {\n          case \"energy-meter\":\n              targetDashboardStateId = \"energy_meter\";\n              break;\n          case \"hvac\":\n              targetDashboardStateId = \"hvac\";\n              break;\n          case \"smart-sensor\":\n              targetDashboardStateId = \"smart_sensor\";\n              break;\n          case \"water-meter\":\n              targetDashboardStateId = \"water_meter\";\n              break;\n        }\n        if (targetDashboardStateId) {\n              widgetContext.stateController.openState(targetDashboardStateId, params, false);\n        }\n    }\n);\n",
                 "id" : "c1120dc4-a51a-d4f6-b403-96ad6255fcb9"
+              } ],
+              "rowDoubleClick" : [ {
+                "name" : "typr",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : null,
+                "openRightLayout" : false,
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "id" : "499aff99-871c-36c8-476e-97bf8fc632ec"
               } ]
             },
             "showTitleIcon" : false,
