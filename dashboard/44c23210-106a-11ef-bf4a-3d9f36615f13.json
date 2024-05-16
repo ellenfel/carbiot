@@ -3625,59 +3625,6 @@
             }
           }
         },
-        "water_meter" : {
-          "name" : "Water Meter: ${entityName}",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "2dcb5560-c55f-e238-022e-69baba7c2022" : {
-                  "sizeX" : 18,
-                  "sizeY" : 12,
-                  "row" : 12,
-                  "col" : 7
-                },
-                "b39719de-1487-eb54-f1e8-cf347f79e6f3" : {
-                  "sizeX" : 37,
-                  "sizeY" : 12,
-                  "mobileHeight" : null,
-                  "row" : 0,
-                  "col" : 11
-                },
-                "e69c1626-73c5-3152-f396-bb453ede4c5c" : {
-                  "sizeX" : 23,
-                  "sizeY" : 12,
-                  "mobileHeight" : null,
-                  "row" : 12,
-                  "col" : 25
-                },
-                "3e6a95ab-ecf3-f65a-5432-8f8636373a30" : {
-                  "sizeX" : 11,
-                  "sizeY" : 12,
-                  "row" : 0,
-                  "col" : 0
-                },
-                "76429f16-a535-6643-3f22-8ab61808be46" : {
-                  "sizeX" : 7,
-                  "sizeY" : 12,
-                  "row" : 12,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "backgroundColor" : "#eeeeee",
-                "color" : "rgba(0,0,0,0.870588)",
-                "columns" : 48,
-                "backgroundSizeMode" : "100%",
-                "autoFillHeight" : true,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70,
-                "margin" : 5,
-                "outerMargin" : true
-              }
-            }
-          }
-        },
         "office_details" : {
           "name" : "Smart office",
           "root" : true,
@@ -3736,7 +3683,7 @@
             }
           }
         },
-        "smart-sensor" : {
+        "smart_sensor" : {
           "name" : "Smart Sensor: ${entityName}",
           "root" : false,
           "layouts" : {
@@ -3792,6 +3739,59 @@
                   "sizeY" : 6,
                   "row" : 6,
                   "col" : 42
+                },
+                "76429f16-a535-6643-3f22-8ab61808be46" : {
+                  "sizeX" : 7,
+                  "sizeY" : 12,
+                  "row" : 12,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "color" : "rgba(0,0,0,0.870588)",
+                "columns" : 48,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70,
+                "margin" : 5,
+                "outerMargin" : true
+              }
+            }
+          }
+        },
+        "water-meter" : {
+          "name" : "Water Meter: ${entityName}",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "2dcb5560-c55f-e238-022e-69baba7c2022" : {
+                  "sizeX" : 18,
+                  "sizeY" : 12,
+                  "row" : 12,
+                  "col" : 7
+                },
+                "b39719de-1487-eb54-f1e8-cf347f79e6f3" : {
+                  "sizeX" : 37,
+                  "sizeY" : 12,
+                  "mobileHeight" : null,
+                  "row" : 0,
+                  "col" : 11
+                },
+                "e69c1626-73c5-3152-f396-bb453ede4c5c" : {
+                  "sizeX" : 23,
+                  "sizeY" : 12,
+                  "mobileHeight" : null,
+                  "row" : 12,
+                  "col" : 25
+                },
+                "3e6a95ab-ecf3-f65a-5432-8f8636373a30" : {
+                  "sizeX" : 11,
+                  "sizeY" : 12,
+                  "row" : 0,
+                  "col" : 0
                 },
                 "76429f16-a535-6643-3f22-8ab61808be46" : {
                   "sizeX" : 7,
