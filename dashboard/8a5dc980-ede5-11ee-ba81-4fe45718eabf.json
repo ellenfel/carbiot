@@ -3041,8 +3041,8 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Sim - Fuel Level Monitoring",
-    "title" : "Sim - Fuel Level Monitoring"
+    "name" : "Solution: Fuel Level Monitoring",
+    "title" : "Solution: Fuel Level Monitoring"
   },
   "relations" : [ ],
   "attributes" : {
