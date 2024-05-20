@@ -51,7 +51,7 @@
         "scriptLang" : "JS",
         "jsScript" : "var airFlow = Math.random() * (500 - 100) + 100; // Random air flow between 100 and 500\nvar targetTemperature = Math.random() * (30 - 15) + 15; // Random target temperature between 15 and 30\nvar enabled = Math.random() < 0.5; // Random boolean value for enabled\n\nreturn {\n    msg: {\n        airFlow: parseFloat(airFlow.toFixed(1)), // Round to 1 decimal place\n        targetTemperature: parseFloat(targetTemperature.toFixed(1)), // Round to 1 decimal place\n        enabled: enabled\n    },\n    metadata: {\n        deviceType: \"hvac_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
-        "originatorId" : "467b8f20-109c-11ef-bf4a-3d9f36615f13",
+        "originatorId" : "c2046710-1683-11ef-bf4a-3d9f36615f13",
         "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
@@ -79,7 +79,7 @@
         "scriptLang" : "JS",
         "jsScript" : "var voltage = Math.random() * (250 - 200) + 200; // Random voltage between 200 and 250\nvar frequency = Math.random() * (70 - 50) + 50; // Random frequency between 50 and 70\nvar amperage = Math.random() * (20 - 10) + 10; // Random amperage between 10 and 20\nvar power = Math.random() * (4000 - 2000) + 2000; // Random power between 2000 and 4000\nvar energy = Math.random() * 500; // Random energy between 0 and 500\n\nreturn {\n    msg: {\n        voltage: parseFloat(voltage.toFixed(1)), // Round to 1 decimal place\n        frequency: parseFloat(frequency.toFixed(1)), // Round to 1 decimal place\n        amperage: parseFloat(amperage.toFixed(1)), // Round to 1 decimal place\n        power: parseFloat(power.toFixed(1)), // Round to 1 decimal place\n        energy: parseFloat(energy.toFixed(1)) // Round to 1 decimal place\n    },\n    metadata: {\n        deviceType: \"energy_meter_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
-        "originatorId" : "46809830-109c-11ef-bf4a-3d9f36615f13",
+        "originatorId" : "c20ccb80-1683-11ef-bf4a-3d9f36615f13",
         "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
@@ -157,7 +157,7 @@
         "scriptLang" : "JS",
         "jsScript" : "var co2 = Math.random() * 1000; // Random CO2 level between 0 and 1000\nvar tvoc = Math.random() * 1; // Random TVOC level between 0 and 1\nvar temperature = Math.random() * (30 - 10) + 10; // Random temperature between 10 and 30\nvar humidity = Math.random() * 100; // Random humidity level between 0 and 100\nvar occupancy = Math.random() < 0.5; // Random boolean value for occupancy\n\nreturn {\n    msg: {\n        co2: parseFloat(co2.toFixed(1)), // Round to 1 decimal place\n        tvoc: parseFloat(tvoc.toFixed(1)), // Round to 1 decimal place\n        temperature: parseFloat(temperature.toFixed(1)), // Round to 1 decimal place\n        humidity: parseFloat(humidity.toFixed(1)), // Round to 1 decimal place\n        occupancy: occupancy\n    },\n    metadata: {\n        deviceType: \"smart_sensor_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
-        "originatorId" : "467bdd40-109c-11ef-bf4a-3d9f36615f13",
+        "originatorId" : "c203f1e0-1683-11ef-bf4a-3d9f36615f13",
         "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
