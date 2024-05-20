@@ -3779,8 +3779,8 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Sim - Silos monitoring",
-    "title" : "Sim - Silos monitoring"
+    "name" : "Solition: Silos Monitoring",
+    "title" : "Solition: Silos Monitoring"
   },
   "relations" : [ ],
   "attributes" : {
