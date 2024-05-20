@@ -3880,7 +3880,7 @@
               "id" : "6e8dbce0-109c-11ef-bf4a-3d9f36615f13"
             },
             "direction" : "FROM",
-            "maxLevel" : 1,
+            "maxLevel" : 5,
             "fetchLastLevelOnly" : null,
             "relationType" : "Contains",
             "deviceTypes" : [ "energy-meter" ]
@@ -3903,7 +3903,7 @@
             "maxLevel" : 1,
             "fetchLastLevelOnly" : null,
             "relationType" : "Contains",
-            "deviceTypes" : [ "water-meter", "energy-meter" ]
+            "deviceTypes" : [ "water-meter", "energy-meter", "smart-sensor", "hvac" ]
           }
         },
         "a0faf37a-3c5d-e721-f445-de7914947895" : {
