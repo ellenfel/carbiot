@@ -3890,7 +3890,7 @@
           "id" : "e73f4fd0-3136-89e7-f802-e071e6e19a6d",
           "alias" : "Office Devices",
           "filter" : {
-            "type" : "deviceSearchQuery",
+            "type" : "relationsQuery",
             "resolveMultiple" : true,
             "rootStateEntity" : false,
             "stateEntityParamName" : null,
@@ -3901,9 +3901,8 @@
             },
             "direction" : "FROM",
             "maxLevel" : 1,
-            "fetchLastLevelOnly" : null,
-            "relationType" : "Contains",
-            "deviceTypes" : [ "water-meter", "energy-meter", "smart-sensor", "hvac" ]
+            "fetchLastLevelOnly" : false,
+            "filters" : [ ]
           }
         },
         "a0faf37a-3c5d-e721-f445-de7914947895" : {
