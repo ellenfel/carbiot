@@ -3,7 +3,719 @@
   "entity" : {
     "assignedCustomers" : null,
     "configuration" : {
-      "description" : ""
+      "description" : "",
+      "widgets" : {
+        "5fc486a3-cfb2-ae7a-21ee-35531e88563e" : {
+          "type" : "latest",
+          "sizeX" : 8.5,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "0813fdcd-9ed7-a737-74fd-13c978a9a1ab",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.848379539472371
+              }, {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.7803202333041441
+              }, {
+                "name" : "cropType",
+                "type" : "attribute",
+                "label" : "cropType",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.13560061274453417
+              }, {
+                "name" : "avgMoisture",
+                "type" : "timeseries",
+                "label" : "avgMoisture",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.011152801250584377
+              }, {
+                "name" : "minMoistureThreshold",
+                "type" : "attribute",
+                "label" : "minMoistureThreshold",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.4441224029270672
+              }, {
+                "name" : "maxMoistureThreshold",
+                "type" : "attribute",
+                "label" : "maxMoistureThreshold",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.024053653116780316
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1695017847770,
+                  "endTimeMs" : 1695104247770
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0,0,0,0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "provider" : "openstreet-map",
+              "gmApiKey" : "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
+              "gmDefaultMapType" : "roadmap",
+              "mapProvider" : "Esri.WorldImagery",
+              "useCustomProvider" : false,
+              "customProviderTileUrl" : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "mapProviderHere" : "HERE.normalDay",
+              "credentials" : {
+                "app_id" : "AhM6TzD9ThyK78CT3ptx",
+                "app_code" : "p6NPiITB3Vv0GMUFnkLOOg"
+              },
+              "mapImageUrl" : "tb-image:aGVyZV9tYXBfc3lzdGVtX3dpZGdldF9tYXBfaW1hZ2Uuc3Zn:IkhFUkUgTWFwIiBzeXN0ZW0gd2lkZ2V0IG1hcCBpbWFnZQ==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMiIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwIiB3aWR0aD0iMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtOTUyLjM2KSI+CiAgPHJlY3QgaWQ9InJlY3Q0Njg0IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBoZWlnaHQ9Ijk5LjAxIiB3aWR0aD0iOTkuMDEiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiB5PSI5NTIuODYiIHg9Ii40OTUwNSIgc3Ryb2tlLXdpZHRoPSIuOTkwMTAiIGZpbGw9IiNlZWUiLz4KICA8dGV4dCBpZD0idGV4dDQ2ODYiIHN0eWxlPSJ3b3JkLXNwYWNpbmc6MHB4O2xldHRlci1zcGFjaW5nOjBweDt0ZXh0LWFuY2hvcjptaWRkbGU7dGV4dC1hbGlnbjpjZW50ZXIiIGZvbnQtd2VpZ2h0PSJib2xkIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmb250LXNpemU9IjEwcHgiIGxpbmUtaGVpZ2h0PSIxMjUlIiB5PSI5NzAuNzI4MDkiIHg9IjQ5LjM5NjQ3NyIgZm9udC1mYW1pbHk9IlJvYm90byIgZmlsbD0iIzY2NjY2NiI+PHRzcGFuIGlkPSJ0c3BhbjQ2OTAiIHg9IjUwLjY0NjQ3NyIgeT0iOTcwLjcyODA5Ij5JbWFnZSBiYWNrZ3JvdW5kIDwvdHNwYW4+PHRzcGFuIGlkPSJ0c3BhbjQ2OTIiIHg9IjQ5LjM5NjQ3NyIgeT0iOTgzLjIyODA5Ij5pcyBub3QgY29uZmlndXJlZDwvdHNwYW4+PC90ZXh0PgogIDxyZWN0IGlkPSJyZWN0NDY5NCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgaGVpZ2h0PSIxOS4zNiIgd2lkdGg9IjY5LjM2IiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgeT0iOTkyLjY4IiB4PSIxNS4zMiIgc3Ryb2tlLXdpZHRoPSIuNjM5ODYiIGZpbGw9Im5vbmUiLz4KIDwvZz4KPC9zdmc+Cg==",
+              "tmApiKey" : "84d6d83e0e51e481e50454ccbe8986b",
+              "tmDefaultMapType" : "roadmap",
+              "latKeyName" : "1",
+              "lngKeyName" : "1",
+              "xPosKeyName" : "xPos",
+              "yPosKeyName" : "yPos",
+              "defaultCenterPosition" : "0,0",
+              "disableScrollZooming" : false,
+              "disableDoubleClickZooming" : false,
+              "disableZoomControl" : false,
+              "fitMapBounds" : true,
+              "useDefaultCenterPosition" : false,
+              "mapPageSize" : 16384,
+              "markerOffsetX" : 0.5,
+              "markerOffsetY" : 1,
+              "posFunction" : "return {x: origXPos, y: origYPos};",
+              "draggableMarker" : false,
+              "showLabel" : true,
+              "useLabelFunction" : false,
+              "label" : "${entityName}",
+              "showTooltip" : true,
+              "showTooltipAction" : "click",
+              "autocloseTooltip" : true,
+              "useTooltipFunction" : false,
+              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See advanced settings for details</small>",
+              "tooltipOffsetX" : 0,
+              "tooltipOffsetY" : -1,
+              "color" : "#fe7569",
+              "useColorFunction" : false,
+              "useMarkerImageFunction" : false,
+              "markerImageSize" : 34,
+              "markerImages" : [ ],
+              "showPolygon" : true,
+              "polygonKeyName" : "perimeter",
+              "editablePolygon" : false,
+              "showPolygonLabel" : true,
+              "usePolygonLabelFunction" : true,
+              "polygonLabelFunction" : "var html = '<div>';\nhtml += '<div style=\"color: #FFF; font-weight: 600; text-align: center; padding-bottom: 8px;\">${entityName} (${cropType})</div>';\n\nvar avgMoisture = data['avgMoisture'];\nvar avgMoistureText = avgMoisture !== '' ?  Number(avgMoisture).toFixed(1) + '%' : 'n/a';\nvar minMoistureThreshold = data['minMoistureThreshold'];\nvar maxMoistureThreshold = data['maxMoistureThreshold'];\nvar color = '#FFFFFF';\nvar textColor = '#000000';\nif (avgMoisture < minMoistureThreshold || avgMoisture > maxMoistureThreshold) {\n    color = '#D12730';\n    textColor = '#FFFFFF';\n}\n\nhtml += '<div style=\"text-align: center;\"><span style=\"background: ' + color + '; color: ' + textColor + '; border-radius: 8px; padding: 4px;\">'+avgMoistureText+'</span></div>';\n\nhtml += '<div>';\n\nreturn html;",
+              "showPolygonTooltip" : false,
+              "polygonColor" : "#3388ff",
+              "polygonOpacity" : 0.2,
+              "usePolygonColorFunction" : false,
+              "polygonStrokeColor" : "#3388ff",
+              "polygonStrokeOpacity" : 1,
+              "polygonStrokeWeight" : 3,
+              "usePolygonStrokeColorFunction" : false,
+              "showCircle" : false,
+              "circleKeyName" : "perimeter",
+              "editableCircle" : false,
+              "showCircleLabel" : false,
+              "useCircleLabelFunction" : false,
+              "circleLabel" : "${entityName}",
+              "showCircleTooltip" : false,
+              "showCircleTooltipAction" : "click",
+              "autoCloseCircleTooltip" : true,
+              "useCircleTooltipFunction" : false,
+              "circleTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "circleFillColor" : "#3388ff",
+              "circleFillColorOpacity" : 0.2,
+              "useCircleFillColorFunction" : false,
+              "circleStrokeColor" : "#3388ff",
+              "circleStrokeOpacity" : 1,
+              "circleStrokeWeight" : 3,
+              "useCircleStrokeColorFunction" : false,
+              "useClusterMarkers" : false,
+              "zoomOnClick" : true,
+              "maxClusterRadius" : 80,
+              "animate" : true,
+              "spiderfyOnMaxZoom" : false,
+              "showCoverageOnHover" : true,
+              "chunkedLoading" : false,
+              "removeOutsideVisibleBounds" : true
+            },
+            "title" : "Fields",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : {
+              "markerClick" : [ ],
+              "polygonClick" : [ {
+                "name" : "Field details",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "field",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "6feadbe9-7088-fccc-2cbc-dcde695df002"
+              } ]
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "5fc486a3-cfb2-ae7a-21ee-35531e88563e",
+          "typeFullFqn" : "system.maps_v2.openstreetmap"
+        },
+        "d4dec610-2b77-e9a5-f07b-23ca1035bf04" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1695017847770,
+                  "endTimeMs" : 1695104247770
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "entitiesTitle" : "Araziler",
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "Name",
+              "useRowStyleFunction" : false
+            },
+            "title" : "New Entities table",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "0813fdcd-9ed7-a737-74fd-13c978a9a1ab",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Arazi",
+                "color" : "#ffc107",
+                "settings" : {
+                  "columnWidth" : "30%",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.7231686834210371,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Etiket",
+                "color" : "#2196f3",
+                "settings" : {
+                  "columnWidth" : "30%",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "return {\n    fontWeight: 600\n};",
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "return value ? '<span style=\"background: rgba(111, 116, 242, 0.08); border-radius: 16px; padding: 4px 8px; color: #5553AF;\">'+value+'</span>' : '';",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.7427597097428846,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cropType",
+                "type" : "attribute",
+                "label" : "Mahsul Türü",
+                "color" : "#4caf50",
+                "settings" : {
+                  "columnWidth" : "20%",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.45735173845667054,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "avgMoisture",
+                "type" : "timeseries",
+                "label" : "Ortalama Nem",
+                "color" : "#f44336",
+                "settings" : {
+                  "columnWidth" : "20%",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "if (value) {\n    var minMoistureThreshold = entity['minMoistureThreshold'];\n    var maxMoistureThreshold = entity['maxMoistureThreshold'];\n    var background = '111, 116, 242';\n    var textColor = '#5553AF';\n    if (value < minMoistureThreshold || value > maxMoistureThreshold) {\n        background = '209, 39, 48';\n        textColor = '#D12730';\n    }\n    var percent = value + '%';\n    var percentText = value.toFixed(0) + '%';\n    return '<div style=\"width: 100%; max-width: 100px; height: 16px; background: linear-gradient(to right, rgba('+background+', 0.16) '+percent+', rgba('+background+', 0.08) '+percent+'); border-radius: 5.21053px;\"><span style=\"padding-left: 4px; font-weight: 600; font-size: 13px; color: '+textColor+';\">'+percentText+'</span></div>';\n} else {\n    return 'No data';\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.017767185128356955,
+                "aggregationType" : "NONE",
+                "units" : "%",
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "minMoistureThreshold",
+                "type" : "attribute",
+                "label" : "minMoistureThreshold",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "disabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.5565658823011432,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "maxMoistureThreshold",
+                "type" : "attribute",
+                "label" : "maxMoistureThreshold",
+                "color" : "#3f51b5",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "disabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.860782325530304,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "irrigationState",
+                "type" : "timeseries",
+                "label" : "Sulama Durumu",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "var text = value === 'ON' ? 'On' : 'Off';\nvar color = value === 'ON' ? '#198038' : 'red';\nreturn '<div><span style=\"width: 4px; height: 4px; border-radius: 2px; background: '+color+'; display: inline-block; vertical-align: middle;\"></span><span style=\"padding-left: 8px;\">'+text+'</span></div>';",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.20197437452090683,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "displayTimewindow" : true,
+            "actions" : {
+              "rowClick" : [ {
+                "name" : "Arazi detayları",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "field",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9fac49b3-0e6b-9beb-56a7-6da9cec34984"
+              } ],
+              "headerButton" : [ {
+                "name" : "Arazi oluştur",
+                "icon" : "add",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form #addFieldForm=\"ngForm\" [formGroup]=\"addFieldFormGroup\"\n      (ngSubmit)=\"submit()\" class=\"sf-field-form\">\n    <mat-toolbar fxLayout=\"row\" color=\"primary\">\n        <h2>{{ step === 1 ? 'Add field' : 'Setup field polygon' }}</h2>\n        <span fxFlex></span>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content fxLayout=\"column\">\n        <section *ngIf=\"step === 1\" fxLayout=\"column\">\n            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">\n                <mat-form-field fxFlex class=\"mat-block\">\n                    <mat-label>Field Name</mat-label>\n                    <input matInput formControlName=\"name\" required>\n                    <mat-error *ngIf=\"addFieldFormGroup.get('name').hasError('required')\">\n                        Field name is required.\n                    </mat-error>\n                </mat-form-field>\n                <mat-form-field fxFlex class=\"mat-block\">\n                    <mat-label>Label</mat-label>\n                    <input matInput formControlName=\"label\">\n                </mat-form-field>\n            </div>\n            <mat-form-field appearance=\"fill\">\n              <mat-label>Crop type</mat-label>\n              <mat-select matInput formControlName=\"cropType\" required>\n                <mat-option *ngFor=\"let cropType of cropTypes\" [value]=\"cropType\">\n                  {{ cropType }}\n                </mat-option>\n              </mat-select>\n              <mat-error *ngIf=\"addFieldFormGroup.get('cropType').hasError('required')\">\n                    Crop type is required.\n              </mat-error>\n            </mat-form-field>\n            <span class=\"title-modal\" style=\"padding-left: 8px;\">Moisture thresholds</span>\n            <div fxLayout=\"column\">\n                <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" style=\"padding: 0 8px;\">\n                    <label class=\"tb-small\">Min</label>\n                    <label class=\"tb-small threshold-value\">{{ addFieldFormGroup.get('minMoistureThreshold').value }}%</label>\n                </div>\n                <mat-slider\n                    color=\"primary\"\n                    formControlName=\"minMoistureThreshold\"\n                    thumbLabel\n                    [displayWith]=\"formatMoistureThreshold\"\n                    tickInterval=\"auto\"\n                    step=\"1\"\n                    min=\"0\"\n                    max=\"100\"\n                    aria-label=\"Minimum moisture threshold\">\n                </mat-slider>\n            </div>    \n            <div fxLayout=\"column\">\n                <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" style=\"padding: 0 8px;\">\n                    <label class=\"tb-small\">Max</label>\n                    <label class=\"tb-small threshold-value\">{{ addFieldFormGroup.get('maxMoistureThreshold').value }}%</label>\n                </div>\n                <mat-slider\n                    color=\"primary\"\n                    formControlName=\"maxMoistureThreshold\"\n                    thumbLabel\n                    [displayWith]=\"formatMoistureThreshold\"\n                    tickInterval=\"auto\"\n                    step=\"1\"\n                    min=\"0\"\n                    max=\"100\"\n                    aria-label=\"Maximum moisture threshold\">\n                </mat-slider>\n            </div>    \n        </section>\n        <section *ngIf=\"step === 2\" fxLayout=\"column\">\n            <tb-dashboard-state \n                style=\"height: 600px; width: 100%;\"\n                [ctx]=\"widgetContext\"\n                stateId=\"setup_field_polygon\"\n                [entityId]=\"field.id\">\n            </tb-dashboard-state>\n        </section>\n    </div>\n    <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\">\n        <button *ngIf=\"step === 1\" mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button *ngIf=\"step === 1\" mat-button mat-raised-button color=\"primary\"\n                type=\"button\"\n                (click)=\"next()\"\n                [disabled]=\"(isLoading$ | async) || addFieldFormGroup.invalid\">\n            Next\n        </button>\n        <button *ngIf=\"step === 2\" mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"back()\" cdkFocusInitial>\n            Back\n        </button>\n        <button *ngIf=\"step === 2\" mat-button mat-raised-button color=\"primary\"\n                type=\"submit\"\n                [disabled]=\"(isLoading$ | async) || addFieldFormGroup.invalid || !hasPolygon\">\n            Create\n        </button>\n    </div>\n</form>\n",
+                "customCss" : ".sf-field-form {\n    width: 800px;\n}\n\n.sf-field-form .mat-toolbar.mat-primary {\n    background: #fff;\n    color: rgba(0, 0, 0, 0.87);\n}\n\n.sf-field-form .mat-button.mat-primary, .sf-field-form .mat-icon-button.mat-primary, .sf-field-form .mat-stroked-button.mat-primary {\n    color: #5553AF;\n}\n\n.sf-field-form .mat-fab.mat-primary, .sf-field-form .mat-flat-button.mat-primary, .sf-field-form .mat-mini-fab.mat-primary, .sf-field-form .mat-raised-button.mat-primary {\n    color: #fff;\n}\n\n.sf-field-form .mat-fab.mat-primary, .sf-field-form .mat-flat-button.mat-primary, .sf-field-form .mat-mini-fab.mat-primary, .sf-field-form .mat-raised-button.mat-primary {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-button.mat-primary .mat-button-focus-overlay, .sf-field-form .mat-icon-button.mat-primary .mat-button-focus-overlay, .sf-field-form .mat-stroked-button.mat-primary .mat-button-focus-overlay {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-form-field.mat-focused .mat-form-field-label {\n    color: #5553AF;\n}\n\n.sf-field-form .mat-form-field.mat-focused .mat-form-field-ripple {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-slide-toggle.mat-checked .mat-ripple-element, .sf-field-form .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {\n    background-color: rgba(111, 116, 242, 0.54);\n}\n\n.sf-field-form .mat-datetimepicker-calendar-header {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-datetimepicker-calendar-body-cell-content.mat-datetimepicker-calendar-body-selected {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-datetimepicker-clock-cell.mat-datetimepicker-clock-cell-selected {\n    background-color: #8689f4;\n}\n\n.sf-field-form .mat-datetimepicker-clock-center, .sf-field-form .mat-datetimepicker-clock-hand, .sf-field-form .mat-datetimepicker-clock-hand:before {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-datetimepicker-calendar-body-cell-content.mat-datetimepicker-calendar-body-today:not(.mat-datetimepicker-calendar-body-selected) {\n    border-color: #6F74F2;\n}\n\n.sf-field-form .mat-icon {\n    color: #868D9C;\n}\n\n.sf-field-form .title-modal {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 130%;\n    color: #868D9C;\n    padding-bottom: 8px;\n}\n\n.sf-field-form .mat-button-toggle-group-appearance-standard, .sf-field-form .mat-button-toggle-standalone.mat-button-toggle-appearance-standard {\n    border: none;\n}\n\n.sf-field-form .mat-button-toggle {\n    background: rgba(0, 0, 0, 0.06);\n    height: 32px;\n    align-items: center;\n    display: flex;\n}\n\n.sf-field-form .mat-button-toggle-checked .mat-button-toggle-button {\n    background-color: #fff;\n    border-radius: 4px;\n    margin-left: 2px;\n    margin-right: 2px;\n}\n\n.sf-field-form .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {\n    line-height: 28px;\n    font-size: 14px;\n}\n\n.sf-field-form .mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {\n    border-left: none;\n}\n\n.sf-field-form .mat-button-toggle-checked.mat-button-toggle-appearance-standard:not(.mat-button-toggle-disabled):hover .mat-button-toggle-focus-overlay {\n    opacity: .01;\n}\n\n.sf-field-form .mat-button.weekly-repeat {\n    padding: 0 15px;\n    min-width: 0;\n}\n\n.sf-field-form .mat-button.weekly-repeat.no-border {\n    padding: 0 16px;\n}\n\n.sf-field-form .mat-slider {\n    padding: 8px 0;\n}\n\n.sf-field-form .mat-primary .mat-slider-thumb, .sf-field-form .mat-primary .mat-slider-thumb-label, .sf-field-form .mat-primary .mat-slider-track-fill {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .title-modal {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 130%;\n    color: #868D9C;\n    padding-bottom: 8px;\n}\n\n.sf-field-form .threshold-value {\n    color: #fff;\n    font-weight: 500;\n    background: #6F74F2;\n    border-radius: 16px;\n    width: 32px;\n    height: 32px;\n    line-height: 32px;\n    text-align: center;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenAddFieldDialog();\n\nfunction openAddFieldDialog() {\n    customDialog.customDialog(htmlTemplate, AddFieldDialogController).subscribe();\n}\n\nfunction AddFieldDialogController(instance) {\n    let vm = instance;\n    \n    vm.cropTypes = ['rice', 'corn', 'wheat', \n    'sugarcane', 'maize (corn)', 'soybean oil', 'palm oil', 'potatoes',\n    'cassava', 'legume pulses', 'sunflower seed oil', 'rape and mustard oil',\n    'other vegetables', 'other fruits', 'sorghum', 'millet', 'groundnuts', 'beans',\n    'sweet potatoes', 'bananas', 'various nuts', 'soybeans', 'cottonseed oil',\n    'groundnut oil', 'yams'];\n    \n    vm.widgetContext = widgetContext;\n    vm.step = 1;\n    vm.field = null;\n    \n    vm.hasPolygon = false;\n    vm.polygonSubscription = null;\n\n\n    vm.addFieldFormGroup = vm.fb.group({\n      name: ['', [vm.validators.required]],\n      label: [null],\n      cropType: ['wheat', [vm.validators.required]],\n      minMoistureThreshold: [25, [vm.validators.required, vm.validators.min(0), vm.validators.max(100)]],\n      maxMoistureThreshold: [75, [vm.validators.required, vm.validators.min(0), vm.validators.max(100)]]\n    });\n\n    vm.cancel = function() {\n        cancelPolygonSubscription();\n        deleteEntityObservable().subscribe(\n            function () {\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n            }\n        );\n    };\n\n    vm.next = function() {\n        vm.addFieldFormGroup.markAsPristine();\n        saveEntityObservable().subscribe(\n            function (entity) {\n                vm.field = entity;\n                widgetContext.rxjs.forkJoin([\n                    saveAttributes(entity.id),\n                ]).subscribe(\n                    function () {\n                        createPolygonSubscription().subscribe(\n                            function() {\n                                vm.step = 2;\n                            }\n                        );\n                    }\n                );\n            }\n        );\n    };\n    \n    vm.back = function() {\n        cancelPolygonSubscription();\n        vm.step = 1;\n    }\n    \n    vm.submit = function() {\n        cancelPolygonSubscription();\n        widgetContext.updateAliases();\n        vm.dialogRef.close(null);\n    }\n    \n    vm.formatMoistureThreshold = function(value) {\n        return value + '%';\n    }\n    \n    function createPolygonSubscription() {\n        var subscriptionInfo = {\n            type: 'entity',\n            entityType: vm.field.id.entityType,\n            entityId: vm.field.id.id,\n            attributes: [{ name: 'perimeter' }]\n        };\n        var options = {\n            callbacks: {\n                onDataUpdated: function(subscription) {\n                    checkHasPolygon(subscription.data);\n                }\n            }\n        };\n        return widgetContext.subscriptionApi.createSubscriptionFromInfo(\n                            'latest', [ subscriptionInfo ], options, false, true).pipe(\n            widgetContext.rxjs.tap(function(polygonSubscription) {\n                vm.polygonSubscription = polygonSubscription;\n            })\n        );\n        \n    }\n    \n    function checkHasPolygon(data) {\n        var datasourceData = data[0].data;\n        var keyData = datasourceData[0];\n        var value = keyData[1];\n        if (value && Array.isArray(JSON.parse(value))) {\n            vm.hasPolygon = true;\n        } else {\n            vm.hasPolygon = false;\n        }\n    }\n    \n    function cancelPolygonSubscription() {\n        if (vm.polygonSubscription) {\n            widgetContext.subscriptionApi.removeSubscription(vm.polygonSubscription.id);\n            vm.polygonSubscription = null;\n        }\n    }\n\n    function saveEntityObservable() {\n        return getOrCreateSmartIrrigationAssetGroup().pipe(\n          widgetContext.rxjs.switchMap((smartIrrigation) => {\n            const formValues = vm.addFieldFormGroup.value;\n            let field = {\n                name: formValues.name,\n                type: 'SI Field',\n                label: formValues.label\n            };\n            if (vm.field) {\n                field.id = vm.field.id;\n            }\n            return assetService.saveAsset(field, smartIrrigation.id.id);\n          })\n        );\n    }\n    \n    function deleteEntityObservable() {\n        if (vm.field) {\n            return assetService.deleteAsset(vm.field.id.id);\n        } else {\n            return widgetContext.rxjs.of(null);\n        }\n    }\n\n    function saveAttributes(entityId) {\n        let cropType = vm.addFieldFormGroup.get('cropType').value;\n        let minMoistureThreshold = vm.addFieldFormGroup.get('minMoistureThreshold').value;\n        let maxMoistureThreshold = vm.addFieldFormGroup.get('maxMoistureThreshold').value;\n        let attributesArray = [\n            {key: 'cropType', value: cropType},\n            {key: 'minMoistureThreshold', value: minMoistureThreshold},\n            {key: 'maxMoistureThreshold', value: maxMoistureThreshold}\n        ];\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n    }\n    \n    function getOrCreateSmartIrrigationAssetGroup() {\n      return getEntityGroupByName(\"Smart Irrigation\", \"ASSET\").pipe(\n          widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                  return widgetContext.rxjs.of(group);\n              } else {\n                  var smartIrrigation = {\n                    type: 'ASSET',\n                    name: 'Smart Irrigation'\n                  };\n                  return entityGroupService.saveEntityGroup(smartIrrigation);\n              }\n          })\n      );\n    }\n    \n    function getEntityGroupByName(groupName, groupType) {\n      var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n      return entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.map((data) => {\n            if (data.data.length) {\n                return data.data.find((group) => group.name === groupName);\n            } else {\n                return null;\n            }\n          })\n      );\n    }\n\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "5b9d0130-b8ab-4103-0223-90a4530d425f"
+              } ],
+              "actionCellButton" : [ {
+                "name" : "Araziyi düzenle",
+                "icon" : "edit",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form #addFieldForm=\"ngForm\" [formGroup]=\"editFieldFormGroup\"\n      (ngSubmit)=\"save()\" class=\"sf-field-form\">\n    <mat-toolbar fxLayout=\"row\" color=\"primary\">\n        <h2>Araziyi düzenle '{{ entityName }}'</h2>\n        <span fxFlex></span>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content fxLayout=\"column\">\n        <section fxLayout=\"column\">\n            <div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.xs=\"column\"  fxLayoutGap.xs=\"0\">\n                <mat-form-field fxFlex class=\"mat-block\">\n                    <mat-label>Arazi ismi</mat-label>\n                    <input matInput formControlName=\"name\" required>\n                    <mat-error *ngIf=\"editFieldFormGroup.get('name').hasError('required')\">\n                        Arazi ismi gereklidir.\n                    </mat-error>\n                </mat-form-field>\n                <mat-form-field fxFlex class=\"mat-block\">\n                    <mat-label>Etiket</mat-label>\n                    <input matInput formControlName=\"label\">\n                </mat-form-field>\n            </div>\n            <mat-form-field appearance=\"fill\">\n              <mat-label>Mahsul türü</mat-label>\n              <mat-select matInput formControlName=\"cropType\" required>\n                <mat-option *ngFor=\"let cropType of cropTypes\" [value]=\"cropType\">\n                  {{ cropType }}\n                </mat-option>\n              </mat-select>\n              <mat-error *ngIf=\"editFieldFormGroup.get('cropType').hasError('required')\">\n                    Mahsul türü gereklidir.\n              </mat-error>\n            </mat-form-field>\n            <span class=\"title-modal\" style=\"padding-left: 8px;\">Nem eşikleri</span>\n            <div fxLayout=\"column\">\n                <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" style=\"padding: 0 8px;\">\n                    <label class=\"tb-small\">Min</label>\n                    <label class=\"tb-small threshold-value\">{{ editFieldFormGroup.get('minMoistureThreshold').value }}%</label>\n                </div>\n                <mat-slider\n                    color=\"primary\"\n                    formControlName=\"minMoistureThreshold\"\n                    thumbLabel\n                    [displayWith]=\"formatMoistureThreshold\"\n                    tickInterval=\"auto\"\n                    step=\"1\"\n                    min=\"0\"\n                    max=\"100\"\n                    aria-label=\"Minimum moisture threshold\">\n                </mat-slider>\n            </div>    \n            <div fxLayout=\"column\">\n                <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" style=\"padding: 0 8px;\">\n                    <label class=\"tb-small\">Max</label>\n                    <label class=\"tb-small threshold-value\">{{ editFieldFormGroup.get('maxMoistureThreshold').value }}%</label>\n                </div>\n                <mat-slider\n                    color=\"primary\"\n                    formControlName=\"maxMoistureThreshold\"\n                    thumbLabel\n                    [displayWith]=\"formatMoistureThreshold\"\n                    tickInterval=\"auto\"\n                    step=\"1\"\n                    min=\"0\"\n                    max=\"100\"\n                    aria-label=\"Maximum moisture threshold\">\n                </mat-slider>\n            </div>\n        </section>\n        <section fxLayout=\"column\">\n            <tb-dashboard-state \n                style=\"height: 600px; width: 100%;\"\n                [ctx]=\"widgetContext\"\n                stateId=\"setup_field_polygon\"\n                [entityId]=\"entityId\">\n            </tb-dashboard-state>\n        </section>\n    </div>\n    <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                type=\"submit\"\n                [disabled]=\"(isLoading$ | async) || editFieldFormGroup.invalid || !(editFieldFormGroup.dirty || polygonChanged) || !hasPolygon\">\n            Save\n        </button>\n    </div>\n</form>\n",
+                "customCss" : ".sf-field-form {\n    width: 800px;\n}\n\n.sf-field-form .mat-toolbar.mat-primary {\n    background: #fff;\n    color: rgba(0, 0, 0, 0.87);\n}\n\n.sf-field-form .mat-button.mat-primary, .sf-field-form .mat-icon-button.mat-primary, .sf-field-form .mat-stroked-button.mat-primary {\n    color: #5553AF;\n}\n\n.sf-field-form .mat-fab.mat-primary, .sf-field-form .mat-flat-button.mat-primary, .sf-field-form .mat-mini-fab.mat-primary, .sf-field-form .mat-raised-button.mat-primary {\n    color: #fff;\n}\n\n.sf-field-form .mat-fab.mat-primary, .sf-field-form .mat-flat-button.mat-primary, .sf-field-form .mat-mini-fab.mat-primary, .sf-field-form .mat-raised-button.mat-primary {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-button.mat-primary .mat-button-focus-overlay, .sf-field-form .mat-icon-button.mat-primary .mat-button-focus-overlay, .sf-field-form .mat-stroked-button.mat-primary .mat-button-focus-overlay {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-form-field.mat-focused .mat-form-field-label {\n    color: #5553AF;\n}\n\n.sf-field-form .mat-form-field.mat-focused .mat-form-field-ripple {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-slide-toggle.mat-checked .mat-ripple-element, .sf-field-form .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {\n    background-color: rgba(111, 116, 242, 0.54);\n}\n\n.sf-field-form .mat-datetimepicker-calendar-header {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-datetimepicker-calendar-body-cell-content.mat-datetimepicker-calendar-body-selected {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-datetimepicker-clock-cell.mat-datetimepicker-clock-cell-selected {\n    background-color: #8689f4;\n}\n\n.sf-field-form .mat-datetimepicker-clock-center, .sf-field-form .mat-datetimepicker-clock-hand, .sf-field-form .mat-datetimepicker-clock-hand:before {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .mat-datetimepicker-calendar-body-cell-content.mat-datetimepicker-calendar-body-today:not(.mat-datetimepicker-calendar-body-selected) {\n    border-color: #6F74F2;\n}\n\n.sf-field-form .mat-icon {\n    color: #868D9C;\n}\n\n.sf-field-form .title-modal {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 130%;\n    color: #868D9C;\n    padding-bottom: 8px;\n}\n\n.sf-field-form .mat-button-toggle-group-appearance-standard, .sf-field-form .mat-button-toggle-standalone.mat-button-toggle-appearance-standard {\n    border: none;\n}\n\n.sf-field-form .mat-button-toggle {\n    background: rgba(0, 0, 0, 0.06);\n    height: 32px;\n    align-items: center;\n    display: flex;\n}\n\n.sf-field-form .mat-button-toggle-checked .mat-button-toggle-button {\n    background-color: #fff;\n    border-radius: 4px;\n    margin-left: 2px;\n    margin-right: 2px;\n}\n\n.sf-field-form .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {\n    line-height: 28px;\n    font-size: 14px;\n}\n\n.sf-field-form .mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {\n    border-left: none;\n}\n\n.sf-field-form .mat-button-toggle-checked.mat-button-toggle-appearance-standard:not(.mat-button-toggle-disabled):hover .mat-button-toggle-focus-overlay {\n    opacity: .01;\n}\n\n.sf-field-form .mat-button.weekly-repeat {\n    padding: 0 15px;\n    min-width: 0;\n}\n\n.sf-field-form .mat-button.weekly-repeat.no-border {\n    padding: 0 16px;\n}\n\n.sf-field-form .mat-slider {\n    padding: 8px 0;\n}\n\n.sf-field-form .mat-primary .mat-slider-thumb, .sf-field-form .mat-primary .mat-slider-thumb-label, .sf-field-form .mat-primary .mat-slider-track-fill {\n    background-color: #6F74F2;\n}\n\n.sf-field-form .title-modal {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 130%;\n    color: #868D9C;\n    padding-bottom: 8px;\n}\n\n.sf-field-form .threshold-value {\n    color: #fff;\n    font-weight: 500;\n    background: #6F74F2;\n    border-radius: 16px;\n    width: 32px;\n    height: 32px;\n    line-height: 32px;\n    text-align: center;\n}\n\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenEditFieldDialog();\n\nfunction openEditFieldDialog() {\n    customDialog.customDialog(htmlTemplate, EditFieldDialogController).subscribe();\n}\n\nfunction EditFieldDialogController(instance) {\n    let vm = instance;\n    \n    vm.entityName = entityName;\n    vm.entityId = entityId;\n    \n    vm.cropTypes = ['pirinç', 'mısır', 'buğday', 'şeker kamışı', 'patates', 'diğer sebzeler', 'diğer meyveler', 'darı', 'yerfıstığı', 'fasulye', 'tatlı patates', 'muz' , 'çeşitli yemişler', 'soya fasulyesi', 'yer elması'];\n    \n    vm.widgetContext = widgetContext;\n    vm.field = null;\n    \n    vm.perimeter = null;\n    vm.hasPolygon = false;\n    vm.polygonChanged = false;\n    vm.polygonSubscription = null;\n\n\n    vm.editFieldFormGroup = vm.fb.group({\n      name: ['', [vm.validators.required]],\n      label: [null],\n      cropType: [null, [vm.validators.required]],\n      minMoistureThreshold: [null, [vm.validators.required, vm.validators.min(0), vm.validators.max(100)]],\n      maxMoistureThreshold: [null, [vm.validators.required, vm.validators.min(0), vm.validators.max(100)]]\n    });\n\n    vm.cancel = function() {\n        cancelPolygonSubscription();\n        restorePolygon().subscribe(\n            function () {\n                vm.dialogRef.close(null);\n            }\n        );\n    };\n\n    vm.save = function() {\n        vm.editFieldFormGroup.markAsPristine();\n        widgetContext.rxjs.forkJoin([\n            saveAttributes(entityId),\n            saveField()\n        ]).subscribe(\n            function () {\n                cancelPolygonSubscription();\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n            }\n        );\n    };\n    \n    loadField();\n    \n    function createPolygonSubscription() {\n        var subscriptionInfo = {\n            type: 'entity',\n            entityType: vm.field.id.entityType,\n            entityId: vm.field.id.id,\n            attributes: [{ name: 'perimeter' }]\n        };\n        var options = {\n            callbacks: {\n                onDataUpdated: function(subscription) {\n                    checkPolygon(subscription.data);\n                }\n            }\n        };\n        return widgetContext.subscriptionApi.createSubscriptionFromInfo(\n                            'latest', [ subscriptionInfo ], options, false, true).pipe(\n            widgetContext.rxjs.tap(function(polygonSubscription) {\n                vm.polygonSubscription = polygonSubscription;\n            })\n        );\n        \n    }\n    \n    function checkPolygon(data) {\n        var datasourceData = data[0].data;\n        var keyData = datasourceData[0];\n        var value = keyData[1];\n        if (value && Array.isArray(JSON.parse(value))) {\n            vm.hasPolygon = true;\n        } else {\n            vm.hasPolygon = false;\n        }\n        vm.polygonChanged = vm.perimeter !== value;\n    }\n    \n    function cancelPolygonSubscription() {\n        if (vm.polygonSubscription) {\n            widgetContext.subscriptionApi.removeSubscription(vm.polygonSubscription.id);\n            vm.polygonSubscription = null;\n        }\n    }\n\n    function saveField() {\n        const formValues = vm.editFieldFormGroup.value;\n        vm.field.name = formValues.name;\n        vm.field.label = formValues.label;\n        return assetService.saveAsset(vm.field);\n    }\n\n    function saveAttributes(entityId) {\n        let cropType = vm.editFieldFormGroup.get('cropType').value;\n        let minMoistureThreshold = vm.editFieldFormGroup.get('minMoistureThreshold').value;\n        let maxMoistureThreshold = vm.editFieldFormGroup.get('maxMoistureThreshold').value;\n        let attributesArray = [\n            {key: 'cropType', value: cropType},\n            {key: 'minMoistureThreshold', value: minMoistureThreshold},\n            {key: 'maxMoistureThreshold', value: maxMoistureThreshold}\n        ];\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n    }\n    \n    function restorePolygon() {\n        if (vm.polygonChanged) {\n            return attributeService.saveEntityAttributes(vm.field.id, \"SERVER_SCOPE\", [{key: 'perimeter', value: JSON.parse(vm.perimeter)}]);\n        } else {\n            return widgetContext.rxjs.of(null);\n        }\n    }\n    \n    function loadField() {\n        widgetContext.rxjs.forkJoin([\n            attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', ['cropType', 'minMoistureThreshold', 'maxMoistureThreshold', 'perimeter']),\n            assetService.getAsset(entityId.id)\n        ]).subscribe(\n            function (data) {\n                var attributes = data[0];\n                for (var i = 0; i < attributes.length; i ++) {\n                    if (attributes[i].key === 'cropType') {\n                        var cropType = attributes[i].value;\n                        vm.editFieldFormGroup.get('cropType').patchValue(cropType, {emitEvent: false});\n                    } else if (attributes[i].key === 'minMoistureThreshold') {\n                        var minMoistureThreshold = attributes[i].value;\n                        vm.editFieldFormGroup.get('minMoistureThreshold').patchValue(minMoistureThreshold, {emitEvent: false});\n                    } else if (attributes[i].key === 'maxMoistureThreshold') {\n                        var maxMoistureThreshold = attributes[i].value;\n                        vm.editFieldFormGroup.get('maxMoistureThreshold').patchValue(maxMoistureThreshold, {emitEvent: false});\n                    } else if (attributes[i].key === 'perimeter') {\n                        vm.perimeter = JSON.stringify(attributes[i].value);\n                    }\n                }\n                vm.field = data[1];\n                vm.editFieldFormGroup.get('name').patchValue(vm.field.name, {emitEvent: false});\n                vm.editFieldFormGroup.get('label').patchValue(vm.field.label, {emitEvent: false});\n                createPolygonSubscription();\n            }\n        );\n    }\n\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "440ca790-1b01-c774-c4f9-065a2aaa2dce"
+              }, {
+                "name" : "Araziyi sil",
+                "icon" : "delete",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "",
+                "customCss" : ".sf-field-delete-dialog .mat-button.mat-primary, .sf-field-delete-dialog .mat-icon-button.mat-primary, .sf-field-delete-dialog .mat-stroked-button.mat-primary {\n    color: #5553AF;\n}\n\n.sf-field-delete-dialog .mat-fab.mat-primary, .sf-field-delete-dialog .mat-flat-button.mat-primary, .sf-field-delete-dialog .mat-mini-fab.mat-primary, .sf-field-delete-dialog .mat-raised-button.mat-primary {\n    color: #fff;\n}\n\n.sf-field-delete-dialog .mat-fab.mat-primary, .sf-field-delete-dialog .mat-flat-button.mat-primary, .sf-field-delete-dialog .mat-mini-fab.mat-primary, .sf-field-delete-dialog .mat-raised-button.mat-primary {\n    background-color: #6F74F2;\n}\n\n.sf-field-delete-dialog .mat-button.mat-primary .mat-button-focus-overlay, .sf-field-delete-dialog .mat-icon-button.mat-primary .mat-button-focus-overlay, .sf-field-delete-dialog .mat-stroked-button.mat-primary .mat-button-focus-overlay {\n    background-color: #6F74F2;\n}\n",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\n\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\n\nopenDeleteEntityDialog();\n\nfunction openDeleteEntityDialog() {\n    let title = 'Delete field \\'' +\n                 entityName + '\\'';\n    let content = 'Are you sure you want to delete the field \\'' + entityName + '\\'?';\n    dialogs.confirm(title, content, 'Cancel', 'Delete').subscribe(\n        function(result) {\n            if (result) {\n                deleteEntity();\n            }\n        }\n    );\n    $('tb-confirm-dialog').addClass('sf-field-delete-dialog');\n}\n\nfunction deleteEntity() {\n    deleteEntityObservable(entityId).subscribe(\n        function success() {\n            widgetContext.updateAliases();\n        },\n        function fail() {\n            showErrorDialog();\n        }\n    );\n}\n\nfunction deleteEntityObservable(entityId) {\n    return assetService.deleteAsset(entityId.id);\n}\n\nfunction showErrorDialog() {\n    let title = 'Error';\n    let content = 'An error occurred while deleting the field. Please try again.';\n    dialogs.alert(title, content, 'CLOSE').subscribe(\n        function(result) {}\n    );\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "76de68f0-6177-7d13-0fb7-5af0f56b25dc"
+              } ]
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "mat-row {\n    cursor: pointer;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d4dec610-2b77-e9a5-f07b-23ca1035bf04",
+          "typeFullFqn" : "system.cards.entities_table"
+        },
+        "2cc39bd3-f52d-aef6-0800-69f72f5dd740" : {
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "0813fdcd-9ed7-a737-74fd-13c978a9a1ab",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "avgMoisture",
+                "type" : "timeseries",
+                "label" : "${entityName}",
+                "color" : "#6f74f2",
+                "settings" : { },
+                "_hash" : 0.5177958102552112,
+                "aggregationType" : null,
+                "units" : "%",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 604800000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1800000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 50000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "stack" : false,
+              "fontSize" : 10,
+              "fontColor" : "#545454",
+              "showTooltip" : true,
+              "tooltipIndividual" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "grid" : {
+                "verticalLines" : false,
+                "horizontalLines" : true,
+                "outlineWidth" : 0,
+                "color" : null,
+                "backgroundColor" : null,
+                "tickColor" : "#DDDDDD"
+              },
+              "xaxis" : {
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454"
+              },
+              "yaxis" : {
+                "min" : null,
+                "max" : null,
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454",
+                "tickSize" : null,
+                "tickDecimals" : 0,
+                "ticksFormatter" : ""
+              },
+              "shadowSize" : 0,
+              "smoothLines" : true,
+              "comparisonEnabled" : false,
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "title" : null,
+                "showLabels" : true
+              },
+              "customLegendEnabled" : false,
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "row",
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : false,
+                "showTotal" : false,
+                "showLatest" : false
+              }
+            },
+            "title" : "Nem geçmişi",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : false,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2cc39bd3-f52d-aef6-0800-69f72f5dd740",
+          "typeFullFqn" : "system.charts.basic_timeseries"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Smart Irrigation",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "5fc486a3-cfb2-ae7a-21ee-35531e88563e" : {
+                  "sizeX" : 12,
+                  "sizeY" : 12,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "d4dec610-2b77-e9a5-f07b-23ca1035bf04" : {
+                  "sizeX" : 12,
+                  "sizeY" : 6,
+                  "row" : 0,
+                  "col" : 12
+                },
+                "2cc39bd3-f52d-aef6-0800-69f72f5dd740" : {
+                  "sizeX" : 12,
+                  "sizeY" : 6,
+                  "row" : 6,
+                  "col" : 12
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#F9FAFE",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : false,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "0813fdcd-9ed7-a737-74fd-13c978a9a1ab" : {
+          "id" : "0813fdcd-9ed7-a737-74fd-13c978a9a1ab",
+          "alias" : "Fields",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetNameFilter" : "",
+            "assetTypes" : [ "SI Field" ]
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1716479058555,
+            "endTimeMs" : 1716565458555
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : false,
+        "showEntitiesSelect" : false,
+        "showDashboardTimewindow" : false,
+        "showDashboardExport" : false,
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : false,
+        "showUpdateDashboardImage" : false,
+        "dashboardCss" : ""
+      }
     },
     "externalId" : null,
     "id" : {
