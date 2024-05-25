@@ -7,10 +7,7 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : {
-      "entityType" : "RULE_NODE",
-      "id" : "9afe61f0-1a90-11ef-bf4a-3d9f36615f13"
-    },
+    "firstRuleNodeId" : null,
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "9ad88a70-1a90-11ef-bf4a-3d9f36615f13"
@@ -65,7 +62,7 @@
       "toIndex" : 7,
       "type" : "Alarm Severity Updated"
     } ],
-    "firstNodeIndex" : 6,
+    "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
         "layoutX" : 1005,
@@ -204,8 +201,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 209,
-        "layoutY" : 307
+        "layoutX" : 380,
+        "layoutY" : 287
       },
       "configuration" : {
         "persistAlarmRulesState" : false,
@@ -246,6 +243,34 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 23,
+        "layoutY" : 223
+      },
+      "configuration" : {
+        "msgCount" : 1,
+        "periodInSeconds" : 100,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : null,
+        "originatorType" : null
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b1490460-1a90-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "generator",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
     } ],
     "ruleChainConnections" : null
   },
