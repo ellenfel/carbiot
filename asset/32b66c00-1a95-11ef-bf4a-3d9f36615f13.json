@@ -1,0 +1,58 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : { },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "efb4c150-1a93-11ef-bf4a-3d9f36615f13"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "32b66c00-1a95-11ef-bf4a-3d9f36615f13"
+    },
+    "label" : null,
+    "name" : "SI Field 2",
+    "type" : "SI Field"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cropType",
+      "lastUpdateTs" : 1716641357530,
+      "longValue" : null,
+      "strValue" : "buğday"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "majorAlarmsCount",
+      "lastUpdateTs" : 1716641357530,
+      "longValue" : 4,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxMoistureThreshold",
+      "lastUpdateTs" : 1716641357530,
+      "longValue" : 80,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minMoistureThreshold",
+      "lastUpdateTs" : 1716641357530,
+      "longValue" : 23,
+      "strValue" : null
+    } ]
+  }
+}
