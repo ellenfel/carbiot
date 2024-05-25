@@ -19,7 +19,32 @@
   "metaData" : {
     "connections" : null,
     "firstNodeIndex" : null,
-    "nodes" : [ ],
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 262,
+        "layoutY" : 258
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "updateAttributesOnlyOnValueChange" : false,
+        "sendAttributesUpdatedNotification" : false
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "396b3790-1a92-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "Save as attribute",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    } ],
     "ruleChainConnections" : null
   },
   "relations" : [ ],
