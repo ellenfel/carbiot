@@ -42,26 +42,6 @@
       "fromIndex" : 6,
       "toIndex" : 2,
       "type" : "Success"
-    }, {
-      "fromIndex" : 6,
-      "toIndex" : 8,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 7,
-      "toIndex" : 10,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 8,
-      "toIndex" : 0,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 8,
-      "toIndex" : 9,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 9,
-      "toIndex" : 7,
-      "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -220,105 +200,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 649,
-        "layoutY" : 587
-      },
-      "configuration" : {
-        "direction" : "FROM",
-        "entityType" : "DEVICE",
-        "entityNamePattern" : "${debimetre}_A",
-        "entityTypePattern" : "klorometre",
-        "relationType" : "Contains",
-        "createEntityIfNotExists" : true,
-        "removeCurrentRelations" : false,
-        "changeOriginatorToRelatedEntity" : true,
-        "entityCacheExpiration" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "5ab7fa00-1c2c-11ef-8c6e-7dee5b7207f4"
-      },
-      "name" : "device-A",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 96,
-        "layoutY" : 587
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "if(msg.klor)\n    return {msg: msg, metadata: metadata, msgType: msgType};\nelse{\n    return false;\n}",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "5aba6b00-1c2c-11ef-8c6e-7dee5b7207f4"
-      },
-      "name" : "script",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 377,
-        "layoutY" : 589
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "if(msg.klor){\n    msg.xPos = Math.random();\n    msg.yPos = Math.random();\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\nelse{\n    return false;\n}\n",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "ab5eaf70-1c2d-11ef-8c6e-7dee5b7207f4"
-      },
-      "name" : "script",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "layoutX" : 916,
-        "layoutY" : 591
-      },
-      "configuration" : {
-        "defaultTTL" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "ab5ed680-1c2d-11ef-8c6e-7dee5b7207f4"
-      },
-      "name" : "Save Timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     } ],
     "ruleChainConnections" : null
   },
