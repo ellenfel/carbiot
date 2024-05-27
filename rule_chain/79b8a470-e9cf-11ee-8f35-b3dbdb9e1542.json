@@ -47,15 +47,27 @@
       "toIndex" : 8,
       "type" : "Success"
     }, {
+      "fromIndex" : 7,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
       "fromIndex" : 8,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
       "toIndex" : 7,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
       "additionalInfo" : {
-        "layoutX" : 824,
-        "layoutY" : 156
+        "layoutX" : 818,
+        "layoutY" : 163
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -211,8 +223,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 518,
-        "layoutY" : 494
+        "layoutX" : 649,
+        "layoutY" : 587
       },
       "configuration" : {
         "direction" : "FROM",
@@ -241,8 +253,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 288,
-        "layoutY" : 394
+        "layoutX" : 96,
+        "layoutY" : 587
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -262,6 +274,51 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 377,
+        "layoutY" : 589
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "if(msg.klor){\n    msg.xPos = Math.random();\n    msg.yPos = Math.random();\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\nelse{\n    return false;\n}\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ab5eaf70-1c2d-11ef-8c6e-7dee5b7207f4"
+      },
+      "name" : "script",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 916,
+        "layoutY" : 591
+      },
+      "configuration" : {
+        "defaultTTL" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ab5ed680-1c2d-11ef-8c6e-7dee5b7207f4"
+      },
+      "name" : "Save Timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     } ],
     "ruleChainConnections" : null
   },
