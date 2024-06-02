@@ -1286,23 +1286,25 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "#577BD9",
-            "color" : "rgba(0, 0, 0, 0.87)",
+            "backgroundColor" : "#2D3B48",
+            "color" : "rgba(255, 255, 255, 0.87)",
             "padding" : "0px",
             "settings" : {
+              "layout" : "column",
+              "autoScale" : true,
               "showLabel" : true,
               "label" : "Devices",
               "labelFont" : {
+                "family" : "Roboto",
                 "size" : 15,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
                 "style" : "normal",
+                "weight" : "400",
                 "lineHeight" : "16px"
               },
               "labelColor" : {
                 "type" : "constant",
-                "color" : "rgb(0, 0, 0)",
+                "color" : "rgb(255, 255, 255)",
                 "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
@@ -1321,8 +1323,8 @@
               "iconBackgroundColor" : {
                 "type" : "constant",
                 "color" : "rgb(241, 141, 23)",
-                "rangeList" : [ ],
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "rangeList" : [ ]
               },
               "valueFont" : {
                 "family" : "Roboto",
@@ -1334,15 +1336,11 @@
               },
               "valueColor" : {
                 "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
+                "color" : "rgba(255, 255, 255, 0.87)",
+                "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showChevron" : false,
-              "chevronSize" : 24,
-              "chevronSizeUnit" : "px",
-              "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column",
-              "autoScale" : true
+              "showChevron" : false
             },
             "title" : "Entity count",
             "dropShadow" : true,
@@ -1357,7 +1355,7 @@
             "showLegend" : false,
             "widgetStyle" : { },
             "actions" : { },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -1855,7 +1853,7 @@
               }
             },
             "showTitle" : true,
-            "backgroundColor" : "#577BD9",
+            "backgroundColor" : "#2D3B48",
             "color" : "rgb(255, 255, 255)",
             "padding" : "4px",
             "settings" : {
@@ -1930,7 +1928,7 @@
             "widgetStyle" : { },
             "displayTimewindow" : true,
             "actions" : { },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "alarmFilterConfig" : {
               "statusList" : [ "ACTIVE", "ACK", "UNACK" ],
               "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
@@ -1947,7 +1945,10 @@
               "weight" : "bold",
               "style" : "normal"
             },
-            "titleColor" : "#FFFFFF"
+            "titleColor" : "#FFFFFF",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
@@ -4528,7 +4529,7 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "#577BD9",
+            "backgroundColor" : "#2D3B48",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
@@ -4546,7 +4547,7 @@
               },
               "labelColor" : {
                 "type" : "constant",
-                "color" : "rgb(0, 0, 0)",
+                "color" : "rgb(255, 255, 255)",
                 "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
@@ -4586,7 +4587,8 @@
               },
               "valueColor" : {
                 "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
+                "color" : "rgba(255, 255, 255, 0.87)",
+                "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "showChevron" : false
