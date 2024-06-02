@@ -4711,7 +4711,7 @@
       "states" : {
         "default" : {
           "name" : "Akıllı Enerji İzleme - 2",
-          "root" : false,
+          "root" : true,
           "layouts" : {
             "main" : {
               "widgets" : {
@@ -4895,7 +4895,7 @@
         },
         "main_state" : {
           "name" : "main_state",
-          "root" : true,
+          "root" : false,
           "layouts" : {
             "main" : {
               "widgets" : {
