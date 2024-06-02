@@ -91,7 +91,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "return { msg:{}, metadata:{}, msgType: \"POST_TELEMETRY_REQUEST\"};",
         "tbelScript" : "return { msg: msg, metadata: metadata, msgType: msgType };",
