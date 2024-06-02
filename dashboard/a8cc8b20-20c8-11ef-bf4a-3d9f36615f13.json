@@ -1867,21 +1867,25 @@
             "color" : "rgb(255, 255, 255)",
             "padding" : "4px",
             "settings" : {
+              "alarmsTitle" : "Alarms",
               "enableSelection" : true,
               "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableFilter" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : false,
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "false",
               "displayDetails" : true,
               "allowAcknowledgment" : true,
               "allowClear" : true,
               "allowAssign" : true,
               "displayActivity" : true,
-              "displayPagination" : true,
+              "displayPagination" : false,
               "defaultPageSize" : 10,
               "defaultSortOrder" : "-createdTime",
-              "enableSelectColumnDisplay" : true,
-              "enableStickyAction" : false,
-              "enableFilter" : true,
-              "entitiesTitle" : null,
-              "alarmsTitle" : "Alarms"
+              "useRowStyleFunction" : true,
+              "rowStyleFunction" : "var severity = alarm.severity;\nvar color = '#fff';\nswitch (severity) {\n  case 'CRITICAL':\n    color = 'red';\n    break;\n  case 'MAJOR':\n    color = 'orange';\n    break;\n  case 'MINOR':\n    color = '#ffca3d';\n    break;\n  case 'WARNING':\n    color = '#abab00';\n    break;\n  case 'INDETERMINATE':\n    color = 'green';\n    break;\n}\nreturn {\n  backgroundColor: color\n};\n"
             },
             "title" : "Alarms table",
             "dropShadow" : true,
@@ -1891,7 +1895,7 @@
               "fontWeight" : 400,
               "padding" : "5px 10px 5px 10px"
             },
-            "useDashboardTimewindow" : false,
+            "useDashboardTimewindow" : true,
             "showLegend" : false,
             "alarmSource" : {
               "type" : "device",
@@ -1924,6 +1928,13 @@
                 },
                 "_hash" : 0.2780007688856758,
                 "funcBody" : null
+              }, {
+                "name" : "type",
+                "type" : "alarm",
+                "label" : "Type",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.40094390591157203
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
