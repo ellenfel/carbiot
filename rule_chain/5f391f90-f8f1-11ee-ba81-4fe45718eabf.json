@@ -1109,7 +1109,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 10,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar msg = {\n    \"FNW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW3emission\": initialValue + Math.random() * increaseFactor,\n    \"FS1emission\": initialValue + Math.random() * increaseFactor,\n    \"FS2emission\": initialValue + Math.random() * increaseFactor,\n    \"FS3emission\": initialValue + Math.random() * increaseFactor,\n    \"FE1emission\": initialValue + Math.random() * increaseFactor,\n    \"FE2emission\": initialValue + Math.random() * increaseFactor,\n    \"FE3emission\": initialValue + Math.random() * increaseFactor,\n    \"FW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FW3emission\": initialValue + Math.random() * increaseFactor,\n};\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
