@@ -5539,6 +5539,247 @@
           "row" : 0,
           "col" : 0,
           "id" : "5404610b-7b85-6dd9-51b9-d269f7b8ddf5"
+        },
+        "5917c64d-d930-0daf-5d3e-d9e5fe896582" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "05924a8e-00fd-8da1-450b-6ca89111a651",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "highTemperature",
+                "type" : "attribute",
+                "label" : "highTemperature",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.44281921320875384,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value !== 'unset';"
+              }, {
+                "name" : "lowBattery",
+                "type" : "attribute",
+                "label" : "lowBattery",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.338713616073099,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value !== 'unset';"
+              }, {
+                "name" : "lowRemaningLevel",
+                "type" : "attribute",
+                "label" : "lowRemaningLevel",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.44652549440453715,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value !== 'unset';"
+              }, {
+                "name" : "lowTemperature",
+                "type" : "attribute",
+                "label" : "lowTemperature",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.033350726799084685,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value !== 'unset';"
+              }, {
+                "name" : "noAlarms",
+                "type" : "attribute",
+                "label" : "noAlarms",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.05751102627236171,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value !== 'unset';"
+              }, {
+                "name" : "offline",
+                "type" : "attribute",
+                "label" : "offline",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.2892859337116618,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value !== 'unset';"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1682001930247,
+                  "endTimeMs" : 1682088330247
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "6px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "# Markdown/HTML card \\n - **Current entity**: **${entityName}**. \\n - **Current value**: **${Random}**.",
+              "markdownTextFunction" : "\nlet enabledFiltersString = '';\n\nif (data[0].noAlarms) {\n    enabledFiltersString += 'No alarms  ';\n}\n\nif (data[0].lowRemaningLevel) {\n    enabledFiltersString += 'Low remaining level  ';\n}\n\nif (data[0].highTemperature) {\n    enabledFiltersString += 'High temperature  ';\n}\n\nif (data[0].lowTemperature) {\n    enabledFiltersString += 'Low temperature  ';\n}\n\nif (data[0].lowBattery) {\n    enabledFiltersString += 'Low battery  ';\n}\n\nif (data[0].offline) {\n    enabledFiltersString += 'Offline  ';\n}\n\nif (enabledFiltersString.length > 0) {\n    enabledFiltersString = enabledFiltersString.replace(/  /g, ', ');\n    enabledFiltersString = enabledFiltersString.slice(0, -2) + '.';\n}\n\nctx.enabledFiltersString = enabledFiltersString;\n\nif (!ctx.markdownInited) {\n    ctx.markdownInited = true;\n    return '<div class=\"tank-layout\" style=\"width: 100%; height: 100%; padding: 0;\" fxLayout=\"column\">' +\n            '<tb-dashboard-state fxFlex [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=\"tanks-location\"></tb-dashboard-state>' +\n            '<mat-expansion-panel hideToggle=\"true\" id=\"arrow_rotate\" [expanded]=\"true\">' + \n                '<mat-expansion-panel-header>' + \n                    '<mat-panel-title style=\"min-width: 95px; max-width: 95px; align-items: center;\">' +\n                      '<label class=\"tb-panel-title\" style=\"height: min-content;\">Filter alarms</label>' +\n                    '</mat-panel-title>' +\n                    '<mat-panel-description class=\"panel-icon\">' + \n                      '<mat-icon class=\"tb-panel-description\" id=\"tb-rotation-arrow\">keyboard_arrow_down</mat-icon>' + \n                    '</mat-panel-description>' + \n                    '<mat-panel-description class=\"panel-text\" style=\"min-width: 190px;\">' + \n                        '<label style=\"display: none;\" class=\"panel-text-label\">' +\n                          enabledFiltersString + \n                        '</label>' +\n                        '<div class=\"panel-buttons\" (click)=\"$event.stopPropagation()\">' + \n                            '<tb-dashboard-state fxFlex [ctx]=\"ctx\" style=\"height: 50px;\" stateId=\"device-alarm-filter-buttons\"></tb-dashboard-state>' + \n                        '</div>' +\n                    '</mat-panel-description>' +\n                '</mat-expansion-panel-header>' +\n                '<div class=\"tank-filter-layout\" fxLayout=\"row\" fxLayout.xs=\"column\">' + \n                    '<tb-dashboard-state class=\"tank-filter-toggles\" fxFlex [ctx]=\"ctx\" stateId=\"device_alarm_filter_1st_part\"></tb-dashboard-state>' +\n                    '<tb-dashboard-state class=\"tank-filter-toggles\" fxFlex [ctx]=\"ctx\" stateId=\"device_alarm_filter_2nd_part\"></tb-dashboard-state>' +\n                '</div>' + \n            '</mat-expansion-panel>' +\n        '</div>';\n}",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-markdown-view .tb-progress-cover, .tb-markdown-view .mat-drawer-container {\n    background-color: #fff;\n}\n\n.tb-markdown-view div, .tb-markdown-view p {\n    line-height: normal;\n}\n\n.tank-layout .mat-expansion-panel-body {\n    padding: 0;\n}\n\n.tank-layout .mat-expansion-panel-header {\n    padding: 0 8px;\n}\n\n.tank-layout .mat-expansion-panel-header-title, .mat-expansion-panel-header-description {\n    margin: 0;\n    /*justify-content: flex-end;*/\n}\n\n.tank-layout .mat-expansion-panel-header-title {\n    justify-content: flex-start;\n}\n\n.tank-layout .panel-text {\n    justify-content: flex-end;\n    align-items: center;\n}\n\n.tank-layout .panel-icon {\n    justify-content: flex-start;\n    align-items: center;\n    max-width: 90px;\n}\n\n.tank-layout .panel-text-label {\n    height: min-content;\n    font-weight: 400;\n    letter-spacing: 0.2px;\n}\n\n.tank-layout .mat-expansion-panel-header-description label {\n    width: 80%;\n    padding: 0;\n    text-align: right;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    overflow: hidden;\n}\n\n.tank-layout .mat-expansion-panel-header {\n  justify-content: flex-start;\n}\n\n#tb-rotation-arrow {\n  transition: transform 0.5s ease;\n}\n\n#tb-rotation-arrow::after {\n  content: '';\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n}\n\n#tb-rotation-arrow.clicked {\n  transform: rotate(-180deg);\n}\n\n#tb-rotation-arrow.clicked::after {\n  transform: rotate(180deg);\n}\n\n.mat-content .mat-content-hide-toggle {\n    height: 100%;\n    margin: 0;\n}\n\n.panel-buttons {\n    width: 100%;\n    max-width: 190px;\n}\n\n.tb-panel-title {\n    font-size: 16px;\n    line-height: 24px;\n    letter-spacing: 0.25px;\n}\n\n.tank-layout .tank-filter-toggles {\n    height: 175px;\n}"
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "\n.tank-layout .tb-widget-container .tb-widget .tb-multiple-input {\n    /*background-color: rgba(0, 0, 0, 0.04);*/\n    border-radius: 4px;\n}\n\n.tank-layout .tank-filter-layout .tb-widget-container .tb-widget .tb-multiple-input .tb-multiple-input-container .label-wrapper {\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    overflow: hidden;\n}\n\n/*.tb-widget-container .tb-widget .tb-multiple-input .mdc-form-field > label {*/\n/*    min-width: 160px;*/\n/*}*/\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-form-field > label .mat-icon {\n    margin-left: 0;\n}\n\n/*.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-form-field .label-wrapper {*/\n/*    font-weight: bold;*/\n/*}*/\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch {\n    width: 42px;\n    margin-left: 8px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__track {\n    border-radius: 16px;\n    height: 24px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle-track {\n    width: calc(100% - 24px);\n    left: 2px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__handle {\n    border-radius: 10px;\n    width: 20px;\n    height: 20px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__ripple {\n    width: 40px;\n    height: 40px;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__icons {\n    display: none;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch.mdc-switch--unselected:enabled .mdc-switch__handle::after {\n    background: #fafafa;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch.mdc-switch--selected:enabled .mdc-switch__handle::after {\n    background: #fafafa;\n}\n\n.tb-widget-container .tb-widget .tb-multiple-input .mat-mdc-slide-toggle .mdc-switch .mdc-switch__track::after {\n    background: #9699FF !important;\n}\n\n.mat-content.mat-content-hide-toggle {\n    height: 100%;\n    margin: 0;\n}\n\n.tank-layout .mat-expansion-panel-body {\n    padding: 0;\n}\n\n.tank-layout .mdc-button {\n    color: #474BD2 !important;\n}\n\n\n.tank-layout .panel-buttons {\n    width: 100%;\n    padding-right: 1px !important;\n}\n\n.tank-layout .mat-mdc-slide-toggle .mdc-switch {\n    margin-left: 0 !important;\n}\n",
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "pageSize" : 1024,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "arrow_rotate",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "\nif ($event.target && \n        ($event.target.className.includes('expansion-panel-header') ||\n        $event.target.className.includes('panel-description') ||\n        $event.target.className.includes('panel-title') || \n        $event.target.className.includes('panel-text') || \n        $event.target.className.includes('panel-buttons'))\n   ) {\n    const arrow = document.querySelector('#tb-rotation-arrow');\n    const panelTextLabel = document.getElementsByClassName('panel-text-label')[0];\n    const panelButtons = document.getElementsByClassName('panel-buttons')[0];\n    \n    widgetContext.panelOpenState = !widgetContext.panelOpenState;\n    arrow.classList.toggle('clicked');\n    panelTextLabel.textContent = widgetContext.enabledFiltersString;\n    \n    if (widgetContext.panelOpenState) {\n        panelTextLabel.style = \"display: block\";\n        panelButtons.style = \"display: none\";\n    } else {\n        panelTextLabel.style = \"display: none\";\n        panelButtons.style = \"display: block\";\n    }\n}",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d3236ada-e737-f872-1fe0-a3fe5f1fe985"
+              } ]
+            },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "5917c64d-d930-0daf-5d3e-d9e5fe896582",
+          "typeFullFqn" : "system.cards.markdown_card"
+        },
+        "ec7fb05d-415e-3582-c2a2-92c0e7939cf6" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1682928306473,
+                  "endTimeMs" : 1683014706473
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 2500
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextPattern" : "# Markdown/HTML card \\n - **Current entity**: **${entityName}**. \\n - **Current value**: **${Random}**.",
+              "markdownTextFunction" : "\nvar dashboardPage = $('.tb-dashboard-page')[0];\n\nvar darkMode = $(dashboardPage).hasClass('dark');\nvar darkModeExpression = darkMode ? '(darkMode !== false)' : 'darkMode';\n\nreturn '<div class=\"header\" fxLayout=\"column\" fxLayoutAlign=\"space-around center\" fxLayout.gt-sm=\"row\" fxLayoutAlign.gt-sm=\"start stretch\" fxLayoutGap.gt-sm=\"24px\">' +\n        '<div fxLayout=\"column\" fxLayoutAlign=\"center\">' +\n           '<div class=\"title\">Silos monitoring</div>' +\n        '</div>' +\n        '<div fxFlex.gt-sm fxLayout=\"column\" fxLayoutAlign=\"space-around center\" fxLayoutGap=\"16px\" fxLayout.gt-sm=\"row\" fxLayoutGap.gt-sm=\"8px\" fxLayoutAlign.gt-sm=\"start center\">' +\n           '<div class=\"powered-by\">Powered by Carbiot IoT platform.</div>' +\n           '<div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">' +\n              '<button id=\"try-it-now\" mat-raised-button color=\"primary\">Try it now</button><div class=\"powered-by\">OR</div><a mat-raised-button color=\"primary\" href=\"https://carbiot.com\" target=\"_blank\">Install</a>' +\n           '</div>' +\n        '</div>' +\n        '<div fxLayout=\"column\" fxLayoutAlign=\"center\" style=\"padding-right: 24px;\">' +\n            '<button (click)=\"darkMode = '+darkModeExpression+' ? false : true\" id=\"dark-mode-switch\" mat-icon-button matTooltip=\"{{ '+ darkModeExpression +' ? &quot;Switch to light mode&quot; : &quot;Switch to dark mode&quot; }}\"><mat-icon>{{ '+ darkModeExpression +' ? &quot;light_mode&quot; : &quot;dark_mode&quot; }}</mat-icon></button>' +\n        '</div>' +\n    '</div>';\n    ",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".header {\n    height: 100%;\n    padding: 0 0 0 24px;\n} \n\n.header .mat-icon.title-icon {\n    width: 40px;\n    height: 40px;\n}\n\n.header .title {\n    font-size: 24px;\n    font-weight: 500;\n    color: #28232D;\n}\n\n.header .subtitle {\n    font-size: 13px;\n    font-weight: normal;\n    color: #757575;\n}\n"
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : ".tb-markdown-view a:hover {\n    text-decoration: none;\n}",
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "dark-mode-switch",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "var dashboardPage = $('.tb-dashboard-page')[0];\n$(dashboardPage).toggleClass('dark');",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "fd666ec9-cd5a-af01-47e1-b7e53911f87a"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "ec7fb05d-415e-3582-c2a2-92c0e7939cf6",
+          "typeFullFqn" : "system.cards.markdown_card"
         }
       },
       "timewindow" : {
@@ -5832,6 +6073,18 @@
                   "sizeY" : 5,
                   "row" : 3,
                   "col" : 16
+                },
+                "5917c64d-d930-0daf-5d3e-d9e5fe896582" : {
+                  "sizeX" : 36,
+                  "sizeY" : 35,
+                  "row" : 30,
+                  "col" : 0
+                },
+                "ec7fb05d-415e-3582-c2a2-92c0e7939cf6" : {
+                  "sizeX" : 64,
+                  "sizeY" : 2,
+                  "row" : 65,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
