@@ -1005,12 +1005,18 @@
                 "settings" : { },
                 "_hash" : 0.9666386952796702
               }, {
-                "name" : "energy",
+                "name" : "ipec_pddata_avg_pd_a",
                 "type" : "timeseries",
-                "label" : "energy",
+                "label" : "pddata",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.017254678971051707
+                "_hash" : 0.017254678971051707,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "frequency",
                 "type" : "timeseries",
@@ -4556,8 +4562,7 @@
               "chevronSize" : 24,
               "chevronSizeUnit" : "px",
               "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column",
-              "autoScale" : true
+              "layout" : "column"
             },
             "title" : "Alarm count",
             "dropShadow" : true,
@@ -5083,10 +5088,7 @@
             "direction" : "FROM",
             "maxLevel" : 10,
             "fetchLastLevelOnly" : false,
-            "filters" : [ {
-              "relationType" : "Contains",
-              "entityTypes" : [ "CUSTOMER" ]
-            } ]
+            "filters" : [ ]
           }
         }
       },
