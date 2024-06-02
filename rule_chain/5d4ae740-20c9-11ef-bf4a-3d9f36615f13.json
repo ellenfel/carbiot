@@ -27,12 +27,12 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
-        "originatorId" : null,
-        "originatorType" : null,
+        "periodInSeconds" : 300,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };"
+        "tbelScript" : "var msg = {\n    \"water_detector\": Math.random() < 0.5, // Boolean\n    \"lid_switch\": Math.random() < 0.5, // Boolean\n    \"pulse_a\": Math.random() * 1000, // Random number between 0 and 1000\n    \"pulse_b\": Math.random() * 1000, // Random number between 0 and 1000\n    \"pulse_c\": Math.random() * 1000, // Random number between 0 and 1000\n    \"voltage_a\": Math.random() * 100, // Random voltage between 0 and 100\n    \"voltage_b\": Math.random() * 100, // Random voltage between 0 and 100\n    \"voltage_c\": Math.random() * 100, // Random voltage between 0 and 100\n    \"current_a\": Math.random() * 100, // Random current between 0 and 100\n    \"current_b\": Math.random() * 100, // Random current between 0 and 100\n    \"current_c\": Math.random() * 100, // Random current between 0 and 100\n    \"420_ir_a\": Math.random() * 100, // Random value between 0 and 100\n    \"420_ir_b\": Math.random() * 100, // Random value between 0 and 100\n    \"420_ir_c\": Math.random() * 100, // Random value between 0 and 100\n    \"temp\": Math.random() * 40, // Random temperature between 0 and 40\n    \"hum\": Math.random() * 100, // Random humidity between 0 and 100\n    \"pressure\": Math.random() * 1000, // Random pressure between 0 and 1000\n    \"thermocouple_a\": Math.random() * 100, // Random value between 0 and 100\n    \"thermocouple_b\": Math.random() * 100, // Random value between 0 and 100\n    \"thermocouple_c\": Math.random() * 100, // Random value between 0 and 100\n    \"mppt_batary_voltage\": Math.random() * 100, // Random voltage between 0 and 100\n    \"mppt_panel_power\": Math.random() * 1000, // Random power between 0 and 1000\n    \"harvesting_battery_voltage\": Math.random() * 100, // Random voltage between 0 and 100\n    \"harvesting_battery_power\": Math.random() * 1000, // Random power between 0 and 1000\n    \"ipec_pddata_avg_pd_a\": Math.random() * 100, // Random value between 0 and 100\n    \"ipec_pddata_avg_pd_b\": Math.random() * 100, // Random value between 0 and 100\n    \"ipec_pddata_avg_pd_c\": Math.random() * 100 // Random value between 0 and 100\n};\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"default\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "originatorId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
+        "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -55,12 +55,12 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
-        "originatorId" : null,
-        "originatorType" : null,
+        "periodInSeconds" : 300,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };"
+        "tbelScript" : "var msg = {\n    \"water_detector\": Math.random() < 0.5, // Boolean\n    \"lid_switch\": Math.random() < 0.5, // Boolean\n    \"pulse_a\": Math.random() * 1000, // Random number between 0 and 1000\n    \"pulse_b\": Math.random() * 1000, // Random number between 0 and 1000\n    \"pulse_c\": Math.random() * 1000, // Random number between 0 and 1000\n    \"voltage_a\": Math.random() * 100, // Random voltage between 0 and 100\n    \"voltage_b\": Math.random() * 100, // Random voltage between 0 and 100\n    \"voltage_c\": Math.random() * 100, // Random voltage between 0 and 100\n    \"current_a\": Math.random() * 100, // Random current between 0 and 100\n    \"current_b\": Math.random() * 100, // Random current between 0 and 100\n    \"current_c\": Math.random() * 100, // Random current between 0 and 100\n    \"420_ir_a\": Math.random() * 100, // Random value between 0 and 100\n    \"420_ir_b\": Math.random() * 100, // Random value between 0 and 100\n    \"420_ir_c\": Math.random() * 100, // Random value between 0 and 100\n    \"temp\": Math.random() * 40, // Random temperature between 0 and 40\n    \"hum\": Math.random() * 100, // Random humidity between 0 and 100\n    \"pressure\": Math.random() * 1000, // Random pressure between 0 and 1000\n    \"thermocouple_a\": Math.random() * 100, // Random value between 0 and 100\n    \"thermocouple_b\": Math.random() * 100, // Random value between 0 and 100\n    \"thermocouple_c\": Math.random() * 100, // Random value between 0 and 100\n    \"mppt_batary_voltage\": Math.random() * 100, // Random voltage between 0 and 100\n    \"mppt_panel_power\": Math.random() * 1000, // Random power between 0 and 1000\n    \"harvesting_battery_voltage\": Math.random() * 100, // Random voltage between 0 and 100\n    \"harvesting_battery_power\": Math.random() * 1000, // Random power between 0 and 1000\n    \"ipec_pddata_avg_pd_a\": Math.random() * 100, // Random value between 0 and 100\n    \"ipec_pddata_avg_pd_b\": Math.random() * 100, // Random value between 0 and 100\n    \"ipec_pddata_avg_pd_c\": Math.random() * 100 // Random value between 0 and 100\n};\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"default\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "originatorId" : "e17e14b0-20c4-11ef-bf4a-3d9f36615f13",
+        "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -83,12 +83,12 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 1,
-        "originatorId" : null,
-        "originatorType" : null,
+        "periodInSeconds" : 300,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };"
+        "tbelScript" : "var msg = {\n    \"water_detector\": Math.random() < 0.5, // Boolean\n    \"lid_switch\": Math.random() < 0.5, // Boolean\n    \"pulse_a\": Math.random() * 1000, // Random number between 0 and 1000\n    \"pulse_b\": Math.random() * 1000, // Random number between 0 and 1000\n    \"pulse_c\": Math.random() * 1000, // Random number between 0 and 1000\n    \"voltage_a\": Math.random() * 100, // Random voltage between 0 and 100\n    \"voltage_b\": Math.random() * 100, // Random voltage between 0 and 100\n    \"voltage_c\": Math.random() * 100, // Random voltage between 0 and 100\n    \"current_a\": Math.random() * 100, // Random current between 0 and 100\n    \"current_b\": Math.random() * 100, // Random current between 0 and 100\n    \"current_c\": Math.random() * 100, // Random current between 0 and 100\n    \"420_ir_a\": Math.random() * 100, // Random value between 0 and 100\n    \"420_ir_b\": Math.random() * 100, // Random value between 0 and 100\n    \"420_ir_c\": Math.random() * 100, // Random value between 0 and 100\n    \"temp\": Math.random() * 40, // Random temperature between 0 and 40\n    \"hum\": Math.random() * 100, // Random humidity between 0 and 100\n    \"pressure\": Math.random() * 1000, // Random pressure between 0 and 1000\n    \"thermocouple_a\": Math.random() * 100, // Random value between 0 and 100\n    \"thermocouple_b\": Math.random() * 100, // Random value between 0 and 100\n    \"thermocouple_c\": Math.random() * 100, // Random value between 0 and 100\n    \"mppt_batary_voltage\": Math.random() * 100, // Random voltage between 0 and 100\n    \"mppt_panel_power\": Math.random() * 1000, // Random power between 0 and 1000\n    \"harvesting_battery_voltage\": Math.random() * 100, // Random voltage between 0 and 100\n    \"harvesting_battery_power\": Math.random() * 1000, // Random power between 0 and 1000\n    \"ipec_pddata_avg_pd_a\": Math.random() * 100, // Random value between 0 and 100\n    \"ipec_pddata_avg_pd_b\": Math.random() * 100, // Random value between 0 and 100\n    \"ipec_pddata_avg_pd_c\": Math.random() * 100 // Random value between 0 and 100\n};\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"default\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "originatorId" : "d91e3890-20c4-11ef-bf4a-3d9f36615f13",
+        "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
