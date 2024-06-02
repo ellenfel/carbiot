@@ -4472,7 +4472,10 @@
                 "_hash" : 0.5046994784833425
               } ],
               "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
+                "statusList" : [ "ACTIVE" ],
+                "typeList" : [ "Emelec" ],
+                "assignedToCurrentUser" : false,
+                "assigneeId" : null
               }
             } ],
             "timewindow" : {
@@ -4577,7 +4580,7 @@
             "showLegend" : false,
             "widgetStyle" : { },
             "actions" : { },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "0px",
