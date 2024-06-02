@@ -4371,30 +4371,46 @@
               "showLabel" : true,
               "label" : "Offline Devices",
               "labelFont" : {
+                "family" : "Roboto",
                 "size" : 15,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
                 "style" : "normal",
+                "weight" : "400",
                 "lineHeight" : "16px"
               },
               "labelColor" : {
                 "type" : "constant",
                 "color" : "rgb(0, 0, 0)",
-                "rangeList" : null,
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "rangeList" : null
               },
               "showIcon" : true,
               "iconSize" : 30,
               "iconSizeUnit" : "px",
-              "icon" : "warning",
+              "icon" : "signal_wifi_connected_no_internet_4",
               "iconColor" : {
                 "type" : "constant",
                 "color" : "rgb(255, 255, 255)",
-                "rangeList" : null,
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "rangeList" : null
+              },
+              "showIconBackground" : true,
+              "iconBackgroundSize" : 36,
+              "iconBackgroundSizeUnit" : "px",
+              "iconBackgroundColor" : {
+                "type" : "range",
+                "color" : "rgba(0, 105, 92, 1)",
+                "rangeList" : [ {
+                  "from" : 0,
+                  "to" : 0,
+                  "color" : "rgb(244, 67, 54)"
+                }, {
+                  "from" : 1,
+                  "to" : null,
+                  "color" : "rgba(209, 39, 48, 1)"
+                } ],
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showIconBackground" : false,
               "valueFont" : {
                 "family" : "Roboto",
                 "size" : 20,
@@ -4512,10 +4528,12 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
+            "backgroundColor" : "#577BD9",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
+              "layout" : "column",
+              "autoScale" : true,
               "showLabel" : true,
               "label" : "Total",
               "labelFont" : {
@@ -4532,7 +4550,7 @@
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "showIcon" : true,
-              "iconSize" : 20,
+              "iconSize" : 30,
               "iconSizeUnit" : "px",
               "icon" : "warning",
               "iconColor" : {
@@ -4544,16 +4562,16 @@
               "iconBackgroundSize" : 36,
               "iconBackgroundSizeUnit" : "px",
               "iconBackgroundColor" : {
-                "type" : "range",
                 "color" : "rgba(0, 105, 92, 1)",
+                "type" : "range",
                 "rangeList" : [ {
                   "from" : 0,
                   "to" : 0,
                   "color" : "rgba(0, 105, 92, 1)"
                 }, {
                   "from" : 1,
-                  "to" : null,
-                  "color" : "rgba(209, 39, 48, 1)"
+                  "color" : "rgba(209, 39, 48, 1)",
+                  "to" : null
                 } ],
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
@@ -4570,11 +4588,7 @@
                 "color" : "rgba(0, 0, 0, 0.87)",
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showChevron" : false,
-              "chevronSize" : 24,
-              "chevronSizeUnit" : "px",
-              "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column"
+              "showChevron" : false
             },
             "title" : "Alarm count",
             "dropShadow" : true,
@@ -5104,6 +5118,16 @@
               "relationType" : "Contains",
               "entityTypes" : [ "CUSTOMER" ]
             } ]
+          }
+        },
+        "3c1af1cc-712a-9cab-265f-91e3a1d0d7af" : {
+          "id" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
+          "alias" : "current-state",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null
           }
         }
       },
