@@ -4863,11 +4863,11 @@
               "autoScale" : false,
               "showLabel" : true,
               "labelFont" : {
+                "family" : "Roboto",
                 "size" : 20,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "600",
                 "style" : "normal",
+                "weight" : "600",
                 "lineHeight" : "1.5"
               },
               "labelColor" : {
@@ -4887,7 +4887,7 @@
                 "rangeList" : null
               },
               "valueFont" : {
-                "size" : 48,
+                "size" : 44,
                 "sizeUnit" : "px",
                 "family" : "Roboto",
                 "weight" : "500",
