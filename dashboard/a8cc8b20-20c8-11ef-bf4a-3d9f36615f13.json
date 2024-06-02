@@ -4535,7 +4535,7 @@
               "layout" : "column",
               "autoScale" : true,
               "showLabel" : true,
-              "label" : "Total",
+              "label" : "Alarm Count",
               "labelFont" : {
                 "family" : "Roboto",
                 "size" : 12,
@@ -4546,7 +4546,8 @@
               },
               "labelColor" : {
                 "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.54)",
+                "color" : "rgb(0, 0, 0)",
+                "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "showIcon" : true,
