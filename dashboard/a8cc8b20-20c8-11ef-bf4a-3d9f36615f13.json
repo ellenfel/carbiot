@@ -1089,8 +1089,8 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
+            "backgroundColor" : "#2D3B48",
+            "color" : "rgba(255, 255, 255, 0.87)",
             "padding" : "8px",
             "settings" : {
               "provider" : "openstreet-map",
