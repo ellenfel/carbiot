@@ -91,11 +91,11 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 900,
+        "periodInSeconds" : 1,
         "scriptLang" : "JS",
         "jsScript" : "return { msg:{}, metadata:{}, msgType: \"POST_TELEMETRY_REQUEST\"};",
         "tbelScript" : "return { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : "5c5f08f0-df94-11ee-a8f2-674fc522c738",
+        "originatorId" : "06372960-20e6-11ef-bf4a-3d9f36615f13",
         "originatorType" : "ASSET"
       },
       "configurationVersion" : 1,
