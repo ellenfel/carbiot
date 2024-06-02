@@ -4877,7 +4877,7 @@
                 "rangeList" : null
               },
               "showIcon" : true,
-              "iconSize" : 40,
+              "iconSize" : 30,
               "iconSizeUnit" : "px",
               "icon" : "mdi:lightning-bolt",
               "iconColor" : {
@@ -4887,11 +4887,11 @@
                 "rangeList" : null
               },
               "valueFont" : {
+                "family" : "Roboto",
                 "size" : 44,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
                 "style" : "normal",
+                "weight" : "500",
                 "lineHeight" : "100%"
               },
               "valueColor" : {
