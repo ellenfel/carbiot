@@ -5328,7 +5328,19 @@
               "barColor" : {
                 "type" : "range",
                 "color" : "#FFFFFF",
-                "rangeList" : null,
+                "rangeList" : [ {
+                  "from" : 0,
+                  "to" : 20,
+                  "color" : "rgb(244, 67, 54)"
+                }, {
+                  "from" : 20,
+                  "to" : 150,
+                  "color" : "rgb(232, 150, 35)"
+                }, {
+                  "from" : 150,
+                  "to" : 400,
+                  "color" : "rgb(0, 150, 136)"
+                } ],
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "barBackground" : "#FFFFFF",
