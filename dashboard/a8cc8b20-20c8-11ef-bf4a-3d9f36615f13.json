@@ -5088,7 +5088,10 @@
             "direction" : "FROM",
             "maxLevel" : 10,
             "fetchLastLevelOnly" : false,
-            "filters" : [ ]
+            "filters" : [ {
+              "relationType" : "Contains",
+              "entityTypes" : [ "CUSTOMER" ]
+            } ]
           }
         }
       },
