@@ -1946,6 +1946,7 @@
               "style" : "normal"
             },
             "titleColor" : "#FFFFFF",
+            "borderRadius" : "8px",
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
@@ -4717,6 +4718,7 @@
             "widgetStyle" : { },
             "actions" : { },
             "displayTimewindow" : true,
+            "borderRadius" : "8px",
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
