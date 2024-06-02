@@ -30,12 +30,8 @@
       "toIndex" : 3,
       "type" : "Success"
     }, {
-      "fromIndex" : 3,
+      "fromIndex" : 2,
       "toIndex" : 4,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 3,
-      "toIndex" : 5,
       "type" : "Failure"
     } ],
     "firstNodeIndex" : null,
@@ -138,41 +134,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 866,
-        "layoutY" : 511
-      },
-      "configuration" : {
-        "originatorSource" : "ENTITY",
-        "entityType" : "DEVICE",
-        "entityNamePattern" : "Restfull-Sensor",
-        "relationsQuery" : {
-          "direction" : "FROM",
-          "maxLevel" : 1,
-          "filters" : [ {
-            "relationType" : "Contains",
-            "entityTypes" : [ ]
-          } ],
-          "fetchLastLevelOnly" : false
-        }
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "4d47d000-2110-11ef-bf4a-3d9f36615f13"
-      },
-      "name" : "rest",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1135,
-        "layoutY" : 507
+        "layoutX" : 1088,
+        "layoutY" : 331
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -195,8 +158,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1111,
-        "layoutY" : 630
+        "layoutX" : 1098,
+        "layoutY" : 395
       },
       "configuration" : {
         "scriptLang" : "TBEL",
