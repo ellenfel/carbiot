@@ -5355,7 +5355,7 @@
                 "imageUrl" : null
               }
             },
-            "title" : "Days Left to Service",
+            "title" : "Days Left to Maintenance",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "titleStyle" : {
