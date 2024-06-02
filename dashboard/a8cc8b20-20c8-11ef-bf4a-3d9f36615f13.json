@@ -4363,8 +4363,8 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "#577BD9",
-            "color" : "rgba(0, 0, 0, 0.87)",
+            "backgroundColor" : "#2D3B48",
+            "color" : "rgba(255, 255, 255, 0.87)",
             "padding" : "0px",
             "settings" : {
               "layout" : "column",
@@ -4381,9 +4381,9 @@
               },
               "labelColor" : {
                 "type" : "constant",
-                "color" : "rgb(0, 0, 0)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
-                "rangeList" : null
+                "color" : "rgb(255, 255, 255)",
+                "rangeList" : null,
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "showIcon" : true,
               "iconSize" : 30,
@@ -4399,16 +4399,16 @@
               "iconBackgroundSize" : 36,
               "iconBackgroundSizeUnit" : "px",
               "iconBackgroundColor" : {
-                "type" : "range",
                 "color" : "rgba(0, 105, 92, 1)",
+                "type" : "range",
                 "rangeList" : [ {
                   "from" : 0,
                   "to" : 0,
                   "color" : "rgb(244, 67, 54)"
                 }, {
                   "from" : 1,
-                  "to" : null,
-                  "color" : "rgba(209, 39, 48, 1)"
+                  "color" : "rgba(209, 39, 48, 1)",
+                  "to" : null
                 } ],
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
@@ -4422,7 +4422,8 @@
               },
               "valueColor" : {
                 "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
+                "color" : "rgba(255, 255, 255, 0.87)",
+                "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "showChevron" : false
