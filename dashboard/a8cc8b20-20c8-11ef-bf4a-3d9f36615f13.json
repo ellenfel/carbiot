@@ -5194,7 +5194,7 @@
           }
         },
         "main_state" : {
-          "name" : "Emelec I-Link Box SCADA",
+          "name" : "Emelec I-Link Box SCADA System",
           "root" : true,
           "layouts" : {
             "main" : {
