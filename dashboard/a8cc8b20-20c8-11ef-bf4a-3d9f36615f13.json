@@ -4556,7 +4556,7 @@
               "chevronSize" : 24,
               "chevronSizeUnit" : "px",
               "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "row",
+              "layout" : "column",
               "autoScale" : true
             },
             "title" : "Alarm count",
