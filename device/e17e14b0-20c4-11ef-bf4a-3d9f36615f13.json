@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "e17e14b0-20c4-11ef-bf4a-3d9f36615f13"
     },
-    "label" : "",
+    "label" : "Emelec",
     "name" : "I-Link Box - 3",
     "softwareId" : null,
     "type" : "default"
@@ -40,7 +40,23 @@
   },
   "relations" : [ ],
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1717322201055,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1717322201055,
+      "longValue" : 1717322201054,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
