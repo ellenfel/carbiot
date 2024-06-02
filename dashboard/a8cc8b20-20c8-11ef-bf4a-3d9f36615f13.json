@@ -5065,6 +5065,25 @@
               "id" : "6f2fe870-7a26-11ed-aeaa-b7268336535c"
             }
           }
+        },
+        "7dcc77ce-3e75-bce6-52fe-b075db204cdc" : {
+          "id" : "7dcc77ce-3e75-bce6-52fe-b075db204cdc",
+          "alias" : "relational-customer",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : {
+              "entityType" : "CUSTOMER",
+              "id" : "5fbc5640-20e6-11ef-bf4a-3d9f36615f13"
+            },
+            "direction" : "FROM",
+            "maxLevel" : 10,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ ]
+          }
         }
       },
       "settings" : {
