@@ -5022,14 +5022,14 @@
             "stateEntityParamName" : null,
             "defaultStateEntity" : null,
             "rootEntity" : {
-              "entityType" : "CUSTOMER",
-              "id" : "0c84aec0-df94-11ee-a8f2-674fc522c738"
+              "entityType" : "DEVICE",
+              "id" : "b989f440-20da-11ef-bf4a-3d9f36615f13"
             },
             "direction" : "FROM",
             "maxLevel" : 3,
             "fetchLastLevelOnly" : true,
             "relationType" : "Contains",
-            "deviceTypes" : [ "sayac" ]
+            "deviceTypes" : [ "I-Link Box" ]
           }
         },
         "cb8a7ac4-93c8-ea25-10e7-dbdb7382a5ff" : {
