@@ -16,13 +16,25 @@
       "entityType" : "CUSTOMER",
       "id" : "5fbc5640-20e6-11ef-bf4a-3d9f36615f13"
     },
-    "name" : "Emelec",
+    "name" : "Emelec Admin",
     "phone" : null,
     "state" : null,
-    "title" : "Emelec",
+    "title" : "Emelec Admin",
     "zip" : null
   },
-  "relations" : [ ],
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "5fbc5640-20e6-11ef-bf4a-3d9f36615f13"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2938a600-20e6-11ef-bf4a-3d9f36615f13"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
