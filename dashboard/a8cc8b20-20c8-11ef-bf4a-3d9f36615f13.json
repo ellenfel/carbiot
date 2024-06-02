@@ -5232,6 +5232,170 @@
           "row" : 0,
           "col" : 0,
           "id" : "8e4f31a2-0618-1c4f-abe9-ec281403d8f5"
+        },
+        "7ffe6c50-a04e-ded2-edbe-c1d9d1e22590" : {
+          "typeFullFqn" : "system.progress_bar",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
+              "dataKeys" : [ {
+                "name" : "service",
+                "type" : "attribute",
+                "label" : "service",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5510463541325468
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1717274913785,
+                  "endTimeMs" : 1717361313785
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "layout" : "default",
+              "autoScale" : false,
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 24,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "32px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(255, 255, 255, 0.87)",
+                "rangeList" : [ {
+                  "from" : 0,
+                  "to" : 50,
+                  "color" : "rgb(244, 67, 54)"
+                }, {
+                  "from" : 50,
+                  "to" : 150,
+                  "color" : "rgb(232, 150, 35)"
+                }, {
+                  "from" : 150,
+                  "to" : 400,
+                  "color" : "rgb(4, 138, 211)"
+                } ],
+                "colorFunction" : "var service = value;\nif (typeof temperature !== undefined) {\n  var percent = (service + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "tickMin" : 0,
+              "tickMax" : 365,
+              "showTicks" : true,
+              "ticksFont" : {
+                "family" : "Roboto",
+                "size" : 11,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "ticksColor" : "rgba(0,0,0,0.54)",
+              "barColor" : {
+                "type" : "range",
+                "color" : "#FFFFFF",
+                "rangeList" : null,
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "barBackground" : "#FFFFFF",
+              "background" : {
+                "type" : "color",
+                "color" : "#2D3B48",
+                "overlay" : {
+                  "enabled" : true,
+                  "color" : "#2D3B48",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              }
+            },
+            "title" : "Days Left to Service",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "advanced",
+            "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "20px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : true,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "24px"
+            },
+            "titleIcon" : "event",
+            "iconColor" : "rgba(255, 255, 255, 0.87)",
+            "iconSize" : "20px",
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "14px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : null,
+                "weight" : null,
+                "style" : null,
+                "lineHeight" : "1"
+              },
+              "color" : null
+            },
+            "titleColor" : "rgba(255, 255, 255, 0.87)"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7ffe6c50-a04e-ded2-edbe-c1d9d1e22590"
         }
       },
       "timewindow" : {
@@ -5462,8 +5626,8 @@
                 },
                 "c3f06e60-4a74-29c6-cfac-8f9d45914ec0" : {
                   "sizeX" : 37,
-                  "sizeY" : 14,
-                  "row" : 16,
+                  "sizeY" : 13,
+                  "row" : 17,
                   "col" : 0
                 },
                 "598ae79f-c288-c4bd-ab3d-68971cf55c27" : {
@@ -5480,45 +5644,51 @@
                 },
                 "4cb38aa2-9baf-ac2f-2832-cb57e61b2cdc" : {
                   "sizeX" : 16,
-                  "sizeY" : 16,
+                  "sizeY" : 17,
                   "row" : 0,
                   "col" : 0
                 },
                 "897903d7-a933-009d-a6e5-fb29cd3a7604" : {
                   "sizeX" : 7,
                   "sizeY" : 5,
-                  "row" : 11,
+                  "row" : 12,
                   "col" : 16
                 },
                 "0aa04c00-e6c4-d37c-7732-218b5041aa75" : {
                   "sizeX" : 7,
                   "sizeY" : 5,
-                  "row" : 11,
+                  "row" : 12,
                   "col" : 23
                 },
                 "74e64371-6ae7-2bf7-433c-d8b28e79ee15" : {
                   "sizeX" : 7,
                   "sizeY" : 5,
-                  "row" : 11,
+                  "row" : 12,
                   "col" : 30
                 },
                 "65b494b6-3b41-38e6-75e5-aa7f51763c78" : {
                   "sizeX" : 7,
                   "sizeY" : 5,
-                  "row" : 6,
+                  "row" : 7,
                   "col" : 16
                 },
                 "fe1bd3e2-70c1-024e-ff30-58030b03829a" : {
                   "sizeX" : 7,
                   "sizeY" : 5,
-                  "row" : 6,
+                  "row" : 7,
                   "col" : 23
                 },
                 "8e4f31a2-0618-1c4f-abe9-ec281403d8f5" : {
                   "sizeX" : 7,
                   "sizeY" : 5,
-                  "row" : 6,
+                  "row" : 7,
                   "col" : 30
+                },
+                "7ffe6c50-a04e-ded2-edbe-c1d9d1e22590" : {
+                  "sizeX" : 21,
+                  "sizeY" : 4,
+                  "row" : 3,
+                  "col" : 16
                 }
               },
               "gridSettings" : {
