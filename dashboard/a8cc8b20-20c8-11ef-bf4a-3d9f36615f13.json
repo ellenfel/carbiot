@@ -4215,7 +4215,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "nemport",
+                "targetDashboardStateId" : "main_state",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
