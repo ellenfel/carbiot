@@ -132,9 +132,15 @@
                 "ticksFormatter" : ""
               },
               "shadowSize" : 8,
-              "smoothLines" : false,
+              "smoothLines" : true,
               "thresholdsLineWidth" : null,
-              "comparisonEnabled" : false,
+              "comparisonEnabled" : true,
+              "timeForComparison" : "previousInterval",
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "title" : null,
+                "showLabels" : true
+              },
               "showLegend" : true,
               "legendConfig" : {
                 "direction" : "row",
