@@ -4187,7 +4187,22 @@
               }
             } ],
             "widgetStyle" : { },
-            "actions" : { },
+            "actions" : {
+              "nodeSelected" : [ {
+                "name" : "cihaza git",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "main_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : "",
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "84a256e0-eadd-a174-a96d-4ddd744a3e39"
+              } ]
+            },
             "displayTimewindow" : true,
             "borderRadius" : "8px",
             "widgetCss" : "",
