@@ -4977,7 +4977,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "updateDashboardState",
-                "targetDashboardStateId" : "main_state",
+                "targetDashboardStateId" : "default",
                 "setEntityId" : true,
                 "stateEntityParamName" : "",
                 "openRightLayout" : false,
