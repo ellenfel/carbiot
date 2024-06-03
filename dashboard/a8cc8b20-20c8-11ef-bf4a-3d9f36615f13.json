@@ -2604,7 +2604,7 @@
                 "_hash" : 0.5046994784833425
               } ],
               "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ],
+                "statusList" : [ "ACTIVE", "UNACK" ],
                 "typeList" : [ "Maintanence", "Pulse" ],
                 "assignedToCurrentUser" : false,
                 "assigneeId" : null
