@@ -1538,7 +1538,7 @@
               "dataKeys" : [ {
                 "name" : "pulse_a",
                 "type" : "timeseries",
-                "label" : "COUNTER",
+                "label" : "PULSE",
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.995787353603711
@@ -2039,7 +2039,7 @@
               "dataKeys" : [ {
                 "name" : "pulse_b",
                 "type" : "timeseries",
-                "label" : "COUNTER",
+                "label" : "PULSE",
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.03423073675870647
@@ -2214,7 +2214,7 @@
               "dataKeys" : [ {
                 "name" : "pulse_c",
                 "type" : "timeseries",
-                "label" : "COUNTER",
+                "label" : "PULSE",
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.8828628648954797
