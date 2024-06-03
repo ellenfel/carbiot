@@ -99,7 +99,7 @@
             "color" : "rgb(255, 254, 254)",
             "padding" : "8px",
             "settings" : {
-              "stack" : false,
+              "stack" : true,
               "enableSelection" : true,
               "fontSize" : 10,
               "fontColor" : "#ffffff",
