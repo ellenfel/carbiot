@@ -4397,8 +4397,8 @@
               "widgets" : {
                 "ba61cc92-ef44-850b-a53c-75e7a46decf4" : {
                   "sizeX" : 28,
-                  "sizeY" : 12,
-                  "row" : 11,
+                  "sizeY" : 10,
+                  "row" : 13,
                   "col" : 0,
                   "mobileHeight" : 4,
                   "mobileOrder" : 3
@@ -4406,7 +4406,7 @@
                 "33746cd2-2201-0abf-c163-7aeeab07c8ac" : {
                   "sizeX" : 10,
                   "sizeY" : 2,
-                  "row" : 0,
+                  "row" : 2,
                   "col" : 8,
                   "mobileHeight" : 1,
                   "mobileOrder" : 10
@@ -4414,7 +4414,7 @@
                 "77e85f3d-9c3d-1ca9-d80e-0a15376213e7" : {
                   "sizeX" : 3,
                   "sizeY" : 9,
-                  "row" : 2,
+                  "row" : 4,
                   "col" : 8,
                   "mobileHeight" : 4,
                   "mobileOrder" : 11
@@ -4422,7 +4422,7 @@
                 "f78891d7-fd3d-39d4-03a4-8ac3d60f275c" : {
                   "sizeX" : 3,
                   "sizeY" : 9,
-                  "row" : 2,
+                  "row" : 4,
                   "col" : 11,
                   "mobileHeight" : 4,
                   "mobileOrder" : 12
@@ -4430,7 +4430,7 @@
                 "d1004dbe-d8cc-ff93-8e15-06da5a6b8e3e" : {
                   "sizeX" : 10,
                   "sizeY" : 2,
-                  "row" : 0,
+                  "row" : 2,
                   "col" : 28,
                   "mobileHeight" : 1,
                   "mobileOrder" : 15
@@ -4438,7 +4438,7 @@
                 "fbfcee0a-8408-2719-d3a3-a54fb3cc0741" : {
                   "sizeX" : 3,
                   "sizeY" : 9,
-                  "row" : 2,
+                  "row" : 4,
                   "col" : 28,
                   "mobileHeight" : 4,
                   "mobileOrder" : 16
@@ -4446,7 +4446,7 @@
                 "e62ea3c5-0594-9056-1584-2a68fdfd5433" : {
                   "sizeX" : 3,
                   "sizeY" : 9,
-                  "row" : 2,
+                  "row" : 4,
                   "col" : 31,
                   "mobileHeight" : 4,
                   "mobileOrder" : 17
@@ -4454,7 +4454,7 @@
                 "e9b02fab-5f0f-5aba-f4a4-5e6bc6964e02" : {
                   "sizeX" : 4,
                   "sizeY" : 9,
-                  "row" : 2,
+                  "row" : 4,
                   "col" : 14
                 },
                 "7e87866d-050c-fc03-6660-062d4ac20f08" : {
@@ -4462,7 +4462,7 @@
                   "sizeY" : 2,
                   "mobileOrder" : 5,
                   "mobileHeight" : 1,
-                  "row" : 0,
+                  "row" : 2,
                   "col" : 18
                 },
                 "3a697e60-6ddd-bd8a-28ba-ce20c2fd9ff8" : {
@@ -4470,7 +4470,7 @@
                   "sizeY" : 9,
                   "mobileOrder" : 6,
                   "mobileHeight" : 4,
-                  "row" : 2,
+                  "row" : 4,
                   "col" : 18
                 },
                 "89ddef24-f3c5-4a51-755c-4ba14027809b" : {
@@ -4478,24 +4478,24 @@
                   "sizeY" : 9,
                   "mobileOrder" : 7,
                   "mobileHeight" : 4,
-                  "row" : 2,
+                  "row" : 4,
                   "col" : 21
                 },
                 "b4dbc436-a6b9-3144-5120-2fc079e2eaca" : {
                   "sizeX" : 4,
                   "sizeY" : 9,
-                  "row" : 2,
+                  "row" : 4,
                   "col" : 24
                 },
                 "0377a9b0-f49b-4e86-f8ae-d591a5d09322" : {
                   "sizeX" : 4,
                   "sizeY" : 9,
-                  "row" : 2,
+                  "row" : 4,
                   "col" : 34
                 },
                 "2aace7cf-2cd0-4b65-f7f5-c2775d5cb019" : {
                   "sizeX" : 13,
-                  "sizeY" : 11,
+                  "sizeY" : 13,
                   "row" : 0,
                   "col" : 38
                 },
@@ -4506,10 +4506,10 @@
                   "col" : 0
                 },
                 "ace4df5e-ef8a-f983-2989-6284823ecac6" : {
-                  "sizeX" : 48,
-                  "sizeY" : 5,
-                  "row" : 23,
-                  "col" : 0
+                  "sizeX" : 30,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 8
                 }
               },
               "gridSettings" : {
