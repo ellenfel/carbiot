@@ -5599,14 +5599,30 @@
               "dataZoom" : true,
               "rangeColors" : [ {
                 "from" : null,
-                "to" : 5,
+                "to" : 20,
                 "color" : "#3FA71A"
               }, {
-                "from" : 5,
-                "to" : 15,
+                "from" : 20,
+                "to" : 50,
                 "color" : "#F36900"
               }, {
-                "from" : 15,
+                "from" : 50,
+                "to" : null,
+                "color" : "#D81838"
+              }, {
+                "from" : 20,
+                "to" : 40,
+                "color" : "#FFA600"
+              }, {
+                "from" : 40,
+                "to" : 60,
+                "color" : "#F36900"
+              }, {
+                "from" : 60,
+                "to" : 80,
+                "color" : "#F04022"
+              }, {
+                "from" : 80,
                 "to" : null,
                 "color" : "#D81838"
               } ],
@@ -5637,7 +5653,8 @@
               "tooltipDateFormat" : {
                 "format" : "dd MMM yyyy HH:mm",
                 "lastUpdateAgo" : false,
-                "custom" : false
+                "custom" : false,
+                "auto" : false
               },
               "tooltipDateFont" : {
                 "family" : "Roboto",
@@ -5648,6 +5665,7 @@
                 "lineHeight" : "16px"
               },
               "tooltipDateColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipDateInterval" : true,
               "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
               "tooltipBackgroundBlur" : 4,
               "background" : {
@@ -5658,14 +5676,13 @@
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
                 }
-              },
-              "tooltipDateInterval" : true
+              }
             },
             "title" : "Power consumption",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "titleStyle" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
