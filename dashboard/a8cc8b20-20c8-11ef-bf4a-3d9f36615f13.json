@@ -4212,7 +4212,7 @@
               "widgets" : {
                 "ba61cc92-ef44-850b-a53c-75e7a46decf4" : {
                   "sizeX" : 20,
-                  "sizeY" : 12,
+                  "sizeY" : 9,
                   "row" : 11,
                   "col" : 8,
                   "mobileHeight" : 4,
@@ -4316,7 +4316,7 @@
                 },
                 "5404610b-7b85-6dd9-51b9-d269f7b8ddf5" : {
                   "sizeX" : 8,
-                  "sizeY" : 23,
+                  "sizeY" : 20,
                   "row" : 0,
                   "col" : 0
                 }
