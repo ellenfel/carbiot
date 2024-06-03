@@ -5169,6 +5169,183 @@
           "row" : 0,
           "col" : 0,
           "id" : "1f9c73ad-e9be-8aba-2984-cb34dbb76451"
+        },
+        "489c59dc-f9ef-3651-366d-13a09da75097" : {
+          "typeFullFqn" : "system.battery_level",
+          "type" : "latest",
+          "sizeX" : 2.5,
+          "sizeY" : 2.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "mppt_batary_voltage",
+                "type" : "timeseries",
+                "label" : "MPPT_Batary_Voltage",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.038670460402907114,
+                "aggregationType" : "NONE",
+                "units" : "%",
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value;\n\n//value= value/100;\n//var oldRange= 10;\n//var newRange = 100;\n\n//var ratio = (value - 15.8) / 10;\n//var scaledValue = (ratio * newRange);\n\n//return scaledValue;\n"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1714901080123,
+                  "endTimeMs" : 1714987480123
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#81C4E9CD",
+            "color" : "rgb(0, 0, 0)",
+            "padding" : "0px",
+            "settings" : {
+              "layout" : "vertical_solid",
+              "sectionsCount" : 5,
+              "showValue" : true,
+              "autoScaleValueSize" : null,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 26,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "24px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgb(255, 255, 255)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "rangeList" : null
+              },
+              "batteryLevelColor" : {
+                "color" : "rgb(76, 175, 80)",
+                "type" : "range",
+                "rangeList" : [ {
+                  "from" : 18,
+                  "to" : 21,
+                  "color" : "rgba(227, 71, 71, 1)"
+                }, {
+                  "from" : 21,
+                  "to" : 24,
+                  "color" : "rgba(246, 206, 67, 1)"
+                }, {
+                  "from" : 24,
+                  "to" : 28,
+                  "color" : "rgba(92, 223, 144, 1)"
+                } ],
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "batteryShapeColor" : {
+                "type" : "constant",
+                "color" : "rgb(255, 255, 255)",
+                "rangeList" : [ {
+                  "from" : 18,
+                  "to" : 21,
+                  "color" : "rgba(227, 71, 71, 0.32)"
+                }, {
+                  "from" : 21,
+                  "to" : 24,
+                  "color" : "rgba(246, 206, 67, 0.32)"
+                }, {
+                  "from" : 24.5,
+                  "to" : 28,
+                  "color" : "rgba(92, 223, 144, 0.32)"
+                } ],
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "#2D3B48",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "#FFFFFF",
+                  "blur" : 5
+                },
+                "imageUrl" : null
+              }
+            },
+            "title" : "Battery Voltage",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "V",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "advanced",
+            "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : true,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "24px"
+            },
+            "titleIcon" : "mdi:battery-high",
+            "iconColor" : "rgb(5, 5, 5)",
+            "iconSize" : "20px",
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "14px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : null,
+                "weight" : null,
+                "style" : null,
+                "lineHeight" : "1"
+              },
+              "color" : null
+            },
+            "titleColor" : "#FFFFFFDE"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "489c59dc-f9ef-3651-366d-13a09da75097"
         }
       },
       "timewindow" : {
@@ -5334,6 +5511,12 @@
                   "sizeY" : 3,
                   "row" : 16,
                   "col" : 28
+                },
+                "489c59dc-f9ef-3651-366d-13a09da75097" : {
+                  "sizeX" : 6,
+                  "sizeY" : 3,
+                  "row" : 10,
+                  "col" : 38
                 }
               },
               "gridSettings" : {
