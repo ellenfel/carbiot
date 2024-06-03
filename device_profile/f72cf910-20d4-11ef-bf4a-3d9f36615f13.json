@@ -192,9 +192,9 @@
           }
         },
         "id" : "1902e2c7-6213-74a4-333a-55e6f0eb3312",
-        "propagate" : false,
+        "propagate" : true,
         "propagateRelationTypes" : null,
-        "propagateToOwner" : false,
+        "propagateToOwner" : true,
         "propagateToTenant" : false
       } ],
       "configuration" : {
