@@ -418,16 +418,25 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "name" : "Smart Meter B",
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
-                "name" : "voltage",
+                "name" : "voltage_a",
                 "type" : "timeseries",
                 "label" : "Voltage",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.39398391439849156
+                "_hash" : 0.39398391439849156,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
-              "name" : "Smart Meter B",
-              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -458,8 +467,8 @@
             "color" : "rgb(255, 254, 254)",
             "padding" : "0px",
             "settings" : {
-              "minValue" : 100,
-              "maxValue" : 500,
+              "minValue" : 0,
+              "maxValue" : 100,
               "gaugeType" : "verticalBar",
               "donutStartAngle" : 90,
               "defaultColor" : "#b2ffb6",
@@ -477,7 +486,8 @@
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showUnitTitle" : true,
               "unitTitle" : "V",
@@ -487,14 +497,16 @@
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showValue" : true,
               "valueFont" : {
                 "family" : "RobotoDraft",
+                "size" : 12,
                 "style" : "normal",
                 "weight" : "500",
-                "size" : 12
+                "color" : null
               },
               "showMinMax" : false,
               "minMaxFont" : {
@@ -549,14 +561,20 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "Smart Meter B",
-              "entityAliasId" : "dd8154f4-08cc-f620-e4db-dd4491c65b8a",
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
-                "name" : "frequency",
+                "name" : "current_a",
                 "type" : "timeseries",
                 "label" : "frequency",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.3133070076436535
+                "_hash" : 0.3133070076436535,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -591,8 +609,8 @@
             "color" : "rgb(255, 254, 254)",
             "padding" : "0px",
             "settings" : {
-              "minValue" : 45,
-              "maxValue" : 52,
+              "minValue" : 0,
+              "maxValue" : 100,
               "gaugeType" : "verticalBar",
               "donutStartAngle" : 90,
               "defaultColor" : "#b2ffb6",
@@ -610,7 +628,8 @@
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showUnitTitle" : true,
               "unitTitle" : "A",
@@ -620,14 +639,16 @@
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showValue" : true,
               "valueFont" : {
                 "family" : "RobotoDraft",
+                "size" : 12,
                 "style" : "normal",
                 "weight" : "500",
-                "size" : 12
+                "color" : null
               },
               "showMinMax" : false,
               "minMaxFont" : {
@@ -725,16 +746,25 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "name" : "Smart Meter C",
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
-                "name" : "voltage",
+                "name" : "voltage_c",
                 "type" : "timeseries",
                 "label" : "Voltage",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.4906904582578355
+                "_hash" : 0.4906904582578355,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
-              "name" : "Smart Meter C",
-              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -765,8 +795,8 @@
             "color" : "rgb(255, 254, 254)",
             "padding" : "0px",
             "settings" : {
-              "minValue" : 100,
-              "maxValue" : 500,
+              "minValue" : 0,
+              "maxValue" : 100,
               "gaugeType" : "verticalBar",
               "donutStartAngle" : 90,
               "defaultColor" : "#fe9e9a",
@@ -776,13 +806,16 @@
               "roundedLineCap" : false,
               "gaugeColor" : "#0c1730",
               "useFixedLevelColor" : false,
+              "levelColors" : [ ],
+              "fixedLevelColors" : [ ],
               "showTitle" : true,
               "title" : "VOLTAGE",
               "titleFont" : {
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showUnitTitle" : true,
               "unitTitle" : "V",
@@ -792,14 +825,16 @@
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showValue" : true,
               "valueFont" : {
                 "family" : "RobotoDraft",
+                "size" : 12,
                 "style" : "normal",
                 "weight" : "500",
-                "size" : 12
+                "color" : null
               },
               "showMinMax" : false,
               "minMaxFont" : {
@@ -812,12 +847,10 @@
               "showTicks" : false,
               "tickWidth" : 4,
               "colorTicks" : "#666",
+              "ticksValue" : [ ],
               "animation" : true,
               "animationDuration" : 500,
-              "animationRule" : "linear",
-              "levelColors" : [ ],
-              "fixedLevelColors" : [ ],
-              "ticksValue" : [ ]
+              "animationRule" : "linear"
             },
             "title" : "Voltaj: Enerji Analizörü C",
             "dropShadow" : true,
@@ -852,16 +885,25 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
+              "name" : "Smart Meter C",
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
-                "name" : "frequency",
+                "name" : "current_c",
                 "type" : "timeseries",
                 "label" : "Frequency",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.5083592068812213
+                "_hash" : 0.5083592068812213,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
-              "name" : "Smart Meter C",
-              "entityAliasId" : "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -892,8 +934,8 @@
             "color" : "rgb(255, 254, 254)",
             "padding" : "0px",
             "settings" : {
-              "minValue" : 45,
-              "maxValue" : 52,
+              "minValue" : 0,
+              "maxValue" : 100,
               "gaugeType" : "verticalBar",
               "donutStartAngle" : 90,
               "defaultColor" : "#fe9e9a",
@@ -903,13 +945,16 @@
               "roundedLineCap" : false,
               "gaugeColor" : "#0c1730",
               "useFixedLevelColor" : false,
+              "levelColors" : [ ],
+              "fixedLevelColors" : [ ],
               "showTitle" : true,
               "title" : "CURRENT",
               "titleFont" : {
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showUnitTitle" : true,
               "unitTitle" : "A",
@@ -919,14 +964,16 @@
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showValue" : true,
               "valueFont" : {
                 "family" : "RobotoDraft",
+                "size" : 12,
                 "style" : "normal",
                 "weight" : "500",
-                "size" : 12
+                "color" : null
               },
               "showMinMax" : false,
               "minMaxFont" : {
@@ -939,12 +986,10 @@
               "showTicks" : false,
               "tickWidth" : 4,
               "colorTicks" : "#666",
+              "ticksValue" : [ ],
               "animation" : true,
               "animationDuration" : 500,
-              "animationRule" : "linear",
-              "levelColors" : [ ],
-              "fixedLevelColors" : [ ],
-              "ticksValue" : [ ]
+              "animationRule" : "linear"
             },
             "title" : "Frekans: Enerji Analizörü C",
             "dropShadow" : true,
@@ -1665,16 +1710,17 @@
           "sizeY" : 3.5,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "134b3c53-25ff-11ee-9c0b-a53a7980c9e6",
+              "deviceId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
-                "name" : "CurrentTotal",
+                "name" : "pulse_a",
                 "type" : "timeseries",
                 "label" : "COUNTER",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.12027567645704207
+                "_hash" : 0.995787353603711
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1883,17 +1929,23 @@
           "sizeY" : 11,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "Smart Meter A",
-              "deviceId" : "134b3c53-25ff-11ee-9c0b-a53a7980c9e6",
-              "entityAliasId" : "34fc86f9-4cbc-1c87-33af-2839a666772b",
+              "deviceId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
-                "name" : "voltage",
+                "name" : "voltage_a",
                 "type" : "timeseries",
                 "label" : "Voltage",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.5926485341996204
+                "_hash" : 0.5926485341996204,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1928,30 +1980,48 @@
             "color" : "rgb(255, 254, 254)",
             "padding" : "0px",
             "settings" : {
-              "maxValue" : 500,
+              "minValue" : 0,
+              "maxValue" : 100,
+              "gaugeType" : "verticalBar",
               "donutStartAngle" : 90,
-              "showValue" : true,
-              "showMinMax" : false,
+              "defaultColor" : "#87fcff",
               "gaugeWidthScale" : 0.75,
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 1.2,
+              "roundedLineCap" : false,
+              "gaugeColor" : "#0c1730",
+              "useFixedLevelColor" : false,
               "levelColors" : [ ],
+              "fixedLevelColors" : [ ],
+              "showTitle" : true,
+              "title" : "Voltage",
               "titleFont" : {
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
+              "showUnitTitle" : true,
+              "unitTitle" : "V",
+              "showTimestamp" : false,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
               "labelFont" : {
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
+              "showValue" : true,
               "valueFont" : {
                 "family" : "RobotoDraft",
+                "size" : 12,
                 "style" : "normal",
                 "weight" : "500",
-                "size" : 12
+                "color" : null
               },
+              "showMinMax" : false,
               "minMaxFont" : {
                 "family" : "Segment7Standard",
                 "size" : 8,
@@ -1959,20 +2029,13 @@
                 "weight" : "normal",
                 "color" : "#ffffff"
               },
-              "neonGlowBrightness" : 0,
-              "showUnitTitle" : true,
-              "gaugeColor" : "#0c1730",
-              "gaugeType" : "verticalBar",
-              "showTitle" : true,
-              "minValue" : 100,
-              "dashThickness" : 1.2,
-              "defaultColor" : "#87fcff",
-              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "showTicks" : false,
+              "tickWidth" : 4,
+              "colorTicks" : "#666",
+              "ticksValue" : [ ],
               "animation" : true,
               "animationDuration" : 500,
-              "animationRule" : "linear",
-              "unitTitle" : "V",
-              "title" : "Voltage"
+              "animationRule" : "linear"
             },
             "title" : "Gerilim: Sayaç A",
             "dropShadow" : true,
@@ -2007,17 +2070,23 @@
           "sizeY" : 11,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "Smart Meter A",
-              "deviceId" : "134b3c52-25ff-11ee-9c0b-a53a7980c9e6",
-              "entityAliasId" : "34fc86f9-4cbc-1c87-33af-2839a666772b",
+              "deviceId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
-                "name" : "frequency",
+                "name" : "current_b",
                 "type" : "timeseries",
                 "label" : "Frequency",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.5259041270929596
+                "_hash" : 0.5259041270929596,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -2052,8 +2121,8 @@
             "color" : "rgb(255, 254, 254)",
             "padding" : "0px",
             "settings" : {
-              "minValue" : 45,
-              "maxValue" : 52,
+              "minValue" : 0,
+              "maxValue" : 100,
               "gaugeType" : "verticalBar",
               "donutStartAngle" : 90,
               "defaultColor" : "#87fcff",
@@ -2071,7 +2140,8 @@
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showUnitTitle" : true,
               "unitTitle" : "A",
@@ -2081,14 +2151,16 @@
                 "family" : "RobotoDraft",
                 "size" : 8,
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "color" : null
               },
               "showValue" : true,
               "valueFont" : {
                 "family" : "RobotoDraft",
+                "size" : 12,
                 "style" : "normal",
                 "weight" : "500",
-                "size" : 12
+                "color" : null
               },
               "showMinMax" : false,
               "minMaxFont" : {
@@ -2139,16 +2211,17 @@
           "sizeY" : 3.5,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "134b3c53-25ff-11ee-9c0b-a53a7980c9e6",
+              "deviceId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
-                "name" : "CurrentTotal",
+                "name" : "pulse_b",
                 "type" : "timeseries",
                 "label" : "COUNTER",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.12027567645704207
+                "_hash" : 0.03423073675870647
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -2313,16 +2386,17 @@
           "sizeY" : 3.5,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "134b3c53-25ff-11ee-9c0b-a53a7980c9e6",
+              "deviceId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
-                "name" : "CurrentTotal",
+                "name" : "pulse_c",
                 "type" : "timeseries",
                 "label" : "COUNTER",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.12027567645704207
+                "_hash" : 0.8828628648954797
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
