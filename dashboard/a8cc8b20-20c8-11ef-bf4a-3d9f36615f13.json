@@ -2369,50 +2369,6 @@
           "col" : 0,
           "id" : "0377a9b0-f49b-4e86-f8ae-d591a5d09322"
         },
-        "2aace7cf-2cd0-4b65-f7f5-c2775d5cb019" : {
-          "typeFullFqn" : "tenant.custom_widgets.html_list",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#565B5C",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "cardHtml" : "<img src=\"/api/images/public/ZtCKavy8R5niPmBAueqpwTKlR0NdnHB1\" alt=\"device.png\" class=\"card\"  />\n",
-              "cardCss" : ".card {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    width: 40%;\n    height: 150%;\n}"
-            },
-            "title" : "html-list",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "2aace7cf-2cd0-4b65-f7f5-c2775d5cb019"
-        },
         "598ae79f-c288-c4bd-ab3d-68971cf55c27" : {
           "typeFullFqn" : "system.alarm_count",
           "type" : "latest",
@@ -5158,12 +5114,6 @@
                   "row" : 3,
                   "col" : 34
                 },
-                "2aace7cf-2cd0-4b65-f7f5-c2775d5cb019" : {
-                  "sizeX" : 11,
-                  "sizeY" : 10,
-                  "row" : 0,
-                  "col" : 38
-                },
                 "ace4df5e-ef8a-f983-2989-6284823ecac6" : {
                   "sizeX" : 38,
                   "sizeY" : 1,
@@ -5195,10 +5145,10 @@
                   "col" : 0
                 },
                 "13cf30d7-3a66-6bcb-68b4-4f14d9d74f7a" : {
-                  "sizeX" : 17,
-                  "sizeY" : 16,
-                  "row" : 16,
-                  "col" : 28
+                  "sizeX" : 10,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 38
                 }
               },
               "gridSettings" : {
