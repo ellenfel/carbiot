@@ -4763,23 +4763,17 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
-              "entityAliasId" : null,
+              "deviceId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
                 "name" : "voltage_a",
                 "type" : "timeseries",
-                "label" : "Voltage A",
+                "label" : "voltage_a",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.022811821418355027,
-                "aggregationType" : "NONE",
-                "units" : "V",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.03392963734220711
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
