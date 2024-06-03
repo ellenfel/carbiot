@@ -5374,7 +5374,7 @@
               "widgets" : {
                 "ba61cc92-ef44-850b-a53c-75e7a46decf4" : {
                   "sizeX" : 28,
-                  "sizeY" : 12,
+                  "sizeY" : 11,
                   "row" : 10,
                   "col" : 0,
                   "mobileHeight" : 4,
@@ -5508,15 +5508,15 @@
                 },
                 "1f9c73ad-e9be-8aba-2984-cb34dbb76451" : {
                   "sizeX" : 10,
-                  "sizeY" : 3,
+                  "sizeY" : 2,
                   "row" : 16,
                   "col" : 28
                 },
                 "489c59dc-f9ef-3651-366d-13a09da75097" : {
-                  "sizeX" : 6,
+                  "sizeX" : 10,
                   "sizeY" : 3,
-                  "row" : 10,
-                  "col" : 38
+                  "row" : 18,
+                  "col" : 28
                 }
               },
               "gridSettings" : {
