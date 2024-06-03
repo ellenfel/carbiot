@@ -4176,7 +4176,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "default",
+                "targetDashboardStateId" : "pd_trends",
                 "setEntityId" : false,
                 "stateEntityParamName" : null,
                 "openRightLayout" : null,
