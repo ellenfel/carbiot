@@ -4268,7 +4268,13 @@
                 "label" : "Pressure",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.6190724227976512
+                "_hash" : 0.6190724227976512,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -4329,18 +4335,14 @@
                 "color" : "#000000DE",
                 "rangeList" : [ {
                   "from" : 0,
-                  "to" : 5,
-                  "color" : "#305AD7"
+                  "to" : 500,
+                  "color" : "#FFFFFF"
                 }, {
-                  "from" : 5,
-                  "to" : 10,
-                  "color" : "#3FA71A"
-                }, {
-                  "from" : 10,
-                  "to" : 15,
+                  "from" : 500,
+                  "to" : 700,
                   "color" : "#F36900"
                 }, {
-                  "from" : 15,
+                  "from" : 1000,
                   "to" : null,
                   "color" : "#D81838"
                 } ],
@@ -4398,7 +4400,7 @@
               "background" : {
                 "type" : "color",
                 "imageUrl" : null,
-                "color" : "#142551",
+                "color" : "#2D3B48",
                 "overlay" : {
                   "enabled" : false,
                   "color" : "rgba(255,255,255,0.72)",
@@ -4571,7 +4573,7 @@
               "background" : {
                 "type" : "color",
                 "imageUrl" : null,
-                "color" : "#142551",
+                "color" : "#2D3B48",
                 "overlay" : {
                   "enabled" : false,
                   "color" : "rgba(255,255,255,0.72)",
@@ -4801,7 +4803,7 @@
               "background" : {
                 "type" : "color",
                 "imageUrl" : null,
-                "color" : "#142551",
+                "color" : "#2D3B48",
                 "overlay" : {
                   "enabled" : false,
                   "color" : "rgba(255,255,255,0.72)",
@@ -5045,7 +5047,7 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "rgba(10, 10, 10, 0.63)",
+            "backgroundColor" : "#2D3B48",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
