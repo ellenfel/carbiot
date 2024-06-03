@@ -1633,7 +1633,7 @@
             "actions" : { },
             "configMode" : "advanced",
             "alarmFilterConfig" : {
-              "statusList" : [ "ACTIVE", "ACK", "UNACK" ],
+              "statusList" : [ "ACTIVE", "UNACK" ],
               "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
               "typeList" : [ ],
               "searchPropagatedAlarms" : false,
