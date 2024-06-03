@@ -2605,7 +2605,7 @@
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ],
-                "typeList" : [ "Emelec" ],
+                "typeList" : [ "Maintanence", "Pulse" ],
                 "assignedToCurrentUser" : false,
                 "assigneeId" : null
               }
