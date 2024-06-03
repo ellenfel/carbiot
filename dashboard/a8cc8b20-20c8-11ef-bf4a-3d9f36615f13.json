@@ -4220,10 +4220,10 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
-              "entityAliasId" : null,
+              "deviceId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
                 "name" : "pulse_a",
                 "type" : "timeseries",
@@ -4397,10 +4397,10 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
-              "entityAliasId" : null,
+              "deviceId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
                 "name" : "pulse_b",
                 "type" : "timeseries",
@@ -4580,10 +4580,10 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
-              "entityAliasId" : null,
+              "deviceId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
                 "name" : "pulse_c",
                 "type" : "timeseries",
@@ -4770,10 +4770,16 @@
               "dataKeys" : [ {
                 "name" : "voltage_a",
                 "type" : "timeseries",
-                "label" : "voltage_a",
+                "label" : "Voltage A",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.03392963734220711
+                "_hash" : 0.03392963734220711,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -4940,10 +4946,10 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
               "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
-              "entityAliasId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
                 "name" : "voltage_b",
                 "type" : "timeseries",
@@ -5123,10 +5129,10 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
               "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
-              "entityAliasId" : null,
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
                 "name" : "voltage_c",
                 "type" : "timeseries",
@@ -5306,9 +5312,10 @@
           "sizeY" : 2,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
               "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
+              "entityAliasId" : "3c1af1cc-712a-9cab-265f-91e3a1d0d7af",
               "dataKeys" : [ {
                 "name" : "service",
                 "type" : "attribute",
