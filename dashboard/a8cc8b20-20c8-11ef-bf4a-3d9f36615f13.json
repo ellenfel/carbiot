@@ -1580,7 +1580,7 @@
             "useDashboardTimewindow" : true,
             "showLegend" : false,
             "alarmSource" : {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
               "deviceId" : "b989f440-20da-11ef-bf4a-3d9f36615f13",
               "entityAliasId" : "05924a8e-00fd-8da1-450b-6ca89111a651",
