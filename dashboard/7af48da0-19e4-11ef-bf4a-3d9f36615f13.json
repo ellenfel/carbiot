@@ -618,7 +618,7 @@
       },
       "states" : {
         "default" : {
-          "name" : "Smart Irrigation",
+          "name" : "Irrigation Management",
           "root" : true,
           "layouts" : {
             "main" : {
@@ -652,6 +652,70 @@
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "field" : {
+          "name" : "${entityName}\t",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "field_alarms" : {
+          "name" : "${entityName}\t",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "moisture_sensor_details" : {
+          "name" : "Moisture sensor details",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "moisture_sensor_details_alarms" : {
+          "name" : "Moisture sensor details alarms",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
               }
             }
           }
