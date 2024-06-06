@@ -438,7 +438,7 @@
         "entityType" : "RULE_NODE",
         "id" : "73201740-2419-11ef-bf4a-3d9f36615f13"
       },
-      "name" : "SI SM 1",
+      "name" : "SI Meter 1",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
