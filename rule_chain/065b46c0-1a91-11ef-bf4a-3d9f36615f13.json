@@ -88,6 +88,10 @@
       "fromIndex" : 13,
       "toIndex" : 8,
       "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 6,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -418,12 +422,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 291,
-        "layoutY" : 491
+        "layoutX" : 53,
+        "layoutY" : 416
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 5000,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var pulseCounter = Math.random() * 7800; // Random water consumption between 0 and 5\nvar battery = Math.random() * 100; // Random voltage between 0 and 5\n\nreturn {\n    msg: {\n        pulseCounter: parseFloat(pulseCounter.toFixed(0)), // Round to 1 decimal place\n        battery: parseFloat(battery.toFixed(2)) // Round to 1 decimal place\n    },\n    metadata: {\n        deviceType: \"SI Soil Moisture\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : "var moisture = Math.random() * 78; // Random water consumption between 0 and 5\nvar battery = Math.random() * 100; // Random voltage between 0 and 5\n\nreturn {\n    msg: {\n        moisture: parseFloat(water.toFixed(2)), // Round to 1 decimal place\n        battery: parseFloat(voltage.toFixed(2)) // Round to 1 decimal place\n    },\n    metadata: {\n        deviceType: \"SI Soil Moisture\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
