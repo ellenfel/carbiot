@@ -61,6 +61,10 @@
       "fromIndex" : 6,
       "toIndex" : 7,
       "type" : "Alarm Severity Updated"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 6,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
