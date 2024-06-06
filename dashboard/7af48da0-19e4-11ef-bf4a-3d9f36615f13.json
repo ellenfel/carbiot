@@ -1977,9 +1977,9 @@
                 },
                 "0ff8f160-374e-7e75-f3c1-6a0ca2519172" : {
                   "sizeX" : 16,
-                  "sizeY" : 10,
-                  "row" : 56,
-                  "col" : 0
+                  "sizeY" : 22,
+                  "row" : 0,
+                  "col" : 32
                 }
               },
               "gridSettings" : {
