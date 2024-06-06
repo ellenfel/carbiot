@@ -785,8 +785,8 @@
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = {waterConsumption: 60};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var msg = {waterConsumption: 60};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : null,
-        "originatorType" : null
+        "originatorId" : "32b66c00-1a95-11ef-bf4a-3d9f36615f13",
+        "originatorType" : "ASSET"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -796,7 +796,7 @@
         "entityType" : "RULE_NODE",
         "id" : "b9822930-1a91-11ef-bf4a-3d9f36615f13"
       },
-      "name" : "Field 1 Water Consumption Simulator",
+      "name" : "Field 2 Water Consumption Simulator",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -813,7 +813,7 @@
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { waterConsumption: 60 };\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var msg = { waterConsumption: 60 };\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : "a7818c20-8290-11ed-9db6-93910378a3c3",
+        "originatorId" : "32b72f50-1a95-11ef-bf4a-3d9f36615f13",
         "originatorType" : "ASSET"
       },
       "configurationVersion" : 1,
