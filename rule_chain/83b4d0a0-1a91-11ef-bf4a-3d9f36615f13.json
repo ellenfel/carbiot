@@ -555,10 +555,10 @@
       "configuration" : {
         "msgCount" : 0,
         "periodInSeconds" : 5,
-        "scriptLang" : "TBEL",
-        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = { moisture: 51.57 };\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : "a78cafb0-8290-11ed-9db6-93910378a3c3",
+        "scriptLang" : "JS",
+        "jsScript" : "var moisture = Math.random() * 78; // Random water consumption between 0 and 5\nvar battery = Math.random() * 100; // Random voltage between 0 and 5\n\nreturn {\n    msg: {\n        moisture: parseFloat(moisture.toFixed(2)), // Round to 1 decimal place\n        battery: parseFloat(battery.toFixed(2)) // Round to 1 decimal place\n    },\n    metadata: {\n        deviceType: \"SI Soil Moisture\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : "var moisture = Math.random() * 78; // Random water consumption between 0 and 5\nvar battery = Math.random() * 100; // Random voltage between 0 and 5\n\nreturn {\n    msg: {\n        moisture: parseFloat(water.toFixed(2)), // Round to 1 decimal place\n        battery: parseFloat(voltage.toFixed(2)) // Round to 1 decimal place\n    },\n    metadata: {\n        deviceType: \"SI Soil Moisture\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "originatorId" : "03fde810-1a8c-11ef-bf4a-3d9f36615f13",
         "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
@@ -569,7 +569,7 @@
         "entityType" : "RULE_NODE",
         "id" : "83d30701-1a91-11ef-bf4a-3d9f36615f13"
       },
-      "name" : "s3",
+      "name" : "SI SM 1",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
