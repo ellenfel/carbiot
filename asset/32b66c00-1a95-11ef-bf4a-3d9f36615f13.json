@@ -15,7 +15,7 @@
       "entityType" : "ASSET",
       "id" : "32b66c00-1a95-11ef-bf4a-3d9f36615f13"
     },
-    "label" : null,
+    "label" : "Wheat",
     "name" : "SI Field 2",
     "type" : "SI Field"
   },
@@ -52,6 +52,14 @@
       "key" : "minMoistureThreshold",
       "lastUpdateTs" : 1716641357530,
       "longValue" : 23,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[49.35733376286064,32.099990847388675],[49.36462881286005,32.09157942926953],[49.3693518503928,32.1008920749419],[49.362018441924455,32.10958265164581]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1716641415358,
+      "longValue" : null,
       "strValue" : null
     } ]
   }
