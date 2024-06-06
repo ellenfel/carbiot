@@ -250,13 +250,13 @@
         "layoutY" : 284
       },
       "configuration" : {
-        "msgCount" : 1,
-        "periodInSeconds" : 100,
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
-        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "jsScript" : "var battery = Math.random() * 100; // Random voltage between 0 and 5\n\nreturn {\n    msg: {\n        battery: parseFloat(battery.toFixed(2)) // Round to 1 decimal place\n    },\n    metadata: {\n        deviceType: \"SI Smart Valve\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : null,
-        "originatorType" : null
+        "originatorId" : "041abee0-1a8c-11ef-bf4a-3d9f36615f13",
+        "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -266,7 +266,7 @@
         "entityType" : "RULE_NODE",
         "id" : "b1490460-1a90-11ef-bf4a-3d9f36615f13"
       },
-      "name" : "generator",
+      "name" : "SI Valve",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
