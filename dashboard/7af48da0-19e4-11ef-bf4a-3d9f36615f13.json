@@ -667,6 +667,60 @@
             "assetNameFilter" : "",
             "assetTypes" : [ "SI Field" ]
           }
+        },
+        "4fba01b8-b087-61ab-bedb-838dbba32440" : {
+          "id" : "4fba01b8-b087-61ab-bedb-838dbba32440",
+          "alias" : "Current field",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null
+          }
+        },
+        "8b5b62ba-5b71-ab4a-dd98-ccd938c46b7f" : {
+          "id" : "8b5b62ba-5b71-ab4a-dd98-ccd938c46b7f",
+          "alias" : "Moisture Sensors",
+          "filter" : {
+            "type" : "deviceSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : null,
+            "deviceTypes" : [ "SI Soil Moisture" ]
+          }
+        },
+        "3cc08b1c-a15b-14d4-59a9-3e3e166305d5" : {
+          "id" : "3cc08b1c-a15b-14d4-59a9-3e3e166305d5",
+          "alias" : "Moisture Sensor Field",
+          "filter" : {
+            "type" : "assetSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "TO",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : null,
+            "assetTypes" : [ "SI Field" ]
+          }
+        },
+        "6ef87f3e-c9ad-9bff-e48b-a3d62423a778" : {
+          "id" : "6ef87f3e-c9ad-9bff-e48b-a3d62423a778",
+          "alias" : "Current sensor",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null
+          }
         }
       },
       "filters" : { },
