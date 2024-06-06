@@ -475,7 +475,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -549,8 +549,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 178,
-        "layoutY" : 631
+        "layoutX" : 95,
+        "layoutY" : 257
       },
       "configuration" : {
         "msgCount" : 0,
