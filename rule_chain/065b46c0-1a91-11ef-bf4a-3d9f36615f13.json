@@ -415,6 +415,34 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbCheckpointNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 291,
+        "layoutY" : 491
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 5,
+        "scriptLang" : "JS",
+        "jsScript" : "var moisture = Math.random() * 78; // Random water consumption between 0 and 5\nvar battery = Math.random() * 100; // Random voltage between 0 and 5\n\nreturn {\n    msg: {\n        moisture: parseFloat(moisture.toFixed(2)), // Round to 1 decimal place\n        battery: parseFloat(battery.toFixed(2)) // Round to 1 decimal place\n    },\n    metadata: {\n        deviceType: \"SI Soil Moisture\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : "var moisture = Math.random() * 78; // Random water consumption between 0 and 5\nvar battery = Math.random() * 100; // Random voltage between 0 and 5\n\nreturn {\n    msg: {\n        moisture: parseFloat(water.toFixed(2)), // Round to 1 decimal place\n        battery: parseFloat(voltage.toFixed(2)) // Round to 1 decimal place\n    },\n    metadata: {\n        deviceType: \"SI Soil Moisture\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "originatorId" : "042482e0-1a8c-11ef-bf4a-3d9f36615f13",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "73201740-2419-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "SI SM 1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
     } ],
     "ruleChainConnections" : null
   },
