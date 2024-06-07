@@ -626,7 +626,7 @@
               "entityAliasId" : "4fba01b8-b087-61ab-bedb-838dbba32440",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "waterConsumption",
+                "name" : "currentIrrigationWaterConsumption",
                 "type" : "timeseries",
                 "label" : "DailyWaterConsumption",
                 "color" : "#2196f3",
@@ -639,7 +639,10 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null,
                 "comparisonEnabled" : null
-              } ]
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
