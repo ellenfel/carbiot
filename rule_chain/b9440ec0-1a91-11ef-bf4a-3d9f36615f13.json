@@ -7,10 +7,7 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : {
-      "entityType" : "RULE_NODE",
-      "id" : "b97be7a0-1a91-11ef-bf4a-3d9f36615f13"
-    },
+    "firstRuleNodeId" : null,
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "b9440ec0-1a91-11ef-bf4a-3d9f36615f13"
@@ -136,8 +133,12 @@
       "fromIndex" : 29,
       "toIndex" : 9,
       "type" : "Success"
+    }, {
+      "fromIndex" : 30,
+      "toIndex" : 0,
+      "type" : "Success"
     } ],
-    "firstNodeIndex" : 0,
+    "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
@@ -908,8 +909,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 33,
-        "layoutY" : 751
+        "layoutX" : 40,
+        "layoutY" : 223
       },
       "configuration" : {
         "msgCount" : 0,
