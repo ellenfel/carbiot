@@ -283,8 +283,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1239,
-        "layoutY" : 459
+        "layoutX" : 1241,
+        "layoutY" : 516
       },
       "configuration" : {
         "originatorSource" : "RELATED",
@@ -316,8 +316,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1239,
-        "layoutY" : 527
+        "layoutX" : 1249,
+        "layoutY" : 613
       },
       "configuration" : {
         "ruleChainId" : "a7602170-8290-11ed-9db6-93910378a3c3"
