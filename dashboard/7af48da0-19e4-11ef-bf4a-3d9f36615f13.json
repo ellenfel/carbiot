@@ -2404,9 +2404,9 @@
                 },
                 "49780df8-1e45-3aab-49b2-e4572783e2b2" : {
                   "sizeX" : 8,
-                  "sizeY" : 4,
-                  "row" : 22,
-                  "col" : 2
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 9
                 }
               },
               "gridSettings" : {
