@@ -606,8 +606,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 49,
-        "layoutY" : 620
+        "layoutX" : 251,
+        "layoutY" : 617
       },
       "configuration" : {
         "msgCount" : 0,
@@ -634,8 +634,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 103,
-        "layoutY" : 568
+        "layoutX" : 305,
+        "layoutY" : 565
       },
       "configuration" : {
         "msgCount" : 0,
@@ -662,8 +662,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 51,
-        "layoutY" : 517
+        "layoutX" : 253,
+        "layoutY" : 514
       },
       "configuration" : {
         "msgCount" : 0,
@@ -690,8 +690,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 103,
-        "layoutY" : 465
+        "layoutX" : 305,
+        "layoutY" : 462
       },
       "configuration" : {
         "msgCount" : 0,
