@@ -2213,7 +2213,6 @@
       },
       "filters" : { },
       "timewindow" : {
-        "displayValue" : "",
         "hideInterval" : false,
         "hideLastInterval" : false,
         "hideQuickInterval" : false,
@@ -2223,24 +2222,15 @@
         "selectedTab" : 0,
         "realtime" : {
           "realtimeType" : 0,
-          "interval" : 1000,
-          "timewindowMs" : 60000,
-          "quickInterval" : "CURRENT_DAY"
-        },
-        "history" : {
-          "historyType" : 0,
-          "interval" : 1000,
-          "timewindowMs" : 60000,
-          "fixedTimewindow" : {
-            "startTimeMs" : 1716479058555,
-            "endTimeMs" : 1716565458555
-          },
-          "quickInterval" : "CURRENT_DAY"
+          "timewindowMs" : 7200000,
+          "quickInterval" : "CURRENT_DAY",
+          "interval" : 15000
         },
         "aggregation" : {
           "type" : "AVG",
           "limit" : 25000
-        }
+        },
+        "timezone" : null
       },
       "settings" : {
         "stateControllerId" : "entity",
