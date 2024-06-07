@@ -790,7 +790,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 60,
+        "periodInSeconds" : 900,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = {waterConsumption: 60};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var msg = {waterConsumption: 60};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
@@ -818,7 +818,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 60,
+        "periodInSeconds" : 900,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { waterConsumption: 60 };\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var msg = { waterConsumption: 60 };\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
@@ -922,7 +922,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 60,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"irrigationState\": Math.random() < 0.5 ? \"ON\" : \"OFF\", // Randomly ON or OFF\n    \"irrigationTask\": {\n        \"startTs\": Date.now() - Math.floor(Math.random() * 100000000), // Random start timestamp within last ~3 years\n        \"durationThreshold\": 1800000, // Fixed value\n        \"duration\": Math.floor(Math.random() * 80000000), // Random duration\n        \"consumption\": parseFloat((Math.random() * 1000).toFixed(2)) // Random consumption up to 1000 with 2 decimal places\n    },\n    \"avgMoisture\": parseFloat((Math.random() * 100).toFixed(2)) // Random moisture between 0 and 100 with 2 decimal places\n};\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"SI Field\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
@@ -950,7 +950,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 60,
+        "periodInSeconds" : 900,
         "scriptLang" : "JS",
         "jsScript" : "var msg = {\n    \"irrigationState\": Math.random() < 0.5 ? \"ON\" : \"OFF\", // Randomly ON or OFF\n    \"irrigationTask\": {\n        \"startTs\": Date.now() - Math.floor(Math.random() * 100000000), // Random start timestamp within last ~3 years\n        \"durationThreshold\": 1800000, // Fixed value\n        \"duration\": Math.floor(Math.random() * 80000000), // Random duration\n        \"consumption\": parseFloat((Math.random() * 1000).toFixed(2)) // Random consumption up to 1000 with 2 decimal places\n    },\n    \"avgMoisture\": parseFloat((Math.random() * 100).toFixed(2)) // Random moisture between 0 and 100 with 2 decimal places\n};\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"SI Field\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
