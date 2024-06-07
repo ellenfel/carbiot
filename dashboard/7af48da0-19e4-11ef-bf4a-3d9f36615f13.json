@@ -1799,12 +1799,14 @@
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 0,
-                "timewindowMs" : 604800000,
-                "quickInterval" : "CURRENT_DAY",
-                "interval" : 1000
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 1,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1.7175107295167456E12,
+                  "endTimeMs" : 1717755023000
+                },
+                "interval" : 489000
               },
               "aggregation" : {
                 "type" : "NONE",
