@@ -168,8 +168,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 165,
-        "layoutY" : 383
+        "layoutX" : 250,
+        "layoutY" : 373
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -216,8 +216,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 434,
-        "layoutY" : 382
+        "layoutX" : 532,
+        "layoutY" : 371
       },
       "configuration" : {
         "messageNames" : [ "waterConsumption" ],
