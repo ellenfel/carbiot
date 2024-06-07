@@ -1423,13 +1423,18 @@
               "enableSelectColumnDisplay" : false,
               "enableStickyHeader" : true,
               "enableStickyAction" : true,
-              "reserveSpaceForHiddenAction" : "true",
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "false",
               "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
               "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
               "displayEntityType" : false,
               "displayPagination" : false,
+              "defaultPageSize" : 10,
               "defaultSortOrder" : "name",
-              "useRowStyleFunction" : false
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : ""
             },
             "title" : "New Entities table",
             "dropShadow" : false,
@@ -1645,7 +1650,8 @@
                 "openInPopover" : true,
                 "id" : "548ad8b1-2a95-54f5-ffde-9d555e5a5832"
               } ]
-            }
+            },
+            "margin" : ""
           },
           "row" : 0,
           "col" : 0,
