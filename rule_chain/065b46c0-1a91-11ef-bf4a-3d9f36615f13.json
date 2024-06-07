@@ -297,12 +297,15 @@
           "filters" : [ {
             "relationType" : "FieldToWaterMeter",
             "entityTypes" : [ "ASSET" ]
+          }, {
+            "relationType" : "Contains",
+            "entityTypes" : [ "ASSET" ]
           } ]
         }
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
