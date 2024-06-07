@@ -2543,9 +2543,9 @@
       "settings" : {
         "stateControllerId" : "entity",
         "showTitle" : false,
-        "showDashboardsSelect" : false,
+        "showDashboardsSelect" : true,
         "showEntitiesSelect" : false,
-        "showDashboardTimewindow" : false,
+        "showDashboardTimewindow" : true,
         "showDashboardExport" : false,
         "toolbarAlwaysOpen" : true,
         "titleColor" : "rgba(0,0,0,0.870588)",
