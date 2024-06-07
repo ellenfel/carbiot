@@ -1052,8 +1052,11 @@
                 "color" : "#f44336",
                 "settings" : {
                   "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
-                  "cellContentFunction" : "var data;\nif (value) {\n    try {\n        data = JSON.parse(value);\n    } catch (e){}\n}\nif (data) {\n    var duration = data.duration;\n    if (typeof duration === 'number') {\n        return '~' + (duration / 60000).toFixed(0) + ' min';\n    } else {\n        return 'N/A'\n    }\n} else {\n    return 'N/A';\n}\n"
+                  "cellContentFunction" : "var data;\nif (value) {\n    try {\n        data = JSON.parse(value);\n    } catch (e){}\n}\nif (data) {\n    var duration = data.duration;\n    if (typeof duration === 'number') {\n        return '~' + (duration / 60000*0.01).toFixed(0) + ' min'; //del*0.1\n    } else {\n        return 'N/A'\n    }\n} else {\n    return 'N/A';\n}\n",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled"
                 },
                 "_hash" : 0.16840508210390004,
                 "aggregationType" : null,
