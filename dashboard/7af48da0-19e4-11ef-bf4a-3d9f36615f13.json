@@ -743,7 +743,7 @@
             }, {
               "type" : "entity",
               "name" : null,
-              "entityAliasId" : "6b9d5f01-fcb0-3483-1aea-bbd71bc73250",
+              "entityAliasId" : "8b5b62ba-5b71-ab4a-dd98-ccd938c46b7f",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "latitude",
@@ -793,7 +793,10 @@
                 "color" : "#03a9f4",
                 "settings" : { },
                 "_hash" : 0.41803536024678767
-              } ]
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -965,7 +968,8 @@
             "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
