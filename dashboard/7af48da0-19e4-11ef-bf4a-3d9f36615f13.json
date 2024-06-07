@@ -2052,45 +2052,45 @@
             "main" : {
               "widgets" : {
                 "887aa4a0-a4ea-6fac-2795-cabf79cc471b" : {
-                  "sizeX" : 9,
-                  "sizeY" : 2,
-                  "row" : 5,
-                  "col" : 0
+                  "sizeX" : 8,
+                  "sizeY" : 3,
+                  "row" : 2,
+                  "col" : 9
                 },
                 "101c8201-362f-84b0-ea50-911c8bb79646" : {
                   "sizeX" : 17,
-                  "sizeY" : 13,
+                  "sizeY" : 11,
                   "row" : 9,
                   "col" : 17
                 },
                 "820b8500-aabd-1278-4eec-492be180b798" : {
                   "sizeX" : 17,
-                  "sizeY" : 13,
+                  "sizeY" : 9,
+                  "row" : 0,
+                  "col" : 17
+                },
+                "73b8134b-f6f6-778a-be76-e8ef23f07613" : {
+                  "sizeX" : 17,
+                  "sizeY" : 11,
                   "row" : 9,
                   "col" : 0
                 },
-                "73b8134b-f6f6-778a-be76-e8ef23f07613" : {
-                  "sizeX" : 25,
-                  "sizeY" : 9,
-                  "row" : 0,
-                  "col" : 9
-                },
                 "00076f4f-c700-fa54-700f-d626e7c8aa82" : {
-                  "sizeX" : 9,
+                  "sizeX" : 17,
                   "sizeY" : 2,
                   "row" : 0,
                   "col" : 0
                 },
                 "0ff8f160-374e-7e75-f3c1-6a0ca2519172" : {
                   "sizeX" : 14,
-                  "sizeY" : 22,
+                  "sizeY" : 20,
                   "row" : 0,
                   "col" : 34
                 },
                 "ce67403e-e2ea-d338-abfc-5461b6bb476d" : {
-                  "sizeX" : 9,
-                  "sizeY" : 2,
-                  "row" : 7,
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 6,
                   "col" : 0
                 },
                 "78587634-4e8e-5684-05b0-6e1d75efe281" : {
