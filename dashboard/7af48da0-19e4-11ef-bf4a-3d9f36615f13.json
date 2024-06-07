@@ -2161,7 +2161,7 @@
       "states" : {
         "default" : {
           "name" : "Irrigation Management",
-          "root" : false,
+          "root" : true,
           "layouts" : {
             "main" : {
               "widgets" : {
@@ -2301,7 +2301,7 @@
         },
         "moisture_sensor_details_alarms" : {
           "name" : "Moisture sensor details alarms",
-          "root" : true,
+          "root" : false,
           "layouts" : {
             "main" : {
               "widgets" : {
