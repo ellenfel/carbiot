@@ -1950,7 +1950,7 @@
               },
               "barBackground" : "rgba(0, 0, 0, 0.04)"
             },
-            "title" : "Soil Moisture",
+            "title" : "Average Soil Moisture",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "titleStyle" : {
@@ -1963,7 +1963,7 @@
             "showLegend" : false,
             "widgetStyle" : { },
             "actions" : { },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "0px",
@@ -2052,27 +2052,27 @@
             "main" : {
               "widgets" : {
                 "887aa4a0-a4ea-6fac-2795-cabf79cc471b" : {
-                  "sizeX" : 8,
+                  "sizeX" : 9,
                   "sizeY" : 3,
-                  "row" : 2,
-                  "col" : 9
+                  "row" : 5,
+                  "col" : 8
                 },
                 "101c8201-362f-84b0-ea50-911c8bb79646" : {
                   "sizeX" : 17,
-                  "sizeY" : 11,
-                  "row" : 9,
+                  "sizeY" : 12,
+                  "row" : 8,
                   "col" : 17
                 },
                 "820b8500-aabd-1278-4eec-492be180b798" : {
                   "sizeX" : 17,
-                  "sizeY" : 9,
+                  "sizeY" : 8,
                   "row" : 0,
                   "col" : 17
                 },
                 "73b8134b-f6f6-778a-be76-e8ef23f07613" : {
                   "sizeX" : 17,
-                  "sizeY" : 11,
-                  "row" : 9,
+                  "sizeY" : 12,
+                  "row" : 8,
                   "col" : 0
                 },
                 "00076f4f-c700-fa54-700f-d626e7c8aa82" : {
@@ -2088,13 +2088,13 @@
                   "col" : 34
                 },
                 "ce67403e-e2ea-d338-abfc-5461b6bb476d" : {
-                  "sizeX" : 7,
+                  "sizeX" : 8,
                   "sizeY" : 3,
-                  "row" : 6,
+                  "row" : 5,
                   "col" : 0
                 },
                 "78587634-4e8e-5684-05b0-6e1d75efe281" : {
-                  "sizeX" : 9,
+                  "sizeX" : 17,
                   "sizeY" : 3,
                   "row" : 2,
                   "col" : 0
