@@ -3988,17 +3988,23 @@
       },
       "timewindow" : {
         "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
         "hideAggregation" : false,
         "hideAggInterval" : false,
+        "hideTimezone" : false,
         "selectedTab" : 0,
         "realtime" : {
-          "timewindowMs" : 86400000,
+          "realtimeType" : 0,
+          "timewindowMs" : 18000000,
+          "quickInterval" : "CURRENT_DAY",
           "interval" : 900000
         },
         "aggregation" : {
           "type" : "AVG",
           "limit" : 2500
-        }
+        },
+        "timezone" : null
       },
       "settings" : {
         "stateControllerId" : "entity",
