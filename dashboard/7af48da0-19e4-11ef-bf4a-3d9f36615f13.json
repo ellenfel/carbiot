@@ -542,13 +542,15 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "stack" : false,
+              "stack" : true,
+              "enableSelection" : true,
               "fontSize" : 10,
               "fontColor" : "#545454",
               "showTooltip" : true,
               "tooltipIndividual" : false,
               "tooltipCumulative" : false,
               "hideZeros" : false,
+              "tooltipValueFormatter" : "",
               "grid" : {
                 "verticalLines" : false,
                 "horizontalLines" : true,
@@ -574,24 +576,20 @@
               },
               "shadowSize" : 0,
               "smoothLines" : true,
+              "thresholdsLineWidth" : null,
               "comparisonEnabled" : false,
-              "xaxisSecond" : {
-                "axisPosition" : "top",
-                "title" : null,
-                "showLabels" : true
-              },
-              "customLegendEnabled" : false,
               "showLegend" : true,
               "legendConfig" : {
-                "direction" : "row",
-                "position" : "top",
+                "position" : "bottom",
                 "sortDataKeys" : false,
-                "showMin" : false,
-                "showMax" : false,
+                "direction" : "row",
+                "showMin" : true,
+                "showMax" : true,
                 "showAvg" : false,
                 "showTotal" : false,
                 "showLatest" : false
-              }
+              },
+              "customLegendEnabled" : false
             },
             "title" : "Nem geçmişi",
             "dropShadow" : false,
