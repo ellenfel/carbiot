@@ -1820,8 +1820,14 @@
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
+                "popoverPreferredPlacement" : "right",
+                "popoverHideOnClickOutside" : true,
+                "popoverHideDashboardToolbar" : true,
+                "popoverWidth" : "25vw",
+                "popoverHeight" : "25vh",
+                "popoverStyle" : { },
                 "openInSeparateDialog" : false,
-                "openInPopover" : false,
+                "openInPopover" : true,
                 "id" : "c53fe484-e193-ef07-dbd8-8c2f4cfd36b4"
               } ]
             },
