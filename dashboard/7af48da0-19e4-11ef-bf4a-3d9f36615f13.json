@@ -1820,11 +1820,7 @@
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
-                "dialogTitle" : "",
-                "dialogHideDashboardToolbar" : true,
-                "dialogWidth" : null,
-                "dialogHeight" : null,
-                "openInSeparateDialog" : true,
+                "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "c53fe484-e193-ef07-dbd8-8c2f4cfd36b4"
               } ]
