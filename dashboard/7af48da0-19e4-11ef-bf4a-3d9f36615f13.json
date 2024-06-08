@@ -673,7 +673,9 @@
             "settings" : {
               "useMarkdownTextFunction" : false,
               "markdownTextPattern" : "<div class=\"daily-water-consumption\" fxLayout=\"column\" fxLayoutAlign=\"center center\"><div class=\"text\">${DailyWaterConsumption:0} l</div></div>",
-              "markdownCss" : ".daily-water-consumption {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n}\n\n.daily-water-consumption .text {\n    font-weight: 700;\n    font-size: 36px;\n    color: #000;\n}\n\n@media only screen and (min-width: 960px) and (max-width: 1200px) {\n    .daily-water-consumption .text {\n        font-size: 24px;\n    }\n}"
+              "markdownTextFunction" : "return '# Some title\\\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".daily-water-consumption {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n}\n\n.daily-water-consumption .text {\n    font-weight: 700;\n    font-size: 36px;\n    color: #16537e;\n}\n\n@media only screen and (min-width: 960px) and (max-width: 1200px) {\n    .daily-water-consumption .text {\n        font-size: 24px;\n    }\n}"
             },
             "title" : "Daily water consumption",
             "showTitleIcon" : false,
