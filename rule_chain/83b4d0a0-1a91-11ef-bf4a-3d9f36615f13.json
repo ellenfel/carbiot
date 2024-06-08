@@ -304,14 +304,17 @@
           "filters" : [ {
             "relationType" : "FieldToMoistureSensor",
             "entityTypes" : [ "ASSET" ]
+          }, {
+            "relationType" : "Contains",
+            "entityTypes" : [ "ASSET" ]
           } ]
         },
+        "dataToFetch" : "ATTRIBUTES",
+        "fetchTo" : "METADATA",
         "dataMapping" : {
           "maxMoistureThreshold" : "maxMoistureThreshold",
           "minMoistureThreshold" : "minMoistureThreshold"
-        },
-        "dataToFetch" : "ATTRIBUTES",
-        "fetchTo" : "METADATA"
+        }
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
