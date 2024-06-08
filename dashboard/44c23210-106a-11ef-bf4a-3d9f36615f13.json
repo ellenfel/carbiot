@@ -4011,15 +4011,15 @@
         "showTitle" : false,
         "showDashboardsSelect" : true,
         "showEntitiesSelect" : false,
-        "showDashboardTimewindow" : true,
-        "showDashboardExport" : true,
+        "showDashboardTimewindow" : false,
+        "showDashboardExport" : false,
         "toolbarAlwaysOpen" : true,
         "titleColor" : "rgba(0,0,0,0.870588)",
         "showFilters" : false,
         "showDashboardLogo" : false,
         "dashboardLogoUrl" : null,
         "hideToolbar" : false,
-        "showUpdateDashboardImage" : true,
+        "showUpdateDashboardImage" : false,
         "dashboardCss" : ""
       },
       "filters" : {
