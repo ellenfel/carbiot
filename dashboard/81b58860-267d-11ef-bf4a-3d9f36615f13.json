@@ -1220,7 +1220,7 @@
                   "col" : 40
                 },
                 "50806594-fd7a-faa8-589a-68ba0164288a" : {
-                  "sizeX" : 23,
+                  "sizeX" : 17,
                   "sizeY" : 10,
                   "row" : 14,
                   "col" : 47
@@ -1232,7 +1232,7 @@
                   "col" : 19
                 },
                 "a9a1cd6f-413e-2c97-2ab0-02c5093ab2f3" : {
-                  "sizeX" : 23,
+                  "sizeX" : 17,
                   "sizeY" : 14,
                   "row" : 0,
                   "col" : 47
@@ -1250,7 +1250,7 @@
                 "margin" : 16,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
-                "autoFillHeight" : false,
+                "autoFillHeight" : true,
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
