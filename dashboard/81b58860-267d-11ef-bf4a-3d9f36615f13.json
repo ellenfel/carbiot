@@ -4,14 +4,960 @@
     "assignedCustomers" : null,
     "configuration" : {
       "description" : "",
-      "widgets" : { },
+      "widgets" : {
+        "3d965559-6680-09a3-c355-14b64aa6ed4f" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "4212c3e4-217d-e193-c6da-e61b2538bb87",
+              "filterId" : "2d6c7d56-5a3d-c839-3177-f65e4dbc1b9b",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2630114195793014
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "dd60656e-d046-2381-fc65-2999df56f399",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "displayOfflineBins",
+                "type" : "attribute",
+                "label" : "displayOfflineBins",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.18972330547681393
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1677748441199,
+                  "endTimeMs" : 1677834841199
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextFunction" : "let value = '-';\nlet isCardSelected = false;\nif (data.length) {\n    value = data[0].count;\n    if (data[1]) {\n        isCardSelected = data[1].displayOfflineBins && data[1].displayOfflineBins !== 'false';\n    }\n}\n\nconst icon = 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0ibm9uZSI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjNzU3NTc1IiByeD0iNCIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xNi4zMjIgMTIuNzA3YTQuMDI5IDQuMDI5IDAgMCAxIC4zMDMtMi4wNSAxNi4yNSAxNi4yNSAwIDAgMC04LjI4NCA0LjY1MmMtLjQ1NS40NzMtLjQ1NSAxLjE4MiAwIDEuNjMuMjAyLjIzNi40OC4zNDEuNzgzLjM0MS4zMDMgMCAuNTgtLjEwNS43ODMtLjM0MmExMy45MjggMTMuOTI4IDAgMCAxIDYuNDY1LTMuODM3bC0uMDUtLjM5NFpNMzEuNjc4IDE1LjMzNWExNi4yNSAxNi4yNSAwIDAgMC04LjI4NC00LjY1MWMuMjc4LjYzLjM3OSAxLjM0LjMwMyAyLjA1bC0uMDUuMzk0YTE0LjM4MSAxNC4zODEgMCAwIDEgNi40NjUgMy44MzdjLjQzLjQ0NiAxLjEzNi40NDYgMS41NjYgMCAuNDMtLjQ3My40My0xLjE4MyAwLTEuNjNaTTE2LjcgMTUuODg3Yy0xLjgxOC41NTItMy40ODUgMS41NzctNC44OTkgMy4wNDgtLjQ1NC40NzMtLjQ1NCAxLjE4MyAwIDEuNjMuMjAyLjIzNi40OC4zNDEuNzgzLjM0MS4yNzggMCAuNTgtLjEwNS43ODMtLjM0MSAxLjA2LTEuMDc4IDIuMjk4LTEuODkzIDMuNjM3LTIuMzRsLS4zMDMtMi4zMzhaTTIzLjMxOCAxNS44ODdsLS4yNzggMi4zMzlhOS4wMTYgOS4wMTYgMCAwIDEgMy42MTIgMi4zMzljLjQ1NC40NDcgMS4xMzYuNDQ3IDEuNTY2IDAgLjQ1NC0uNDczLjQ1NC0xLjE4MyAwLTEuNjMtMS40MTQtMS40NzEtMy4wODEtMi40OTYtNC45LTMuMDQ4Wk0xNS4yNjEgMjIuNTM2YTEuMTkyIDEuMTkyIDAgMCAwIDAgMS42M2MuMjI4LjIzNi41MDUuMzQxLjc4My4zNDFzLjU4MS0uMTA1Ljc4My0uMzQxYy4yNTMtLjI2My41My0uNDczLjgwOC0uNjU3bC0uMzAzLTIuNDQ1Yy0uNzgzLjM0Mi0xLjQ2NS44NDEtMi4wNyAxLjQ3MlpNMjIuNjg3IDIxLjA2NGwtLjMwMyAyLjQ0NWMuMjc3LjE4My41NTUuNDIuNzgyLjY1Ny40NTUuNDQ2IDEuMTM3LjQ0NiAxLjU2NiAwIC40NTUtLjQ3NC40NTUtMS4xODMgMC0xLjYzYTYuMDcgNi4wNyAwIDAgMC0yLjA0NS0xLjQ3MlpNMTkuMjc3IDI0LjAwOGMuMjI3LS4wOC40OC0uMDguNzA3LS4wOC4yNTMgMCAuNTA1LjAyNy43NTguMDhsMS4zNjQtMTEuNTExYy4wMjUtLjEwNS4wMjUtLjE4NC4wMjUtLjI5IDAtMS4xODItLjkzNS0yLjIwNy0yLjEyMi0yLjIwNy0xLjI2MiAwLTIuMjQ3IDEuMTgzLTIuMTIxIDIuNDdsMS4zODkgMTEuNTM3Wk0yMC4wMSAyNS41NTljLTEuMTYyIDAtMi4xMjIuOTk4LTIuMTIyIDIuMjA3IDAgMS4yMzUuOTYgMi4yMzQgMi4xMjIgMi4yMzQgMS4xODcgMCAyLjE0Ny0uOTk5IDIuMTQ3LTIuMjM0IDAtMS4yMDktLjk2LTIuMjA3LTIuMTQ3LTIuMjA3WiIvPjwvc3ZnPg==';\n\nreturn '<div class=\"bin-card\">' +\n           '<button id=\"offline-bins\"' + (isCardSelected ? ' class=\"bin-card-selected\" ' : '') + 'mat-button>' +\n                '<div fxLayout=\"row\" class=\"bin-card-content\">' +\n                    '<img src=\"data:image/svg+xml;base64,' + icon + '\"/>' +\n                    '<div fxLayout=\"column\" class=\"bin-card-data\">' +\n                        '<div class=\"bin-card-header\">Offline</div>' +\n                        '<div class=\"bin-card-value\">' + value + '</div>' +\n                    '</div>' +\n                '</div>' +\n           '</button>' +\n        '</div>';"
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "offline-bins",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "const $injector = widgetContext.$scope.$injector;\nconst attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nconst currentUser = widgetContext.currentUser;\nconsole.log(currentUser);\nconst attributesArray = [\n    { key: 'displayFullBins', value: false },\n    { key: 'displayLowBatteryBins', value: false },\n    { key: 'displayOfflineBins', value: true }\n];\nattributeService.saveEntityAttributes({id: currentUser.userId, entityType: 'USER'},\n    'SERVER_SCOPE', attributesArray, {ignoreLoading: true}).subscribe();",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "4b4a2c35-e86a-01f9-d941-ab77ddf8bbc3"
+              } ]
+            },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "3d965559-6680-09a3-c355-14b64aa6ed4f",
+          "typeFullFqn" : "system.cards.markdown_card"
+        },
+        "c265338f-36a8-4ded-5144-eae998945b12" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "4212c3e4-217d-e193-c6da-e61b2538bb87",
+              "filterId" : "74d3337e-0996-f5ca-117f-4fd43865c874",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8714572145476891
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "dd60656e-d046-2381-fc65-2999df56f399",
+              "filterId" : "74d3337e-0996-f5ca-117f-4fd43865c874",
+              "dataKeys" : [ {
+                "name" : "displayLowBatteryBins",
+                "type" : "attribute",
+                "label" : "displayLowBatteryBins",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.9752503565296855
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1677748441199,
+                  "endTimeMs" : 1677834841199
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextFunction" : "let value = '-';\nlet isCardSelected = false;\nif (data.length) {\n    value = data[0].count;\n    if (data[1]) {\n        isCardSelected = data[1].displayLowBatteryBins && data[1].displayLowBatteryBins !== 'false';\n    }\n}\n\nconst icon = 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0ibm9uZSI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRkY4QTAwIiByeD0iNCIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xOS41MjQgMjhoLTcuNjJWMTRoNy42Mm0uNjM4LTJoLTEuNTl2LTJoLTUuNzE1djJoLTEuNTlDMTAuNTcgMTIgMTAgMTIuNiAxMCAxMy4zM3YxNS4zNGMwIC43My41NzEgMS4zMyAxLjI2NyAxLjMzaDguODk1Yy43MDUgMCAxLjI2Ny0uNTkgMS4yNjctMS4zM1YxMy4zM2MwLS43My0uNTcyLTEuMzMtMS4yNjctMS4zM1ptLTEuNTkgMTJoLTUuNzE1djNoNS43MTR2LTNaTTMwIDE4aC0yLjg1N3YtN0wyMi4zOCAyMWgyLjg1N3Y4Ii8+PC9zdmc+';\n\nreturn '<div class=\"bin-card\">' +\n           '<button id=\"low-battery-bins\"' + (isCardSelected ? ' class=\"bin-card-selected\" ' : '') + 'mat-button>' +\n                '<div fxLayout=\"row\" class=\"bin-card-content\">' +\n                    '<img src=\"data:image/svg+xml;base64,' + icon + '\"/>' +\n                    '<div fxLayout=\"column\" class=\"bin-card-data\">' +\n                        '<div class=\"bin-card-header\">Low battery</div>' +\n                        '<div class=\"bin-card-value\">' + value + '</div>' +\n                    '</div>' +\n                '</div>' +\n           '</button>' +\n        '</div>';"
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "low-battery-bins",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "const $injector = widgetContext.$scope.$injector;\nconst attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nconst currentUser = widgetContext.currentUser;\nconst attributesArray = [\n    { key: 'displayFullBins', value: false },\n    { key: 'displayLowBatteryBins', value: true },\n    { key: 'displayOfflineBins', value: false }\n];\nattributeService.saveEntityAttributes({id: currentUser.userId, entityType: 'USER'},\n    'SERVER_SCOPE', attributesArray, {ignoreLoading: true}).subscribe();",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "da4a1c1f-861e-759b-bad9-e5ba46bdc163"
+              } ]
+            },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "c265338f-36a8-4ded-5144-eae998945b12",
+          "typeFullFqn" : "system.cards.markdown_card"
+        },
+        "eaa3f326-c904-f112-4423-7bf8f82113e4" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "4212c3e4-217d-e193-c6da-e61b2538bb87",
+              "filterId" : "b52db293-b108-a246-d0f0-03efee7dc286",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.014129314319205832
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "dd60656e-d046-2381-fc65-2999df56f399",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "displayFullBins",
+                "type" : "attribute",
+                "label" : "displayFullBins",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.25115492510872106
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1677748441199,
+                  "endTimeMs" : 1677834841199
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextFunction" : "let value = '-';\nlet isCardSelected = false;\nif (data.length) {\n    value = data[0].count;\n    if (data[1]) {\n        isCardSelected = data[1].displayFullBins && data[1].displayFullBins !== 'false';\n    }\n}\n\nconst icon = 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0ibm9uZSI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRDEyNzMwIiByeD0iNCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE3LjI5MyAxMi4yOTNBMSAxIDAgMCAxIDE4IDEyaDRhMSAxIDAgMCAxIDEgMXYxaC02di0xYTEgMSAwIDAgMSAuMjkzLS43MDdaTTE1IDE0di0xYTMgMyAwIDAgMSAzLTNoNGEzIDMgMCAwIDEgMyAzdjFoNC4wNDhjLjUyNiAwIC45NTIuNDQ4Ljk1MiAxcy0uNDI2IDEtLjk1MiAxSDI3djExYTMgMyAwIDAgMS0zIDNoLTdjLS43OTYgMC0yLjU1OS0uMzE2LTMuMTIxLS44NzlBMyAzIDAgMCAxIDEzIDI3VjE2aC0yLjA0OGMtLjUyNiAwLS45NTItLjQ0OC0uOTUyLTFzLjQyNi0xIC45NTItMUgxNVptMCAydjEyaDEwVjE2SDE1WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE2IDE5aDh2OGgtOHYtOFoiLz48L3N2Zz4=';\n\nreturn '<div class=\"bin-card\">' +\n           '<button id=\"full-bins\"' + (isCardSelected ? ' class=\"bin-card-selected\" ' : '') + 'mat-button>' +\n                '<div fxLayout=\"row\" class=\"bin-card-content\">' +\n                    '<img src=\"data:image/svg+xml;base64,' + icon + '\"/>' +\n                    '<div fxLayout=\"column\" class=\"bin-card-data\">' +\n                        '<div class=\"bin-card-header\">Fullness</div>' +\n                        '<div class=\"bin-card-value\">' + value + '</div>' +\n                    '</div>' +\n                '</div>' +\n           '</button>' +\n        '</div>';"
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "full-bins",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "const $injector = widgetContext.$scope.$injector;\nconst attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nconst currentUser = widgetContext.currentUser;\nconst attributesArray = [\n    { key: 'displayFullBins', value: true },\n    { key: 'displayLowBatteryBins', value: false },\n    { key: 'displayOfflineBins', value: false }\n];\nattributeService.saveEntityAttributes({id: currentUser.userId, entityType: 'USER'},\n    'SERVER_SCOPE', attributesArray, {ignoreLoading: true}).subscribe();",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "e71119c0-064c-1078-5419-4f7b9bfcf6c5"
+              } ]
+            },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "eaa3f326-c904-f112-4423-7bf8f82113e4",
+          "typeFullFqn" : "system.cards.markdown_card"
+        },
+        "23e6343e-5834-0bd7-5499-7c23a576ec12" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "4212c3e4-217d-e193-c6da-e61b2538bb87",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5938525025758234
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "dd60656e-d046-2381-fc65-2999df56f399",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "displayFullBins",
+                "type" : "attribute",
+                "label" : "displayFullBins",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.33612633337924147
+              }, {
+                "name" : "displayLowBatteryBins",
+                "type" : "attribute",
+                "label" : "displayLowBatteryBins",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.1993674121509843
+              }, {
+                "name" : "displayOfflineBins",
+                "type" : "attribute",
+                "label" : "displayOfflineBins",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.8371334910835757
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1677748441199,
+                  "endTimeMs" : 1677834841199
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextFunction" : "let value = '-';\nlet isCardSelected = false;\nif (data.length) {\n    value = data[0].count;\n    if (data[1]) {\n        const displayFullBins = data[1].displayFullBins && data[1].displayFullBins !== 'false';\n        const displayLowBatteryBins = data[1].displayLowBatteryBins && data[1].displayLowBatteryBins !== 'false';\n        const displayOfflineBins = data[1].displayOfflineBins && data[1].displayOfflineBins !== 'false';\n        isCardSelected = !displayFullBins && !displayLowBatteryBins && !displayOfflineBins;\n    }\n}\n\nconst icon = 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0ibm9uZSI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjMTk4MDM4IiByeD0iNCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0ibTEzLjI0OCAxOS42MzggMy44NDMgNC42MzJMMjguMzIgMTAuMzc0Yy44NC0uOTQgMi4xNjIuMDYyIDEuNTAxIDEuMTI2TDE4Ljc3MiAyOS4wOWMtLjg0IDEuMTI3LTEuOTgxIDEuMjUyLTIuOTQyLjEyNWwtNS41ODUtNi45NDhjLTEuMDgtMS42MjggMS42ODItMy45NDQgMy4wMDMtMi42M1oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==';\n\nreturn '<div class=\"bin-card\">' +\n           '<button id=\"total-bins\"' + (isCardSelected ? ' class=\"bin-card-selected\" ' : '') + 'mat-button>' +\n                '<div fxLayout=\"row\" class=\"bin-card-content\">' +\n                    '<img src=\"data:image/svg+xml;base64,' + icon + '\"/>' +\n                    '<div fxLayout=\"column\" class=\"bin-card-data\">' +\n                        '<div class=\"bin-card-header\">Total bins</div>' +\n                        '<div class=\"bin-card-value\">' + value + '</div>' +\n                    '</div>' +\n                '</div>' +\n           '</button>' +\n        '</div>';"
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "total-bins",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "const $injector = widgetContext.$scope.$injector;\nconst attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nconst currentUser = widgetContext.currentUser;\nconst attributesArray = [\n    { key: 'displayFullBins', value: false },\n    { key: 'displayLowBatteryBins', value: false },\n    { key: 'displayOfflineBins', value: false }\n];\nattributeService.saveEntityAttributes({id: currentUser.userId, entityType: 'USER'},\n    'SERVER_SCOPE', attributesArray, {ignoreLoading: true}).subscribe();",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9191ed68-b49e-d28d-a2a6-d40253f211ed"
+              } ]
+            },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "23e6343e-5834-0bd7-5499-7c23a576ec12",
+          "typeFullFqn" : "system.cards.markdown_card"
+        },
+        "50806594-fd7a-faa8-589a-68ba0164288a" : {
+          "type" : "alarm",
+          "sizeX" : 10.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 604800000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "enableSelection" : false,
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : false,
+              "enableFilter" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : false,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayDetails" : false,
+              "allowAcknowledgment" : false,
+              "allowClear" : false,
+              "displayPagination" : false,
+              "defaultSortOrder" : "-createdTime",
+              "useRowStyleFunction" : false
+            },
+            "title" : "New Alarms table",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 500,
+              "padding" : "5px 10px 5px 2px",
+              "color" : "#29313C",
+              "letterSpacing" : "0.25px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "alarmSource" : {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "4212c3e4-217d-e193-c6da-e61b2538bb87",
+              "filterId" : "693e9b96-7103-29f6-5739-0babc006bd49",
+              "dataKeys" : [ {
+                "name" : "originator",
+                "type" : "alarm",
+                "label" : "Cihaz",
+                "color" : "#4caf50",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.2780007688856758,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "createdTime",
+                "type" : "alarm",
+                "label" : "Zaman",
+                "color" : "#2196f3",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.021092237451093787,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "type",
+                "type" : "alarm",
+                "label" : "Açıklama",
+                "color" : "#f44336",
+                "settings" : {
+                  "columnWidth" : "25%",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.7323586880398418,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "fullLevel",
+                "type" : "timeseries",
+                "label" : "Doluluk Seviyesi",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.2377800952287068,
+                "aggregationType" : null,
+                "units" : "%",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            },
+            "alarmsPollingInterval" : 5,
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "Alarm rules",
+                "icon" : "settings",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form [formGroup]=\"alarmRulesFormGroup\" (ngSubmit)=\"save()\" style=\"width:360px\">\n    <mat-toolbar color=\"primary\">\n        <h2>Alarm rules</h2>\n        <span fxFlex></span>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content fxLayout=\"column\">\n        <div fxLayout=\"row\" class=\"rule-row\">\n            <div class=\"rule-label\">Battery level less than</div>\n            <div fxLayout=\"row\" style=\"align-items:baseline\">\n                <mat-form-field class=\"mat-block rule-input\" appearance=\"outline\">\n                    <input matInput type=\"number\" step=\"1\" formControlName=\"binsBatteryLevelThreshold\" required>\n                    <mat-error *ngIf=\"alarmRulesFormGroup.get('binsBatteryLevelThreshold').hasError('required')\">\n                        Required!\n                    </mat-error>\n                </mat-form-field>\n                <div class=\"rule-units\">%</div>\n            </div>\n        </div>\n        <div fxLayout=\"row\" class=\"rule-row\">\n            <div class=\"rule-label\">Fullness greater than</div>\n            <div fxLayout=\"row\" style=\"align-items:baseline\">\n                <mat-form-field class=\"mat-block rule-input\" appearance=\"outline\">\n                    <input matInput type=\"number\" step=\"1\" formControlName=\"binsFullLevelThreshold\" required>\n                    <mat-error *ngIf=\"alarmRulesFormGroup.get('binsFullLevelThreshold').hasError('required')\">\n                        Required!\n                    </mat-error>\n                </mat-form-field>\n                <div class=\"rule-units\">%</div>\n            </div>\n        </div>\n        <div class=\"hint-content\">\n            Changes will be applied when the device sends new data\n        </div>\n    </div>\n    <div mat-dialog-actions fxLayoutAlign=\"end center\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                type=\"submit\"\n                [disabled]=\"(isLoading$ | async) || alarmRulesFormGroup.invalid || !alarmRulesFormGroup.dirty\">\n            Save\n        </button>\n    </div>\n</form>",
+                "customCss" : ".rule-row {\n    align-items: baseline;\n    justify-content: space-between;\n}\n\n.rule-input {\n    margin-right: 8px;\n    width: 80px;\n}\n\n.rule-label {\n    width: 180px;\n    letter-spacing: 0.2px;\n    color: rgba(0, 0, 0, 0.76);\n}\n\n.rule-input .mat-mdc-form-field-infix {\n    min-height: 40px;\n}\n\n.rule-input .mat-mdc-form-field-error-wrapper {\n    padding: 0;\n}\n\n.rule-input .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {\n    padding-top: 8px;\n    padding-bottom: 8px;\n}\n\n.hint-content {\n    padding: 8px 12px;\n    border-radius: 4px;\n    background: rgba(0, 0, 0, 0.04);\n    font-size: 13px;\n    line-height: 18px;\n    letter-spacing: 0.25px;\n    color: rgba(0, 0, 0, 0.54);\n}",
+                "customFunction" : "const $injector = widgetContext.$scope.$injector;\nconst customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nconst attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenAlarmRulesDialog();\n\nfunction openAlarmRulesDialog() {\n    customDialog.customDialog(htmlTemplate, AlarmRulesDialogController).subscribe();\n}\n\nfunction AlarmRulesDialogController(instance) {\n    const vm = instance;\n    const tenantId = {\n        id: widgetContext.currentUser.tenantId,\n        entityType: 'TENANT'\n    };\n    \n    vm.attributes = {};\n    \n    vm.alarmRulesFormGroup = vm.fb.group({\n        binsBatteryLevelThreshold: ['', [vm.validators.required]],\n        binsFullLevelThreshold: ['', [vm.validators.required]]\n    });\n    \n    getEntityInfo();\n    \n    vm.save = () => {\n        saveAttributes().subscribe(() => {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n        });\n    };\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    function getEntityInfo() {\n        attributeService.getEntityAttributes(tenantId, 'SERVER_SCOPE', ['binsFullLevelThreshold', 'binsBatteryLevelThreshold']).subscribe(\n            (attrs) => {\n                getEntityAttributes(attrs);\n                vm.alarmRulesFormGroup.patchValue({\n                    binsBatteryLevelThreshold: vm.attributes.binsBatteryLevelThreshold ? vm.attributes.binsBatteryLevelThreshold : 30,\n                    binsFullLevelThreshold: vm.attributes.binsFullLevelThreshold ? vm.attributes.binsFullLevelThreshold : 90\n                });\n        });\n    }\n    \n    function getEntityAttributes(attributes) {\n        for (let i = 0; i < attributes.length; i++) {\n            vm.attributes[attributes[i].key] = attributes[i].value;\n        }\n    }\n    \n    function saveAttributes() {\n        const attributes = vm.alarmRulesFormGroup.value;\n        const attributesArray = [];\n        for (let key in attributes) {\n            if (attributes[key] !== vm.attributes[key]) {\n                attributesArray.push({key: key, value: attributes[key]});\n            }\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(tenantId, \"SERVER_SCOPE\", attributesArray);\n        } else {\n            return widgetContext.rxjs.of([]);\n        }\n    }\n}",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "3e84d938-b2ee-9fd2-d18e-7555703ad781"
+              } ],
+              "actionCellButton" : [ {
+                "name" : "Clear",
+                "icon" : "close",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "const $injector = widgetContext.$scope.$injector;\nconst dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nconst alarmService = $injector.get(widgetContext.servicesMap.get('alarmService'));\n\nopenDeleteEntityDialog();\n\nfunction openDeleteEntityDialog() {\n    const alarmType = additionalParams.alarm.type ? additionalParams.alarm.type : '';\n    const title = 'Clear ' + alarmType + ' Alarm';\n    const content = 'Are you sure you want to clear Alarm?';\n    dialogs.confirm(title, content, 'No', 'Yes').subscribe(\n        (result) => {\n            if (result) {\n                clearAlarm();\n            }\n        }\n    );\n}\n\nfunction clearAlarm() {\n    alarmService.clearAlarm(additionalParams.alarm.id.id).subscribe(\n        () => {\n            setTimeout(() => {\n                widgetContext.updateAliases();\n            }, 500);\n        },\n        () => {\n            showErrorDialog();\n        }\n    );\n}\n\nfunction showErrorDialog() {\n    const title = 'Error';\n    const content = 'An error occurred while clearing the alarm. Please try again.';\n    dialogs.alert(title, content, 'CLOSE').subscribe();\n}",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "2c0d3d51-a177-b473-2309-95caa4f4d7f4"
+              } ]
+            },
+            "datasources" : [ ],
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "alarmFilterConfig" : {
+              "statusList" : [ "ACTIVE" ],
+              "severityList" : [ ],
+              "typeList" : [ ],
+              "searchPropagatedAlarms" : false
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "50806594-fd7a-faa8-589a-68ba0164288a",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table"
+        },
+        "82657855-00db-a925-a937-680acef3b2d8" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1677748441199,
+                  "endTimeMs" : 1677834841199
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "entitiesTitle" : "Bins",
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : false,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "entityName",
+              "useRowStyleFunction" : false
+            },
+            "title" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 500,
+              "padding" : "5px 10px 5px 5px",
+              "color" : "#29313C",
+              "letterSpacing" : "0.25px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "4212c3e4-217d-e193-c6da-e61b2538bb87",
+              "filterId" : "693e9b96-7103-29f6-5739-0babc006bd49",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Etiket",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "return {\n    fontWeight: 600\n};",
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "return value ? '<span style=\"background: rgba(111, 116, 242, 0.08); border-radius: 16px; padding: 4px 8px; color: #5553AF;\">'+value+'</span>' : '';",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.8251710862591306,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "address",
+                "type" : "attribute",
+                "label" : "Konum",
+                "color" : "#2196f3",
+                "settings" : {
+                  "columnWidth" : "25%",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.3603616959179663,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "Bağlantı",
+                "color" : "#3f51b5",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "/*\nvar text = value === 'true' ? 'On' : 'Off';\nvar color = value === 'true' ? '#198038' : 'red';\nreturn '<div><span style=\"width: 4px; height: 4px; border-radius: 2px; background: '+color+'; display: inline-block; vertical-align: middle;\"></span><span style=\"padding-left: 8px;\">'+text+'</span></div>';\n*/\n\nvar aeration = value;\n\nvar color = aeration === 'true' ? '#1F8B4D' : 'red';\n\nvar aerationSvg = '<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">' +\n                   '<circle cx=\"10\" cy=\"10\" r=\"6\" fill=\"'+color+'\"/>' +\n                   '</svg>';\nvar encodedAerationSvg = encodeURIComponent(aerationSvg);\nvar aerationSvgUrl = 'data:image/svg+xml,' + encodedAerationSvg;\nvar aerationLabel = aeration === 'true' ? 'On' : 'Off';\n\nreturn '<span>'+\n           '<img style=\"vertical-align: middle;\" class=\"mat-icon\" src=\"'+ aerationSvgUrl +'\">' +\n           '<span style=\"vertical-align: middle; padding-left: 8px;\">'+ aerationLabel +'</span>' +\n       '</span>';\n",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.2735966257464493,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "fullLevel",
+                "type" : "timeseries",
+                "label" : "Doluluk",
+                "color" : "#f44336",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "if (value) {\n    var alarm_rate = 10;\n    var notEnough = 60;\n    var full = 100;\n    var background = '111, 116, 242';\n    var textColor = '#5553AF';\n    if (value < notEnough && value > alarm_rate) { //10-60\n        background = '255, 197, 92';\n        textColor = '#8B4000';\n    }\n    \n    else if (value <= full && value >= notEnough) { //60-100\n        background = '127, 255, 127';\n        textColor = '#526F50';\n    }\n    \n    else if (value <= alarm_rate && value >= 0) {  //0-10\n        background = '209, 39, 48';\n        textColor = '#D12730';\n    }\n    \n    \n    var percent = value + '%';\n    var percentText = value.toFixed(0) + '%';\n    return '<div style=\"width: 100%; max-width: 100px; height: 16px; background: linear-gradient(to right, rgba('+background+', 0.16) '+percent+', rgba('+background+', 0.08) '+percent+'); border-radius: 5.21053px;\"><span style=\"padding-left: 4px; font-weight: 600; font-size: 13px; color: '+textColor+';\">'+percentText+'</span></div>';\n}\n\nelse {\n    return 'No data';\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.13077782640135394,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "batteryLevel",
+                "type" : "timeseries",
+                "label" : "Batarya",
+                "color" : "#ffc107",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "/*return {\n  \"color\": entity['isLowBattery'] === 'true' ? \"#D12730\" : \"#4B535B\"  \n};\n*/",
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "//return value ? (parseFloat(value).toFixed(0) + '%') : '-';\n\nif (value) {\n    var isLowBattery = 5;\n    var minMoistureThreshold = 7;\n    var maxMoistureThreshold = 95;\n    var background = '111, 116, 242';\n    var textColor = '#5553AF';\n    if (value < minMoistureThreshold) {\n        background = '209, 39, 48';\n        textColor = '#D12730';\n    }\n    var percent = value + '%';\n    var percentText = value.toFixed(0) + '%';\n    return '<div style=\"width: 100%; max-width: 100px; height: 16px; background: linear-gradient(to right, rgba('+background+', 0.16) '+percent+', rgba('+background+', 0.08) '+percent+'); border-radius: 5.21053px;\"><span style=\"padding-left: 4px; font-weight: 600; font-size: 13px; color: '+textColor+';\">'+percentText+'</span></div>';\n}\n\nelse {\n    return 'No data';\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.5810257360740916,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "isFull",
+                "type" : "attribute",
+                "label" : "isFull",
+                "color" : "#607d8b",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "disabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.8920880537911846,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "isLowBattery",
+                "type" : "attribute",
+                "label" : "isLowBattery",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "disabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.010592382897542718,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "No bins found",
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "Add bins",
+                "icon" : "add",
+                "useShowWidgetActionFunction" : false,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form [formGroup]=\"addEntityFormGroup\" (ngSubmit)=\"import()\" style=\"width:640px\">\n    <mat-toolbar color=\"primary\">\n        <h2>Register sensors</h2>\n        <span fxFlex></span>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content fxLayout=\"column\" style=\"position:relative\">\n        <fieldset [disabled]=\"isLoading$ | async\" tb-toast toastTarget=\"importSensorsTarget\">\n            <tb-file-input formControlName=\"importData\"\n                           required\n                           label=\"Sensors file\"\n                           [allowedExtensions]=\"'csv,txt'\"\n                           [accept]=\"'.csv,application/csv,text/csv,.txt,text/plain'\"\n                           dropLabel=\"{{'import.drop-file-csv-or' | translate}}\">\n            </tb-file-input>\n            <mat-form-field class=\"mat-block\" style=\"margin-top:12px\">\n              <mat-label translate>import.csv-delimiter</mat-label>\n              <mat-select required formControlName=\"delim\">\n                <mat-option *ngFor=\"let delimiter of delimiters\" [value]=\"delimiter.key\">\n                  {{ delimiter.value }}\n                </mat-option>\n              </mat-select>\n            </mat-form-field>\n        </fieldset>\n        <div class=\"import-info-section\">\n            <div class=\"import-info-header\">CSV file must content columns:</div>\n            <div class=\"import-info-text\">\n                <div>1. Serial number</div>\n                <div>2. Address</div>\n                <div>3. Latitude</div>\n                <div>4. Longitude</div>\n            </div>\n            <div class=\"import-info-header\" style=\"margin-top:12px;margin-bottom:6px\">Example:</div>\n            <div [innerHTML]=\"exampleContent\" class=\"example-content\"></div>\n        </div>\n    </div>\n    <div mat-dialog-actions fxLayoutAlign=\"end center\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                type=\"submit\"\n                [disabled]=\"(isLoading$ | async) || addEntityFormGroup.invalid || !addEntityFormGroup.dirty\">\n            Import\n        </button>\n    </div>\n</form>",
+                "customCss" : ".import-info-section {\n    display: flex;\n    flex-direction: column;\n    padding: 12px 16px;\n    background-color: rgba(0, 0, 0, 0.04);\n    border-radius: 4px;\n}\n\n.import-info-header,\n.import-info-text {\n    font-size: 14px;\n    line-height: 20px;\n    letter-spacing: 0.2px;\n    color: rgba(0, 0, 0, 0.54);\n}\n\n.import-info-header {\n    font-weight: 700;\n}\n\n.delim-value {\n    color: rgba(0, 0, 0, 0.87);\n    font-weight: 700;\n}\n\n.example-content {\n    padding: 12px;\n    border: 1px solid rgba(0, 0, 0, 0.12);\n    border-radius: 6px;\n    background-color: rgba(255, 255, 255, 0.08);\n}\n\n.example-content .import-info-text {\n    color: rgba(0, 0, 0, 0.38);\n}",
+                "customFunction" : "const $injector = widgetContext.$scope.$injector;\nconst customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nconst entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\nconst importExportService = $injector.get(widgetContext.servicesMap.get('importExport'));\nconst rxjs = widgetContext.rxjs;\n\nopenAddEntityDialog();\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    const vm = instance;\n    \n    vm.delimiters = [{\n        key: ',',\n        value: ','\n    }, {\n        key: ';',\n        value: ';'\n    }, {\n        key: '|',\n        value: '|'\n    }];\n    \n    vm.exampleData = [\n        ['389021001233', '12th St 1400', '33.888169', '-118.389693'],\n        ['389021001322', 'Manzanita Ln 1501', '33.889536', '-118.381968']\n    ];\n    \n    vm.columns = [\n        { type: 'NAME' },\n        { type: 'SERVER_ATTRIBUTE', key: 'address' },\n        { type: 'SERVER_ATTRIBUTE', key: 'latitude' },\n        { type: 'SERVER_ATTRIBUTE', key: 'longitude' },\n        { type: 'SERVER_ATTRIBUTE', key: 'isFull' },\n        { type: 'SERVER_ATTRIBUTE', key: 'isLowBattery' },\n        { type: 'TYPE' }\n    ];\n    \n    vm.addEntityFormGroup = vm.fb.group({\n        importData: [null, [vm.validators.required]],\n        delim: [';', [vm.validators.required]]\n    });\n    \n    vm.exampleContent = buildExampleContent(vm.addEntityFormGroup.get('delim').value);\n    \n    vm.addEntityFormGroup.get('delim').valueChanges.subscribe(value => {\n        vm.exampleContent = buildExampleContent(value);\n    });\n\n    vm.import = () => {\n        const origFile = vm.addEntityFormGroup.get('importData').value;\n        const delim = vm.addEntityFormGroup.get('delim').value;\n        const parseData = parseCSV(origFile);\n        if (parseData === -1) {\n            vm.addEntityFormGroup.get('importData').setValue(null);\n        } else {\n            getEntityGroupByName('Waste Sensors', 'DEVICE').subscribe(group => {\n                if (group) {\n                    const csvRows = origFile.split(/[\\r\\n]+/);\n                    csvRows.forEach((row, i) => {\n                        if (row) {\n                            csvRows[i] += (delim + 'false' + delim + 'false' + delim + 'Waste Sensor');\n                        }\n                    });\n                    const updatedFile = csvRows.join(\"\\r\\n\");\n                    const entitiesData = {\n                        file: updatedFile,\n                        entityGroupId: group.id.id,\n                        mapping: {\n                            columns: vm.columns,\n                            delimiter: delim,\n                            header: false,\n                            update: true\n                        }\n                    };\n                    importExportService.bulkImportEntities(entitiesData, 'DEVICE', {ignoreErrors: true}).subscribe(result => {\n                        setTimeout(() => {\n                            widgetContext.updateAliases();\n                            widgetContext.showSuccessToast(result.created + (result.created === 1 ? ' bin was' : ' bins were') + ' successfully added! ', 2000, 'top', 'left');\n                        }, 1000);\n                        vm.dialogRef.close(null);\n                    });\n                } else {\n                    widgetContext.showErrorToast(\"Target sensors-group doesn't exist!\", 'top', 'left', 'importSensorsTarget');\n                }\n            });\n        }\n    };\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    function getEntityGroupByName(groupName, groupType) {\n        const entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n        return entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType).pipe(\n            rxjs.map((data) => {\n                if (data.data.length) {\n                    return data.data.find((group) => group.name === groupName);\n                } else {\n                    return null;\n                }\n            })\n        );\n    }\n    \n    function buildExampleContent(delim) {\n        let content = '';\n        vm.exampleData.forEach(dataArray => {\n            let result = '<div class=\"import-info-text\">';\n            dataArray.forEach((value, index) => {\n                result += value;\n                if (index !== dataArray.length - 1) {\n                    result += ('<span class=\"delim-value\">' + delim + '</span>');\n                }\n            });\n            result += '</div>';\n            content += result;\n        });\n        return content;\n    }\n    \n    function parseCSV(importData) {\n        const config = {\n            delim: vm.addEntityFormGroup.get('delim').value,\n            header: false\n        };\n        return convertCSVToJson(importData, config, (messageId, params) => {\n            widgetContext.showErrorToast(widgetContext.translate.instant(messageId, params), 'top', 'left', 'importSensorsTarget');\n        });\n    }\n    \n    function convertCSVToJson(csvdata, config, onError) {\n        config = config || {};\n        const delim = config.delim || ',';\n        const header = config.header || false;\n        const result = {};\n        const csvlines = csvdata.split(/[\\r\\n]+/);\n        const csvheaders = splitCSV(csvlines[0], delim);\n        if (csvheaders.length < 2) {\n            onError('import.import-csv-number-columns-error');\n            return -1;\n        }\n        const csvrows = header ? csvlines.slice(1, csvlines.length) : csvlines;\n        result.headers = csvheaders;\n        result.rows = [];\n        for (const row of csvrows) {\n            if (row.length === 0) {\n                break;\n            }\n            const rowitems = splitCSV(row, delim);\n            if (rowitems.length !== result.headers.length) {\n                onError('import.import-csv-invalid-format-error', {line: (header ? result.rows.length + 2 : result.rows.length + 1)});\n                return -1;\n            }\n            for (let i = 0; i < rowitems.length; i++) {\n                rowitems[i] = convertStringToJSType(rowitems[i]);\n            }\n            result.rows.push(rowitems);\n        }\n        return result;\n    }\n    \n    function splitCSV(str, sep) {\n        let foo, x, tl;\n        for (foo = str.split(sep = sep || ','), x = foo.length - 1, tl; x >= 0; x--) {\n            if (foo[x].replace(/\"\\s+$/, '\"').charAt(foo[x].length - 1) === '\"') {\n                if ((tl = foo[x].replace(/^\\s+\"/, '\"')).length > 1 && tl.charAt(0) === '\"') {\n                    foo[x] = foo[x].replace(/^\\s*\"|\"\\s*$/g, '').replace(/\"\"/g, '\"');\n                } else if (x) {\n                    foo.splice(x - 1, 2, [foo[x - 1], foo[x]].join(sep));\n                } else {\n                    foo = foo.shift().split(sep).concat(foo);\n                }\n            } else {\n                foo[x].replace(/\"\"/g, '\"');\n            }\n        }\n        return foo;\n    }\n    \n    function convertStringToJSType(str) {\n        if (isNumeric(str.replace(',', '.'))) {\n            return parseFloat(str.replace(',', '.'));\n        }\n        if (str.search(/^(true|false)$/im) === 0) {\n            return str.toLowerCase() === 'true';\n        }\n        if (str === '') {\n            return null;\n        }\n        return str;\n    }\n    \n    function isNumeric(str) {\n        str = str.replace(',', '.');\n        return (str - parseFloat(str) + 1) >= 0 && Number(str).toString() === str;\n    }\n}",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "781dc3c9-67d4-4393-684b-8f3380db1724"
+              } ],
+              "rowClick" : [ {
+                "name" : "bin-details",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "pecete-bin",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9b08f3aa-7fbe-257d-b15e-ff5ce4c9c0e8"
+              } ],
+              "actionCellButton" : [ {
+                "name" : "Edit",
+                "icon" : "edit",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form [formGroup]=\"editEntityFormGroup\" (ngSubmit)=\"save()\" style=\"width:360px\">\n    <mat-toolbar color=\"primary\">\n        <h2>Edit sensor {{entityName}}</h2>\n        <span fxFlex></span>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content fxLayout=\"column\">\n        <mat-form-field fxFlex class=\"mat-block\">\n            <mat-label>Serial number</mat-label>\n            <input matInput formControlName=\"entityName\" required>\n            <mat-error *ngIf=\"editEntityFormGroup.get('entityName').hasError('required')\">\n                Serial number is required.\n            </mat-error>\n        </mat-form-field>\n        <div formGroupName=\"attributes\" fxLayout=\"column\">\n            <mat-form-field fxFlex class=\"mat-block\">\n                <mat-label>Address</mat-label>\n                <input matInput formControlName=\"address\" required>\n                <mat-error *ngIf=\"editEntityFormGroup.get('attributes.address').hasError('required')\">\n                    Address is required.\n                </mat-error>\n            </mat-form-field>\n            <mat-form-field fxFlex class=\"mat-block\">\n                <mat-label>Latitude</mat-label>\n                <input type=\"number\" step=\"0.1\" matInput\n                       formControlName=\"latitude\">\n            </mat-form-field>\n            <mat-form-field fxFlex class=\"mat-block\">\n                <mat-label>Longitude</mat-label>\n                <input type=\"number\" step=\"0.1\" matInput\n                       formControlName=\"longitude\">\n            </mat-form-field>\n        </div>\n    </div>\n    <div mat-dialog-actions fxLayoutAlign=\"end center\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                type=\"submit\"\n                [disabled]=\"(isLoading$ | async) || editEntityFormGroup.invalid || !editEntityFormGroup.dirty\">\n            Save\n        </button>\n    </div>\n</form>",
+                "customCss" : "",
+                "customFunction" : "const $injector = widgetContext.$scope.$injector;\nconst customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nconst deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\nconst attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nconst rxjs = widgetContext.rxjs;\n\nopenEditEntityDialog();\n\nfunction openEditEntityDialog() {\n    customDialog.customDialog(htmlTemplate, EditEntityDialogController).subscribe();\n}\n\nfunction EditEntityDialogController(instance) {\n    const vm = instance;\n    \n    vm.entityId = entityId;\n    vm.entityName = entityName;\n    vm.sensor = null;\n    vm.attributes = {};\n    \n    vm.editEntityFormGroup = vm.fb.group({\n        entityName: ['', [vm.validators.required]],\n        attributes: vm.fb.group({\n            address: ['', [vm.validators.required]],\n            latitude: [null],\n            longitude: [null]\n        })\n    });\n    \n    getEntityInfo();\n    \n    vm.save = () => {\n        vm.editEntityFormGroup.markAsPristine();\n        const formValues = vm.editEntityFormGroup.value;\n        vm.sensor.name = formValues.entityName;\n        vm.sensor.label = formValues.entityLabel;\n        deviceService.saveDevice(vm.sensor).pipe(\n            rxjs.concatMap(() => {\n                return saveAttributes();\n            })\n        ).subscribe(() => {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n        });\n    };\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    function getEntityAttributes(attributes) {\n        for (let i = 0; i < attributes.length; i++) {\n            vm.attributes[attributes[i].key] = attributes[i].value;\n        }\n    }\n    \n    function getEntityInfo() {\n        rxjs.forkJoin([\n            attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', ['latitude', 'longitude', 'address']),\n            deviceService.getDevice(entityId.id)\n        ]).subscribe(\n            (data) => {\n                const attrs = data[0];\n                vm.sensor = data[1];\n                getEntityAttributes(attrs);\n                vm.editEntityFormGroup.patchValue({\n                    entityName: vm.entityName,\n                    attributes: vm.attributes\n                });\n            }\n        );\n    }\n    \n    function saveAttributes() {\n        const attributes = vm.editEntityFormGroup.get('attributes').value;\n        const attributesArray = [];\n        for (let key in attributes) {\n            if (attributes[key] !== vm.attributes[key]) {\n                attributesArray.push({key: key, value: attributes[key]});\n            }\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(vm.entityId, \"SERVER_SCOPE\", attributesArray);\n        } else {\n            return widgetContext.rxjs.of([]);\n        }\n    }\n}",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "f3f85e88-6d4a-4b39-d07f-8f631bff0d21"
+              }, {
+                "name" : "Delete",
+                "icon" : "delete_forever",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "const $injector = widgetContext.$scope.$injector;\nconst dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nconst deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\n\nopenDeleteEntityDialog();\n\nfunction openDeleteEntityDialog() {\n    const title = 'Delete sensor \"' +  entityName + '\"';\n    const content = 'Are you sure you want to delete the sensor \"' +\n        entityName + '\"?';\n    dialogs.confirm(title, content, 'Cancel', 'Delete').subscribe(\n        (result) => {\n            if (result) {\n                deleteEntity();\n            }\n        }\n    );\n}\n\nfunction deleteEntity() {\n    deviceService.deleteDevice(entityId.id).subscribe(\n        () => {\n            widgetContext.updateAliases();\n        },\n        () => {\n            showErrorDialog();\n        }\n    );\n}\n\nfunction showErrorDialog() {\n    const title = 'Error';\n    const content = 'An error occurred while deleting the sensor. Please try again.';\n    dialogs.alert(title, content, 'CLOSE').subscribe();\n}",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "acbab6c2-c447-505c-6b8d-e5d3268c97ca"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "82657855-00db-a925-a937-680acef3b2d8",
+          "typeFullFqn" : "system.cards.entities_table"
+        }
+      },
       "states" : {
         "default" : {
           "name" : "Waste Management",
           "root" : true,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "3d965559-6680-09a3-c355-14b64aa6ed4f" : {
+                  "sizeX" : 7,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 19
+                },
+                "c265338f-36a8-4ded-5144-eae998945b12" : {
+                  "sizeX" : 7,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 26
+                },
+                "eaa3f326-c904-f112-4423-7bf8f82113e4" : {
+                  "sizeX" : 7,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 33
+                },
+                "23e6343e-5834-0bd7-5499-7c23a576ec12" : {
+                  "sizeX" : 7,
+                  "sizeY" : 4,
+                  "row" : 0,
+                  "col" : 40
+                },
+                "50806594-fd7a-faa8-589a-68ba0164288a" : {
+                  "sizeX" : 19,
+                  "sizeY" : 10,
+                  "row" : 5,
+                  "col" : 0
+                },
+                "82657855-00db-a925-a937-680acef3b2d8" : {
+                  "sizeX" : 28,
+                  "sizeY" : 20,
+                  "row" : 4,
+                  "col" : 19
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 64,
@@ -27,8 +973,290 @@
           }
         }
       },
-      "entityAliases" : { },
-      "filters" : { },
+      "entityAliases" : {
+        "4212c3e4-217d-e193-c6da-e61b2538bb87" : {
+          "id" : "4212c3e4-217d-e193-c6da-e61b2538bb87",
+          "alias" : "relational",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 4,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
+              "relationType" : "Contains",
+              "entityTypes" : [ "DEVICE" ]
+            } ]
+          }
+        },
+        "dd60656e-d046-2381-fc65-2999df56f399" : {
+          "id" : "dd60656e-d046-2381-fc65-2999df56f399",
+          "alias" : "Current User",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
+            }
+          }
+        }
+      },
+      "filters" : {
+        "2d6c7d56-5a3d-c839-3177-f65e4dbc1b9b" : {
+          "id" : "2d6c7d56-5a3d-c839-3177-f65e4dbc1b9b",
+          "filter" : "Offline bins",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ATTRIBUTE",
+              "key" : "active"
+            },
+            "valueType" : "BOOLEAN",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "NOT_EQUAL",
+                "value" : {
+                  "defaultValue" : true,
+                  "dynamicValue" : null
+                },
+                "type" : "BOOLEAN"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "74d3337e-0996-f5ca-117f-4fd43865c874" : {
+          "id" : "74d3337e-0996-f5ca-117f-4fd43865c874",
+          "filter" : "Low Battery bins",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ATTRIBUTE",
+              "key" : "isLowBattery"
+            },
+            "valueType" : "BOOLEAN",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "EQUAL",
+                "value" : {
+                  "defaultValue" : true,
+                  "dynamicValue" : null
+                },
+                "type" : "BOOLEAN"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "b52db293-b108-a246-d0f0-03efee7dc286" : {
+          "id" : "b52db293-b108-a246-d0f0-03efee7dc286",
+          "filter" : "Full bins",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ATTRIBUTE",
+              "key" : "isFull"
+            },
+            "valueType" : "BOOLEAN",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "EQUAL",
+                "value" : {
+                  "defaultValue" : true,
+                  "dynamicValue" : null
+                },
+                "type" : "BOOLEAN"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        },
+        "693e9b96-7103-29f6-5739-0babc006bd49" : {
+          "id" : "693e9b96-7103-29f6-5739-0babc006bd49",
+          "filter" : "Bins filter",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ATTRIBUTE",
+              "key" : "isFull"
+            },
+            "valueType" : "BOOLEAN",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "OR",
+                "predicates" : [ {
+                  "keyFilterPredicate" : {
+                    "operation" : "EQUAL",
+                    "value" : {
+                      "defaultValue" : true,
+                      "dynamicValue" : null
+                    },
+                    "type" : "BOOLEAN"
+                  },
+                  "userInfo" : {
+                    "editable" : true,
+                    "label" : "",
+                    "autogeneratedLabel" : true,
+                    "order" : 0
+                  }
+                }, {
+                  "keyFilterPredicate" : {
+                    "operation" : "EQUAL",
+                    "value" : {
+                      "defaultValue" : false,
+                      "dynamicValue" : {
+                        "sourceType" : "CURRENT_USER",
+                        "sourceAttribute" : "displayFullBins",
+                        "inherit" : false
+                      }
+                    },
+                    "type" : "BOOLEAN"
+                  },
+                  "userInfo" : {
+                    "editable" : true,
+                    "label" : "",
+                    "autogeneratedLabel" : true,
+                    "order" : 0
+                  }
+                } ],
+                "type" : "COMPLEX"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          }, {
+            "key" : {
+              "type" : "ATTRIBUTE",
+              "key" : "isLowBattery"
+            },
+            "valueType" : "BOOLEAN",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "OR",
+                "predicates" : [ {
+                  "keyFilterPredicate" : {
+                    "operation" : "EQUAL",
+                    "value" : {
+                      "defaultValue" : true,
+                      "dynamicValue" : null
+                    },
+                    "type" : "BOOLEAN"
+                  },
+                  "userInfo" : {
+                    "editable" : true,
+                    "label" : "",
+                    "autogeneratedLabel" : true,
+                    "order" : 0
+                  }
+                }, {
+                  "keyFilterPredicate" : {
+                    "operation" : "EQUAL",
+                    "value" : {
+                      "defaultValue" : false,
+                      "dynamicValue" : {
+                        "sourceType" : "CURRENT_USER",
+                        "sourceAttribute" : "displayLowBatteryBins",
+                        "inherit" : false
+                      }
+                    },
+                    "type" : "BOOLEAN"
+                  },
+                  "userInfo" : {
+                    "editable" : true,
+                    "label" : "",
+                    "autogeneratedLabel" : true,
+                    "order" : 0
+                  }
+                } ],
+                "type" : "COMPLEX"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          }, {
+            "key" : {
+              "type" : "ATTRIBUTE",
+              "key" : "active"
+            },
+            "valueType" : "BOOLEAN",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "OR",
+                "predicates" : [ {
+                  "keyFilterPredicate" : {
+                    "operation" : "EQUAL",
+                    "value" : {
+                      "defaultValue" : false,
+                      "dynamicValue" : null
+                    },
+                    "type" : "BOOLEAN"
+                  },
+                  "userInfo" : {
+                    "editable" : true,
+                    "label" : "",
+                    "autogeneratedLabel" : true,
+                    "order" : 0
+                  }
+                }, {
+                  "keyFilterPredicate" : {
+                    "operation" : "NOT_EQUAL",
+                    "value" : {
+                      "defaultValue" : false,
+                      "dynamicValue" : {
+                        "sourceType" : "CURRENT_USER",
+                        "sourceAttribute" : "displayOfflineBins",
+                        "inherit" : false
+                      }
+                    },
+                    "type" : "BOOLEAN"
+                  },
+                  "userInfo" : {
+                    "editable" : true,
+                    "label" : "",
+                    "autogeneratedLabel" : true,
+                    "order" : 0
+                  }
+                } ],
+                "type" : "COMPLEX"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        }
+      },
       "timewindow" : {
         "displayValue" : "",
         "hideInterval" : false,
