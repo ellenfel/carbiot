@@ -1266,12 +1266,15 @@
           "filter" : {
             "type" : "relationsQuery",
             "resolveMultiple" : true,
-            "rootStateEntity" : true,
+            "rootStateEntity" : false,
             "stateEntityParamName" : null,
             "defaultStateEntity" : null,
-            "rootEntity" : null,
+            "rootEntity" : {
+              "entityType" : "CUSTOMER",
+              "id" : "90040e00-2687-11ef-bf4a-3d9f36615f13"
+            },
             "direction" : "FROM",
-            "maxLevel" : 4,
+            "maxLevel" : 5,
             "fetchLastLevelOnly" : false,
             "filters" : [ {
               "relationType" : "Contains",
