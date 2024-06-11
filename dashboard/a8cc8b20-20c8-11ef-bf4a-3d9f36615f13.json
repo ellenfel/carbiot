@@ -7297,6 +7297,25 @@
             "maxLevel" : 1,
             "fetchLastLevelOnly" : false,
             "filters" : [ {
+              "relationType" : null,
+              "entityTypes" : [ "DEVICE" ]
+            } ]
+          }
+        },
+        "48546e32-c344-4c4f-61ce-4dedf69d2234" : {
+          "id" : "48546e32-c344-4c4f-61ce-4dedf69d2234",
+          "alias" : "GatewayDevice",
+          "filter" : {
+            "type" : "relationsQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "filters" : [ {
               "relationType" : "Created",
               "entityTypes" : [ "DEVICE" ]
             } ]
