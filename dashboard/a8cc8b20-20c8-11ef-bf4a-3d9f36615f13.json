@@ -6236,7 +6236,7 @@
         "showEntitiesSelect" : false,
         "showDashboardTimewindow" : true,
         "showDashboardExport" : false,
-        "toolbarAlwaysOpen" : false,
+        "toolbarAlwaysOpen" : true,
         "titleColor" : "rgba(0,0,0,0.87)",
         "showFilters" : true,
         "showDashboardLogo" : true,
