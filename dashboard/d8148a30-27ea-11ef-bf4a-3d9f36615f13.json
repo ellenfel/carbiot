@@ -2049,162 +2049,6 @@
           "id" : "3d661190-7463-ba61-6793-503c85af67ec",
           "typeFullFqn" : "system.cards.markdown_card"
         },
-        "1615bd4e-c0a4-c32c-3706-3c83214cb8d7" : {
-          "type" : "latest",
-          "sizeX" : 7.5,
-          "sizeY" : 6.5,
-          "config" : {
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 86400000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1684327643501,
-                  "endTimeMs" : 1684414043501
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "NONE",
-                "limit" : 200
-              }
-            },
-            "showTitle" : true,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "4px",
-            "settings" : {
-              "entitiesTitle" : "Devices",
-              "enableSearch" : true,
-              "enableSelectColumnDisplay" : true,
-              "enableStickyHeader" : true,
-              "enableStickyAction" : true,
-              "reserveSpaceForHiddenAction" : "true",
-              "displayEntityName" : true,
-              "entityNameColumnTitle" : "Device Name",
-              "displayEntityLabel" : false,
-              "displayEntityType" : false,
-              "displayPagination" : true,
-              "defaultPageSize" : 10,
-              "defaultSortOrder" : "entityName",
-              "useRowStyleFunction" : false
-            },
-            "title" : "Devices",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400,
-              "padding" : "5px 10px 5px 10px"
-            },
-            "useDashboardTimewindow" : false,
-            "showLegend" : false,
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : null,
-              "entityAliasId" : "a75d9031-ba51-8da4-81be-de65061b72f4",
-              "filterId" : null,
-              "dataKeys" : [ {
-                "name" : "type",
-                "type" : "entityField",
-                "label" : "Device Type",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.3129929097366162,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "active",
-                "type" : "attribute",
-                "label" : "Status",
-                "color" : "#4caf50",
-                "settings" : {
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : true,
-                  "cellContentFunction" : "let cssClass;\r\nswitch (value) {\r\n      case \"Active\":\r\n        cssClass = \"status status-active\";\r\n        break;\r\n      case \"Inactive\":\r\n           default:\r\n        cssClass = \"status status-inactive\";\r\n        break;\r\n    }\r\n    \r\n    return `<span class='${cssClass}'>${value}</span>`;",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled"
-                },
-                "_hash" : 0.5969880627410065,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value == 'true' ? \"Active\": \"Inactive\";"
-              }, {
-                "name" : "connectorName",
-                "type" : "attribute",
-                "label" : "Connector Name",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.012483045440007778,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "connectorType",
-                "type" : "attribute",
-                "label" : "Connector Type",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.6004192233378134,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "displayTimewindow" : true,
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "widgetCss" : ".status {\r\n    border-radius: 20px;\r\n    font-weight: 500;\r\n    padding: 5px 15px;\r\n  }\r\n\r\n  .status-active {\r\n    color: green;\r\n    background: rgba(0, 128, 0, 0.1);\r\n  }\r\n\r\n  .status-inactive {\r\n    color: red;\r\n    background: rgba(255, 0, 0, 0.1);\r\n  }\r\n",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "enableDataExport" : false,
-            "borderRadius" : "",
-            "actions" : {
-              "actionCellButton" : [ {
-                "name" : "Show Device Info",
-                "icon" : "info",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "const url = `${window.location.origin + widgetContext.utils.getEntityDetailsPageURL(entityId.id, entityId.entityType)}`;\nwindow.open(url, '_blank');",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "45e4507d-3adc-bb31-8b2b-1ba09bbd56ac"
-              } ]
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "1615bd4e-c0a4-c32c-3706-3c83214cb8d7",
-          "typeFullFqn" : "system.cards.entities_table"
-        },
         "aafba3d8-a381-21c0-ecbe-446da3cdc041" : {
           "type" : "latest",
           "sizeX" : 7.5,
@@ -4925,63 +4769,6 @@
             }
           }
         },
-        "gateway_details" : {
-          "name" : "${entityName}",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "79f59106-758f-c428-8b93-4341faea705d" : {
-                  "sizeX" : 40,
-                  "sizeY" : 3,
-                  "row" : 0,
-                  "col" : 0,
-                  "mobileHeight" : 5,
-                  "mobileOrder" : 2
-                },
-                "60dcf518-8fc3-3539-8ff8-ce94bda39f3a" : {
-                  "sizeX" : 40,
-                  "sizeY" : 10,
-                  "row" : 12,
-                  "col" : 0
-                },
-                "fb9df382-6ef3-4aa6-bc13-8bf8e300ba19" : {
-                  "sizeX" : 8,
-                  "sizeY" : 3,
-                  "row" : 0,
-                  "col" : 40,
-                  "mobileOrder" : 0,
-                  "mobileHeight" : 1
-                },
-                "61d149e8-b249-5526-e5d7-6ad58413982e" : {
-                  "sizeX" : 8,
-                  "sizeY" : 19,
-                  "row" : 3,
-                  "col" : 40,
-                  "mobileOrder" : 1,
-                  "mobileHeight" : 3
-                },
-                "3d661190-7463-ba61-6793-503c85af67ec" : {
-                  "sizeX" : 40,
-                  "sizeY" : 9,
-                  "row" : 3,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "backgroundColor" : "#eeeeee",
-                "columns" : 48,
-                "margin" : 10,
-                "backgroundSizeMode" : "100%",
-                "autoFillHeight" : true,
-                "backgroundImageUrl" : null,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70,
-                "outerMargin" : true
-              }
-            }
-          }
-        },
         "logs" : {
           "name" : "Logs",
           "root" : false,
@@ -5180,33 +4967,6 @@
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70,
                 "outerMargin" : true
-              }
-            }
-          }
-        },
-        "gateway_devices_0" : {
-          "name" : "Gateway devices",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "1615bd4e-c0a4-c32c-3706-3c83214cb8d7" : {
-                  "sizeX" : 24,
-                  "sizeY" : 11,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "backgroundColor" : "#eeeeee",
-                "columns" : 24,
-                "margin" : 0,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%",
-                "autoFillHeight" : true,
-                "backgroundImageUrl" : null,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
               }
             }
           }
@@ -5666,6 +5426,63 @@
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "gateway_devices_0" : {
+          "name" : "${entityName}",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "79f59106-758f-c428-8b93-4341faea705d" : {
+                  "sizeX" : 40,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 0,
+                  "mobileHeight" : 5,
+                  "mobileOrder" : 2
+                },
+                "60dcf518-8fc3-3539-8ff8-ce94bda39f3a" : {
+                  "sizeX" : 40,
+                  "sizeY" : 10,
+                  "row" : 12,
+                  "col" : 0
+                },
+                "fb9df382-6ef3-4aa6-bc13-8bf8e300ba19" : {
+                  "sizeX" : 8,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 40,
+                  "mobileOrder" : 0,
+                  "mobileHeight" : 1
+                },
+                "61d149e8-b249-5526-e5d7-6ad58413982e" : {
+                  "sizeX" : 8,
+                  "sizeY" : 19,
+                  "row" : 3,
+                  "col" : 40,
+                  "mobileOrder" : 1,
+                  "mobileHeight" : 3
+                },
+                "3d661190-7463-ba61-6793-503c85af67ec" : {
+                  "sizeX" : 40,
+                  "sizeY" : 9,
+                  "row" : 3,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 48,
+                "margin" : 10,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70,
+                "outerMargin" : true
               }
             }
           }
