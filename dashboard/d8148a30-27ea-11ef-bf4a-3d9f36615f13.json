@@ -6351,8 +6351,8 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "ThingsBoard IoT Gateways",
-    "title" : "ThingsBoard IoT Gateways"
+    "name" : "IoT Gateways",
+    "title" : "IoT Gateways"
   },
   "relations" : [ ],
   "attributes" : {
