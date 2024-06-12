@@ -5819,7 +5819,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "manevra",
+                "targetDashboardStateId" : "default",
                 "setEntityId" : false,
                 "stateEntityParamName" : "tool",
                 "openRightLayout" : null,
