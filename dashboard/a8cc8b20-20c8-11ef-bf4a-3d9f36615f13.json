@@ -5678,7 +5678,7 @@
                 }
               }
             },
-            "title" : "Power consumption",
+            "title" : "I-Link Box - 1 PD",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "titleStyle" : null,
@@ -8192,7 +8192,7 @@
                 }
               }
             },
-            "title" : "Power consumption",
+            "title" : "I-Link Box - 2 PD",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "titleStyle" : null,
@@ -8382,7 +8382,7 @@
                 }
               }
             },
-            "title" : "Power consumption",
+            "title" : "I-Link Box - 3 PD",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "titleStyle" : null,
