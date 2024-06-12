@@ -9767,22 +9767,22 @@
             "main" : {
               "widgets" : {
                 "dfb69f6b-315e-c4c4-41e6-0d95134c7b53" : {
-                  "sizeX" : 48,
-                  "sizeY" : 30,
-                  "row" : 4,
+                  "sizeX" : 64,
+                  "sizeY" : 40,
+                  "row" : 3,
                   "col" : 0
                 },
                 "c003c03b-dfd3-c6ce-c862-96dd777734a6" : {
-                  "sizeX" : 48,
-                  "sizeY" : 4,
+                  "sizeX" : 64,
+                  "sizeY" : 3,
                   "row" : 0,
                   "col" : 0
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
-                "columns" : 48,
-                "margin" : 5,
+                "columns" : 64,
+                "margin" : 16,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
                 "autoFillHeight" : true,
