@@ -2677,7 +2677,7 @@
             "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
-            "borderRadius" : "0px",
+            "borderRadius" : "8px",
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
