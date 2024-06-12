@@ -8352,22 +8352,22 @@
             "main" : {
               "widgets" : {
                 "393f7e70-fe7d-631c-f342-275af419dd88" : {
-                  "sizeX" : 48,
+                  "sizeX" : 64,
                   "sizeY" : 2,
                   "row" : 0,
                   "col" : 0
                 },
                 "f13d62a7-4662-1392-8d05-d605eb23f78b" : {
-                  "sizeX" : 48,
-                  "sizeY" : 10,
+                  "sizeX" : 52,
+                  "sizeY" : 13,
                   "row" : 2,
                   "col" : 0
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "rgb(20, 37, 81)",
-                "columns" : 48,
-                "margin" : 5,
+                "columns" : 64,
+                "margin" : 16,
                 "outerMargin" : false,
                 "backgroundSizeMode" : "100%",
                 "autoFillHeight" : false,
