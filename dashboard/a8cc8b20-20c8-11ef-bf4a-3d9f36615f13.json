@@ -5806,7 +5806,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "lora",
+                "targetDashboardStateId" : "lorawan_console",
                 "setEntityId" : true,
                 "stateEntityParamName" : "mu",
                 "openRightLayout" : null,
