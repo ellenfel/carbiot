@@ -6974,80 +6974,6 @@
           "id" : "f5b9af49-8afd-97bc-ed4c-41f049f4add6",
           "typeFullFqn" : "system.gateway_widgets.gateway_logs"
         },
-        "a3e9d26d-37a0-3625-39d5-42dc2ea3b8ae" : {
-          "type" : "latest",
-          "sizeX" : 5,
-          "sizeY" : 3.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "function",
-              "entityAliasId" : "48546e32-c344-4c4f-61ce-4dedf69d2234",
-              "dataKeys" : [ ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1686652103417,
-                  "endTimeMs" : 1686738503417
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<div style=\"width: 100%; height: 100%; padding: 0;\" fxFlex fxLayout=\"column\">\r\n  <mat-tab-group [(selectedIndex)]=\"selectedTabIndex\">\r\n    <mat-tab label=\"All\" value=\"gateway_devices_0\"></mat-tab>\r\n    <mat-tab label=\"MQTT\" value=\"gateway_devices_1\"></mat-tab>\r\n    <mat-tab label=\"MODBUS\" value=\"gateway_devices_2\"></mat-tab>\r\n    <mat-tab label=\"GRPC\" value=\"gateway_devices_3\"></mat-tab>\r\n    <mat-tab label=\"OPCUA\" value=\"gateway_devices_4\"> </mat-tab>\r\n    <mat-tab label=\"OPCUA ASYNCIO\" value=\"gateway_devices_5\"></mat-tab>\r\n    <mat-tab label=\"BLE\" value=\"gateway_devices_6\"></mat-tab>\r\n    <mat-tab label=\"REQUEST\" value=\"gateway_devices_7\"></mat-tab>\r\n    <mat-tab label=\"CAN\" value=\"gateway_devices_8\"></mat-tab>\r\n    <mat-tab label=\"BACNET\" value=\"gateway_devices_9\"></mat-tab>\r\n    <mat-tab label=\"ODBC\" value=\"gateway_devices_10\"></mat-tab>\r\n    <mat-tab label=\"REST\" value=\"gateway_devices_11\"></mat-tab>\r\n    <mat-tab label=\"SNMP\" value=\"gateway_devices_12\"></mat-tab>\r\n    <mat-tab label=\"FTP\" value=\"gateway_devices_13\"></mat-tab>\r\n    <mat-tab label=\"SOCKET\" value=\"gateway_devices_14\"></mat-tab>\r\n    <mat-tab label=\"XMPP\" value=\"gateway_devices_15\"></mat-tab>\r\n    <mat-tab label=\"OCCP\" value=\"gateway_devices_16\"></mat-tab>\r\n    <mat-tab label=\"CUSTOM\" value=\"gateway_devices_17\"></mat-tab>\r\n  </mat-tab-group><tb-dashboard-state *ngIf=\"selectedTabIndex == 1\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_1\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 2\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_2\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 3\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_3\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 4\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_4\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 5\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_5\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 6\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_6\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 7\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_7\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 8\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_8\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 9\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_9\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 10\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_10\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 11\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_11\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 12\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_12\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 13\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_13\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 14\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_14\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 15\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_15\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 16\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_16\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 17\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_17\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"!selectedTabIndex\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_0\"></tb-dashboard-state>\r\n</div>\r\n",
-              "applyDefaultMarkdownStyle" : false,
-              "markdownCss" : ".mat-mdc-form-field-subscript-wrapper {\n    display: none !important;\n}"
-            },
-            "title" : "Gateway devices",
-            "showTitleIcon" : false,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "showLegend" : false,
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "enableDataExport" : false,
-            "borderRadius" : "4px"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "a3e9d26d-37a0-3625-39d5-42dc2ea3b8ae",
-          "typeFullFqn" : "system.cards.markdown_card"
-        },
         "776664ed-bc71-fb48-aeac-eeaf02d58b2b" : {
           "type" : "alarm",
           "sizeX" : 10.5,
@@ -7185,6 +7111,80 @@
           "col" : 0,
           "id" : "776664ed-bc71-fb48-aeac-eeaf02d58b2b",
           "typeFullFqn" : "system.alarm_widgets.alarms_table"
+        },
+        "290e9f30-dd29-84a6-053a-2a8b5b8cb551" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "function",
+              "entityAliasId" : "48546e32-c344-4c4f-61ce-4dedf69d2234",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1686652103417,
+                  "endTimeMs" : 1686738503417
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"width: 100%; height: 100%; padding: 0;\" fxFlex fxLayout=\"column\">\r\n  <mat-tab-group [(selectedIndex)]=\"selectedTabIndex\">\r\n    <mat-tab label=\"All\" value=\"gateway_devices_0\"></mat-tab>\r\n    <mat-tab label=\"MQTT\" value=\"gateway_devices_1\"></mat-tab>\r\n    <mat-tab label=\"MODBUS\" value=\"gateway_devices_2\"></mat-tab>\r\n    <mat-tab label=\"GRPC\" value=\"gateway_devices_3\"></mat-tab>\r\n    <mat-tab label=\"OPCUA\" value=\"gateway_devices_4\"> </mat-tab>\r\n    <mat-tab label=\"OPCUA ASYNCIO\" value=\"gateway_devices_5\"></mat-tab>\r\n    <mat-tab label=\"BLE\" value=\"gateway_devices_6\"></mat-tab>\r\n    <mat-tab label=\"REQUEST\" value=\"gateway_devices_7\"></mat-tab>\r\n    <mat-tab label=\"CAN\" value=\"gateway_devices_8\"></mat-tab>\r\n    <mat-tab label=\"BACNET\" value=\"gateway_devices_9\"></mat-tab>\r\n    <mat-tab label=\"ODBC\" value=\"gateway_devices_10\"></mat-tab>\r\n    <mat-tab label=\"REST\" value=\"gateway_devices_11\"></mat-tab>\r\n    <mat-tab label=\"SNMP\" value=\"gateway_devices_12\"></mat-tab>\r\n    <mat-tab label=\"FTP\" value=\"gateway_devices_13\"></mat-tab>\r\n    <mat-tab label=\"SOCKET\" value=\"gateway_devices_14\"></mat-tab>\r\n    <mat-tab label=\"XMPP\" value=\"gateway_devices_15\"></mat-tab>\r\n    <mat-tab label=\"OCCP\" value=\"gateway_devices_16\"></mat-tab>\r\n    <mat-tab label=\"CUSTOM\" value=\"gateway_devices_17\"></mat-tab>\r\n  </mat-tab-group><tb-dashboard-state *ngIf=\"selectedTabIndex == 1\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_1\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 2\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_2\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 3\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_3\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 4\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_4\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 5\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_5\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 6\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_6\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 7\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_7\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 8\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_8\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 9\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_9\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 10\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_10\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 11\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_11\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 12\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_12\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 13\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_13\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 14\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_14\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 15\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_15\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 16\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_16\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"selectedTabIndex == 17\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_17\"></tb-dashboard-state>\r\n   <tb-dashboard-state *ngIf=\"!selectedTabIndex\" [ctx]=\"ctx\" fxFlex syncParentStateParams=\"true\" stateId=\"gateway_devices_0\"></tb-dashboard-state>\r\n</div>\r\n",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".mat-mdc-form-field-subscript-wrapper {\n    display: none !important;\n}"
+            },
+            "title" : "Gateway devices",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "4px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "290e9f30-dd29-84a6-053a-2a8b5b8cb551",
+          "typeFullFqn" : "system.cards.markdown_card"
         }
       },
       "timewindow" : {
@@ -7594,16 +7594,16 @@
                   "row" : 0,
                   "col" : 40
                 },
-                "a3e9d26d-37a0-3625-39d5-42dc2ea3b8ae" : {
-                  "sizeX" : 40,
-                  "sizeY" : 9,
-                  "row" : 3,
-                  "col" : 0
-                },
                 "776664ed-bc71-fb48-aeac-eeaf02d58b2b" : {
                   "sizeX" : 40,
                   "sizeY" : 10,
                   "row" : 12,
+                  "col" : 0
+                },
+                "290e9f30-dd29-84a6-053a-2a8b5b8cb551" : {
+                  "sizeX" : 40,
+                  "sizeY" : 9,
+                  "row" : 3,
                   "col" : 0
                 }
               },
