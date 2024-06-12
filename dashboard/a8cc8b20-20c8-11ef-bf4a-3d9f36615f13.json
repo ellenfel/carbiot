@@ -4035,7 +4035,7 @@
             "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
-            "borderRadius" : "20px",
+            "borderRadius" : "0px",
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
