@@ -3366,7 +3366,7 @@
                 "settings" : { },
                 "_hash" : 0.03392963734220711,
                 "aggregationType" : "NONE",
-                "units" : null,
+                "units" : "V",
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
