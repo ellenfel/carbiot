@@ -5596,11 +5596,11 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "dataZoom" : true,
+              "dataZoom" : false,
               "rangeColors" : [ {
-                "from" : null,
                 "to" : 20,
-                "color" : "#3FA71A"
+                "color" : "#3FA71A",
+                "from" : null
               }, {
                 "from" : 20,
                 "to" : 50,
@@ -5623,12 +5623,12 @@
                 "color" : "#F04022"
               }, {
                 "from" : 80,
-                "to" : null,
-                "color" : "#D81838"
+                "color" : "#D81838",
+                "to" : null
               } ],
               "outOfRangeColor" : "#ccc",
               "fillArea" : true,
-              "showLegend" : true,
+              "showLegend" : false,
               "legendPosition" : "top",
               "legendLabelFont" : {
                 "family" : "Roboto",
@@ -8110,11 +8110,11 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "dataZoom" : true,
+              "dataZoom" : false,
               "rangeColors" : [ {
-                "from" : null,
                 "to" : 20,
-                "color" : "#3FA71A"
+                "color" : "#3FA71A",
+                "from" : null
               }, {
                 "from" : 20,
                 "to" : 50,
@@ -8137,12 +8137,12 @@
                 "color" : "#F04022"
               }, {
                 "from" : 80,
-                "to" : null,
-                "color" : "#D81838"
+                "color" : "#D81838",
+                "to" : null
               } ],
               "outOfRangeColor" : "#ccc",
               "fillArea" : true,
-              "showLegend" : true,
+              "showLegend" : false,
               "legendPosition" : "top",
               "legendLabelFont" : {
                 "family" : "Roboto",
@@ -8300,11 +8300,11 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "dataZoom" : true,
+              "dataZoom" : false,
               "rangeColors" : [ {
-                "from" : null,
                 "to" : 20,
-                "color" : "#3FA71A"
+                "color" : "#3FA71A",
+                "from" : null
               }, {
                 "from" : 20,
                 "to" : 50,
@@ -8327,12 +8327,12 @@
                 "color" : "#F04022"
               }, {
                 "from" : 80,
-                "to" : null,
-                "color" : "#D81838"
+                "color" : "#D81838",
+                "to" : null
               } ],
               "outOfRangeColor" : "#ccc",
               "fillArea" : true,
-              "showLegend" : true,
+              "showLegend" : false,
               "legendPosition" : "top",
               "legendLabelFont" : {
                 "family" : "Roboto",
