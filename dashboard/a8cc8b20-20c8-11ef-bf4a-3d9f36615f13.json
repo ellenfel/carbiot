@@ -9986,22 +9986,22 @@
             "main" : {
               "widgets" : {
                 "07943b47-b92f-615e-f808-ac8e755b7e35" : {
-                  "sizeX" : 64,
-                  "sizeY" : 26,
-                  "row" : 2,
+                  "sizeX" : 48,
+                  "sizeY" : 19,
+                  "row" : 1,
                   "col" : 0
                 },
                 "e21bb87a-bf55-2cdf-8a52-6d10b00fe8c8" : {
-                  "sizeX" : 64,
-                  "sizeY" : 2,
+                  "sizeX" : 48,
+                  "sizeY" : 1,
                   "row" : 0,
                   "col" : 0
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
-                "columns" : 64,
-                "margin" : 8,
+                "columns" : 48,
+                "margin" : 5,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
                 "autoFillHeight" : true,
