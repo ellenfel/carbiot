@@ -7641,7 +7641,7 @@
           }
         },
         "gateway_details" : {
-          "name" : "${entity_name}",
+          "name" : "${entityName}",
           "root" : false,
           "layouts" : {
             "main" : {
