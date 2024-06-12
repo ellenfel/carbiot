@@ -7988,6 +7988,70 @@
           "col" : 0,
           "id" : "7706d685-68d4-e0d9-36f0-d71660ba8ef3",
           "typeFullFqn" : "system.cards.entities_table"
+        },
+        "83ac88c2-b102-2e7a-c76f-625f72d11447" : {
+          "type" : "latest",
+          "sizeX" : 9.5,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "710a653b-211c-4a83-645e-c7d552798795",
+              "filterId" : null,
+              "dataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1680685647526,
+                  "endTimeMs" : 1680772047526
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : { },
+            "title" : "New Gateway configuration",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 500
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "borderRadius" : "4px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "83ac88c2-b102-2e7a-c76f-625f72d11447",
+          "typeFullFqn" : "system.gateway_widgets.gateway_general_configuration"
         }
       },
       "timewindow" : {
@@ -8429,7 +8493,14 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "83ac88c2-b102-2e7a-c76f-625f72d11447" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
