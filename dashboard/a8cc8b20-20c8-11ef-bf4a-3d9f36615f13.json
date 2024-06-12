@@ -6686,6 +6686,76 @@
           "col" : 0,
           "id" : "d99666ee-abf9-b2b0-5427-53641309672c",
           "typeFullFqn" : "system.cards.markdown_card"
+        },
+        "a58f3b06-3736-1e14-cfa9-bcdced2641d4" : {
+          "type" : "latest",
+          "sizeX" : 11,
+          "sizeY" : 8,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "710a653b-211c-4a83-645e-c7d552798795",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "activeConnectors",
+                "type" : "attribute",
+                "label" : "activeConnectors",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.7454705362378311
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1680769601167,
+                  "endTimeMs" : 1680856001167
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : { },
+            "title" : "New Gateway connector",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 500
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showLegend" : false,
+            "useDashboardTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a58f3b06-3736-1e14-cfa9-bcdced2641d4",
+          "typeFullFqn" : "system.gateway_widgets.gateway_connectors"
         }
       },
       "timewindow" : {
@@ -7153,13 +7223,24 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "a58f3b06-3736-1e14-cfa9-bcdced2641d4" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
