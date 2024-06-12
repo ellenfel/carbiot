@@ -9583,8 +9583,8 @@
               "widgets" : {
                 "dfb69f6b-315e-c4c4-41e6-0d95134c7b53" : {
                   "sizeX" : 79,
-                  "sizeY" : 42,
-                  "row" : 0,
+                  "sizeY" : 40,
+                  "row" : 2,
                   "col" : 0
                 }
               },
