@@ -9025,7 +9025,7 @@
             },
             "showTitle" : true,
             "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
+            "color" : null,
             "padding" : "4px",
             "settings" : {
               "entitiesTitle" : "LoRa-WAN Bağlantı Kontrol Tablosu",
@@ -9197,7 +9197,8 @@
             "noDataDisplayMessage" : "",
             "titleIcon" : "share",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px"
+            "iconSize" : "24px",
+            "borderRadius" : "8px"
           },
           "row" : 0,
           "col" : 0,
