@@ -5360,190 +5360,6 @@
           "col" : 0,
           "id" : "489c59dc-f9ef-3651-366d-13a09da75097"
         },
-        "f13d62a7-4662-1392-8d05-d605eb23f78b" : {
-          "typeFullFqn" : "system.power_consumption_range_chart",
-          "type" : "timeseries",
-          "sizeX" : 8,
-          "sizeY" : 5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "05924a8e-00fd-8da1-450b-6ca89111a651",
-              "dataKeys" : [ {
-                "name" : "ipec_pddata_avg_pd_a",
-                "type" : "timeseries",
-                "label" : "ipec_pddata_avg_pd_a",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.2243144928798242
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
-                "timewindowMs" : 2592000000,
-                "interval" : 86400000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1700577227898,
-                  "endTimeMs" : 1700663627898
-                },
-                "quickInterval" : "CURRENT_MONTH_SO_FAR"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              },
-              "timezone" : null
-            },
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0, 0, 0, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "dataZoom" : false,
-              "rangeColors" : [ {
-                "to" : 20,
-                "color" : "#3FA71A",
-                "from" : null
-              }, {
-                "from" : 20,
-                "to" : 50,
-                "color" : "#F36900"
-              }, {
-                "from" : 50,
-                "to" : null,
-                "color" : "#D81838"
-              }, {
-                "from" : 20,
-                "to" : 40,
-                "color" : "#FFA600"
-              }, {
-                "from" : 40,
-                "to" : 60,
-                "color" : "#F36900"
-              }, {
-                "from" : 60,
-                "to" : 80,
-                "color" : "#F04022"
-              }, {
-                "from" : 80,
-                "color" : "#D81838",
-                "to" : null
-              } ],
-              "outOfRangeColor" : "#ccc",
-              "fillArea" : true,
-              "showLegend" : false,
-              "legendPosition" : "top",
-              "legendLabelFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "400",
-                "lineHeight" : "16px"
-              },
-              "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "showTooltip" : true,
-              "tooltipValueFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "16px"
-              },
-              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipShowDate" : true,
-              "tooltipDateFormat" : {
-                "format" : "dd MMM yyyy HH:mm",
-                "lastUpdateAgo" : false,
-                "custom" : false,
-                "auto" : false
-              },
-              "tooltipDateFont" : {
-                "family" : "Roboto",
-                "size" : 11,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "400",
-                "lineHeight" : "16px"
-              },
-              "tooltipDateColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipDateInterval" : true,
-              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
-              "tooltipBackgroundBlur" : 4,
-              "background" : {
-                "type" : "color",
-                "color" : "#fff",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              }
-            },
-            "title" : "I-Link Box - 1 PD",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : null,
-            "configMode" : "advanced",
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : "thermostat",
-            "iconColor" : "#1F6BDD",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : "normal",
-              "lineHeight" : "24px"
-            },
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "units" : "",
-            "decimals" : 0,
-            "noDataDisplayMessage" : "",
-            "timewindowStyle" : {
-              "showIcon" : false,
-              "iconSize" : "24px",
-              "icon" : null,
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "lineHeight" : "16px"
-              },
-              "color" : "rgba(0, 0, 0, 0.38)",
-              "displayTypePrefix" : false
-            },
-            "margin" : "0px",
-            "borderRadius" : "0px",
-            "iconSize" : "0px"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "f13d62a7-4662-1392-8d05-d605eb23f78b"
-        },
         "75101c61-acbd-fd38-8374-adfedc30025c" : {
           "type" : "latest",
           "sizeX" : 120,
@@ -7868,386 +7684,6 @@
           "id" : "83ac88c2-b102-2e7a-c76f-625f72d11447",
           "typeFullFqn" : "system.gateway_widgets.gateway_general_configuration"
         },
-        "c5a66728-1d8e-3289-38c3-2123ed56bc9d" : {
-          "typeFullFqn" : "system.power_consumption_range_chart",
-          "type" : "timeseries",
-          "sizeX" : 8,
-          "sizeY" : 5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "05924a8e-00fd-8da1-450b-6ca89111a651",
-              "dataKeys" : [ {
-                "name" : "ipec_pddata_avg_pd_b",
-                "type" : "timeseries",
-                "label" : "ipec_pddata_avg_pd_b",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.2243144928798242,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
-                "timewindowMs" : 2592000000,
-                "interval" : 86400000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1700577227898,
-                  "endTimeMs" : 1700663627898
-                },
-                "quickInterval" : "CURRENT_MONTH_SO_FAR"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              },
-              "timezone" : null
-            },
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0, 0, 0, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "dataZoom" : false,
-              "rangeColors" : [ {
-                "to" : 20,
-                "color" : "#3FA71A",
-                "from" : null
-              }, {
-                "from" : 20,
-                "to" : 50,
-                "color" : "#F36900"
-              }, {
-                "from" : 50,
-                "to" : null,
-                "color" : "#D81838"
-              }, {
-                "from" : 20,
-                "to" : 40,
-                "color" : "#FFA600"
-              }, {
-                "from" : 40,
-                "to" : 60,
-                "color" : "#F36900"
-              }, {
-                "from" : 60,
-                "to" : 80,
-                "color" : "#F04022"
-              }, {
-                "from" : 80,
-                "color" : "#D81838",
-                "to" : null
-              } ],
-              "outOfRangeColor" : "#ccc",
-              "fillArea" : true,
-              "showLegend" : false,
-              "legendPosition" : "top",
-              "legendLabelFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "400",
-                "lineHeight" : "16px"
-              },
-              "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "showTooltip" : true,
-              "tooltipValueFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "16px"
-              },
-              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipShowDate" : true,
-              "tooltipDateFormat" : {
-                "format" : "dd MMM yyyy HH:mm",
-                "lastUpdateAgo" : false,
-                "custom" : false,
-                "auto" : false
-              },
-              "tooltipDateFont" : {
-                "family" : "Roboto",
-                "size" : 11,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "400",
-                "lineHeight" : "16px"
-              },
-              "tooltipDateColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipDateInterval" : true,
-              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
-              "tooltipBackgroundBlur" : 4,
-              "background" : {
-                "type" : "color",
-                "color" : "#fff",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              }
-            },
-            "title" : "I-Link Box - 2 PD",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : null,
-            "configMode" : "advanced",
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : "thermostat",
-            "iconColor" : "#1F6BDD",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : "normal",
-              "lineHeight" : "24px"
-            },
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "units" : "",
-            "decimals" : 0,
-            "noDataDisplayMessage" : "",
-            "timewindowStyle" : {
-              "showIcon" : false,
-              "iconSize" : "24px",
-              "icon" : null,
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "lineHeight" : "16px"
-              },
-              "color" : "rgba(0, 0, 0, 0.38)",
-              "displayTypePrefix" : false
-            },
-            "margin" : "0px",
-            "borderRadius" : "0px",
-            "iconSize" : "0px"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "c5a66728-1d8e-3289-38c3-2123ed56bc9d"
-        },
-        "52b8f008-f45d-0ff8-1d84-106be10c4dd6" : {
-          "typeFullFqn" : "system.power_consumption_range_chart",
-          "type" : "timeseries",
-          "sizeX" : 8,
-          "sizeY" : 5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "05924a8e-00fd-8da1-450b-6ca89111a651",
-              "dataKeys" : [ {
-                "name" : "ipec_pddata_avg_pd_c",
-                "type" : "timeseries",
-                "label" : "ipec_pddata_avg_pd_c",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.2243144928798242,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
-                "timewindowMs" : 2592000000,
-                "interval" : 86400000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1700577227898,
-                  "endTimeMs" : 1700663627898
-                },
-                "quickInterval" : "CURRENT_MONTH_SO_FAR"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              },
-              "timezone" : null
-            },
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0, 0, 0, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "dataZoom" : false,
-              "rangeColors" : [ {
-                "to" : 20,
-                "color" : "#3FA71A",
-                "from" : null
-              }, {
-                "from" : 20,
-                "to" : 50,
-                "color" : "#F36900"
-              }, {
-                "from" : 50,
-                "to" : null,
-                "color" : "#D81838"
-              }, {
-                "from" : 20,
-                "to" : 40,
-                "color" : "#FFA600"
-              }, {
-                "from" : 40,
-                "to" : 60,
-                "color" : "#F36900"
-              }, {
-                "from" : 60,
-                "to" : 80,
-                "color" : "#F04022"
-              }, {
-                "from" : 80,
-                "color" : "#D81838",
-                "to" : null
-              } ],
-              "outOfRangeColor" : "#ccc",
-              "fillArea" : true,
-              "showLegend" : false,
-              "legendPosition" : "top",
-              "legendLabelFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "400",
-                "lineHeight" : "16px"
-              },
-              "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "showTooltip" : true,
-              "tooltipValueFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "16px"
-              },
-              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipShowDate" : true,
-              "tooltipDateFormat" : {
-                "format" : "dd MMM yyyy HH:mm",
-                "lastUpdateAgo" : false,
-                "custom" : false,
-                "auto" : false
-              },
-              "tooltipDateFont" : {
-                "family" : "Roboto",
-                "size" : 11,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "400",
-                "lineHeight" : "16px"
-              },
-              "tooltipDateColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipDateInterval" : true,
-              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
-              "tooltipBackgroundBlur" : 4,
-              "background" : {
-                "type" : "color",
-                "color" : "#fff",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              }
-            },
-            "title" : "I-Link Box - 3 PD",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : null,
-            "configMode" : "advanced",
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : "thermostat",
-            "iconColor" : "#1F6BDD",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : "normal",
-              "lineHeight" : "24px"
-            },
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "units" : "",
-            "decimals" : 0,
-            "noDataDisplayMessage" : "",
-            "timewindowStyle" : {
-              "showIcon" : false,
-              "iconSize" : "24px",
-              "icon" : null,
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "lineHeight" : "16px"
-              },
-              "color" : "rgba(0, 0, 0, 0.38)",
-              "displayTypePrefix" : false
-            },
-            "margin" : "0px",
-            "borderRadius" : "0px",
-            "iconSize" : "0px"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "52b8f008-f45d-0ff8-1d84-106be10c4dd6"
-        },
         "c15475f1-5021-5c75-3e40-ef53207ee314" : {
           "typeFullFqn" : "system.doughnut",
           "type" : "latest",
@@ -9759,6 +9195,388 @@
           "row" : 0,
           "col" : 0,
           "id" : "f2b26041-2984-4248-ba96-aaa71b9734c8"
+        },
+        "2a12070f-fdd1-a1ba-4892-42edad86c11d" : {
+          "typeFullFqn" : "system.power_consumption_range_chart",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
+              "entityAliasId" : "05924a8e-00fd-8da1-450b-6ca89111a651",
+              "dataKeys" : [ {
+                "name" : "ipec_pddata_avg_pd_b",
+                "type" : "timeseries",
+                "label" : "ipec_pddata_avg_pd_b",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2243144928798242,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "timewindowMs" : 2592000000,
+                "interval" : 86400000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1700577227898,
+                  "endTimeMs" : 1700663627898
+                },
+                "quickInterval" : "CURRENT_MONTH_SO_FAR"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "dataZoom" : false,
+              "rangeColors" : [ {
+                "from" : null,
+                "to" : 20,
+                "color" : "#048AD3"
+              }, {
+                "from" : 20,
+                "to" : 50,
+                "color" : "#F36900"
+              }, {
+                "from" : 50,
+                "to" : null,
+                "color" : "#D81838"
+              }, {
+                "from" : 20,
+                "to" : 40,
+                "color" : "#FFA600"
+              }, {
+                "from" : 40,
+                "to" : 60,
+                "color" : "#F36900"
+              }, {
+                "from" : 60,
+                "to" : 80,
+                "color" : "#F04022"
+              }, {
+                "from" : 80,
+                "to" : null,
+                "color" : "#D81838"
+              } ],
+              "outOfRangeColor" : "#ccc",
+              "fillArea" : true,
+              "showLegend" : false,
+              "legendPosition" : "top",
+              "legendLabelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
+              "showTooltip" : true,
+              "tooltipValueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "16px"
+              },
+              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipShowDate" : true,
+              "tooltipDateFormat" : {
+                "format" : "dd MMM yyyy HH:mm",
+                "lastUpdateAgo" : false,
+                "custom" : false,
+                "auto" : false
+              },
+              "tooltipDateFont" : {
+                "family" : "Roboto",
+                "size" : 11,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "tooltipDateColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipDateInterval" : true,
+              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
+              "tooltipBackgroundBlur" : 4,
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "I-Link Box - 1 PD",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : null,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "#1F6BDD",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "24px"
+            },
+            "titleColor" : "rgba(0, 0, 0, 0.87)",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : "",
+            "decimals" : 0,
+            "noDataDisplayMessage" : "",
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : null,
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : false
+            },
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "iconSize" : "0px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2a12070f-fdd1-a1ba-4892-42edad86c11d"
+        },
+        "c409e405-a559-25c3-93f0-737b52e9fcc9" : {
+          "typeFullFqn" : "system.power_consumption_range_chart",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "cea3e0e0-20c4-11ef-bf4a-3d9f36615f13",
+              "entityAliasId" : "05924a8e-00fd-8da1-450b-6ca89111a651",
+              "dataKeys" : [ {
+                "name" : "ipec_pddata_avg_pd_c",
+                "type" : "timeseries",
+                "label" : "ipec_pddata_avg_pd_c",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2243144928798242,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "timewindowMs" : 2592000000,
+                "interval" : 86400000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1700577227898,
+                  "endTimeMs" : 1700663627898
+                },
+                "quickInterval" : "CURRENT_MONTH_SO_FAR"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "dataZoom" : false,
+              "rangeColors" : [ {
+                "from" : null,
+                "to" : 20,
+                "color" : "#048AD3"
+              }, {
+                "from" : 20,
+                "to" : 50,
+                "color" : "#F36900"
+              }, {
+                "from" : 50,
+                "to" : null,
+                "color" : "#D81838"
+              }, {
+                "from" : 20,
+                "to" : 40,
+                "color" : "#FFA600"
+              }, {
+                "from" : 40,
+                "to" : 60,
+                "color" : "#F36900"
+              }, {
+                "from" : 60,
+                "to" : 80,
+                "color" : "#F04022"
+              }, {
+                "from" : 80,
+                "to" : null,
+                "color" : "#D81838"
+              } ],
+              "outOfRangeColor" : "#ccc",
+              "fillArea" : true,
+              "showLegend" : false,
+              "legendPosition" : "top",
+              "legendLabelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
+              "showTooltip" : true,
+              "tooltipValueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "16px"
+              },
+              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipShowDate" : true,
+              "tooltipDateFormat" : {
+                "format" : "dd MMM yyyy HH:mm",
+                "lastUpdateAgo" : false,
+                "custom" : false,
+                "auto" : false
+              },
+              "tooltipDateFont" : {
+                "family" : "Roboto",
+                "size" : 11,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "tooltipDateColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipDateInterval" : true,
+              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
+              "tooltipBackgroundBlur" : 4,
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "I-Link Box - 1 PD",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : null,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "#1F6BDD",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "24px"
+            },
+            "titleColor" : "rgba(0, 0, 0, 0.87)",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : "",
+            "decimals" : 0,
+            "noDataDisplayMessage" : "",
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : null,
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : false
+            },
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "iconSize" : "0px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "c409e405-a559-25c3-93f0-737b52e9fcc9"
         }
       },
       "timewindow" : {
@@ -10058,24 +9876,6 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "f13d62a7-4662-1392-8d05-d605eb23f78b" : {
-                  "sizeX" : 37,
-                  "sizeY" : 8,
-                  "row" : 1,
-                  "col" : 0
-                },
-                "c5a66728-1d8e-3289-38c3-2123ed56bc9d" : {
-                  "sizeX" : 37,
-                  "sizeY" : 8,
-                  "row" : 9,
-                  "col" : 0
-                },
-                "52b8f008-f45d-0ff8-1d84-106be10c4dd6" : {
-                  "sizeX" : 37,
-                  "sizeY" : 8,
-                  "row" : 17,
-                  "col" : 0
-                },
                 "c15475f1-5021-5c75-3e40-ef53207ee314" : {
                   "sizeX" : 11,
                   "sizeY" : 8,
@@ -10103,7 +9903,19 @@
                 "f2b26041-2984-4248-ba96-aaa71b9734c8" : {
                   "sizeX" : 37,
                   "sizeY" : 8,
-                  "row" : 25,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "2a12070f-fdd1-a1ba-4892-42edad86c11d" : {
+                  "sizeX" : 37,
+                  "sizeY" : 8,
+                  "row" : 9,
+                  "col" : 0
+                },
+                "c409e405-a559-25c3-93f0-737b52e9fcc9" : {
+                  "sizeX" : 37,
+                  "sizeY" : 8,
+                  "row" : 17,
                   "col" : 0
                 }
               },
