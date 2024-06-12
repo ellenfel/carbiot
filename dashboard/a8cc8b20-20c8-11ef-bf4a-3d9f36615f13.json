@@ -9877,22 +9877,22 @@
             "main" : {
               "widgets" : {
                 "c15475f1-5021-5c75-3e40-ef53207ee314" : {
-                  "sizeX" : 11,
+                  "sizeX" : 9,
                   "sizeY" : 8,
                   "row" : 1,
-                  "col" : 37
+                  "col" : 39
                 },
                 "713d9485-2059-bf73-bd44-a4a25a04e8ae" : {
-                  "sizeX" : 11,
+                  "sizeX" : 9,
                   "sizeY" : 8,
                   "row" : 9,
-                  "col" : 37
+                  "col" : 39
                 },
                 "a782b35b-8a70-cde0-0b2d-246805ba9b5e" : {
-                  "sizeX" : 11,
+                  "sizeX" : 9,
                   "sizeY" : 8,
                   "row" : 17,
-                  "col" : 37
+                  "col" : 39
                 },
                 "b930d978-fee3-dee3-e9e4-069a4f5a7c01" : {
                   "sizeX" : 48,
@@ -9901,22 +9901,22 @@
                   "col" : 0
                 },
                 "f2b26041-2984-4248-ba96-aaa71b9734c8" : {
-                  "sizeX" : 37,
+                  "sizeX" : 13,
                   "sizeY" : 8,
                   "row" : 1,
                   "col" : 0
                 },
                 "2a12070f-fdd1-a1ba-4892-42edad86c11d" : {
-                  "sizeX" : 37,
+                  "sizeX" : 13,
                   "sizeY" : 8,
-                  "row" : 9,
-                  "col" : 0
+                  "row" : 1,
+                  "col" : 13
                 },
                 "c409e405-a559-25c3-93f0-737b52e9fcc9" : {
-                  "sizeX" : 37,
+                  "sizeX" : 13,
                   "sizeY" : 8,
-                  "row" : 17,
-                  "col" : 0
+                  "row" : 1,
+                  "col" : 26
                 }
               },
               "gridSettings" : {
