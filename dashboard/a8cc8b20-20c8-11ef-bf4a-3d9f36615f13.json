@@ -9447,9 +9447,9 @@
             "settings" : {
               "dataZoom" : false,
               "rangeColors" : [ {
-                "from" : null,
                 "to" : 20,
-                "color" : "#048AD3"
+                "color" : "#048AD3",
+                "from" : null
               }, {
                 "from" : 20,
                 "to" : 50,
@@ -9472,8 +9472,8 @@
                 "color" : "#F04022"
               }, {
                 "from" : 80,
-                "to" : null,
-                "color" : "#D81838"
+                "color" : "#D81838",
+                "to" : null
               } ],
               "outOfRangeColor" : "#ccc",
               "fillArea" : true,
@@ -9529,7 +9529,7 @@
             },
             "title" : "I-Link Box - 1 PD",
             "dropShadow" : true,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "titleStyle" : null,
             "configMode" : "advanced",
             "actions" : { },
