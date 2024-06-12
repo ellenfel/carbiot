@@ -7255,6 +7255,328 @@
           "col" : 0,
           "id" : "8907bc98-df44-0cb9-95c6-17f047b5b180",
           "typeFullFqn" : "system.control_widgets.rpc_remote_shell"
+        },
+        "56fe2cf5-f5f8-c1b9-ce71-ec03bbda890f" : {
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "710a653b-211c-4a83-645e-c7d552798795",
+              "filterId" : null,
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 604800000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 300000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 25000
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "stack" : false,
+              "fontSize" : 10,
+              "fontColor" : "#545454",
+              "showTooltip" : true,
+              "tooltipIndividual" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "grid" : {
+                "verticalLines" : true,
+                "horizontalLines" : true,
+                "outlineWidth" : 0,
+                "color" : "#545454",
+                "backgroundColor" : null,
+                "tickColor" : "#DDDDDD"
+              },
+              "xaxis" : {
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454"
+              },
+              "yaxis" : {
+                "min" : null,
+                "max" : null,
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454",
+                "tickSize" : null,
+                "tickDecimals" : 0,
+                "ticksFormatter" : ""
+              },
+              "shadowSize" : 4,
+              "smoothLines" : true,
+              "comparisonEnabled" : false,
+              "timeForComparison" : "previousInterval",
+              "comparisonCustomIntervalValue" : 7200000,
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "title" : null,
+                "showLabels" : true
+              },
+              "customLegendEnabled" : false,
+              "dataKeysListForLabels" : [ ]
+            },
+            "title" : "Gateway Custom Statistics",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 600
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : false,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "enableDataExport" : false,
+            "showLegend" : false,
+            "legendConfig" : {
+              "direction" : "column",
+              "position" : "bottom",
+              "sortDataKeys" : false,
+              "showMin" : false,
+              "showMax" : false,
+              "showAvg" : true,
+              "showTotal" : false,
+              "showLatest" : false
+            },
+            "borderRadius" : "4px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "56fe2cf5-f5f8-c1b9-ce71-ec03bbda890f",
+          "typeFullFqn" : "system.gateway_widgets.gateway_custom_statistics"
+        },
+        "e79e0917-66eb-0baf-c6f6-f7fa079014c5" : {
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "710a653b-211c-4a83-645e-c7d552798795",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "allBytesSentToDevices",
+                "type" : "timeseries",
+                "label" : "Sent To Devices (bytes)",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6608774125800538,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "allBytesSentToTB",
+                "type" : "timeseries",
+                "label" : "Send To ThingsBoard (bytes)",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.05525630093240763,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "allReсeivedBytesFromTB",
+                "type" : "timeseries",
+                "label" : "Received From ThingsBoard (bytes)",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.4539040118567914,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "convertedBytesFromDevice",
+                "type" : "timeseries",
+                "label" : "Converted From Devices (bytes)",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.36601736007496366,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "eventsProduced",
+                "type" : "timeseries",
+                "label" : "Events Produced",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.6227465527701406,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "eventsSent",
+                "type" : "timeseries",
+                "label" : "Events Sent",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.6043328458525739,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "receivedBytesFromDevices",
+                "type" : "timeseries",
+                "label" : "Received From Devices (bytes)",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.7829761270709421,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 604800000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1800000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "stack" : false,
+              "fontSize" : 10,
+              "fontColor" : "#545454",
+              "showTooltip" : true,
+              "tooltipIndividual" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "grid" : {
+                "verticalLines" : true,
+                "horizontalLines" : true,
+                "outlineWidth" : 0,
+                "color" : "#545454",
+                "backgroundColor" : null,
+                "tickColor" : "#DDDDDD"
+              },
+              "xaxis" : {
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454"
+              },
+              "yaxis" : {
+                "min" : null,
+                "max" : null,
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454",
+                "tickSize" : null,
+                "tickDecimals" : 0,
+                "ticksFormatter" : ""
+              },
+              "shadowSize" : 4,
+              "smoothLines" : true,
+              "comparisonEnabled" : false,
+              "timeForComparison" : "previousInterval",
+              "comparisonCustomIntervalValue" : 7200000,
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "title" : null,
+                "showLabels" : true
+              },
+              "customLegendEnabled" : false,
+              "dataKeysListForLabels" : [ ]
+            },
+            "title" : "Gateway General Chart Statistics",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 600
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : false,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "enableDataExport" : false,
+            "showLegend" : false,
+            "legendConfig" : {
+              "direction" : "row",
+              "position" : "bottom",
+              "sortDataKeys" : false,
+              "showMin" : false,
+              "showMax" : false,
+              "showAvg" : false,
+              "showTotal" : false,
+              "showLatest" : false
+            },
+            "borderRadius" : "4px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e79e0917-66eb-0baf-c6f6-f7fa079014c5",
+          "typeFullFqn" : "system.gateway_widgets.gateway_general_chart_statistics"
         }
       },
       "timewindow" : {
@@ -8152,13 +8474,30 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "56fe2cf5-f5f8-c1b9-ce71-ec03bbda890f" : {
+                  "sizeX" : 48,
+                  "sizeY" : 12,
+                  "row" : 10,
+                  "col" : 0
+                },
+                "e79e0917-66eb-0baf-c6f6-f7fa079014c5" : {
+                  "sizeX" : 48,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
-                "margin" : 10,
+                "columns" : 48,
+                "margin" : 12,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
