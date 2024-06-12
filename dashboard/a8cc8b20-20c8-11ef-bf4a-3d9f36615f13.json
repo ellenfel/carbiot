@@ -7277,7 +7277,7 @@
       "states" : {
         "default" : {
           "name" : "Akıllı Enerji İzleme - 2",
-          "root" : false,
+          "root" : true,
           "layouts" : {
             "main" : {
               "widgets" : {
@@ -7615,7 +7615,7 @@
         },
         "iotid" : {
           "name" : "iotId",
-          "root" : true,
+          "root" : false,
           "layouts" : {
             "main" : {
               "widgets" : {
