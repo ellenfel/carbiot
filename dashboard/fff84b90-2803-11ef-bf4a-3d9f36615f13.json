@@ -216,7 +216,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "gateway_devices_0",
+                "targetDashboardStateId" : "gateway_details",
                 "setEntityId" : true,
                 "stateEntityParamName" : "",
                 "openRightLayout" : false,
