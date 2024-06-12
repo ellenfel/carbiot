@@ -8010,7 +8010,7 @@
       "states" : {
         "default" : {
           "name" : "Akıllı Enerji İzleme - 2",
-          "root" : true,
+          "root" : false,
           "layouts" : {
             "main" : {
               "widgets" : {
@@ -8178,7 +8178,7 @@
         },
         "main_state" : {
           "name" : "Emelec I-Link Box SCADA System",
-          "root" : false,
+          "root" : true,
           "layouts" : {
             "main" : {
               "widgets" : {
