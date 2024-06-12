@@ -8993,6 +8993,216 @@
           "row" : 0,
           "col" : 0,
           "id" : "a782b35b-8a70-cde0-0b2d-246805ba9b5e"
+        },
+        "dfb69f6b-315e-c4c4-41e6-0d95134c7b53" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1694414782697,
+                  "endTimeMs" : 1694501182697
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "entitiesTitle" : "LoRa-WAN Bağlantı Kontrol Tablosu",
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : false,
+              "defaultSortOrder" : "entityName",
+              "useRowStyleFunction" : false
+            },
+            "title" : "LoRa-WAN Bağlantı Kontrol Tablosu",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "6462151f-cef5-e47a-95d9-a237817839db",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "devName",
+                "type" : "timeseries",
+                "label" : "Cihaz İsmi",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.9682080904655264,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Asset",
+                "type" : "timeseries",
+                "label" : "Saha",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.2949758916759242,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "devEUI",
+                "type" : "timeseries",
+                "label" : "devEUI",
+                "color" : "#f44336",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "return {\n    fontWeight: 600\n};",
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "return value ? '<span style=\"background: rgba(111, 116, 242, 0.08); border-radius: 16px; padding: 4px 8px; color: #5553AF;\">'+value+'</span>' : '';",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled"
+                },
+                "_hash" : 0.9849657557690075,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "rssi",
+                "type" : "timeseries",
+                "label" : "Alınan Sinyal Gücü",
+                "color" : "#ffc107",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "if (value <= -110) {\n    var textColor = '#FF0000';  // Redish color\n    var background = '255, 0, 0';  // RGB for red\n    return value ? '<span style=\"background: rgba(' + background + ', 0.08); border-radius: 16px; padding: 4px 8px; color: ' + textColor + ';\">' + value + ' dBm' + '</span>': '';\n} \nelse if (value > -110 && value <= -100) {\n    var textColor = '#FFA500';  // Orange-ish color\n    var background = '255, 165, 0';  // RGB for orange\n    return value ? '<span style=\"background: rgba(' + background + ', 0.08); border-radius: 16px; padding: 4px 8px; color: ' + textColor + ';\">' + value + ' dBm' + '</span>': '';\n} \nelse if (value > -100) {\n    var textColor = '#008594';  // Light blue color (like in your example)\n    var background = '111, 116, 242';  // RGB values you provided\n    return value ? '<span style=\"background: rgba(' + background + ', 0.08); border-radius: 16px; padding: 4px 8px; color: ' + textColor + ';\">' + value + ' dBm' + '</span>': '';\n} \nelse {\n    return 'No data';\n}\n",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled"
+                },
+                "_hash" : 0.4115546208948506,
+                "aggregationType" : "NONE",
+                "units" : "dBm",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "snr",
+                "type" : "timeseries",
+                "label" : "Gürültü Seviyesi",
+                "color" : "#607d8b",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "return {\n    color:'rgb(255, 106, 12)',\n    fontWeight: 600\n}",
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled"
+                },
+                "_hash" : 0.13035473220493987,
+                "aggregationType" : "NONE",
+                "units" : "dB",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "time",
+                "type" : "timeseries",
+                "label" : "Son Görülme",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "if(value){\n    var textColor = '#008594';\n    var background = '111, 116, 242';\n    \n    return value ? '<span style=\"background: rgba(111, 116, 242, 0.08); border-radius: 16px; padding: 4px 8px; color: #008594;\">'+value+'</span>' : '';\n} else {\n    return 'No data';\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled"
+                },
+                "_hash" : 0.159603879260668,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Active",
+                "type" : "timeseries",
+                "label" : "Durum",
+                "color" : "#4caf50",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "var color;\nif (value === \"true\") {\n    var text = 'ON'\n    color = '#198038';\n} else {\n    var text = 'Off'\n    color = 'red';\n}\nreturn '<div><span style=\"width: 4px; height: 4px; border-radius: 2px; background: '+color+'; display: inline-block; vertical-align: middle;\"></span><span style=\"padding-left: 8px;\">'+text+'</span></div>';",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled"
+                },
+                "_hash" : 0.1634590543268719,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : true,
+            "showTitleIcon" : true,
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "share",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "dfb69f6b-315e-c4c4-41e6-0d95134c7b53",
+          "typeFullFqn" : "system.cards.entities_table"
         }
       },
       "timewindow" : {
@@ -9370,13 +9580,24 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "dfb69f6b-315e-c4c4-41e6-0d95134c7b53" : {
+                  "sizeX" : 79,
+                  "sizeY" : 42,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
-                "margin" : 10,
+                "columns" : 48,
+                "margin" : 12,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
@@ -10209,6 +10430,26 @@
               "entityType" : "DEVICE",
               "id" : "e17e14b0-20c4-11ef-bf4a-3d9f36615f13"
             }
+          }
+        },
+        "6462151f-cef5-e47a-95d9-a237817839db" : {
+          "id" : "6462151f-cef5-e47a-95d9-a237817839db",
+          "alias" : "deneme",
+          "filter" : {
+            "type" : "deviceSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : {
+              "entityType" : "CUSTOMER",
+              "id" : "cc7d6280-47eb-11ee-ba8c-4f68eb1681f6"
+            },
+            "direction" : "FROM",
+            "maxLevel" : 2,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "Contains",
+            "deviceTypes" : [ "Analizör", "default" ]
           }
         }
       },
