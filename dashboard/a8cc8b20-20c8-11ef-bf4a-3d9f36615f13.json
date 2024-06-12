@@ -7115,6 +7115,422 @@
               }
             }
           }
+        },
+        "configuration" : {
+          "name" : "Configuration",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "connector_rpc" : {
+          "name" : "Connector RPC",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "connectors" : {
+          "name" : "Connectors",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_0" : {
+          "name" : "Gateway devices",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_9" : {
+          "name" : "gateway_devices_bacnet",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_6" : {
+          "name" : "gateway_devices_ble",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_8" : {
+          "name" : "gateway_devices_can",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_17" : {
+          "name" : "gateway_devices_custom",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_13" : {
+          "name" : "gateway_devices_ftp",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_3" : {
+          "name" : "gateway_devices_grpc",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_2" : {
+          "name" : "gateway_devices_modbus",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_1" : {
+          "name" : "gateway_devices_mqtt",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_16" : {
+          "name" : "gateway_devices_occp",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_10" : {
+          "name" : "gateway_devices_odbc",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_4" : {
+          "name" : "gateway_devices_opcua",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_5" : {
+          "name" : "gateway_devices_opcua_async",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_7" : {
+          "name" : "gateway_devices_request",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_11" : {
+          "name" : "gateway_devices_rest",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_12" : {
+          "name" : "gateway_devices_snmp",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_14" : {
+          "name" : "gateway_devices_socket",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gateway_devices_15" : {
+          "name" : "gateway_devices_xmpp",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "logs" : {
+          "name" : "Logs",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "connector_logs" : {
+          "name" : "Logs",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "remote_shell" : {
+          "name" : "Remote Shell",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "rpc" : {
+          "name" : "RPC",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "statistics" : {
+          "name" : "Statistics",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
