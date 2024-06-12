@@ -5360,191 +5360,6 @@
           "col" : 0,
           "id" : "489c59dc-f9ef-3651-366d-13a09da75097"
         },
-        "393f7e70-fe7d-631c-f342-275af419dd88" : {
-          "type" : "latest",
-          "sizeX" : 120,
-          "sizeY" : 4,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : null,
-              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da",
-              "filterId" : null,
-              "dataKeys" : [ {
-                "name" : "hwVersion",
-                "type" : "attribute",
-                "label" : "hwVersion",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.6514375730430242
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1689498991252,
-                  "endTimeMs" : 1689585391252
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgba(245, 245, 245, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "cardHtml" : "<div class=\"navbar\">\n    <a id='homeId' class=\"active\">\n        <i id='homeId' class=\"material-icons\">pie_chart</i>\n        <div id='homeId' class=\"menutext\">Emelec</div>\n    </a>\n    <a id='settingsId'>\n        <i id='settingsId' class=\"material-icons\">insert_chart</i>\n        <div id='settingsId' class=\"menutext\">Main Scada Screen</div>\n    </a>\n    <a id='chartsId'>\n        <i id='chartsId' class=\"material-icons\">timeline</i>\n        <div id='chartsId' class=\"menutext\">PD Trends</div>\n    </a>\n    <a id='historyId'>\n        <i id='historyId' class=\"material-icons\">list</i>\n        <div id='historyId' class=\"menutext\">Reporting</div>\n    </a>\n    <a id='mmsId'>\n        <i id='mmsId' class=\"material-icons\">device_hub</i>\n        <div id='mmsId' class=\"menutext\">LoRa-Wan Console</div>\n    </a>\n    <a id='documentsId'>\n        <i id='documentsId' class=\"material-icons\">attachment</i>\n        <div id='documentsId' class=\"menutext\">Settings</div>\n    </a>\n    <!-- Add the 8th element with pie_chart icon -->\n\n</div>\n",
-              "cardCss" : ".navbar {\n    list-style-type: none;\n    height: 100%;\n    background-color: rgb(45, 59, 72);\n}\n\n.navbar a {\n    height: 100%;\n    float: left;\n    padding: 0 15px 0 15px;\n    margin: 0 5px 0 5px;\n    color: white;\n    text-decoration: none;\n    text-align: center;\n    text-transform: uppercase;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.navbar a:hover {\n    color: white;\n    background-color: #142551;\n    -moz-border-radius: 5px 5px 5px 5px;\n    -webkit-border-radius: 5px 5px 5px 5px;\n    border-radius: 5px 5px 5px 5px;\n    border: 0 solid #e0e0e0;\n}\n\n.active {\n    color: #fafafa !important;\n    background-color: #003366 !important;\n    -moz-border-radius: 5px 5px 5px 5px;\n    -webkit-border-radius: 5px 5px 5px 5px;\n    border-radius: 5px 5px 5px 5px;\n}\n\n.material-icons {\n    font-size: 20px;\n    padding-right: 5px;\n}\n\n[data-md-tooltip] {\n    position: relative;\n}\n\n@media screen and (max-width: 960px) {\n    .menutext {\n        display: none;\n    }\n\n    [data-md-tooltip]:before {\n        content: attr(data-md-tooltip);\n        position: absolute;\n        bottom: -35px;\n        left: 50%;\n        padding: 8px;\n        transform: translateX(-50%) scale(0);\n        transition: transform 0.3s ease-in-out;\n        transform-origin: top;\n        background: #616161e6;\n        color: white;\n        border-radius: 2px;\n        font-size: 12px;\n    }\n\n    [data-md-tooltip]:hover:before {\n        transform: translateX(-50%) scale(1);\n    }\n\n    .material-icons {\n        font-size: 28px;\n    }\n}\n"
-            },
-            "title" : "New HTML Value Card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : {
-              "border-radius" : "10px 10px 10px 10px",
-              "-moz-border-radius" : "10px 10px 10px 10px",
-              "-webkit-border-radius" : "10px 10px 10px 10px",
-              "border" : "0px hidden #000000"
-            },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : {
-              "headerButton" : [ ],
-              "elementClick" : [ {
-                "name" : "mmsId",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "lora",
-                "setEntityId" : true,
-                "stateEntityParamName" : "mu",
-                "openRightLayout" : null,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "d3710d00-ae4d-9c0b-4762-a5bf3590c6da"
-              }, {
-                "name" : "settingsId",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "manevra",
-                "setEntityId" : false,
-                "stateEntityParamName" : "tool",
-                "openRightLayout" : null,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "182ec0f4-82d2-4e1f-1f6f-3ee4419c145c"
-              }, {
-                "name" : "chartsId",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "pd_trends",
-                "setEntityId" : false,
-                "stateEntityParamName" : null,
-                "openRightLayout" : null,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "039cf6ca-1b2a-8b16-839f-6ce5b8e0c3c7"
-              }, {
-                "name" : "maintenanceId",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "onarim",
-                "setEntityId" : false,
-                "stateEntityParamName" : null,
-                "openRightLayout" : null,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "4bf29254-8f81-bbad-4dac-f88a17630030"
-              }, {
-                "name" : "documentsId",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "ayarlar",
-                "setEntityId" : false,
-                "stateEntityParamName" : null,
-                "openRightLayout" : null,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "663f127a-9a2c-afbb-e2f5-3eec1d414065"
-              }, {
-                "name" : "homeId",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "main_state",
-                "setEntityId" : true,
-                "stateEntityParamName" : null,
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "858f01a5-8cb7-82a9-872e-7c885251d9ab"
-              }, {
-                "name" : "historyId",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "raporlama",
-                "setEntityId" : false,
-                "stateEntityParamName" : null,
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "667e289e-3ef4-e3bd-544c-56a5b92b71ff"
-              }, {
-                "name" : "maneuverEnergyId",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "maneuverenergyid",
-                "setEntityId" : false,
-                "stateEntityParamName" : null,
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "6451a520-a6b1-90ff-1169-879b03ce57a0"
-              } ]
-            },
-            "displayTimewindow" : true,
-            "decimals" : null,
-            "enableDataExport" : false,
-            "titleTooltip" : ""
-          },
-          "id" : "393f7e70-fe7d-631c-f342-275af419dd88",
-          "typeFullFqn" : "system.cards.html_value_card"
-        },
         "f13d62a7-4662-1392-8d05-d605eb23f78b" : {
           "typeFullFqn" : "system.power_consumption_range_chart",
           "type" : "timeseries",
@@ -9389,6 +9204,191 @@
           },
           "id" : "c003c03b-dfd3-c6ce-c862-96dd777734a6",
           "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "b930d978-fee3-dee3-e9e4-069a4f5a7c01" : {
+          "type" : "latest",
+          "sizeX" : 120,
+          "sizeY" : 4,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "f6bd11cc-beed-46c7-d972-672e7dddb5da",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "hwVersion",
+                "type" : "attribute",
+                "label" : "hwVersion",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6514375730430242
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1689498991252,
+                  "endTimeMs" : 1689585391252
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(245, 245, 245, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class=\"navbar\">\n    <a id='homeId' class=\"active\">\n        <i id='homeId' class=\"material-icons\">pie_chart</i>\n        <div id='homeId' class=\"menutext\">Emelec</div>\n    </a>\n    <a id='settingsId'>\n        <i id='settingsId' class=\"material-icons\">insert_chart</i>\n        <div id='settingsId' class=\"menutext\">Main Scada Screen</div>\n    </a>\n    <a id='chartsId'>\n        <i id='chartsId' class=\"material-icons\">timeline</i>\n        <div id='chartsId' class=\"menutext\">PD Trends</div>\n    </a>\n    <a id='historyId'>\n        <i id='historyId' class=\"material-icons\">list</i>\n        <div id='historyId' class=\"menutext\">Reporting</div>\n    </a>\n    <a id='mmsId'>\n        <i id='mmsId' class=\"material-icons\">device_hub</i>\n        <div id='mmsId' class=\"menutext\">LoRa-Wan Console</div>\n    </a>\n    <a id='iotId'>\n        <i id='iotId' class=\"material-icons\">sensors</i>\n        <div id='iotId' class=\"menutext\">IoT Gateway</div>\n    </a>\n    <a id='documentsId'>\n        <i id='documentsId' class=\"material-icons\">attachment</i>\n        <div id='documentsId' class=\"menutext\">Settings</div>\n    </a>\n    <!-- Add the 8th element with pie_chart icon -->\n\n</div>\n",
+              "cardCss" : ".navbar {\n    list-style-type: none;\n    height: 100%;\n    background-color: rgb(45, 59, 72);\n}\n\n.navbar a {\n    height: 100%;\n    float: left;\n    padding: 0 15px 0 15px;\n    margin: 0 5px 0 5px;\n    color: white;\n    text-decoration: none;\n    text-align: center;\n    text-transform: uppercase;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.navbar a:hover {\n    color: white;\n    background-color: #142551;\n    -moz-border-radius: 5px 5px 5px 5px;\n    -webkit-border-radius: 5px 5px 5px 5px;\n    border-radius: 5px 5px 5px 5px;\n    border: 0 solid #e0e0e0;\n}\n\n.active {\n    color: #fafafa !important;\n    background-color: #003366 !important;\n    -moz-border-radius: 5px 5px 5px 5px;\n    -webkit-border-radius: 5px 5px 5px 5px;\n    border-radius: 5px 5px 5px 5px;\n}\n\n.material-icons {\n    font-size: 20px;\n    padding-right: 5px;\n}\n\n[data-md-tooltip] {\n    position: relative;\n}\n\n@media screen and (max-width: 960px) {\n    .menutext {\n        display: none;\n    }\n\n    [data-md-tooltip]:before {\n        content: attr(data-md-tooltip);\n        position: absolute;\n        bottom: -35px;\n        left: 50%;\n        padding: 8px;\n        transform: translateX(-50%) scale(0);\n        transition: transform 0.3s ease-in-out;\n        transform-origin: top;\n        background: #616161e6;\n        color: white;\n        border-radius: 2px;\n        font-size: 12px;\n    }\n\n    [data-md-tooltip]:hover:before {\n        transform: translateX(-50%) scale(1);\n    }\n\n    .material-icons {\n        font-size: 28px;\n    }\n}\n"
+            },
+            "title" : "New HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "border-radius" : "10px 10px 10px 10px",
+              "-moz-border-radius" : "10px 10px 10px 10px",
+              "-webkit-border-radius" : "10px 10px 10px 10px",
+              "border" : "0px hidden #000000"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "headerButton" : [ ],
+              "elementClick" : [ {
+                "name" : "mmsId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "lora",
+                "setEntityId" : true,
+                "stateEntityParamName" : "mu",
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d3710d00-ae4d-9c0b-4762-a5bf3590c6da"
+              }, {
+                "name" : "settingsId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "manevra",
+                "setEntityId" : false,
+                "stateEntityParamName" : "tool",
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "182ec0f4-82d2-4e1f-1f6f-3ee4419c145c"
+              }, {
+                "name" : "chartsId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "pd_trends",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "039cf6ca-1b2a-8b16-839f-6ce5b8e0c3c7"
+              }, {
+                "name" : "iotId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "iotid",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "4bf29254-8f81-bbad-4dac-f88a17630030"
+              }, {
+                "name" : "documentsId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "ayarlar",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : null,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "663f127a-9a2c-afbb-e2f5-3eec1d414065"
+              }, {
+                "name" : "homeId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "main_state",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "858f01a5-8cb7-82a9-872e-7c885251d9ab"
+              }, {
+                "name" : "historyId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "raporlama",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "667e289e-3ef4-e3bd-544c-56a5b92b71ff"
+              }, {
+                "name" : "maneuverEnergyId",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "maneuverenergyid",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "6451a520-a6b1-90ff-1169-879b03ce57a0"
+              } ]
+            },
+            "displayTimewindow" : true,
+            "decimals" : null,
+            "enableDataExport" : false,
+            "titleTooltip" : ""
+          },
+          "id" : "b930d978-fee3-dee3-e9e4-069a4f5a7c01",
+          "typeFullFqn" : "system.cards.html_value_card"
         }
       },
       "timewindow" : {
@@ -9688,12 +9688,6 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "393f7e70-fe7d-631c-f342-275af419dd88" : {
-                  "sizeX" : 64,
-                  "sizeY" : 2,
-                  "row" : 0,
-                  "col" : 0
-                },
                 "f13d62a7-4662-1392-8d05-d605eb23f78b" : {
                   "sizeX" : 49,
                   "sizeY" : 13,
@@ -9729,6 +9723,12 @@
                   "sizeY" : 13,
                   "row" : 28,
                   "col" : 49
+                },
+                "b930d978-fee3-dee3-e9e4-069a4f5a7c01" : {
+                  "sizeX" : 64,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
