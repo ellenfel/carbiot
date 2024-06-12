@@ -6983,6 +6983,70 @@
           "col" : 0,
           "id" : "86c49c96-ff8c-84fd-c883-71301a10c5a8",
           "typeFullFqn" : "system.control_widgets.rpc_debug_terminal"
+        },
+        "f5b9af49-8afd-97bc-ed4c-41f049f4add6" : {
+          "type" : "timeseries",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "710a653b-211c-4a83-645e-c7d552798795",
+              "filterId" : null,
+              "dataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 43200000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 25000
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "isConnectorLog" : true,
+              "connectorLogState" : "connector_logs"
+            },
+            "title" : "Gateway Logs",
+            "showTitleIcon" : false,
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "enableDataExport" : false,
+            "showLegend" : false,
+            "useDashboardTimewindow" : false,
+            "displayTimewindow" : true,
+            "titleTooltip" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "borderRadius" : "4px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f5b9af49-8afd-97bc-ed4c-41f049f4add6",
+          "typeFullFqn" : "system.gateway_widgets.gateway_logs"
         }
       },
       "timewindow" : {
@@ -7804,7 +7868,14 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "f5b9af49-8afd-97bc-ed4c-41f049f4add6" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
