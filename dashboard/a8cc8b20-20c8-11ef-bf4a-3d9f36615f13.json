@@ -7436,30 +7436,34 @@
             "main" : {
               "widgets" : {
                 "86744c1d-2389-91a3-2f69-51a4fd2ff6a6" : {
-                  "sizeX" : 24,
-                  "sizeY" : 6,
+                  "sizeX" : 48,
+                  "sizeY" : 12,
                   "row" : 0,
                   "col" : 0
                 },
                 "c84edc91-356a-7f7e-648b-b5c28477586e" : {
-                  "sizeX" : 24,
-                  "sizeY" : 5,
-                  "row" : 6,
+                  "sizeX" : 48,
+                  "sizeY" : 10,
+                  "row" : 12,
                   "col" : 0
                 },
                 "86c49c96-ff8c-84fd-c883-71301a10c5a8" : {
-                  "sizeX" : 24,
-                  "sizeY" : 4,
-                  "row" : 11,
+                  "sizeX" : 48,
+                  "sizeY" : 8,
+                  "row" : 22,
                   "col" : 0
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
-                "margin" : 10,
+                "columns" : 48,
+                "margin" : 12,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : false,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
