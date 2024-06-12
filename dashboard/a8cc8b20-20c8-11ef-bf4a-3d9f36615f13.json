@@ -8505,6 +8505,8 @@
             "settings" : {
               "layout" : "default",
               "autoScale" : true,
+              "clockwise" : false,
+              "sortSeries" : false,
               "totalValueFont" : {
                 "family" : "Roboto",
                 "size" : 24,
@@ -8539,7 +8541,7 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "showTooltip" : true,
-              "tooltipValueType" : "percentage",
+              "tooltipValueType" : "absolute",
               "tooltipValueDecimals" : 0,
               "tooltipValueFont" : {
                 "family" : "Roboto",
@@ -8560,9 +8562,7 @@
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
                 }
-              },
-              "clockwise" : false,
-              "sortSeries" : false
+              }
             },
             "title" : "Doughnut",
             "dropShadow" : true,
@@ -8692,6 +8692,8 @@
             "settings" : {
               "layout" : "default",
               "autoScale" : true,
+              "clockwise" : false,
+              "sortSeries" : false,
               "totalValueFont" : {
                 "family" : "Roboto",
                 "size" : 24,
@@ -8726,7 +8728,7 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "showTooltip" : true,
-              "tooltipValueType" : "percentage",
+              "tooltipValueType" : "absolute",
               "tooltipValueDecimals" : 0,
               "tooltipValueFont" : {
                 "family" : "Roboto",
@@ -8747,9 +8749,7 @@
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
                 }
-              },
-              "clockwise" : false,
-              "sortSeries" : false
+              }
             },
             "title" : "Doughnut",
             "dropShadow" : true,
@@ -8879,6 +8879,8 @@
             "settings" : {
               "layout" : "default",
               "autoScale" : true,
+              "clockwise" : false,
+              "sortSeries" : false,
               "totalValueFont" : {
                 "family" : "Roboto",
                 "size" : 24,
@@ -8913,7 +8915,7 @@
               },
               "legendValueColor" : "rgba(0, 0, 0, 0.87)",
               "showTooltip" : true,
-              "tooltipValueType" : "percentage",
+              "tooltipValueType" : "absolute",
               "tooltipValueDecimals" : 0,
               "tooltipValueFont" : {
                 "family" : "Roboto",
@@ -8934,9 +8936,7 @@
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
                 }
-              },
-              "clockwise" : false,
-              "sortSeries" : false
+              }
             },
             "title" : "Doughnut",
             "dropShadow" : true,
