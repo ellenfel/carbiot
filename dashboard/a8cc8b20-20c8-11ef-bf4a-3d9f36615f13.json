@@ -9317,19 +9317,19 @@
                   "col" : 0
                 },
                 "c15475f1-5021-5c75-3e40-ef53207ee314" : {
-                  "sizeX" : 16,
+                  "sizeX" : 15,
                   "sizeY" : 13,
                   "row" : 2,
                   "col" : 49
                 },
                 "713d9485-2059-bf73-bd44-a4a25a04e8ae" : {
-                  "sizeX" : 16,
+                  "sizeX" : 15,
                   "sizeY" : 13,
                   "row" : 15,
                   "col" : 49
                 },
                 "a782b35b-8a70-cde0-0b2d-246805ba9b5e" : {
-                  "sizeX" : 16,
+                  "sizeX" : 15,
                   "sizeY" : 13,
                   "row" : 28,
                   "col" : 49
@@ -9341,7 +9341,7 @@
                 "margin" : 16,
                 "outerMargin" : false,
                 "backgroundSizeMode" : "100%",
-                "autoFillHeight" : false,
+                "autoFillHeight" : true,
                 "backgroundImageUrl" : "tb-image:YWvEsWxsxLFfZW5lcmppX2lfemxlbWVfMl9kYXNoYm9hcmRfZGVmYXVsdF9iYWNrZ3JvdW5kLnN2Zw==:IkFrxLFsbMSxIEVuZXJqaSDEsHpsZW1lIC0gMiIgZGFzaGJvYXJkIGRlZmF1bHQgYmFja2dyb3VuZA==;data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnODY5MCIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iODMuNzg1bW0iIHdpZHRoPSIxNjkuMzNtbSIgdmVyc2lvbj0iMS4xIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDU5OS45OTk5OCAyOTYuODc1IiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iPgogPGRlZnMgaWQ9ImRlZnM4NjkyIj4KICA8cmFkaWFsR3JhZGllbnQgaWQ9InJhZGlhbEdyYWRpZW50OTI0OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN5PSI4MDguMjciIGN4PSItODQ0LjI5IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTQxMyAtLjAxMjgzMSAuMDA3ODM0NCAuNjk2ODUgMTEyLjk1IDIzMS4yOCkiIHI9IjMwMCI+CiAgIDxzdG9wIGlkPSJzdG9wOTI0MiIgc3RvcC1jb2xvcj0iIzFjMzA2NyIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIGlkPSJzdG9wOTI0NCIgc3RvcC1jb2xvcj0iIzEwMjA0NyIgb2Zmc2V0PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KIDwvZGVmcz4KIDxnIGlkPSJsYXllcjIiPgogIDxyZWN0IGlkPSJyZWN0OTIzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE0MCAtNjU0LjA2KSIgaGVpZ2h0PSIyOTYuODgiIHdpZHRoPSI2MDAiIHk9IjY1NC4wNiIgeD0iLTExNDAiIGZpbGw9InVybCgjcmFkaWFsR3JhZGllbnQ5MjQ4KSIvPgogPC9nPgo8L3N2Zz4K",
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
