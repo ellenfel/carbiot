@@ -9581,20 +9581,23 @@
       },
       "timewindow" : {
         "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
         "selectedTab" : 0,
         "realtime" : {
           "realtimeType" : 0,
-          "timewindowMs" : 7200000,
+          "timewindowMs" : 86400000,
           "quickInterval" : "CURRENT_DAY",
-          "interval" : 300000
+          "interval" : 1800000
         },
         "aggregation" : {
           "type" : "AVG",
           "limit" : 200
-        }
+        },
+        "timezone" : null
       },
       "states" : {
         "default" : {
