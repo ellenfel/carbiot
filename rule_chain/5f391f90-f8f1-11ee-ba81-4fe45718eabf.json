@@ -1456,8 +1456,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 47,
-        "layoutY" : 838
+        "layoutX" : 51,
+        "layoutY" : 855
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1476,7 +1476,7 @@
         "entityType" : "RULE_NODE",
         "id" : "6404b210-fcba-11ee-ba81-4fe45718eabf"
       },
-      "name" : "West",
+      "name" : "entire factory",
       "queueName" : "Main",
       "ruleChainId" : null,
       "singletonMode" : false,
