@@ -130,76 +130,60 @@
       "toIndex" : 29,
       "type" : "Success"
     }, {
-      "fromIndex" : 26,
-      "toIndex" : 43,
-      "type" : "Success"
-    }, {
       "fromIndex" : 27,
       "toIndex" : 29,
       "type" : "Success"
     }, {
-      "fromIndex" : 29,
-      "toIndex" : 30,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 30,
-      "toIndex" : 31,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 31,
-      "toIndex" : 32,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 35,
-      "toIndex" : 42,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 36,
-      "toIndex" : 41,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 37,
-      "toIndex" : 40,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 38,
+      "fromIndex" : 32,
       "toIndex" : 39,
       "type" : "Success"
     }, {
+      "fromIndex" : 33,
+      "toIndex" : 38,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 34,
+      "toIndex" : 37,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 35,
+      "toIndex" : 36,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 36,
+      "toIndex" : 42,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 42,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 38,
+      "toIndex" : 42,
+      "type" : "Success"
+    }, {
       "fromIndex" : 39,
-      "toIndex" : 46,
+      "toIndex" : 42,
       "type" : "Success"
     }, {
       "fromIndex" : 40,
-      "toIndex" : 46,
-      "type" : "Success"
+      "toIndex" : 31,
+      "type" : "Post telemetry"
     }, {
       "fromIndex" : 41,
-      "toIndex" : 46,
+      "toIndex" : 40,
       "type" : "Success"
     }, {
       "fromIndex" : 42,
-      "toIndex" : 46,
+      "toIndex" : 41,
       "type" : "Success"
     }, {
-      "fromIndex" : 44,
-      "toIndex" : 34,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 45,
+      "fromIndex" : 43,
       "toIndex" : 44,
       "type" : "Success"
     }, {
-      "fromIndex" : 46,
-      "toIndex" : 45,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 47,
-      "toIndex" : 48,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 48,
-      "toIndex" : 46,
+      "fromIndex" : 44,
+      "toIndex" : 42,
       "type" : "Success"
     } ],
     "firstNodeIndex" : null,
@@ -1036,74 +1020,6 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 799,
-        "layoutY" : 268
-      },
-      "configuration" : {
-        "version" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "5feec210-f940-11ee-ba81-4fe45718eabf"
-      },
-      "name" : "synchronization start",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transaction.TbSynchronizationBeginNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1061,
-        "layoutY" : 262
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "if(msg[\"Active Energy\"]){\n\tmsg.active = true;\n\n\t// Carbon intensity factor in kgCO2/kWh (example: coal = 0.9 kgCO2/kWh)\n    // carbonIntensityFactor = 0.9;\n\n\t// Active energy consumption assumed in kWh\n\n\t// Calculation of carbon intensity in kilograms of CO2 per kilowatt-hour (kgCO2/kWh)\n\n\tmsg.emission = msg[\"Active Energy\"] * 0.9;\n\tmsg.intensity = (msg[\"Active Energy\"] * 0.9) / msg[\"Active Energy\"];\n\n\t// Output the results\n\t//console.log(\"Carbon Emissions:\", carbonEmissions, \"kgCO2\");\n\t//console.log(\"Carbon Intensity:\", carbonIntensity, \"kgCO2/kWh\");\n\n\n\treturn {msg: msg, metadata: metadata, msgType: msgType};\n}\nelse{return {msg: msg, metadata: metadata, msgType: msgType};}",
-        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "5feee920-f940-11ee-ba81-4fe45718eabf"
-      },
-      "name" : "active - emission",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1054,
-        "layoutY" : 378
-      },
-      "configuration" : {
-        "version" : 0
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "5feee921-f940-11ee-ba81-4fe45718eabf"
-      },
-      "name" : "synchronization end",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transaction.TbSynchronizationEndNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 57,
         "layoutY" : 1121
       },
@@ -1361,32 +1277,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 542,
-        "layoutY" : 707
-      },
-      "configuration" : {
-        "dataMapping" : {
-          "name" : "originatorName"
-        },
-        "ignoreNullStrings" : false,
-        "fetchTo" : "DATA"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "8b5cac00-fa53-11ee-ba81-4fe45718eabf"
-      },
-      "name" : "originator fields",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
     }, {
       "additionalInfo" : {
         "layoutX" : 867,
