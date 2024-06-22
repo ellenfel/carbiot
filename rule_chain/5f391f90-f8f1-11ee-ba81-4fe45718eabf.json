@@ -442,8 +442,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 37,
-        "layoutY" : 724
+        "layoutX" : 234,
+        "layoutY" : 677
       },
       "configuration" : {
         "msgCount" : 0,
@@ -526,8 +526,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 249,
-        "layoutY" : 64
+        "layoutX" : 251,
+        "layoutY" : 61
       },
       "configuration" : {
         "msgCount" : 0,
@@ -722,8 +722,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 220,
-        "layoutY" : 723
+        "layoutX" : 236,
+        "layoutY" : 722
       },
       "configuration" : {
         "msgCount" : 0,
