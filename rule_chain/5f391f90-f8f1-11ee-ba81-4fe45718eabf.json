@@ -358,8 +358,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 35,
-        "layoutY" : 479
+        "layoutX" : 51,
+        "layoutY" : 409
       },
       "configuration" : {
         "msgCount" : 0,
@@ -386,8 +386,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 36,
-        "layoutY" : 529
+        "layoutX" : 52,
+        "layoutY" : 459
       },
       "configuration" : {
         "msgCount" : 0,
@@ -414,8 +414,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 36,
-        "layoutY" : 577
+        "layoutX" : 52,
+        "layoutY" : 507
       },
       "configuration" : {
         "msgCount" : 0,
@@ -442,8 +442,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 234,
-        "layoutY" : 677
+        "layoutX" : 260,
+        "layoutY" : 653
       },
       "configuration" : {
         "msgCount" : 0,
@@ -470,8 +470,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 36,
-        "layoutY" : 1121
+        "layoutX" : 55,
+        "layoutY" : 869
       },
       "configuration" : {
         "msgCount" : 0,
@@ -498,8 +498,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 34,
-        "layoutY" : 1174
+        "layoutX" : 56,
+        "layoutY" : 913
       },
       "configuration" : {
         "msgCount" : 0,
@@ -638,8 +638,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 238,
-        "layoutY" : 480
+        "layoutX" : 254,
+        "layoutY" : 410
       },
       "configuration" : {
         "msgCount" : 0,
@@ -666,8 +666,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 237,
-        "layoutY" : 526
+        "layoutX" : 253,
+        "layoutY" : 456
       },
       "configuration" : {
         "msgCount" : 0,
@@ -694,8 +694,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 236,
-        "layoutY" : 573
+        "layoutX" : 252,
+        "layoutY" : 503
       },
       "configuration" : {
         "msgCount" : 0,
@@ -722,8 +722,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 236,
-        "layoutY" : 722
+        "layoutX" : 262,
+        "layoutY" : 698
       },
       "configuration" : {
         "msgCount" : 0,
@@ -750,8 +750,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 243,
-        "layoutY" : 1059
+        "layoutX" : 262,
+        "layoutY" : 853
       },
       "configuration" : {
         "msgCount" : 0,
@@ -778,8 +778,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 243,
-        "layoutY" : 1109
+        "layoutX" : 263,
+        "layoutY" : 899
       },
       "configuration" : {
         "msgCount" : 0,
@@ -806,8 +806,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 243,
-        "layoutY" : 1162
+        "layoutX" : 262,
+        "layoutY" : 946
       },
       "configuration" : {
         "msgCount" : 0,
@@ -834,8 +834,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 241,
-        "layoutY" : 1215
+        "layoutX" : 265,
+        "layoutY" : 995
       },
       "configuration" : {
         "msgCount" : 0,
@@ -862,8 +862,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 34,
-        "layoutY" : 1222
+        "layoutX" : 55,
+        "layoutY" : 958
       },
       "configuration" : {
         "msgCount" : 0,
@@ -918,8 +918,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 244,
-        "layoutY" : 1266
+        "layoutX" : 265,
+        "layoutY" : 1041
       },
       "configuration" : {
         "msgCount" : 0,
@@ -946,8 +946,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 34,
-        "layoutY" : 1272
+        "layoutX" : 54,
+        "layoutY" : 1004
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1417,6 +1417,118 @@
       "id" : {
         "entityType" : "RULE_NODE",
         "id" : "fd281a70-309c-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "Enerji Analizörü",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 55,
+        "layoutY" : 1050
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {\n    \"Active Enegy-Ex\": 402948,\n    \"Active Enegy-Im\": 4425918,\n    \"Active Power\": 652.8,\n    \"Cos Phi\": 0.995,\n    \"Current L1\": 10.24,\n    \"Current L2\": 10.24,\n    \"Current L3\": 7.36,\n    \"Frequency\": 50,\n    \"Reactive EnergyIn\": 133.704,\n    \"Reactive EnergyKa\": 388.767,\n    \"Reactive Power\": 64,\n    \"Voltage L1-N\": 240.4,\n    \"Voltage L2-N\": 240.1,\n    \"Voltage L3-N\": 241.4,\n    \"devEUI\": \"24e124468d191551\",\n    \"devName\": \"A-MHC02\",\n    \"rssi\": -92,\n    \"snr\": 11.2,\n    \"time\": \"2023-12-08 11:44:24\",\n    \"Active\": true,\n    \"CurrentTotal\": 27.84,\n    \"Active Energy\": 4425918,\n    \"binaryKey\": generateRandomBinary(5) // Add a new key for 5-digit binary\n};\n\nfunction generateRandomBinary(length) {\n    var binaryString = \"\";\n    for (var i = 0; i < length; i++) {\n        binaryString += Math.round(Math.random()).toString();\n    }\n    return binaryString;\n}\n\nfunction getRandomFluctuation(value) {\n    var percentageChange = (Math.random() * 10 - 5) / 100; // Random fluctuation within +/-5%\n    return value * (1 + percentageChange);\n}\n\n// Apply random fluctuations to numeric values in msg object\nfor (var key in msg) {\n    if (typeof msg[key] === 'number') {\n        msg[key] = getRandomFluctuation(msg[key]);\n    }\n}\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"sayac\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : null,
+        "originatorId" : "396f50a0-f8f0-11ee-ba81-4fe45718eabf",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f03d4280-309d-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "Enerji Analizörü",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 56,
+        "layoutY" : 1094
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {\n    \"Active Enegy-Ex\": 402948,\n    \"Active Enegy-Im\": 4425918,\n    \"Active Power\": 652.8,\n    \"Cos Phi\": 0.995,\n    \"Current L1\": 10.24,\n    \"Current L2\": 10.24,\n    \"Current L3\": 7.36,\n    \"Frequency\": 50,\n    \"Reactive EnergyIn\": 133.704,\n    \"Reactive EnergyKa\": 388.767,\n    \"Reactive Power\": 64,\n    \"Voltage L1-N\": 240.4,\n    \"Voltage L2-N\": 240.1,\n    \"Voltage L3-N\": 241.4,\n    \"devEUI\": \"24e124468d191551\",\n    \"devName\": \"A-MHC02\",\n    \"rssi\": -92,\n    \"snr\": 11.2,\n    \"time\": \"2023-12-08 11:44:24\",\n    \"Active\": true,\n    \"CurrentTotal\": 27.84,\n    \"Active Energy\": 4425918,\n    \"binaryKey\": generateRandomBinary(5) // Add a new key for 5-digit binary\n};\n\nfunction generateRandomBinary(length) {\n    var binaryString = \"\";\n    for (var i = 0; i < length; i++) {\n        binaryString += Math.round(Math.random()).toString();\n    }\n    return binaryString;\n}\n\nfunction getRandomFluctuation(value) {\n    var percentageChange = (Math.random() * 10 - 5) / 100; // Random fluctuation within +/-5%\n    return value * (1 + percentageChange);\n}\n\n// Apply random fluctuations to numeric values in msg object\nfor (var key in msg) {\n    if (typeof msg[key] === 'number') {\n        msg[key] = getRandomFluctuation(msg[key]);\n    }\n}\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"sayac\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : null,
+        "originatorId" : "397432a0-f8f0-11ee-ba81-4fe45718eabf",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f03d6990-309d-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "Enerji Analizörü",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 267,
+        "layoutY" : 1090
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {\n    \"Active Enegy-Ex\": 402948,\n    \"Active Enegy-Im\": 4425918,\n    \"Active Power\": 652.8,\n    \"Cos Phi\": 0.995,\n    \"Current L1\": 10.24,\n    \"Current L2\": 10.24,\n    \"Current L3\": 7.36,\n    \"Frequency\": 50,\n    \"Reactive EnergyIn\": 133.704,\n    \"Reactive EnergyKa\": 388.767,\n    \"Reactive Power\": 64,\n    \"Voltage L1-N\": 240.4,\n    \"Voltage L2-N\": 240.1,\n    \"Voltage L3-N\": 241.4,\n    \"devEUI\": \"24e124468d191551\",\n    \"devName\": \"A-MHC02\",\n    \"rssi\": -92,\n    \"snr\": 11.2,\n    \"time\": \"2023-12-08 11:44:24\",\n    \"Active\": true,\n    \"CurrentTotal\": 27.84,\n    \"Active Energy\": 4425918,\n    \"binaryKey\": generateRandomBinary(5) // Add a new key for 5-digit binary\n};\n\nfunction generateRandomBinary(length) {\n    var binaryString = \"\";\n    for (var i = 0; i < length; i++) {\n        binaryString += Math.round(Math.random()).toString();\n    }\n    return binaryString;\n}\n\nfunction getRandomFluctuation(value) {\n    var percentageChange = (Math.random() * 10 - 5) / 100; // Random fluctuation within +/-5%\n    return value * (1 + percentageChange);\n}\n\n// Apply random fluctuations to numeric values in msg object\nfor (var key in msg) {\n    if (typeof msg[key] === 'number') {\n        msg[key] = getRandomFluctuation(msg[key]);\n    }\n}\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"sayac\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : null,
+        "originatorId" : "3978ed90-f8f0-11ee-ba81-4fe45718eabf",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f03d6991-309d-11ef-bf4a-3d9f36615f13"
+      },
+      "name" : "Enerji Analizörü",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 266,
+        "layoutY" : 1136
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {\n    \"Active Enegy-Ex\": 402948,\n    \"Active Enegy-Im\": 4425918,\n    \"Active Power\": 652.8,\n    \"Cos Phi\": 0.995,\n    \"Current L1\": 10.24,\n    \"Current L2\": 10.24,\n    \"Current L3\": 7.36,\n    \"Frequency\": 50,\n    \"Reactive EnergyIn\": 133.704,\n    \"Reactive EnergyKa\": 388.767,\n    \"Reactive Power\": 64,\n    \"Voltage L1-N\": 240.4,\n    \"Voltage L2-N\": 240.1,\n    \"Voltage L3-N\": 241.4,\n    \"devEUI\": \"24e124468d191551\",\n    \"devName\": \"A-MHC02\",\n    \"rssi\": -92,\n    \"snr\": 11.2,\n    \"time\": \"2023-12-08 11:44:24\",\n    \"Active\": true,\n    \"CurrentTotal\": 27.84,\n    \"Active Energy\": 4425918,\n    \"binaryKey\": generateRandomBinary(5) // Add a new key for 5-digit binary\n};\n\nfunction generateRandomBinary(length) {\n    var binaryString = \"\";\n    for (var i = 0; i < length; i++) {\n        binaryString += Math.round(Math.random()).toString();\n    }\n    return binaryString;\n}\n\nfunction getRandomFluctuation(value) {\n    var percentageChange = (Math.random() * 10 - 5) / 100; // Random fluctuation within +/-5%\n    return value * (1 + percentageChange);\n}\n\n// Apply random fluctuations to numeric values in msg object\nfor (var key in msg) {\n    if (typeof msg[key] === 'number') {\n        msg[key] = getRandomFluctuation(msg[key]);\n    }\n}\n\nreturn {\n    msg: msg,\n    metadata: {\n        deviceType: \"sayac\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : null,
+        "originatorId" : "397c21e0-f8f0-11ee-ba81-4fe45718eabf",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f03d90a0-309d-11ef-bf4a-3d9f36615f13"
       },
       "name" : "Enerji Analizörü",
       "queueName" : "Main",
