@@ -358,8 +358,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 44,
-        "layoutY" : 588
+        "layoutX" : 35,
+        "layoutY" : 479
       },
       "configuration" : {
         "msgCount" : 0,
@@ -386,8 +386,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 44,
-        "layoutY" : 641
+        "layoutX" : 36,
+        "layoutY" : 529
       },
       "configuration" : {
         "msgCount" : 0,
@@ -414,8 +414,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 42,
-        "layoutY" : 694
+        "layoutX" : 36,
+        "layoutY" : 577
       },
       "configuration" : {
         "msgCount" : 0,
@@ -442,8 +442,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 42,
-        "layoutY" : 744
+        "layoutX" : 37,
+        "layoutY" : 724
       },
       "configuration" : {
         "msgCount" : 0,
@@ -470,8 +470,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 42,
-        "layoutY" : 797
+        "layoutX" : 36,
+        "layoutY" : 1121
       },
       "configuration" : {
         "msgCount" : 0,
@@ -498,8 +498,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 40,
-        "layoutY" : 850
+        "layoutX" : 34,
+        "layoutY" : 1174
       },
       "configuration" : {
         "msgCount" : 0,
@@ -638,8 +638,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 254,
-        "layoutY" : 522
+        "layoutX" : 238,
+        "layoutY" : 480
       },
       "configuration" : {
         "msgCount" : 0,
@@ -666,8 +666,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 252,
-        "layoutY" : 575
+        "layoutX" : 237,
+        "layoutY" : 526
       },
       "configuration" : {
         "msgCount" : 0,
@@ -694,8 +694,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 251,
-        "layoutY" : 629
+        "layoutX" : 236,
+        "layoutY" : 573
       },
       "configuration" : {
         "msgCount" : 0,
@@ -722,8 +722,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 251,
-        "layoutY" : 682
+        "layoutX" : 220,
+        "layoutY" : 723
       },
       "configuration" : {
         "msgCount" : 0,
@@ -750,8 +750,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 249,
-        "layoutY" : 735
+        "layoutX" : 243,
+        "layoutY" : 1059
       },
       "configuration" : {
         "msgCount" : 0,
@@ -778,8 +778,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 249,
-        "layoutY" : 785
+        "layoutX" : 243,
+        "layoutY" : 1109
       },
       "configuration" : {
         "msgCount" : 0,
@@ -806,8 +806,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 249,
-        "layoutY" : 838
+        "layoutX" : 243,
+        "layoutY" : 1162
       },
       "configuration" : {
         "msgCount" : 0,
@@ -834,8 +834,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 247,
-        "layoutY" : 891
+        "layoutX" : 241,
+        "layoutY" : 1215
       },
       "configuration" : {
         "msgCount" : 0,
@@ -862,8 +862,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 40,
-        "layoutY" : 898
+        "layoutX" : 34,
+        "layoutY" : 1222
       },
       "configuration" : {
         "msgCount" : 0,
@@ -918,8 +918,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 250,
-        "layoutY" : 942
+        "layoutX" : 244,
+        "layoutY" : 1266
       },
       "configuration" : {
         "msgCount" : 0,
@@ -946,8 +946,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 40,
-        "layoutY" : 948
+        "layoutX" : 34,
+        "layoutY" : 1272
       },
       "configuration" : {
         "msgCount" : 0,
