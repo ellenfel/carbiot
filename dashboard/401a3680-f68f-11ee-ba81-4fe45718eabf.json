@@ -205,6 +205,13 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "Bill",
+                "type" : "timeseries",
+                "label" : "Bill 2",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.7069352410582272
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
