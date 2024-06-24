@@ -1020,8 +1020,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 134,
-        "layoutY" : 3708
+        "layoutX" : 153,
+        "layoutY" : 3394
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1072,14 +1072,14 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 101,
-        "layoutY" : 3179
+        "layoutX" : 109,
+        "layoutY" : 3111
       },
       "configuration" : {
         "msgCount" : 0,
         "periodInSeconds" : 900,
         "scriptLang" : "JS",
-        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FW3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FW1gas\": Math.random() * 100,\n    \"FW2gas\": Math.random() * 100,\n    \"FW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FW1water\": Math.random() * 1000,\n    \"FW2water\": Math.random() * 1000,\n    \"FW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FW1energy\": Math.random() * 1000,\n    \"FW2energy\": Math.random() * 1000,\n    \"FW3energy\": Math.random() * 1000\n};\n\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FW\" + floor + \"gas\"] + waterReading[\"FW\" + floor + \"water\"] + energyReading[\"FW\" + floor + \"energy\"];\n    totalBillPrice[\"FW\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FW1emission\": initialValue*3 + Math.random() * increaseFactor,\n    \"FW2emission\": initialValue*3 + Math.random() * increaseFactor,\n    \"FW3emission\": initialValue*3 + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FW1gas\": Math.random() * 100,\n    \"FW2gas\": Math.random() * 100,\n    \"FW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FW1water\": Math.random() * 1000,\n    \"FW2water\": Math.random() * 1000,\n    \"FW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FW1energy\": Math.random() * 1000,\n    \"FW2energy\": Math.random() * 1000,\n    \"FW3energy\": Math.random() * 1000\n};\n\n// Adding scope emissions\nvar scope1Emission = {\n    \"FW1_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FW2_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FW3_scope1\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope2Emission = {\n    \"FW1_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FW2_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FW3_scope2\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope3Emission = {\n    \"FW1_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FW2_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FW3_scope3\": initialValue + Math.random() * increaseFactor\n};\n\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FW\" + floor + \"gas\"] + waterReading[\"FW\" + floor + \"water\"] + energyReading[\"FW\" + floor + \"energy\"];\n    totalBillPrice[\"FW\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, scope1Emission, scope2Emission, scope3Emission, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
         "originatorId" : "2b9f0ed0-f68d-11ee-ba81-4fe45718eabf",
         "originatorType" : "ASSET"
@@ -1100,14 +1100,14 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 101,
-        "layoutY" : 3224
+        "layoutX" : 140,
+        "layoutY" : 3177
       },
       "configuration" : {
         "msgCount" : 0,
         "periodInSeconds" : 900,
         "scriptLang" : "JS",
-        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FNW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FNW1gas\": Math.random() * 100,\n    \"FNW2gas\": Math.random() * 100,\n    \"FNW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FNW1water\": Math.random() * 1000,\n    \"FNW2water\": Math.random() * 1000,\n    \"FNW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FNW1energy\": Math.random() * 1000,\n    \"FNW2energy\": Math.random() * 1000,\n    \"FNW3energy\": Math.random() * 1000\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FNW\" + floor + \"gas\"] + waterReading[\"FNW\" + floor + \"water\"] + energyReading[\"FNW\" + floor + \"energy\"];\n    totalBillPrice[\"FNW\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FNW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FNW1gas\": Math.random() * 100,\n    \"FNW2gas\": Math.random() * 100,\n    \"FNW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FNW1water\": Math.random() * 1000,\n    \"FNW2water\": Math.random() * 1000,\n    \"FNW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FNW1energy\": Math.random() * 1000,\n    \"FNW2energy\": Math.random() * 1000,\n    \"FNW3energy\": Math.random() * 1000\n};\n\n// Adding scope emissions\nvar scope1Emission = {\n    \"FNW1_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FNW2_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FNW3_scope1\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope2Emission = {\n    \"FNW1_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FNW2_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FNW3_scope2\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope3Emission = {\n    \"FNW1_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FNW2_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FNW3_scope3\": initialValue + Math.random() * increaseFactor\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FNW\" + floor + \"gas\"] + waterReading[\"FNW\" + floor + \"water\"] + energyReading[\"FNW\" + floor + \"energy\"];\n    totalBillPrice[\"FNW\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, scope1Emission, scope2Emission, scope3Emission, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
         "originatorId" : "93285760-f682-11ee-ba81-4fe45718eabf",
         "originatorType" : "ASSET"
@@ -1128,14 +1128,14 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 103,
-        "layoutY" : 3270
+        "layoutX" : 154,
+        "layoutY" : 3291
       },
       "configuration" : {
         "msgCount" : 0,
         "periodInSeconds" : 900,
         "scriptLang" : "JS",
-        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FE1emission\": initialValue + Math.random() * increaseFactor,\n    \"FE2emission\": initialValue + Math.random() * increaseFactor,\n    \"FE3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FE1gas\": Math.random() * 100,\n    \"FE2gas\": Math.random() * 100,\n    \"FE3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FE1water\": Math.random() * 1000,\n    \"FE2water\": Math.random() * 1000,\n    \"FE3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FE1energy\": Math.random() * 1000,\n    \"FE2energy\": Math.random() * 1000,\n    \"FE3energy\": Math.random() * 1000\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FE\" + floor + \"gas\"] + waterReading[\"FE\" + floor + \"water\"] + energyReading[\"FE\" + floor + \"energy\"];\n    totalBillPrice[\"FE\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FE1emission\": initialValue + Math.random() * increaseFactor,\n    \"FE2emission\": initialValue + Math.random() * increaseFactor,\n    \"FE3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FE1gas\": Math.random() * 100,\n    \"FE2gas\": Math.random() * 100,\n    \"FE3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FE1water\": Math.random() * 1000,\n    \"FE2water\": Math.random() * 1000,\n    \"FE3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FE1energy\": Math.random() * 1000,\n    \"FE2energy\": Math.random() * 1000,\n    \"FE3energy\": Math.random() * 1000\n};\n\n// Adding scope emissions\nvar scope1Emission = {\n    \"FE1_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FE2_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FE3_scope1\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope2Emission = {\n    \"FE1_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FE2_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FE3_scope2\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope3Emission = {\n    \"FE1_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FE2_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FE3_scope3\": initialValue + Math.random() * increaseFactor\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FE\" + floor + \"gas\"] + waterReading[\"FE\" + floor + \"water\"] + energyReading[\"FE\" + floor + \"energy\"];\n    totalBillPrice[\"FE\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, scope1Emission, scope2Emission, scope3Emission, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
         "originatorId" : "08aab190-f68d-11ee-ba81-4fe45718eabf",
         "originatorType" : "ASSET"
@@ -1156,8 +1156,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 104,
-        "layoutY" : 3317
+        "layoutX" : 155,
+        "layoutY" : 3338
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1184,8 +1184,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 467,
-        "layoutY" : 3291
+        "layoutX" : 518,
+        "layoutY" : 3312
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1208,8 +1208,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 465,
-        "layoutY" : 3247
+        "layoutX" : 516,
+        "layoutY" : 3268
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1232,8 +1232,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 467,
-        "layoutY" : 3203
+        "layoutX" : 481,
+        "layoutY" : 3178
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1256,8 +1256,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 464,
-        "layoutY" : 3159
+        "layoutX" : 438,
+        "layoutY" : 3115
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1346,21 +1346,21 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 101,
-        "layoutY" : 3135
+        "layoutX" : 87,
+        "layoutY" : 3053
       },
       "configuration" : {
         "msgCount" : 0,
         "periodInSeconds" : 900,
         "scriptLang" : "JS",
-        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FW3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FW1gas\": Math.random() * 100,\n    \"FW2gas\": Math.random() * 100,\n    \"FW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FW1water\": Math.random() * 1000,\n    \"FW2water\": Math.random() * 1000,\n    \"FW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FW1energy\": Math.random() * 1000,\n    \"FW2energy\": Math.random() * 1000,\n    \"FW3energy\": Math.random() * 1000\n};\n\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FW\" + floor + \"gas\"] + waterReading[\"FW\" + floor + \"water\"] + energyReading[\"FW\" + floor + \"energy\"];\n    totalBillPrice[\"FW\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FW1emission\": initialValue*3 + Math.random() * increaseFactor,\n    \"FW2emission\": initialValue*3 + Math.random() * increaseFactor,\n    \"FW3emission\": initialValue*3 + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FW1gas\": Math.random() * 100,\n    \"FW2gas\": Math.random() * 100,\n    \"FW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FW1water\": Math.random() * 1000,\n    \"FW2water\": Math.random() * 1000,\n    \"FW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FW1energy\": Math.random() * 1000,\n    \"FW2energy\": Math.random() * 1000,\n    \"FW3energy\": Math.random() * 1000\n};\n\n// Adding scope emissions\nvar scope1Emission = {\n    \"FW1_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FW2_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FW3_scope1\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope2Emission = {\n    \"FW1_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FW2_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FW3_scope2\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope3Emission = {\n    \"FW1_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FW2_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FW3_scope3\": initialValue + Math.random() * increaseFactor\n};\n\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FW\" + floor + \"gas\"] + waterReading[\"FW\" + floor + \"water\"] + energyReading[\"FW\" + floor + \"energy\"];\n    totalBillPrice[\"FW\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, scope1Emission, scope2Emission, scope3Emission, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
         "originatorId" : "2d552440-f682-11ee-ba81-4fe45718eabf",
         "originatorType" : "ASSET"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1374,8 +1374,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 467,
-        "layoutY" : 3115
+        "layoutX" : 418,
+        "layoutY" : 3051
       },
       "configuration" : {
         "scriptLang" : "JS",
