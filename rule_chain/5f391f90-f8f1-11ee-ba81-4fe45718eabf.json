@@ -1128,8 +1128,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 154,
-        "layoutY" : 3291
+        "layoutX" : 170,
+        "layoutY" : 3245
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1156,14 +1156,14 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 155,
-        "layoutY" : 3338
+        "layoutX" : 198,
+        "layoutY" : 3308
       },
       "configuration" : {
         "msgCount" : 0,
         "periodInSeconds" : 900,
         "scriptLang" : "JS",
-        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FS1emission\": initialValue + Math.random() * increaseFactor,\n    \"FS2emission\": initialValue + Math.random() * increaseFactor,\n    \"FS3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FS1gas\": Math.random() * 100,\n    \"FS2gas\": Math.random() * 100,\n    \"FS3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FS1water\": Math.random() * 1000,\n    \"FS2water\": Math.random() * 1000,\n    \"FS3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FS1energy\": Math.random() * 1000,\n    \"FS2energy\": Math.random() * 1000,\n    \"FS3energy\": Math.random() * 1000\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FS\" + floor + \"gas\"] + waterReading[\"FS\" + floor + \"water\"] + energyReading[\"FS\" + floor + \"energy\"];\n    totalBillPrice[\"FS\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FS1emission\": initialValue + Math.random() * increaseFactor,\n    \"FS2emission\": initialValue + Math.random() * increaseFactor,\n    \"FS3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FS1gas\": Math.random() * 100,\n    \"FS2gas\": Math.random() * 100,\n    \"FS3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FS1water\": Math.random() * 1000,\n    \"FS2water\": Math.random() * 1000,\n    \"FS3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FS1energy\": Math.random() * 1000,\n    \"FS2energy\": Math.random() * 1000,\n    \"FS3energy\": Math.random() * 1000\n};\n\n// Adding scope emissions\nvar scope1Emission = {\n    \"FS1_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FS2_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FS3_scope1\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope2Emission = {\n    \"FS1_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FS2_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FS3_scope2\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope3Emission = {\n    \"FS1_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FS2_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FS3_scope3\": initialValue + Math.random() * increaseFactor\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FS\" + floor + \"gas\"] + waterReading[\"FS\" + floor + \"water\"] + energyReading[\"FS\" + floor + \"energy\"];\n    totalBillPrice[\"FS\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, scope1Emission, scope2Emission, scope3Emission, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
         "originatorId" : "1d8705b0-f687-11ee-ba81-4fe45718eabf",
         "originatorType" : "ASSET"
@@ -1184,8 +1184,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 518,
-        "layoutY" : 3312
+        "layoutX" : 539,
+        "layoutY" : 3305
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1208,8 +1208,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 516,
-        "layoutY" : 3268
+        "layoutX" : 499,
+        "layoutY" : 3243
       },
       "configuration" : {
         "scriptLang" : "JS",
