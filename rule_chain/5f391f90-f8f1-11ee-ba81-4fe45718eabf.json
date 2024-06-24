@@ -1020,8 +1020,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 65,
-        "layoutY" : 2988
+        "layoutX" : 62,
+        "layoutY" : 3440
       },
       "configuration" : {
         "msgCount" : 0,
