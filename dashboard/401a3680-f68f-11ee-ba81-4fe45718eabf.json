@@ -3431,10 +3431,10 @@
             "main" : {
               "widgets" : {
                 "92e05aeb-4d17-641d-b355-f78c5d46909f" : {
-                  "sizeX" : 21,
+                  "sizeX" : 49,
                   "sizeY" : 14,
                   "row" : 2,
-                  "col" : 1
+                  "col" : 0
                 },
                 "6d132014-9a02-7d3b-425d-6807b56b4cf5" : {
                   "sizeX" : 48,
