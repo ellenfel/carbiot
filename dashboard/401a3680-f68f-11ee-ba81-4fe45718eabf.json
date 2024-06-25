@@ -4009,10 +4009,10 @@
             "main" : {
               "widgets" : {
                 "ffa4a87f-cf1d-c978-0b52-252d0f8b5dec" : {
-                  "sizeX" : 17,
-                  "sizeY" : 23,
-                  "row" : 0,
-                  "col" : 31
+                  "sizeX" : 18,
+                  "sizeY" : 21,
+                  "row" : 2,
+                  "col" : 30
                 }
               },
               "gridSettings" : {
