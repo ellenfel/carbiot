@@ -1346,8 +1346,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 39,
-        "layoutY" : 2859
+        "layoutX" : 62,
+        "layoutY" : 3055
       },
       "configuration" : {
         "msgCount" : 0,
@@ -1374,8 +1374,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 370,
-        "layoutY" : 2857
+        "layoutX" : 393,
+        "layoutY" : 3053
       },
       "configuration" : {
         "scriptLang" : "JS",
