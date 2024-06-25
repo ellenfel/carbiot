@@ -2383,6 +2383,155 @@
           "row" : 0,
           "col" : 0,
           "id" : "f85b019e-ee61-3376-467f-b9a567a3ac60"
+        },
+        "92e05aeb-4d17-641d-b355-f78c5d46909f" : {
+          "typeFullFqn" : "system.charts.basic_timeseries",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
+              "dataKeys" : [ {
+                "name" : "totalScope1Emission",
+                "type" : "timeseries",
+                "label" : "Scope 1",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8561869701667095,
+                "units" : "tn/m³",
+                "decimals" : 2,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value/1000;"
+              }, {
+                "name" : "totalScope2Emission",
+                "type" : "timeseries",
+                "label" : "Scope 2",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.9179099711759684,
+                "units" : "tn/m³",
+                "decimals" : 2,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value/1000;"
+              }, {
+                "name" : "totalScope3Emission",
+                "type" : "timeseries",
+                "label" : "Scope 3",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.5623818927727438,
+                "units" : "tn/m³",
+                "decimals" : 2,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value/1000;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 300000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "stack" : true,
+              "enableSelection" : true,
+              "fontSize" : 10,
+              "fontColor" : "#545454",
+              "showTooltip" : true,
+              "tooltipIndividual" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "tooltipValueFormatter" : "",
+              "grid" : {
+                "verticalLines" : true,
+                "horizontalLines" : true,
+                "outlineWidth" : 1,
+                "color" : "#545454",
+                "backgroundColor" : null,
+                "tickColor" : "#DDDDDD"
+              },
+              "xaxis" : {
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454"
+              },
+              "yaxis" : {
+                "min" : null,
+                "max" : null,
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454",
+                "tickSize" : null,
+                "tickDecimals" : 0,
+                "ticksFormatter" : ""
+              },
+              "shadowSize" : 4,
+              "smoothLines" : false,
+              "thresholdsLineWidth" : null,
+              "comparisonEnabled" : false,
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "row",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : false,
+                "showTotal" : true,
+                "showLatest" : false
+              },
+              "customLegendEnabled" : false
+            },
+            "title" : "Total Emission",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : true,
+            "titleIcon" : "mdi:molecule-co2",
+            "iconColor" : "#1F6BDD",
+            "useDashboardTimewindow" : false,
+            "displayTimewindow" : true,
+            "titleFont" : null,
+            "titleColor" : null
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "92e05aeb-4d17-641d-b355-f78c5d46909f"
         }
       },
       "states" : {
@@ -2510,13 +2659,24 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "92e05aeb-4d17-641d-b355-f78c5d46909f" : {
+                  "sizeX" : 48,
+                  "sizeY" : 14,
+                  "row" : 2,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
-                "margin" : 10,
+                "columns" : 48,
+                "margin" : 16,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : false,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
