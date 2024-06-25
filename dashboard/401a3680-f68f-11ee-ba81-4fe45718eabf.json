@@ -2161,12 +2161,12 @@
                 "openInPopover" : false,
                 "id" : "039cf6ca-1b2a-8b16-839f-6ce5b8e0c3c7"
               }, {
-                "name" : "maintenanceId",
+                "name" : "analyticsId",
                 "icon" : "more_horiz",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "onarim",
+                "targetDashboardStateId" : "analyticsId",
                 "setEntityId" : false,
                 "stateEntityParamName" : null,
                 "openRightLayout" : null,
