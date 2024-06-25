@@ -4099,7 +4099,7 @@
                   "col" : 0
                 },
                 "c28b6b7e-dfff-4dde-da50-96d55fd074f5" : {
-                  "sizeX" : 14,
+                  "sizeX" : 13,
                   "sizeY" : 18,
                   "row" : 2,
                   "col" : 35
@@ -4144,7 +4144,7 @@
                   "col" : 11
                 },
                 "38503b0a-a303-0fde-d96f-dab83aadb4bc" : {
-                  "sizeX" : 49,
+                  "sizeX" : 48,
                   "sizeY" : 2,
                   "row" : 0,
                   "col" : 0
@@ -4153,7 +4153,7 @@
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 48,
-                "margin" : 16,
+                "margin" : 8,
                 "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
                 "autoFillHeight" : true,
