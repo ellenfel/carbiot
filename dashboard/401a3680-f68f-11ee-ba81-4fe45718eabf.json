@@ -2127,7 +2127,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "lora",
+                "targetDashboardStateId" : "scope1Id",
                 "setEntityId" : true,
                 "stateEntityParamName" : "mu",
                 "openRightLayout" : null,
