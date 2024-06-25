@@ -3434,7 +3434,7 @@
                   "sizeX" : 21,
                   "sizeY" : 14,
                   "row" : 2,
-                  "col" : 16
+                  "col" : 1
                 },
                 "6d132014-9a02-7d3b-425d-6807b56b4cf5" : {
                   "sizeX" : 48,
@@ -3461,9 +3461,9 @@
                   "col" : 0
                 },
                 "68a4146d-3718-06ad-ebed-b3ea8dc6e52d" : {
-                  "sizeX" : 38,
+                  "sizeX" : 49,
                   "sizeY" : 2,
-                  "row" : 17,
+                  "row" : 0,
                   "col" : 0
                 }
               },
