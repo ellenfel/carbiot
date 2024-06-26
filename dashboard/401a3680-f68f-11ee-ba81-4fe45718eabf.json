@@ -1448,7 +1448,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "cardHtml" : "<div class=\"navbar\">\n    <a id='homeId' class=\"active\" data-md-tooltip=\"Carbiot\">\n        <i id='homeId' class=\"material-icons\">pie_chart</i>\n        <div id='homeId' class=\"menutext\">Carbiot</div>\n    </a>\n    <a id='scope1Id' data-md-tooltip=\"Scope 1\">\n        <i id='scope1Id' class=\"material-icons\">filter_1</i>\n        <div id='scope1Id' class=\"menutext\">Scope 1</div>\n    </a>\n    <a id='scope2Id' data-md-tooltip=\"Scope 2\">\n        <i id='scope2Id' class=\"material-icons\">filter_2</i>\n        <div id='scope2Id' class=\"menutext\">Scope 2</div>\n    </a>\n    <a id='scope3Id' data-md-tooltip=\"Scope 3\">\n        <i id='scope3Id' class=\"material-icons\">filter_3</i>\n        <div id='scope3Id' class=\"menutext\">Scope 3</div>\n    </a>\n    <a id='overviewId' data-md-tooltip=\"Overview\">\n        <i id='overviewId' class=\"material-icons\">dashboard</i>\n        <div id='overviewId' class=\"menutext\">Overview</div>\n    </a>\n    <a id='analyticsId' data-md-tooltip=\"Analytics\">\n        <i id='analyticsId' class=\"material-icons\">bar_chart</i>\n        <div id='analyticsId' class=\"menutext\">Analytics</div>\n    </a>\n    <a id='wasteManagementId' data-md-tooltip=\"Waste Management\">\n        <i id='wasteManagementId' class=\"material-icons\">delete</i>\n        <div id='wasteManagementId' class=\"menutext\">Waste Management</div>\n    </a>\n    <a id='energyOptimizationId' data-md-tooltip=\"Energy Optimization\">\n        <i id='energyOptimizationId' class=\"material-icons\">flash_on</i>\n        <div id='energyOptimizationId' class=\"menutext\">Energy Optimization</div>\n    </a>\n    <a id='waterFootprintId' data-md-tooltip=\"Water Footprint\">\n        <i id='waterFootprintId' class=\"material-icons\">opacity</i>\n        <div id='waterFootprintId' class=\"menutext\">Water Footprint</div>\n    </a>\n    <a id='settingsId' data-md-tooltip=\"Settings\">\n        <i id='settingsId' class=\"material-icons\">settings</i>\n        <div id='settingsId' class=\"menutext\">Settings</div>\n    </a>\n    <a id='documentationId' data-md-tooltip=\"Documentation\">\n        <i id='documentationId' class=\"material-icons\">description</i>\n        <div id='documentationId' class=\"menutext\">Documentation</div>\n    </a>\n</div>\n",
+              "cardHtml" : "<div class=\"navbar\">\n    <a id='homeId' class=\"active\" data-md-tooltip=\"Carbiot\">\n        <i id='homeId' class=\"material-icons\">pie_chart</i>\n        <div id='homeId' class=\"menutext\">Carbiot</div>\n    </a>\n    <a id='scope1Id' data-md-tooltip=\"Scope 1\">\n        <i id='scope1Id' class=\"material-icons\">filter_1</i>\n        <div id='scope1Id' class=\"menutext\">Scope 1</div>\n    </a>\n    <a id='scope2Id' data-md-tooltip=\"Scope 2\">\n        <i id='scope2Id' class=\"material-icons\">filter_2</i>\n        <div id='scope2Id' class=\"menutext\">Scope 2</div>\n    </a>\n    <a id='scope3Id' data-md-tooltip=\"Scope 3\">\n        <i id='scope3Id' class=\"material-icons\">filter_3</i>\n        <div id='scope3Id' class=\"menutext\">Scope 3</div>\n    </a>\n    <a id='overviewId' data-md-tooltip=\"Overview\">\n        <i id='overviewId' class=\"material-icons\">dashboard</i>\n        <div id='overviewId' class=\"menutext\">Overview</div>\n    </a>\n    <a id='analyticsId' data-md-tooltip=\"Analytics\">\n        <i id='analyticsId' class=\"material-icons\">bar_chart</i>\n        <div id='analyticsId' class=\"menutext\">Analytics</div>\n    </a>\n    <a id='settingsId' data-md-tooltip=\"Settings\">\n        <i id='settingsId' class=\"material-icons\">settings</i>\n        <div id='settingsId' class=\"menutext\">Settings</div>\n    </a>\n    <a id='documentationId' data-md-tooltip=\"Documentation\">\n        <i id='documentationId' class=\"material-icons\">description</i>\n        <div id='documentationId' class=\"menutext\">Documentation</div>\n    </a>\n</div>\n",
               "cardCss" : ".navbar {\n    list-style-type: none;\n    height: 100%;\n    background-color: white;\n}\n\n.navbar a {\n    height: 100%;\n    float: left;\n    padding: 0 15px 0 15px;\n    margin: 0 5px 0 5px;\n    color: black;\n    text-decoration: none;\n    text-align: center;\n    text-transform: uppercase;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n}\n\n.navbar a:hover {\n    color: black;\n    background-color: #a8d5ba; /* Light green */\n    border-radius: 5px;\n    border: 0 solid #e0e0e0;\n}\n\n.active {\n    color: black !important;\n    background-color: #8bc34a !important; /* Light green */\n    border-radius: 5px;\n}\n\n.material-icons {\n    font-size: 20px;\n    padding-right: 5px;\n    color: black;\n}\n\n[data-md-tooltip] {\n    position: relative;\n}\n\n@media screen and (max-width: 960px) {\n    .menutext {\n        display: none;\n    }\n\n    .navbar a::before {\n        content: attr(data-md-tooltip);\n        position: absolute;\n        bottom: -35px;\n        left: 50%;\n        padding: 8px;\n        transform: translateX(-50%) scale(0);\n        transition: transform 0.3s ease-in-out;\n        transform-origin: top;\n        background: #616161e6;\n        color: white;\n        border-radius: 2px;\n        font-size: 12px;\n        white-space: nowrap;\n        z-index: 1;\n    }\n\n    .navbar a:hover::before {\n        transform: translateX(-50%) scale(1);\n    }\n\n    .material-icons {\n        font-size: 28px;\n        color: black;\n    }\n}\n"
             },
             "title" : "New HTML Value Card",
@@ -4209,15 +4209,16 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "labelPosition" : "top",
               "layout" : "horizontal",
+              "autoScale" : true,
               "showLabel" : true,
               "labelFont" : {
                 "family" : "Roboto",
                 "size" : 16,
                 "sizeUnit" : "px",
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "lineHeight" : "1.5"
               },
               "labelColor" : {
                 "type" : "constant",
@@ -4234,29 +4235,32 @@
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "valueFont" : {
+                "family" : "Roboto",
                 "size" : 36,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
+                "style" : "normal",
                 "weight" : "500",
-                "style" : "normal"
+                "lineHeight" : "100%"
               },
               "valueColor" : {
                 "type" : "constant",
                 "color" : "rgba(0, 0, 0, 0.87)",
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showDate" : true,
+              "showDate" : false,
               "dateFormat" : {
                 "format" : null,
                 "lastUpdateAgo" : true,
-                "custom" : false
+                "custom" : false,
+                "auto" : false
               },
               "dateFont" : {
                 "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
                 "style" : "normal",
-                "weight" : "500"
+                "weight" : "500",
+                "lineHeight" : "1.33"
               },
               "dateColor" : {
                 "type" : "constant",
@@ -4271,8 +4275,7 @@
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
                 }
-              },
-              "autoScale" : true
+              }
             },
             "title" : "Horizontal value card",
             "dropShadow" : true,
@@ -4422,7 +4425,7 @@
                 "color" : "rgba(0, 0, 0, 0.87)",
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
-              "showDate" : true,
+              "showDate" : false,
               "dateFormat" : {
                 "format" : null,
                 "lastUpdateAgo" : true,
@@ -4504,6 +4507,184 @@
           "row" : 0,
           "col" : 0,
           "id" : "31a9146c-984e-c0c1-8d9d-e8cef8318043"
+        },
+        "660d554e-295e-1525-6b8e-5e81f54a52f3" : {
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
+              "dataKeys" : [ {
+                "name" : "totalScope3Emission",
+                "type" : "timeseries",
+                "label" : "Scope 3",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9507524443491604,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1719335014508,
+                  "endTimeMs" : 1719421414508
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "layout" : "horizontal",
+              "autoScale" : true,
+              "showLabel" : true,
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 16,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "1.5"
+              },
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showIcon" : true,
+              "iconSize" : 40,
+              "iconSizeUnit" : "px",
+              "icon" : "looks_3",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "#5469FF",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 36,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "100%"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showDate" : false,
+              "dateFormat" : {
+                "format" : null,
+                "lastUpdateAgo" : true,
+                "custom" : false,
+                "auto" : false
+              },
+              "dateFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "1.33"
+              },
+              "dateColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.38)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Horizontal value card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : "m³/kg",
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "advanced",
+            "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "14px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : null,
+                "weight" : null,
+                "style" : null,
+                "lineHeight" : "1"
+              },
+              "color" : null
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "660d554e-295e-1525-6b8e-5e81f54a52f3"
         }
       },
       "states" : {
@@ -4572,8 +4753,8 @@
                 },
                 "a40e3f61-4858-9cb2-a3cc-89d7dbbcce3d" : {
                   "sizeX" : 7,
-                  "sizeY" : 4,
-                  "row" : 10,
+                  "sizeY" : 3,
+                  "row" : 11,
                   "col" : 7
                 },
                 "42ebb8bf-0d7e-e187-9ec0-ed06b8a89e20" : {
@@ -4584,8 +4765,8 @@
                 },
                 "44c94ecf-5296-bd98-8a45-9b826bdd3b2f" : {
                   "sizeX" : 7,
-                  "sizeY" : 4,
-                  "row" : 10,
+                  "sizeY" : 3,
+                  "row" : 11,
                   "col" : 14
                 },
                 "45d15f06-91b5-a1fb-4e10-07aaa62636cb" : {
@@ -4599,6 +4780,12 @@
                   "sizeY" : 3,
                   "row" : 2,
                   "col" : 12
+                },
+                "660d554e-295e-1525-6b8e-5e81f54a52f3" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "row" : 2,
+                  "col" : 24
                 }
               },
               "gridSettings" : {
