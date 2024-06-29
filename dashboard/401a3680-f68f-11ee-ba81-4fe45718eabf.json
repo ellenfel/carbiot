@@ -4278,7 +4278,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
+              "entityAliasId" : "4b90877a-9642-72e1-7a4d-2186a1b917a8",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -4595,6 +4595,16 @@
               "entityType" : "DEVICE",
               "id" : "8c143350-ea88-11ee-9512-1748ff314dba"
             }
+          }
+        },
+        "4b90877a-9642-72e1-7a4d-2186a1b917a8" : {
+          "id" : "4b90877a-9642-72e1-7a4d-2186a1b917a8",
+          "alias" : "emission types",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "emission types" ],
+            "deviceNameFilter" : ""
           }
         }
       },
