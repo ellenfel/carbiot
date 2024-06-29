@@ -4251,19 +4251,23 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "4px",
             "settings" : {
+              "entitiesTitle" : "Category Based Sorting",
               "enableSearch" : true,
               "enableSelectColumnDisplay" : true,
               "enableStickyHeader" : true,
               "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
               "reserveSpaceForHiddenAction" : "true",
               "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
               "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
               "displayEntityType" : false,
               "displayPagination" : true,
               "defaultPageSize" : 10,
               "defaultSortOrder" : "name",
               "useRowStyleFunction" : false,
-              "entitiesTitle" : "Entities"
+              "rowStyleFunction" : ""
             },
             "title" : "Entities table",
             "dropShadow" : true,
@@ -4283,17 +4287,49 @@
               "dataKeys" : [ {
                 "name" : "name",
                 "type" : "entityField",
-                "label" : "Name",
+                "label" : "Category",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.29568693172178406
+                "_hash" : 0.29568693172178406,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "percentage",
+                "type" : "attribute",
+                "label" : "percentage",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.3992764225529466,
+                "aggregationType" : null,
+                "units" : "%",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "emission",
+                "type" : "attribute",
+                "label" : "emission",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5723321561160524,
+                "aggregationType" : null,
+                "units" : "tCO2",
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value/1000;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
             } ],
             "displayTimewindow" : false,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "list",
