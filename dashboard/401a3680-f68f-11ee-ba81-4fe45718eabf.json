@@ -2777,7 +2777,8 @@
               "icon" : "looks_one",
               "iconColor" : {
                 "type" : "constant",
-                "color" : "#5469FF",
+                "color" : "#009688",
+                "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "valueFont" : {
@@ -2955,7 +2956,8 @@
               "icon" : "looks_two",
               "iconColor" : {
                 "type" : "constant",
-                "color" : "#5469FF",
+                "color" : "#009688",
+                "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "valueFont" : {
@@ -3133,7 +3135,8 @@
               "icon" : "looks_3",
               "iconColor" : {
                 "type" : "constant",
-                "color" : "#5469FF",
+                "color" : "#009688",
+                "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "valueFont" : {
@@ -3475,7 +3478,8 @@
               "icon" : "functions",
               "iconColor" : {
                 "type" : "constant",
-                "color" : "#5469FF",
+                "color" : "#009688",
+                "rangeList" : null,
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "valueFont" : {
