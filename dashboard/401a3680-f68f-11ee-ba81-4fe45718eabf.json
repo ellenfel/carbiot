@@ -324,247 +324,6 @@
           "col" : 0,
           "id" : "3ff44771-d077-09ec-67f9-d47491f2e98c"
         },
-        "3673fc57-d615-1b1a-797e-171509642f6c" : {
-          "type" : "latest",
-          "sizeX" : 4,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
-              "dataKeys" : [ {
-                "name" : "Gas",
-                "type" : "timeseries",
-                "label" : "gasText",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.5560250031919791,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1697718290753,
-                  "endTimeMs" : 1697804690753
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "cardCss" : ".card,\n.card * {\n    box-sizing: border-box;\n}    \n.card {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.card .content {\n    height: 100%;\n}\n.card .upper-bar {\n    position: relative;\n    z-index: 0;\n    overflow: hidden;\n    height: 70%;\n    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);\n    color: #fff;\n}\n.card .lower-bar {\n    height: 30%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.card .image-shade {\n    width: 100%;\n    height: 100%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background-color: rgb(0, 148, 133, .5);\n    z-index: 0;\n}\n.card h1 {\n    margin: 0;\n    font-size: 20px;\n    font-weight: bold;\n    line-height: 30px;\n}\n.card .icon-container {\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n    border: 3px solid rgb(0, 148, 133);\n    text-align: center;\n}\n.card .description {\n    margin-left: 16px;\n    font-size: 20px;\n    font-weight: 500;\n    color: rgb(0, 148, 133);\n}\n.card .value {\n    font-size: 40px;\n    font-weight: 300;\n    letter-spacing: -2px;\n}\n.card .icon {\n    line-height: 36px;\n    color: rgb(0, 148, 133);\n}\n.card video {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    width: 100%;\n    z-index: -1;\n    transform: translateY(-50%);\n}",
-              "cardHtml" : "<div class='card'>\n    <div class='content'>\n       <div class='upper-bar'>\n           <video loop muted autoplay>\n               <source src=\"https://static.videezy.com/system/resources/previews/000/045/419/original/smoke_4__282_29.mp4\" type=\"video/mp4\">\n           </video>\n            <div class='image-shade'>\n                <h1>${entityName}</h1>\n                <div class='value'>${gasText} m3</div>\n            </div>\n       </div>\n       <div class='lower-bar'>\n           <div class='icon-container'>\n               <div class='material-icons icon'>whatshot</div>\n           </div>\n           <div class='description'>Gaz Tüketimi</div>\n       </div>\n    </div>\n</div>"
-            },
-            "title" : "Gas consumed card",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : "more_horiz",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "enableDataExport" : false,
-            "displayTimewindow" : true
-          },
-          "id" : "3673fc57-d615-1b1a-797e-171509642f6c",
-          "typeFullFqn" : "system.cards.html_value_card"
-        },
-        "44b4c254-153a-ea70-bef5-6a046682d8d8" : {
-          "type" : "latest",
-          "sizeX" : 6,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
-              "dataKeys" : [ {
-                "name" : "Water",
-                "type" : "timeseries",
-                "label" : "waterText",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.28049890900500407,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1693912272085,
-                  "endTimeMs" : 1693998672085
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 2500
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "cardHtml" : "<div class='card'>\n    <div class='content'>\n       <div class='upper-bar'>\n           <video loop muted autoplay>\n               <source src=\"https://thingsboard.io/images/dashboards/districts/water-consumed-bg.mp4\" type=\"video/mp4\">\n               <source src=\"https://thingsboard.io/images/dashboards/districts/water-consumed-bg.webm\" type=\"video/webm\">\n           </video>\n            <div class='image-shade'>\n                <h1>${entityName}</h1>\n                <div class='value'>${waterText} gal</div>\n            </div>\n       </div>\n       <div class='lower-bar'>\n           <div class='icon-container'>\n               <div class='material-icons icon'>pool</div>\n           </div>\n           <div class='description'>Su Tüketimi</div>\n       </div>\n    </div>\n</div>",
-              "cardCss" : ".card,\n.card * {\n    box-sizing: border-box;\n}    \n.card {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.card .content {\n    height: 100%;\n}\n.card .upper-bar {\n    position: relative;\n    z-index: 0;\n    overflow: hidden;\n    height: 70%;\n    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);\n    color: #fff;\n}\n.card .lower-bar {\n    height: 30%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.card .image-shade {\n    width: 100%;\n    height: 100%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background-color: rgba(0, 132, 214, .5);\n    z-index: 0;\n}\n.card h1 {\n    margin: 0;\n    font-size: 20px;\n    font-weight: bold;\n    line-height: 30px;\n}\n.card .icon-container {\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n    border: 3px solid rgb(0, 132, 214);\n    text-align: center;\n}\n.card .description {\n    margin-left: 16px;\n    font-size: 20px;\n    font-weight: 500;\n    color: rgb(0, 132, 214);\n}\n.card .value {\n    font-size: 40px;\n    font-weight: 300;\n    letter-spacing: -2px;\n}\n.card .icon {\n    line-height: 36px;\n    color: rgb(0, 132, 214);\n}\n.card video {\n    position: absolute;\n    top: 75%;\n    left: 0;\n    width: 100%;\n    z-index: -1;\n    transform: translateY(-50%);\n}"
-            },
-            "title" : "Energy consumed card",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "displayTimewindow" : true
-          },
-          "id" : "44b4c254-153a-ea70-bef5-6a046682d8d8",
-          "typeFullFqn" : "system.cards.html_value_card"
-        },
-        "0221f8e7-c9b5-c542-8976-fb2e5525d6ba" : {
-          "type" : "latest",
-          "sizeX" : 6,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
-              "dataKeys" : [ {
-                "name" : "Energy",
-                "type" : "timeseries",
-                "label" : "energyText",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.6718908844090252,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Energy",
-                "type" : "timeseries",
-                "label" : "Energytext",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.9515964082989485,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "function numberWithCommas(x) {\n    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\nreturn value ? numberWithCommas(value) : '0';\n\n"
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1693912272085,
-                  "endTimeMs" : 1693998672085
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 2500
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "cardHtml" : "<div class='card'>\n    <div class='content'>\n       <div class='upper-bar'>\n           <video loop muted autoplay>\n               <source src=\"https://thingsboard.io/images/dashboards/districts/energy-consumed-bg.mp4\" type=\"video/mp4\">\n               <source src=\"https://thingsboard.io/images/dashboards/districts/energy-consumed-bg.webm\" type=\"video/webm\">\n           </video>\n            <div class='image-shade'>\n                <h1>${entityName}</h1>\n                <div class='value'>${energyText} kWh</div>\n            </div>\n       </div>\n       <div class='lower-bar'>\n           <div class='icon-container'>\n               <div class='material-icons icon'>flash_on</div>\n           </div>\n           <div class='description'>Enerji Tüketimi</div>\n       </div>\n    </div>\n</div>",
-              "cardCss" : ".card,\n.card * {\n    box-sizing: border-box;\n}    \n.card {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.card .content {\n    height: 100%;\n}\n.card .upper-bar {\n    position: relative;\n    z-index: 0;\n    overflow: hidden;\n    height: 70%;\n    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);\n    color: #fff;\n}\n.card .lower-bar {\n    height: 30%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.card .image-shade {\n    width: 100%;\n    height: 100%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background-color: rgba(255, 157, 12, .5);\n    z-index: 0;\n}\n.card h1 {\n    margin: 0;\n    font-size: 20px;\n    font-weight: bold;\n    line-height: 30px;\n}\n.card .icon-container {\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n    border: 3px solid rgb(255, 157, 12);\n    text-align: center;\n}\n.card .description {\n    margin-left: 16px;\n    font-size: 20px;\n    font-weight: 500;\n    color: rgb(255, 157, 12);\n}\n.card .value {\n    font-size: 40px;\n    font-weight: 300;\n    letter-spacing: -2px;\n}\n.card .icon {\n    line-height: 36px;\n    color: rgb(255, 157, 12);\n}\n.card video {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    width: 100%;\n    z-index: -1;\n    transform: translateY(-50%);\n}"
-            },
-            "title" : "Energy consumed card",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "displayTimewindow" : true
-          },
-          "id" : "0221f8e7-c9b5-c542-8976-fb2e5525d6ba",
-          "typeFullFqn" : "system.cards.html_value_card"
-        },
         "5022785a-e0be-bcd0-06cb-257ec6e60211" : {
           "type" : "latest",
           "sizeX" : 4,
@@ -4299,6 +4058,176 @@
           "row" : 0,
           "col" : 0,
           "id" : "0e756a78-bdcf-7145-1c2e-525af5a21e71"
+        },
+        "c5565982-cb0a-c904-de0b-6c8bf0b1156d" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "general_configuration",
+                "type" : "attribute",
+                "label" : "general_configuration",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.739858588321151
+              }, {
+                "name" : "RemoteLoggingLevel",
+                "type" : "attribute",
+                "label" : "RemoteLoggingLevel",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.20230761305210687
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1685437116892,
+                  "endTimeMs" : 1685523516892
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextFunction" : "let buttonsHtml = \"\" \nctx.actionsApi.getActionDescriptors('elementClick').forEach((btn, index)=>{\n    let disabled =false;\n    if (index == 2) {\n        disabled = data[0] && data[0].RemoteLoggingLevel ? data[0].RemoteLoggingLevel == \"NONE\" : true;\n    } else if (index == 4) {\n        const conf = data[0].general_configuration? JSON.parse(data[0].general_configuration): {};\n        disabled = !conf.remoteShell;\n    }\n    buttonsHtml += `<button mat-raised-button disabled=${disabled} color=\"primary\"(click)=\"ctx.actionsApi.handleWidgetAction($event, ctx.actionsApi.getActionDescriptors('elementClick')[${index}], ctx.datasources[0].entity.id)\" fxFlex fxflex.md=\"50\">${btn.displayName}</button>`\n});\n\nreturn `<div class=\"action-buttons-container\" fxLayout=\"columnd\" fxLayout.md=\"row wrap\" fxLayoutGap=\"5px\" >${buttonsHtml}</div>`;",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".action-buttons-container {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    flex-direction: row;\r\n    height: 100%;\r\n    width: 100%;\r\n    align-content: start;\r\n}\r\n\r\nbutton {\r\n    flex-grow: 1;\r\n    margin: 10px;\r\n    min-width: 150px;\r\n    height: auto;\r\n}"
+            },
+            "title" : "General configuration",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "General configuration",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "configuration",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "337c767b-3217-d3d3-b955-7b0bd0858a1d"
+              }, {
+                "name" : "Connectors configuration",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "connectors",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "00469ea7-f4c4-e39d-a735-c74b6ba6a026"
+              }, {
+                "name" : "Logs",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "logs",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "d8607421-28b4-7c3b-949b-f69c3a46b461"
+              }, {
+                "name" : "Statistics",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "statistics",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "425ba0d8-8e26-18a5-881d-bebe27fb2a7a"
+              }, {
+                "name" : "Remote Shell",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "remote_shell",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "2c4c7dcc-009f-64eb-5f1b-a991df6d25a2"
+              }, {
+                "name" : "RPC",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "rpc",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "35705df8-69cf-7f76-b52f-d53c5a1931c0"
+              } ]
+            },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "4px",
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "c5565982-cb0a-c904-de0b-6c8bf0b1156d",
+          "typeFullFqn" : "system.cards.markdown_card"
         }
       },
       "states" : {
@@ -4309,28 +4238,10 @@
             "main" : {
               "widgets" : {
                 "3ff44771-d077-09ec-67f9-d47491f2e98c" : {
-                  "sizeX" : 37,
-                  "sizeY" : 9,
+                  "sizeX" : 38,
+                  "sizeY" : 11,
                   "row" : 5,
                   "col" : 0
-                },
-                "3673fc57-d615-1b1a-797e-171509642f6c" : {
-                  "sizeX" : 8,
-                  "sizeY" : 5,
-                  "row" : 14,
-                  "col" : 40
-                },
-                "44b4c254-153a-ea70-bef5-6a046682d8d8" : {
-                  "sizeX" : 8,
-                  "sizeY" : 5,
-                  "row" : 14,
-                  "col" : 32
-                },
-                "0221f8e7-c9b5-c542-8976-fb2e5525d6ba" : {
-                  "sizeX" : 8,
-                  "sizeY" : 5,
-                  "row" : 14,
-                  "col" : 24
                 },
                 "5022785a-e0be-bcd0-06cb-257ec6e60211" : {
                   "sizeX" : 8,
@@ -4360,34 +4271,40 @@
                   "col" : 0
                 },
                 "45d15f06-91b5-a1fb-4e10-07aaa62636cb" : {
-                  "sizeX" : 11,
+                  "sizeX" : 10,
                   "sizeY" : 3,
                   "row" : 2,
-                  "col" : 15
+                  "col" : 18
                 },
                 "31a9146c-984e-c0c1-8d9d-e8cef8318043" : {
-                  "sizeX" : 11,
+                  "sizeX" : 10,
                   "sizeY" : 3,
                   "row" : 2,
-                  "col" : 26
+                  "col" : 28
                 },
                 "660d554e-295e-1525-6b8e-5e81f54a52f3" : {
-                  "sizeX" : 11,
+                  "sizeX" : 10,
                   "sizeY" : 3,
                   "row" : 2,
-                  "col" : 37
+                  "col" : 38
                 },
                 "0c2a4f5c-96eb-d06a-a27d-dc807ba83e7e" : {
                   "sizeX" : 24,
-                  "sizeY" : 10,
-                  "row" : 14,
+                  "sizeY" : 8,
+                  "row" : 16,
                   "col" : 0
                 },
                 "0e756a78-bdcf-7145-1c2e-525af5a21e71" : {
-                  "sizeX" : 15,
+                  "sizeX" : 12,
                   "sizeY" : 3,
                   "row" : 2,
-                  "col" : 0
+                  "col" : 6
+                },
+                "c5565982-cb0a-c904-de0b-6c8bf0b1156d" : {
+                  "sizeX" : 10,
+                  "sizeY" : 11,
+                  "row" : 5,
+                  "col" : 38
                 }
               },
               "gridSettings" : {
@@ -4610,6 +4527,28 @@
             "resolveMultiple" : true,
             "entityType" : "ASSET",
             "entityList" : [ "9f057780-36b9-11ef-be26-a34187d795ac", "a6405ba0-36b9-11ef-be26-a34187d795ac", "ae6a0c90-36b9-11ef-be26-a34187d795ac" ]
+          }
+        },
+        "9a41125c-876b-7934-10e0-dcf4688aacbd" : {
+          "id" : "9a41125c-876b-7934-10e0-dcf4688aacbd",
+          "alias" : "Current Customer",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "CUSTOMER",
+              "id" : "01f1ae40-f114-11ee-ba81-4fe45718eabf"
+            }
+          }
+        },
+        "87b8369b-2b2a-17e5-3c19-1e88f7bb1264" : {
+          "id" : "87b8369b-2b2a-17e5-3c19-1e88f7bb1264",
+          "alias" : "Selected Gateway",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "",
+            "defaultStateEntity" : null
           }
         }
       },
