@@ -4340,6 +4340,93 @@
           "col" : 0,
           "id" : "cd8d9858-1d28-3b81-c33e-7d2e9a26e169",
           "typeFullFqn" : "system.cards.markdown_card"
+        },
+        "24f66435-3625-fc50-68bb-39d8120a98d6" : {
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "87b8369b-2b2a-17e5-3c19-1e88f7bb1264",
+              "filterId" : null,
+              "dataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1685437116892,
+                  "endTimeMs" : 1685523516892
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"action-buttons-container\">\r\n  <button mat-raised-button color=\"primary\"\r\n     (click)=\"ctx.actionsApi.handleWidgetAction($event, ctx.actionsApi.getActionDescriptors('elementClick')[0], ctx.datasources[0].entity.id)\"\r\n  >Launch command\r\n </button>\r\n</div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".action-buttons-container {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    flex-direction: row;\r\n    height: 100%;\r\n    width: 100%;\r\n    align-content: center;\r\n}\r\n\r\nbutton {\r\n    flex-grow: 1;\r\n    margin: 10px;\r\n    min-width: 150px;\r\n    height: auto;\r\n}"
+            },
+            "title" : "Service command",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "Launch command",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<div class=\"container\">\n    <mat-toolbar fxLayout=\"row\" color=\"primary\">\n        <h2>Launch command</h2>\n        <span fxFlex></span>\n        <div [tb-help]=\"'gatewayInstall'\"></div>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <tb-gateway-command [deviceId]=\"entityId\"></tb-gateway-command>\n    <div mat-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"end center\">\n        <button mat-button color=\"primary\"\n            type=\"button\"\n            (click)=\"cancel()\" cdkFocusInitial>\n            {{ 'action.close' | translate }}\n        </button>\n    </div>\n</div>\n",
+                "customCss" : ".container {\n    display: grid;\n    grid-template-rows: min-content minmax(auto, 1fr) min-content;\n    height: 100%;\n    max-height: 100vh;\n    width: 600px;\n    max-width: 100%;\n}",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\n\nopenCommands();\n\nfunction openCommands() {\n    customDialog.customDialog(htmlTemplate, CommandsDialogController, {panelClass: \"test\"}).subscribe();\n}\n\nfunction CommandsDialogController(instance) {\n    let vm = instance;\n    \n    vm.entityId = entityId.id;\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n}\n",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "337c767b-3217-d3d3-b955-7b0bd0858a1d"
+              } ]
+            },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "4px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "24f66435-3625-fc50-68bb-39d8120a98d6",
+          "typeFullFqn" : "system.cards.markdown_card"
         }
       },
       "states" : {
@@ -4405,7 +4492,13 @@
                 },
                 "cd8d9858-1d28-3b81-c33e-7d2e9a26e169" : {
                   "sizeX" : 8,
-                  "sizeY" : 14,
+                  "sizeY" : 12,
+                  "row" : 4,
+                  "col" : 0
+                },
+                "24f66435-3625-fc50-68bb-39d8120a98d6" : {
+                  "sizeX" : 8,
+                  "sizeY" : 2,
                   "row" : 2,
                   "col" : 0
                 }
