@@ -3570,7 +3570,7 @@
                 "name" : "Emission",
                 "type" : "timeseries",
                 "label" : "Daily Emission",
-                "color" : "#2196f3",
+                "color" : "#009688",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -3755,15 +3755,16 @@
               },
               "showLegend" : true,
               "legendLabelFont" : {
-                "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "600",
                 "style" : "normal",
-                "weight" : "400",
                 "lineHeight" : "16px"
               },
               "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
               "legendConfig" : {
+                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
@@ -3775,11 +3776,11 @@
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
               "tooltipValueFont" : {
-                "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "700",
                 "style" : "normal",
-                "weight" : "500",
                 "lineHeight" : "16px"
               },
               "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
