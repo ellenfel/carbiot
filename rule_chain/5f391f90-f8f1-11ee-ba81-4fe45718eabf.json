@@ -1809,6 +1809,7 @@
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     }, {
       "additionalInfo" : {
+        "description" : null,
         "layoutX" : 1264,
         "layoutY" : 3191
       },
@@ -1817,7 +1818,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
