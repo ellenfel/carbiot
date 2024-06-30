@@ -185,6 +185,42 @@
       "fromIndex" : 45,
       "toIndex" : 29,
       "type" : "Success"
+    }, {
+      "fromIndex" : 52,
+      "toIndex" : 57,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 53,
+      "toIndex" : 56,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 54,
+      "toIndex" : 55,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 55,
+      "toIndex" : 61,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 56,
+      "toIndex" : 61,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 57,
+      "toIndex" : 61,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 59,
+      "toIndex" : 58,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 60,
+      "toIndex" : 59,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 61,
+      "toIndex" : 60,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
@@ -1324,8 +1360,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 633,
-        "layoutY" : 923
+        "layoutX" : 575,
+        "layoutY" : 1149
       },
       "configuration" : {
         "version" : 0
@@ -1591,6 +1627,252 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 275,
+        "layoutY" : 3382
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FNW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FNW1gas\": Math.random() * 100,\n    \"FNW2gas\": Math.random() * 100,\n    \"FNW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FNW1water\": Math.random() * 1000,\n    \"FNW2water\": Math.random() * 1000,\n    \"FNW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FNW1energy\": Math.random() * 1000,\n    \"FNW2energy\": Math.random() * 1000,\n    \"FNW3energy\": Math.random() * 1000\n};\n\n// Adding scope emissions\nvar scope1Emission = {\n    \"FNW1_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FNW2_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FNW3_scope1\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope2Emission = {\n    \"FNW1_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FNW2_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FNW3_scope2\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope3Emission = {\n    \"FNW1_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FNW2_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FNW3_scope3\": initialValue + Math.random() * increaseFactor\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FNW\" + floor + \"gas\"] + waterReading[\"FNW\" + floor + \"water\"] + energyReading[\"FNW\" + floor + \"energy\"];\n    totalBillPrice[\"FNW\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, scope1Emission, scope2Emission, scope3Emission, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : null,
+        "originatorId" : "9f057780-36b9-11ef-be26-a34187d795ac",
+        "originatorType" : "ASSET"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "113e5790-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "north-west",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 305,
+        "layoutY" : 3450
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FE1emission\": initialValue + Math.random() * increaseFactor,\n    \"FE2emission\": initialValue + Math.random() * increaseFactor,\n    \"FE3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FE1gas\": Math.random() * 100,\n    \"FE2gas\": Math.random() * 100,\n    \"FE3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FE1water\": Math.random() * 1000,\n    \"FE2water\": Math.random() * 1000,\n    \"FE3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FE1energy\": Math.random() * 1000,\n    \"FE2energy\": Math.random() * 1000,\n    \"FE3energy\": Math.random() * 1000\n};\n\n// Adding scope emissions\nvar scope1Emission = {\n    \"FE1_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FE2_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FE3_scope1\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope2Emission = {\n    \"FE1_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FE2_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FE3_scope2\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope3Emission = {\n    \"FE1_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FE2_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FE3_scope3\": initialValue + Math.random() * increaseFactor\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FE\" + floor + \"gas\"] + waterReading[\"FE\" + floor + \"water\"] + energyReading[\"FE\" + floor + \"energy\"];\n    totalBillPrice[\"FE\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, scope1Emission, scope2Emission, scope3Emission, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : null,
+        "originatorId" : "a6405ba0-36b9-11ef-be26-a34187d795ac",
+        "originatorType" : "ASSET"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "11400540-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "east",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 333,
+        "layoutY" : 3513
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 900,
+        "scriptLang" : "JS",
+        "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FS1emission\": initialValue + Math.random() * increaseFactor,\n    \"FS2emission\": initialValue + Math.random() * increaseFactor,\n    \"FS3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FS1gas\": Math.random() * 100,\n    \"FS2gas\": Math.random() * 100,\n    \"FS3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FS1water\": Math.random() * 1000,\n    \"FS2water\": Math.random() * 1000,\n    \"FS3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FS1energy\": Math.random() * 1000,\n    \"FS2energy\": Math.random() * 1000,\n    \"FS3energy\": Math.random() * 1000\n};\n\n// Adding scope emissions\nvar scope1Emission = {\n    \"FS1_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FS2_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FS3_scope1\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope2Emission = {\n    \"FS1_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FS2_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FS3_scope2\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope3Emission = {\n    \"FS1_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FS2_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FS3_scope3\": initialValue + Math.random() * increaseFactor\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FS\" + floor + \"gas\"] + waterReading[\"FS\" + floor + \"water\"] + energyReading[\"FS\" + floor + \"energy\"];\n    totalBillPrice[\"FS\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, scope1Emission, scope2Emission, scope3Emission, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
+        "tbelScript" : null,
+        "originatorId" : "ae6a0c90-36b9-11ef-be26-a34187d795ac",
+        "originatorType" : "ASSET"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "11400541-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "south",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 674,
+        "layoutY" : 3510
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "msg.Emission=msg.FS1emission+msg.FS2emission+msg.FS3emission;\nmsg.Gas=msg.FS3gas+msg.FS3gas+msg.FS3gas;\nmsg.Water=msg.FS1water+msg.FS2water+msg.FS3water;\nmsg.Energy=msg.FS1energy+msg.FS2energy+msg.FS3energy;\nmsg.Bill=msg.FS1totalBillPrice+msg.FS2totalBillPrice+msg.FS3totalBillPrice;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "11405360-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "add zones",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 634,
+        "layoutY" : 3448
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "msg.Emission=msg.FE1emission+msg.FE2emission+msg.FE3emission;\nmsg.Gas=msg.FE3gas+msg.FE3gas+msg.FE3gas;\nmsg.Water=msg.FE1water+msg.FE2water+msg.FE3water;\nmsg.Energy=msg.FE1energy+msg.FE2energy+msg.FE3energy;\nmsg.Bill=msg.FE1totalBillPrice+msg.FE2totalBillPrice+msg.FE3totalBillPrice;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "11407a70-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "add zones",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 616,
+        "layoutY" : 3383
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "msg.Emission=msg.FNW1emission+msg.FNW2emission+msg.FNW3emission;\nmsg.Gas=msg.FNW3gas+msg.FNW3gas+msg.FNW3gas;\nmsg.Water=msg.FNW1water+msg.FNW2water+msg.FNW3water;\nmsg.Energy=msg.FNW1energy+msg.FNW2energy+msg.FNW3energy;\nmsg.Bill=msg.FNW1totalBillPrice+msg.FNW2totalBillPrice+msg.FNW3totalBillPrice;\n\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "11407a71-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "add zones",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1613,
+        "layoutY" : 3185
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "skipLatestPersistence" : false,
+        "useServerTs" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1140a180-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "save timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1264,
+        "layoutY" : 3191
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1140c890-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "Message Type Switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Process incoming messages from devices with the alarm rules defined in the device profile. Dispatch all incoming messages with \"Success\" relation type.",
+        "layoutX" : 1002,
+        "layoutY" : 3264
+      },
+      "configuration" : {
+        "persistAlarmRulesState" : false,
+        "fetchAlarmRulesStateOnStart" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1140efa0-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "Device Profile Node",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 972,
+        "layoutY" : 3375
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "114116b0-36ba-11ef-be26-a34187d795ac"
+      },
+      "name" : "checkpoint",
+      "queueName" : "SequentialByOriginator",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbCheckpointNode"
     } ],
     "ruleChainConnections" : null
   },
