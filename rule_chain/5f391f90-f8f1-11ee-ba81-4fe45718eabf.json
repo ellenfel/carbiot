@@ -1635,7 +1635,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 900,
+        "periodInSeconds" : 90,
         "scriptLang" : "JS",
         "jsScript" : "var initialValue = 50; // Initial low value\nvar increaseFactor = 10; // Factor by which the values increase\n\nvar carbonEmission = {\n    \"FNW1emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW2emission\": initialValue + Math.random() * increaseFactor,\n    \"FNW3emission\": initialValue + Math.random() * increaseFactor\n};\n\nvar gasReading = {\n    \"FNW1gas\": Math.random() * 100,\n    \"FNW2gas\": Math.random() * 100,\n    \"FNW3gas\": Math.random() * 100\n};\n\nvar waterReading = {\n    \"FNW1water\": Math.random() * 1000,\n    \"FNW2water\": Math.random() * 1000,\n    \"FNW3water\": Math.random() * 1000\n};\n\nvar energyReading = {\n    \"FNW1energy\": Math.random() * 1000,\n    \"FNW2energy\": Math.random() * 1000,\n    \"FNW3energy\": Math.random() * 1000\n};\n\n// Adding scope emissions\nvar scope1Emission = {\n    \"FNW1_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FNW2_scope1\": initialValue + Math.random() * increaseFactor,\n    \"FNW3_scope1\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope2Emission = {\n    \"FNW1_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FNW2_scope2\": initialValue + Math.random() * increaseFactor,\n    \"FNW3_scope2\": initialValue + Math.random() * increaseFactor\n};\n\nvar scope3Emission = {\n    \"FNW1_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FNW2_scope3\": initialValue + Math.random() * increaseFactor,\n    \"FNW3_scope3\": initialValue + Math.random() * increaseFactor\n};\n\n// Total bill price calculation\nvar totalBillPrice = {};\nfor (var floor = 1; floor <= 3; floor++) {\n    var total = gasReading[\"FNW\" + floor + \"gas\"] + waterReading[\"FNW\" + floor + \"water\"] + energyReading[\"FNW\" + floor + \"energy\"];\n    totalBillPrice[\"FNW\" + floor + \"totalBillPrice\"] = parseInt(total.toFixed(2)); // Convert to integer\n}\n\nreturn {\n    msg: Object.assign({}, carbonEmission, gasReading, waterReading, energyReading, scope1Emission, scope2Emission, scope3Emission, totalBillPrice),\n    metadata: {\n        deviceType: \"carbon_emission_simulator\"\n    },\n    msgType: \"POST_TELEMETRY_REQUEST\"\n};\n",
         "tbelScript" : null,
@@ -1650,7 +1650,7 @@
         "entityType" : "RULE_NODE",
         "id" : "113e5790-36ba-11ef-be26-a34187d795ac"
       },
-      "name" : "north-west",
+      "name" : "Scope 1",
       "queueName" : "Main",
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -1678,7 +1678,7 @@
         "entityType" : "RULE_NODE",
         "id" : "11400540-36ba-11ef-be26-a34187d795ac"
       },
-      "name" : "east",
+      "name" : "Scope 2",
       "queueName" : "Main",
       "ruleChainId" : null,
       "singletonMode" : false,
