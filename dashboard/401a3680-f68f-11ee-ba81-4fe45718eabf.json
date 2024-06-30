@@ -3923,9 +3923,9 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "#fff",
+            "backgroundColor" : "#829DC901",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
+            "padding" : "0px",
             "settings" : {
               "provider" : "image-map",
               "gmApiKey" : "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
@@ -4038,6 +4038,8 @@
             "widgetStyle" : { },
             "actions" : { },
             "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "8px",
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
