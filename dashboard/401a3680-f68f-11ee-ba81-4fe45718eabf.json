@@ -4117,10 +4117,10 @@
             "main" : {
               "widgets" : {
                 "3ff44771-d077-09ec-67f9-d47491f2e98c" : {
-                  "sizeX" : 24,
+                  "sizeX" : 48,
                   "sizeY" : 9,
                   "row" : 5,
-                  "col" : 24
+                  "col" : 0
                 },
                 "3673fc57-d615-1b1a-797e-171509642f6c" : {
                   "sizeX" : 8,
@@ -4187,8 +4187,8 @@
                 },
                 "0c2a4f5c-96eb-d06a-a27d-dc807ba83e7e" : {
                   "sizeX" : 24,
-                  "sizeY" : 19,
-                  "row" : 5,
+                  "sizeY" : 10,
+                  "row" : 14,
                   "col" : 0
                 }
               },
