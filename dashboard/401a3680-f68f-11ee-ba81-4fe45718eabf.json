@@ -4643,6 +4643,624 @@
           },
           "id" : "b148d5f2-fc4e-c1c8-78de-1a34c6211857",
           "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "d73688fc-5ef0-1c57-e8ad-ee6dd95dc050" : {
+          "type" : "latest",
+          "sizeX" : 10,
+          "sizeY" : 15,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "9a41125c-876b-7934-10e0-dcf4688aacbd",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "cLowTempAlarmEnabled",
+                "type" : "attribute",
+                "label" : "Low Temperature Alarm",
+                "color" : "#4caf50",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "booleanSwitch",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : false,
+                  "step" : 1
+                },
+                "_hash" : 0.7775367356739471,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cLowTempThreshold",
+                "type" : "attribute",
+                "label" : "Low Temperature Threshold",
+                "color" : "#e91e63",
+                "settings" : {
+                  "dataKeyHidden" : false,
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "string",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "disabledOnDataKey" : "cLowTempAlarmEnabled",
+                  "appearance" : "outline",
+                  "subscriptSizing" : "dynamic",
+                  "useCustomIcon" : false,
+                  "useGetValueFunction" : false,
+                  "useSetValueFunction" : false
+                },
+                "_hash" : 0.9590971916933051,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null,
+                "aggregationType" : null
+              }, {
+                "name" : "cDailyConsumptionAlarmEnabled",
+                "type" : "attribute",
+                "label" : "Exceeding Daily Consumption Alarm",
+                "color" : "#ffc107",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "booleanSwitch",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : false,
+                  "step" : 1
+                },
+                "_hash" : 0.07853020804094801,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cDailyConsumptionThreshold",
+                "type" : "attribute",
+                "label" : "Daily Consumption Threshold",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "dataKeyHidden" : false,
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "double",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "disabledOnDataKey" : "cDailyConsumptionAlarmEnabled",
+                  "appearance" : "outline",
+                  "subscriptSizing" : "dynamic",
+                  "step" : 1,
+                  "useCustomIcon" : false,
+                  "useGetValueFunction" : false,
+                  "useSetValueFunction" : false
+                },
+                "_hash" : 0.20555135495339383,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null,
+                "aggregationType" : null
+              }, {
+                "name" : "cWeeklyConsumptionAlarmEnabled",
+                "type" : "attribute",
+                "label" : "Exceeding Weekly Consumption Alarm",
+                "color" : "#607d8b",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "booleanSwitch",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : false,
+                  "step" : 1
+                },
+                "_hash" : 0.3361600543780858,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cWeeklyConsumptionThreshold",
+                "type" : "attribute",
+                "label" : "Weekly Consumption Threshold",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "dataKeyHidden" : false,
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "double",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "disabledOnDataKey" : "cWeeklyConsumptionAlarmEnabled",
+                  "appearance" : "outline",
+                  "subscriptSizing" : "dynamic",
+                  "step" : 1,
+                  "useCustomIcon" : false,
+                  "useGetValueFunction" : false,
+                  "useSetValueFunction" : false
+                },
+                "_hash" : 0.9860115623092394,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null,
+                "aggregationType" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1678090071280,
+                  "endTimeMs" : 1678176471280
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "System Alarms",
+              "showResultMessage" : true,
+              "showActionButtons" : false,
+              "showGroupTitle" : false,
+              "fieldsAlignment" : "column",
+              "rowGap" : 10,
+              "groupTitle" : "${entityName}",
+              "fieldsInRow" : 2,
+              "columnGap" : 10
+            },
+            "title" : "New Update Multiple Attributes",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : {
+              "border" : "1px solid #E0E0E0",
+              "fontSize" : "12px",
+              "textTransform" : "uppercase",
+              "white-space" : "normal !important"
+            },
+            "titleStyle" : {
+              "fontSize" : "18px",
+              "fontWeight" : 600,
+              "padding" : "5px 10px 5px 5px",
+              "textTransform" : "capitalize"
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "displayTimewindow" : true,
+            "widgetCss" : ".mdc-form-field, .mat-mdc-floating-label {\n    text-transform: uppercase;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "id" : "d73688fc-5ef0-1c57-e8ad-ee6dd95dc050",
+          "typeFullFqn" : "system.input_widgets.update_multiple_attributes"
+        },
+        "275838ec-2c7c-6731-06b8-d58a23268bf9" : {
+          "type" : "latest",
+          "sizeX" : 10,
+          "sizeY" : 15,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "9a41125c-876b-7934-10e0-dcf4688aacbd",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "lowTempSmsEnabled",
+                "type" : "attribute",
+                "label" : "Low Temperature Alarm",
+                "color" : "#4caf50",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "booleanSwitch",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : false,
+                  "step" : 1,
+                  "disabledOnDataKey" : "cLowTempAlarmEnabled"
+                },
+                "_hash" : 0.7775367356739471,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "dailyConsumptionSmsEnabled",
+                "type" : "attribute",
+                "label" : "Exceeding Daily Consumption Alarm",
+                "color" : "#ffc107",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "booleanSwitch",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : false,
+                  "step" : 1,
+                  "disabledOnDataKey" : "cDailyConsumptionAlarmEnabled"
+                },
+                "_hash" : 0.07853020804094801,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "weeklyConsumptionSmsEnabled",
+                "type" : "attribute",
+                "label" : "Exceeding Weekly Consumption Alarm",
+                "color" : "#607d8b",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "booleanSwitch",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : false,
+                  "step" : 1,
+                  "disabledOnDataKey" : "cWeeklyConsumptionAlarmEnabled"
+                },
+                "_hash" : 0.1337452487876316,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cLowTempAlarmEnabled",
+                "type" : "attribute",
+                "label" : "cLowTempAlarmEnabled",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "string",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : true,
+                  "step" : 1
+                },
+                "_hash" : 0.10791951005981737,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cDailyConsumptionAlarmEnabled",
+                "type" : "attribute",
+                "label" : "cDailyConsumptionAlarmEnabled",
+                "color" : "#e91e63",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "string",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : true,
+                  "step" : 1
+                },
+                "_hash" : 0.6877141787041134,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cWeeklyConsumptionAlarmEnabled",
+                "type" : "attribute",
+                "label" : "cWeeklyConsumptionAlarmEnabled",
+                "color" : "#ffeb3b",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "string",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : true,
+                  "step" : 1
+                },
+                "_hash" : 0.3514341740752789,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1678090071280,
+                  "endTimeMs" : 1678176471280
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showActionButtons" : false,
+              "showResultMessage" : true,
+              "fieldsAlignment" : "column",
+              "fieldsInRow" : 2,
+              "widgetTitle" : "SMS Notifications",
+              "groupTitle" : "${entityName}",
+              "columnGap" : 10,
+              "rowGap" : 5
+            },
+            "title" : "SMS Notifications",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : {
+              "border" : "1px solid #E0E0E0",
+              "fontSize" : "12px",
+              "textTransform" : "uppercase",
+              "white-space" : "normal !important"
+            },
+            "titleStyle" : {
+              "fontSize" : "18px",
+              "fontWeight" : 600,
+              "padding" : "5px 10px 5px 5px",
+              "textTransform" : "capitalize"
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "displayTimewindow" : true,
+            "widgetCss" : ".mdc-form-field, .mat-mdc-floating-label {\n    text-transform: uppercase;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "id" : "275838ec-2c7c-6731-06b8-d58a23268bf9",
+          "typeFullFqn" : "system.input_widgets.update_multiple_attributes"
+        },
+        "de0c59bf-eed7-d065-1635-bf3600e5fa27" : {
+          "type" : "latest",
+          "sizeX" : 10,
+          "sizeY" : 15,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "9a41125c-876b-7934-10e0-dcf4688aacbd",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "lowTempEmailEnabled",
+                "type" : "attribute",
+                "label" : "Low Temperature Alarm",
+                "color" : "#4caf50",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "booleanSwitch",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : false,
+                  "step" : 1,
+                  "disabledOnDataKey" : "cLowTempAlarmEnabled"
+                },
+                "_hash" : 0.7775367356739471,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "dailyConsumptionEmailEnabled",
+                "type" : "attribute",
+                "label" : "Exceeding Daily Consumption Alarm",
+                "color" : "#ffc107",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "booleanSwitch",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : false,
+                  "step" : 1,
+                  "disabledOnDataKey" : "cDailyConsumptionAlarmEnabled"
+                },
+                "_hash" : 0.07853020804094801,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "weeklyConsumptionEmailEnabled",
+                "type" : "attribute",
+                "label" : "Exceeding Weekly Consumption Alarm",
+                "color" : "#607d8b",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "booleanSwitch",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : false,
+                  "step" : 1,
+                  "disabledOnDataKey" : "cWeeklyConsumptionAlarmEnabled"
+                },
+                "_hash" : 0.1337452487876316,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cLowTempAlarmEnabled",
+                "type" : "attribute",
+                "label" : "cLowTempAlarmEnabled",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "string",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : true,
+                  "step" : 1
+                },
+                "_hash" : 0.33533143393702325,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cDailyConsumptionAlarmEnabled",
+                "type" : "attribute",
+                "label" : "cDailyConsumptionAlarmEnabled",
+                "color" : "#e91e63",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "string",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : true,
+                  "step" : 1
+                },
+                "_hash" : 0.8778621689054382,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "cWeeklyConsumptionAlarmEnabled",
+                "type" : "attribute",
+                "label" : "cWeeklyConsumptionAlarmEnabled",
+                "color" : "#ffeb3b",
+                "settings" : {
+                  "dataKeyType" : "server",
+                  "dataKeyValueType" : "string",
+                  "required" : false,
+                  "isEditable" : "editable",
+                  "dataKeyHidden" : true,
+                  "step" : 1
+                },
+                "_hash" : 0.4706952279595922,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1678090071280,
+                  "endTimeMs" : 1678176471280
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showActionButtons" : false,
+              "showResultMessage" : true,
+              "fieldsAlignment" : "column",
+              "fieldsInRow" : 2,
+              "widgetTitle" : "Email Notifications",
+              "groupTitle" : "${entityName}",
+              "columnGap" : 10,
+              "rowGap" : 5
+            },
+            "title" : "Email Notifications",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : {
+              "border" : "1px solid #E0E0E0",
+              "fontSize" : "12px",
+              "textTransform" : "uppercase",
+              "white-space" : "normal !important"
+            },
+            "titleStyle" : {
+              "fontSize" : "18px",
+              "fontWeight" : 600,
+              "padding" : "5px 10px 5px 5px",
+              "textTransform" : "capitalize"
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : null,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "displayTimewindow" : true,
+            "widgetCss" : ".mdc-form-field, .mat-mdc-floating-label {\n    text-transform: uppercase;\n}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "id" : "de0c59bf-eed7-d065-1635-bf3600e5fa27",
+          "typeFullFqn" : "system.input_widgets.update_multiple_attributes"
         }
       },
       "states" : {
@@ -4863,6 +5481,24 @@
                   "sizeY" : 1,
                   "row" : 0,
                   "col" : 0
+                },
+                "d73688fc-5ef0-1c57-e8ad-ee6dd95dc050" : {
+                  "sizeX" : 8,
+                  "sizeY" : 12,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "275838ec-2c7c-6731-06b8-d58a23268bf9" : {
+                  "sizeX" : 8,
+                  "sizeY" : 12,
+                  "row" : 1,
+                  "col" : 8
+                },
+                "de0c59bf-eed7-d065-1635-bf3600e5fa27" : {
+                  "sizeX" : 8,
+                  "sizeY" : 12,
+                  "row" : 1,
+                  "col" : 16
                 }
               },
               "gridSettings" : {
