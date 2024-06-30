@@ -14,7 +14,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "6ed27d35-6893-9c21-d193-39833e4920d9",
+              "entityAliasId" : "52e4c5af-7cd9-09cc-07b9-b885071e984d",
               "dataKeys" : [ {
                 "name" : "Energy",
                 "type" : "timeseries",
@@ -81,12 +81,12 @@
                   }
                 },
                 "_hash" : 0.08355362843891823,
-                "units" : "kWh",
+                "units" : "CO2e",
                 "decimals" : 2,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
