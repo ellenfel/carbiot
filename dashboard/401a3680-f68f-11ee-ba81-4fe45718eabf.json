@@ -465,7 +465,7 @@
             "padding" : "0px",
             "settings" : {
               "cardHtml" : "<div class=\"navbar\">\n    <a id='homeId' class=\"active\" data-md-tooltip=\"Carbiot\">\n        <i id='homeId' class=\"material-icons\">pie_chart</i>\n        <div id='homeId' class=\"menutext\">Carbiot</div>\n    </a>\n    <a id='scope1Id' data-md-tooltip=\"Scope 1\">\n        <i id='scope1Id' class=\"material-icons\">filter_1</i>\n        <div id='scope1Id' class=\"menutext\">Scope 1</div>\n    </a>\n    <a id='scope2Id' data-md-tooltip=\"Scope 2\">\n        <i id='scope2Id' class=\"material-icons\">filter_2</i>\n        <div id='scope2Id' class=\"menutext\">Scope 2</div>\n    </a>\n    <a id='scope3Id' data-md-tooltip=\"Scope 3\">\n        <i id='scope3Id' class=\"material-icons\">filter_3</i>\n        <div id='scope3Id' class=\"menutext\">Scope 3</div>\n    </a>\n    <a id='overviewId' data-md-tooltip=\"Overview\">\n        <i id='overviewId' class=\"material-icons\">dashboard</i>\n        <div id='overviewId' class=\"menutext\">Overview</div>\n    </a>\n    <a id='analyticsId' data-md-tooltip=\"Analytics\">\n        <i id='analyticsId' class=\"material-icons\">bar_chart</i>\n        <div id='analyticsId' class=\"menutext\">Analytics</div>\n    </a>\n    <a id='settingsId' data-md-tooltip=\"Settings\">\n        <i id='settingsId' class=\"material-icons\">settings</i>\n        <div id='settingsId' class=\"menutext\">Settings</div>\n    </a>\n    <a id='documentationId' data-md-tooltip=\"Documentation\">\n        <i id='documentationId' class=\"material-icons\">description</i>\n        <div id='documentationId' class=\"menutext\">Docs</div>\n    </a>\n</div>\n",
-              "cardCss" : ".navbar {\n    list-style-type: none;\n    height: 100%;\n    background-color: white;\n}\n\n.navbar a {\n    height: 100%;\n    float: left;\n    padding: 0 15px 0 15px;\n    margin: 0 5px 0 5px;\n    color: black;\n    text-decoration: none;\n    text-align: center;\n    text-transform: capitalize;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n}\n\n.navbar a:hover {\n    color: black;\n    background-color: #a8d5ba; /* Light green */\n    border-radius: 5px;\n    border: 0 solid #e0e0e0;\n}\n\n.active {\n    color: black !important;\n    background-color: #386e36 !important; /* Light green */\n    border-radius: 5px;\n}\n\n.material-icons {\n    font-size: 20px;\n    padding-right: 5px;\n    color: black;\n}\n\n[data-md-tooltip] {\n    position: relative;\n}\n\n@media screen and (max-width: 960px) {\n    .menutext {\n        display: none;\n    }\n\n    .navbar a::before {\n        content: attr(data-md-tooltip);\n        position: absolute;\n        bottom: -35px;\n        left: 50%;\n        padding: 8px;\n        transform: translateX(-50%) scale(0);\n        transition: transform 0.3s ease-in-out;\n        transform-origin: top;\n        background: #616161e6;\n        color: white;\n        border-radius: 2px;\n        font-size: 12px;\n        white-space: nowrap;\n        z-index: 1;\n    }\n\n    .navbar a:hover::before {\n        transform: translateX(-50%) scale(1);\n    }\n\n    .material-icons {\n        font-size: 28px;\n        color: black;\n    }\n}\n"
+              "cardCss" : ".navbar {\n    list-style-type: none;\n    height: 100%;\n    background-color: white;\n}\n\n.navbar a {\n    height: 100%;\n    float: left;\n    padding: 0 15px 0 15px;\n    margin: 0 5px 0 5px;\n    color: black;\n    text-decoration: none;\n    text-align: center;\n    text-transform: capitalize;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n}\n\n.navbar a:hover {\n    color: black;\n    background-color: #a8d5ba; /* Light green */\n    border-radius: 5px;\n    border: 0 solid #e0e0e0;\n}\n\n.active {\n    color: white !important; /* Change text color to white */\n    font-weight: bold; /* Make text bolder */\n    background-color: #386e36 !important; /* Green background */\n    border-radius: 5px;\n}\n\n.active .material-icons {\n    color: white !important; /* Change icon color to white */\n}\n\n.active .menutext {\n    text-transform: uppercase; /* Capitalize the text in the first segment */\n}\n\n.material-icons {\n    font-size: 20px;\n    padding-right: 5px;\n    color: black;\n}\n\n[data-md-tooltip] {\n    position: relative;\n}\n\n@media screen and (max-width: 960px) {\n    .menutext {\n        display: none;\n    }\n\n    .navbar a::before {\n        content: attr(data-md-tooltip);\n        position: absolute;\n        bottom: -35px;\n        left: 50%;\n        padding: 8px;\n        transform: translateX(-50%) scale(0);\n        transition: transform 0.3s ease-in-out;\n        transform-origin: top;\n        background: #616161e6;\n        color: white;\n        border-radius: 2px;\n        font-size: 12px;\n        white-space: nowrap;\n        z-index: 1;\n    }\n\n    .navbar a:hover::before {\n        transform: translateX(-50%) scale(1);\n    }\n\n    .material-icons {\n        font-size: 28px;\n        color: black;\n    }\n}\n"
             },
             "title" : "New HTML Value Card",
             "dropShadow" : false,
@@ -3994,6 +3994,47 @@
                 "color" : "#ffc107",
                 "settings" : { },
                 "_hash" : 0.15700355421008494
+              }, {
+                "name" : "Gas",
+                "type" : "timeseries",
+                "label" : "Gas",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.8698928493349218
+              }, {
+                "name" : "Water",
+                "type" : "timeseries",
+                "label" : "Water",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.8295033423248832
+              }, {
+                "name" : "Energy",
+                "type" : "timeseries",
+                "label" : "Energy",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.6696128405176474
+              }, {
+                "name" : "Bill",
+                "type" : "timeseries",
+                "label" : "Bill",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.8448135440492521
+              }, {
+                "name" : "Emission",
+                "type" : "timeseries",
+                "label" : "Emission",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.4258172439822214,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value*8.9;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -4070,7 +4111,7 @@
               "showTooltipAction" : "click",
               "autocloseTooltip" : true,
               "useTooltipFunction" : false,
-              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}",
+              "tooltipPattern" : "<br/><span style=\"font-weight: 500; color:#666;\">Emission:</span>&nbsp;<span style=\"color:#673ab7; font-weight: 600;\">${Emission}</span><br/>\n<span style=\"font-weight: 500; color:#666;\">Active Energy:</span>&nbsp;<span style=\"color:rgb(30, 136, 229); font-weight: 600;\">${Energy}</span><br/>\n<span style=\"font-weight: 500; color:#666;\">Gas:</span>&nbsp;<span style=\"color:rgb(30, 136, 229); font-weight: 600;\">${Gas:0}</span><br/>\n<span style=\"font-weight: 500; color:#666;\">Water:</span>&nbsp;<span style=\"color:rgb(30, 136, 229); font-weight: 600;\">${Water:0}</span><br/>\n<span style=\"font-weight: 500; color:#666;\">Bill:</span>&nbsp;<span style=\"color:rgb(104, 159, 56); font-weight: 600;\">${Bill:0}</span><br/>\n<br/><link-act name=\"sayac\">Section Details</link-act><br/>",
               "tooltipFunction" : null,
               "tooltipOffsetX" : 0,
               "tooltipOffsetY" : -1,
