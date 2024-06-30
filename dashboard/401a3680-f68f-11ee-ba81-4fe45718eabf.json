@@ -213,13 +213,12 @@
               },
               "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "bottom",
-                "sortDataKeys" : true,
+                "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
                 "showAvg" : false,
-                "showTotal" : true,
+                "showTotal" : false,
                 "showLatest" : false
               },
               "showTooltip" : true,
