@@ -503,7 +503,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "settingsId",
+                "targetDashboardStateId" : "settingsid",
                 "setEntityId" : false,
                 "stateEntityParamName" : "tool",
                 "openRightLayout" : null,
