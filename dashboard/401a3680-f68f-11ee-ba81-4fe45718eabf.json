@@ -4417,6 +4417,16 @@
             "deviceTypes" : [ "emission types" ],
             "deviceNameFilter" : ""
           }
+        },
+        "52e4c5af-7cd9-09cc-07b9-b885071e984d" : {
+          "id" : "52e4c5af-7cd9-09cc-07b9-b885071e984d",
+          "alias" : "scopes",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET",
+            "entityList" : [ "9f057780-36b9-11ef-be26-a34187d795ac", "a6405ba0-36b9-11ef-be26-a34187d795ac", "ae6a0c90-36b9-11ef-be26-a34187d795ac" ]
+          }
         }
       },
       "filters" : { },
