@@ -3885,7 +3885,7 @@
               "widgets" : {
                 "3ff44771-d077-09ec-67f9-d47491f2e98c" : {
                   "sizeX" : 28,
-                  "sizeY" : 10,
+                  "sizeY" : 12,
                   "row" : 5,
                   "col" : 0
                 },
@@ -3916,7 +3916,7 @@
                 "0c2a4f5c-96eb-d06a-a27d-dc807ba83e7e" : {
                   "sizeX" : 28,
                   "sizeY" : 9,
-                  "row" : 15,
+                  "row" : 17,
                   "col" : 0
                 },
                 "0e756a78-bdcf-7145-1c2e-525af5a21e71" : {
@@ -3928,7 +3928,7 @@
                 "0d2d5b1b-a155-9906-ef2a-ae743c20cc55" : {
                   "sizeX" : 20,
                   "sizeY" : 9,
-                  "row" : 15,
+                  "row" : 17,
                   "col" : 28
                 }
               },
