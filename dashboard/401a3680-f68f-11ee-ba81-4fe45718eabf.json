@@ -4346,7 +4346,7 @@
             "type" : "entityList",
             "resolveMultiple" : true,
             "entityType" : "ASSET",
-            "entityList" : [ "93285760-f682-11ee-ba81-4fe45718eabf", "2b9f0ed0-f68d-11ee-ba81-4fe45718eabf", "08aab190-f68d-11ee-ba81-4fe45718eabf", "1d8705b0-f687-11ee-ba81-4fe45718eabf" ]
+            "entityList" : [ "93285760-f682-11ee-ba81-4fe45718eabf", "08aab190-f68d-11ee-ba81-4fe45718eabf", "1d8705b0-f687-11ee-ba81-4fe45718eabf" ]
           }
         },
         "3592cd92-9b30-1c03-c586-eb7565a4c9cf" : {
