@@ -317,7 +317,7 @@
               "displayTypePrefix" : true
             },
             "margin" : "0px",
-            "borderRadius" : "0px",
+            "borderRadius" : "8px",
             "iconSize" : "0px"
           },
           "row" : 0,
@@ -3366,7 +3366,13 @@
             "titleIcon" : "list",
             "iconColor" : null,
             "titleFont" : null,
-            "titleColor" : null
+            "titleColor" : null,
+            "titleTooltip" : "",
+            "borderRadius" : "8px",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
@@ -3815,7 +3821,7 @@
               },
               "timezone" : null
             },
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "rgba(0, 0, 0, 0)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
@@ -3975,7 +3981,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "Time series chart",
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
@@ -3985,7 +3991,7 @@
             "titleIcon" : "thermostat",
             "iconColor" : "#1F6BDD",
             "useDashboardTimewindow" : false,
-            "displayTimewindow" : true,
+            "displayTimewindow" : false,
             "titleFont" : {
               "size" : 16,
               "sizeUnit" : "px",
@@ -4019,7 +4025,7 @@
               "displayTypePrefix" : true
             },
             "margin" : "0px",
-            "borderRadius" : "0px",
+            "borderRadius" : "8px",
             "iconSize" : "0px"
           },
           "row" : 0,
