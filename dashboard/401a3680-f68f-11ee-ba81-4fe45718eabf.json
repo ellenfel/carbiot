@@ -4290,7 +4290,7 @@
                 "openInPopover" : false,
                 "id" : "2c4c7dcc-009f-64eb-5f1b-a991df6d25a2"
               }, {
-                "name" : "RPC",
+                "name" : "ISO 14064 Reporting",
                 "icon" : "more_horiz",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
@@ -4315,6 +4315,19 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "b3c24fb8-cbf5-a27d-3fc3-c67c9a0fc0d1"
+              }, {
+                "name" : "GRI Reporting",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "gri-reporting",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "3b154c43-401c-7d9c-6007-a77fd571372b"
               } ]
             },
             "widgetCss" : "",
