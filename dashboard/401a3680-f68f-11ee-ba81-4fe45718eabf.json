@@ -4380,7 +4380,7 @@
             "showTitle" : false,
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
+            "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
               "markdownTextPattern" : "<div class=\"action-buttons-container\">\r\n  <button mat-raised-button color=\"primary\"\r\n     (click)=\"ctx.actionsApi.handleWidgetAction($event, ctx.actionsApi.getActionDescriptors('elementClick')[0], ctx.datasources[0].entity.id)\"\r\n  >Launch command\r\n </button>\r\n</div>",
