@@ -4066,7 +4066,7 @@
               }, {
                 "name" : "percentage",
                 "type" : "attribute",
-                "label" : "percentage",
+                "label" : "Percentage",
                 "color" : "#f44336",
                 "settings" : { },
                 "_hash" : 0.3992764225529466,
@@ -4079,7 +4079,7 @@
               }, {
                 "name" : "emission",
                 "type" : "attribute",
-                "label" : "emission",
+                "label" : "Emission",
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.5723321561160524,
