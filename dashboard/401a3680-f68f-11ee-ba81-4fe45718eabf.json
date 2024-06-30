@@ -4202,7 +4202,7 @@
             "showTitle" : false,
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
+            "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : true,
               "markdownTextFunction" : "let buttonsHtml = \"\" \nctx.actionsApi.getActionDescriptors('elementClick').forEach((btn, index)=>{\n    let disabled =false;\n    if (index == 2) {\n        disabled = data[0] && data[0].RemoteLoggingLevel ? data[0].RemoteLoggingLevel == \"NONE\" : true;\n    } else if (index == 4) {\n        const conf = data[0].general_configuration? JSON.parse(data[0].general_configuration): {};\n        disabled = !conf.remoteShell;\n    }\n    buttonsHtml += `<button mat-raised-button disabled=${disabled} color=\"primary\"(click)=\"ctx.actionsApi.handleWidgetAction($event, ctx.actionsApi.getActionDescriptors('elementClick')[${index}], ctx.datasources[0].entity.id)\" fxFlex fxflex.md=\"50\">${btn.displayName}</button>`\n});\n\nreturn `<div class=\"action-buttons-container\" fxLayout=\"columnd\" fxLayout.md=\"row wrap\" fxLayoutGap=\"5px\" >${buttonsHtml}</div>`;",
