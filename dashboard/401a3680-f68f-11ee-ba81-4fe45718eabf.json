@@ -3352,7 +3352,16 @@
                 "type" : "attribute",
                 "label" : "Emission",
                 "color" : "#4caf50",
-                "settings" : { },
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "if (value >= 110) {\n    var textColor = '#FF0000';  // Redish color\n    var background = '255, 0, 0';  // RGB for red\n    return value ? '<span style=\"background: rgba(' + background + ', 0.08); border-radius: 16px; padding: 4px 8px; color: ' + textColor + ';\">' + value + 'kg CO2e' + '</span>': '';\n} \nelse if (value < 110 && value > 50) {\n    var textColor = '#009688';  // Orange-ish color\n    var background = '#A1ADB1';  // RGB for orange\n    return value ? '<span style=\"background: rgba(' + background + ', 0.08); border-radius: 16px; padding: 4px 8px; color: ' + textColor + ';\">' + value + 'kg CO2e' + '</span>': '';\n} \nelse if (value <= 50) {\n    var textColor = '#008594';  // Light blue color (like in your example)\n    var background = '111, 116, 242';  // RGB values you provided\n    return value ? '<span style=\"background: rgba(' + background + ', 0.08); border-radius: 16px; padding: 4px 8px; color: ' + textColor + ';\">' + value + 'kg CO2e' + '</span>': '';\n} \nelse {\n    return 'No data';\n}\n",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled"
+                },
                 "_hash" : 0.5723321561160524,
                 "aggregationType" : null,
                 "units" : "tCO2",
