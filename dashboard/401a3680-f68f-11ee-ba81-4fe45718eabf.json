@@ -4657,7 +4657,7 @@
               "dataKeys" : [ {
                 "name" : "cLowTempAlarmEnabled",
                 "type" : "attribute",
-                "label" : "Low Temperature Alarm",
+                "label" : "Reactive Power Threshold",
                 "color" : "#4caf50",
                 "settings" : {
                   "dataKeyType" : "server",
@@ -4672,11 +4672,12 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
-                "postFuncBody" : null
+                "postFuncBody" : null,
+                "aggregationType" : null
               }, {
                 "name" : "cLowTempThreshold",
                 "type" : "attribute",
-                "label" : "Low Temperature Threshold",
+                "label" : "Reactive Power Threshold Reached ",
                 "color" : "#e91e63",
                 "settings" : {
                   "dataKeyHidden" : false,
