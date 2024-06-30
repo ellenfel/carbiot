@@ -4277,19 +4277,6 @@
                 "openInPopover" : false,
                 "id" : "425ba0d8-8e26-18a5-881d-bebe27fb2a7a"
               }, {
-                "name" : "Remote Shell",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "remote_shell",
-                "setEntityId" : true,
-                "stateEntityParamName" : null,
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "2c4c7dcc-009f-64eb-5f1b-a991df6d25a2"
-              }, {
                 "name" : "ISO 14064 Reporting",
                 "icon" : "more_horiz",
                 "useShowWidgetActionFunction" : null,
