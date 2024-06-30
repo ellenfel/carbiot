@@ -4376,9 +4376,12 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : null,
-              "entityAliasId" : "87b8369b-2b2a-17e5-3c19-1e88f7bb1264",
+              "entityAliasId" : "a2b9aeba-e522-6842-da36-2f5a7144c5f6",
               "filterId" : null,
-              "dataKeys" : [ ]
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -4448,7 +4451,8 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "enableDataExport" : false,
-            "borderRadius" : "4px"
+            "borderRadius" : "4px",
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
