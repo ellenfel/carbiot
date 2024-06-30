@@ -273,7 +273,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "Usage by Area",
+            "title" : "Carbon Emission Comparison",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
