@@ -4289,6 +4289,19 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "35705df8-69cf-7f76-b52f-d53c5a1931c0"
+              }, {
+                "name" : "CSRD Reporting",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "CSRD Reporting",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "b3c24fb8-cbf5-a27d-3fc3-c67c9a0fc0d1"
               } ]
             },
             "widgetCss" : "",
