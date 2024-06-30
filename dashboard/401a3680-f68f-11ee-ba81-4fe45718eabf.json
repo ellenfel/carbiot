@@ -3706,7 +3706,55 @@
                   "order" : 0
                 }
               },
-              "thresholds" : [ ],
+              "thresholds" : [ {
+                "type" : "constant",
+                "yAxisId" : "default",
+                "units" : "kgCO2e",
+                "decimals" : 0,
+                "lineColor" : "rgb(244, 67, 54)",
+                "lineType" : "solid",
+                "lineWidth" : 1,
+                "startSymbol" : "none",
+                "startSymbolSize" : 5,
+                "endSymbol" : "arrow",
+                "endSymbolSize" : 5,
+                "showLabel" : true,
+                "labelPosition" : "end",
+                "labelFont" : {
+                  "family" : "Roboto",
+                  "size" : 12,
+                  "sizeUnit" : "px",
+                  "style" : "normal",
+                  "weight" : "400",
+                  "lineHeight" : "1"
+                },
+                "labelColor" : "rgba(0, 0, 0, 0.76)",
+                "value" : 175
+              }, {
+                "type" : "constant",
+                "yAxisId" : "default",
+                "units" : "kgCO2e",
+                "decimals" : 0,
+                "lineColor" : "rgb(4, 138, 211)",
+                "lineType" : "solid",
+                "lineWidth" : 1,
+                "startSymbol" : "none",
+                "startSymbolSize" : 5,
+                "endSymbol" : "arrow",
+                "endSymbolSize" : 5,
+                "showLabel" : true,
+                "labelPosition" : "end",
+                "labelFont" : {
+                  "family" : "Roboto",
+                  "size" : 12,
+                  "sizeUnit" : "px",
+                  "style" : "normal",
+                  "weight" : "400",
+                  "lineHeight" : "1"
+                },
+                "labelColor" : "rgba(0, 0, 0, 0.76)",
+                "value" : 155
+              } ],
               "dataZoom" : true,
               "stack" : false,
               "xAxis" : {
@@ -3755,11 +3803,11 @@
               },
               "showLegend" : true,
               "legendLabelFont" : {
+                "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "600",
                 "style" : "normal",
+                "weight" : "600",
                 "lineHeight" : "16px"
               },
               "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
@@ -3776,11 +3824,11 @@
               "showTooltip" : true,
               "tooltipTrigger" : "axis",
               "tooltipValueFont" : {
+                "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "700",
                 "style" : "normal",
+                "weight" : "700",
                 "lineHeight" : "16px"
               },
               "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
@@ -3849,7 +3897,7 @@
             "widgetStyle" : { },
             "widgetCss" : "",
             "pageSize" : 1024,
-            "units" : "",
+            "units" : "kgCO2e",
             "decimals" : null,
             "noDataDisplayMessage" : "",
             "timewindowStyle" : {
@@ -4058,9 +4106,9 @@
             "main" : {
               "widgets" : {
                 "3ff44771-d077-09ec-67f9-d47491f2e98c" : {
-                  "sizeX" : 33,
+                  "sizeX" : 36,
                   "sizeY" : 12,
-                  "row" : 5,
+                  "row" : 4,
                   "col" : 0
                 },
                 "38503b0a-a303-0fde-d96f-dab83aadb4bc" : {
@@ -4070,46 +4118,46 @@
                   "col" : 0
                 },
                 "45d15f06-91b5-a1fb-4e10-07aaa62636cb" : {
-                  "sizeX" : 8,
-                  "sizeY" : 3,
+                  "sizeX" : 9,
+                  "sizeY" : 2,
                   "row" : 2,
-                  "col" : 9
+                  "col" : 21
                 },
                 "31a9146c-984e-c0c1-8d9d-e8cef8318043" : {
-                  "sizeX" : 8,
-                  "sizeY" : 3,
+                  "sizeX" : 9,
+                  "sizeY" : 2,
                   "row" : 2,
-                  "col" : 17
+                  "col" : 30
                 },
                 "660d554e-295e-1525-6b8e-5e81f54a52f3" : {
-                  "sizeX" : 8,
-                  "sizeY" : 3,
+                  "sizeX" : 9,
+                  "sizeY" : 2,
                   "row" : 2,
-                  "col" : 25
+                  "col" : 39
                 },
                 "0c2a4f5c-96eb-d06a-a27d-dc807ba83e7e" : {
-                  "sizeX" : 15,
-                  "sizeY" : 9,
-                  "row" : 17,
+                  "sizeX" : 18,
+                  "sizeY" : 10,
+                  "row" : 16,
                   "col" : 0
                 },
                 "0e756a78-bdcf-7145-1c2e-525af5a21e71" : {
-                  "sizeX" : 9,
-                  "sizeY" : 3,
+                  "sizeX" : 14,
+                  "sizeY" : 2,
                   "row" : 2,
-                  "col" : 0
+                  "col" : 7
                 },
                 "0d2d5b1b-a155-9906-ef2a-ae743c20cc55" : {
-                  "sizeX" : 33,
-                  "sizeY" : 9,
-                  "row" : 17,
-                  "col" : 15
+                  "sizeX" : 30,
+                  "sizeY" : 10,
+                  "row" : 16,
+                  "col" : 18
                 },
                 "8ce11675-29bd-7a35-ac17-29b0178da164" : {
-                  "sizeX" : 15,
-                  "sizeY" : 15,
-                  "row" : 2,
-                  "col" : 33
+                  "sizeX" : 12,
+                  "sizeY" : 12,
+                  "row" : 4,
+                  "col" : 36
                 }
               },
               "gridSettings" : {
