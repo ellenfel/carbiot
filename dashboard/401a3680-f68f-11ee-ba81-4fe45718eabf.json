@@ -563,12 +563,12 @@
                 "openInPopover" : false,
                 "id" : "858f01a5-8cb7-82a9-872e-7c885251d9ab"
               }, {
-                "name" : "historyId",
+                "name" : "energyOptimizationId",
                 "icon" : "more_horiz",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "raporlama",
+                "targetDashboardStateId" : "energyOptimizationId",
                 "setEntityId" : false,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
