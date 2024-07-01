@@ -8342,16 +8342,6 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "fd666ec9-cd5a-af01-47e1-b7e53911f87a"
-              }, {
-                "name" : "dark-mode-switch",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "$('.tb-dashboard-page').toggleClass('dark');",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "4431866e-87da-0a87-0fe0-1bd7bd404081"
               } ]
             }
           },
