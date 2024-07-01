@@ -8416,7 +8416,7 @@
             }
           }
         },
-        "energy_meter" : {
+        "energy-meter" : {
           "name" : "energy_meter",
           "root" : false,
           "layouts" : {
