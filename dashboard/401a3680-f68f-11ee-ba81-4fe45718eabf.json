@@ -8085,6 +8085,504 @@
           },
           "id" : "e394e156-5d06-3e2c-b9d3-71504d4240f6",
           "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "f17f6d70-df4d-0a39-6406-80c212907ae8" : {
+          "typeFullFqn" : "system.time_series_chart",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "8c143350-ea88-11ee-9512-1748ff314dba",
+              "entityAliasId" : "3592cd92-9b30-1c03-c586-eb7565a4c9cf",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "timeseries",
+                "label" : "Toplam Enerji Tüketimi(Bu ay)",
+                "color" : "#2196f3",
+                "settings" : {
+                  "yAxisId" : "default",
+                  "showInLegend" : true,
+                  "dataHiddenByDefault" : false,
+                  "type" : "bar",
+                  "lineSettings" : {
+                    "showLine" : true,
+                    "step" : false,
+                    "stepType" : "start",
+                    "smooth" : true,
+                    "lineType" : "solid",
+                    "lineWidth" : 2,
+                    "showPoints" : false,
+                    "showPointLabel" : false,
+                    "pointLabelPosition" : "top",
+                    "pointLabelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
+                    "pointShape" : "circle",
+                    "pointSize" : 14,
+                    "fillAreaSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "barSettings" : {
+                    "showBorder" : false,
+                    "borderWidth" : 2,
+                    "borderRadius" : 0,
+                    "showLabel" : false,
+                    "labelPosition" : "top",
+                    "labelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "labelColor" : "rgba(0, 0, 0, 0.76)",
+                    "backgroundSettings" : {
+                      "type" : "gradient",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 60
+                      }
+                    }
+                  }
+                },
+                "_hash" : 0.7248259589863468,
+                "units" : "kWh",
+                "decimals" : 2,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value*5;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
+            }, {
+              "type" : "device",
+              "deviceId" : "952e85d0-ea88-11ee-9512-1748ff314dba",
+              "dataKeys" : [ {
+                "name" : "energy",
+                "type" : "timeseries",
+                "label" : "Toplam Enerji Tüketimi(Geçen ay)",
+                "color" : "#4caf50",
+                "settings" : {
+                  "yAxisId" : "default",
+                  "showInLegend" : true,
+                  "dataHiddenByDefault" : false,
+                  "type" : "bar",
+                  "lineSettings" : {
+                    "showLine" : true,
+                    "step" : false,
+                    "stepType" : "start",
+                    "smooth" : false,
+                    "lineType" : "solid",
+                    "lineWidth" : 2,
+                    "showPoints" : false,
+                    "showPointLabel" : false,
+                    "pointLabelPosition" : "top",
+                    "pointLabelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
+                    "pointShape" : "emptyCircle",
+                    "pointSize" : 4,
+                    "fillAreaSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "barSettings" : {
+                    "showBorder" : false,
+                    "borderWidth" : 2,
+                    "borderRadius" : 0,
+                    "showLabel" : false,
+                    "labelPosition" : "top",
+                    "labelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "labelColor" : "rgba(0, 0, 0, 0.76)",
+                    "backgroundSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  }
+                },
+                "_hash" : 0.9062672854033422,
+                "aggregationType" : null,
+                "units" : "kWh",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value*5;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 0,
+                "timewindowMs" : 86400000,
+                "interval" : 7200000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1710430299886,
+                  "endTimeMs" : 1710516699886
+                },
+                "quickInterval" : "YESTERDAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 5000
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "yAxes" : {
+                "default" : {
+                  "units" : "kWh",
+                  "decimals" : 2,
+                  "show" : true,
+                  "label" : "Energy consumption, kWh",
+                  "labelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "600",
+                    "lineHeight" : "1"
+                  },
+                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "left",
+                  "showTickLabels" : true,
+                  "tickLabelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "400",
+                    "lineHeight" : "1"
+                  },
+                  "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                  "ticksFormatter" : null,
+                  "showTicks" : true,
+                  "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                  "showLine" : true,
+                  "lineColor" : "rgba(0, 0, 0, 0.54)",
+                  "showSplitLines" : true,
+                  "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
+                  "id" : "default",
+                  "order" : 0
+                }
+              },
+              "thresholds" : [ {
+                "type" : "constant",
+                "yAxisId" : "default",
+                "units" : "kWh",
+                "decimals" : 0,
+                "lineColor" : "#FF0000",
+                "lineType" : "solid",
+                "lineWidth" : 2,
+                "startSymbol" : "none",
+                "startSymbolSize" : 5,
+                "endSymbol" : "emptyCircle",
+                "endSymbolSize" : 8,
+                "showLabel" : true,
+                "labelPosition" : "insideEndTop",
+                "labelFont" : {
+                  "size" : 12,
+                  "family" : "Roboto",
+                  "weight" : "500",
+                  "style" : "normal"
+                },
+                "labelColor" : null,
+                "value" : 2000
+              }, {
+                "type" : "constant",
+                "yAxisId" : "default",
+                "units" : "kWh",
+                "decimals" : 0,
+                "lineColor" : "#FFDB00",
+                "lineType" : "solid",
+                "lineWidth" : 2,
+                "startSymbol" : "none",
+                "startSymbolSize" : 5,
+                "endSymbol" : "emptyCircle",
+                "endSymbolSize" : 8,
+                "showLabel" : true,
+                "labelPosition" : "insideEndTop",
+                "labelFont" : {
+                  "size" : 12,
+                  "family" : "Roboto",
+                  "weight" : "500",
+                  "style" : "normal"
+                },
+                "labelColor" : null,
+                "value" : 4900
+              }, {
+                "type" : "constant",
+                "yAxisId" : "default",
+                "units" : "kWh",
+                "decimals" : 0,
+                "lineColor" : "#FFDB00",
+                "lineType" : "solid",
+                "lineWidth" : 2,
+                "startSymbol" : "none",
+                "startSymbolSize" : 5,
+                "endSymbol" : "emptyCircle",
+                "endSymbolSize" : 8,
+                "showLabel" : true,
+                "labelPosition" : "insideEndTop",
+                "labelFont" : {
+                  "size" : 12,
+                  "family" : "Roboto",
+                  "weight" : "500",
+                  "style" : "normal"
+                },
+                "labelColor" : null,
+                "value" : 4900
+              }, {
+                "type" : "constant",
+                "yAxisId" : "default",
+                "units" : "kWh",
+                "decimals" : 0,
+                "lineColor" : "#FF0000",
+                "lineType" : "solid",
+                "lineWidth" : 2,
+                "startSymbol" : "none",
+                "startSymbolSize" : 5,
+                "endSymbol" : "emptyCircle",
+                "endSymbolSize" : 8,
+                "showLabel" : true,
+                "labelPosition" : "insideEndTop",
+                "labelFont" : {
+                  "size" : 12,
+                  "family" : "Roboto",
+                  "weight" : "500",
+                  "style" : "normal"
+                },
+                "labelColor" : null,
+                "value" : 2000
+              } ],
+              "dataZoom" : true,
+              "stack" : false,
+              "xAxis" : {
+                "show" : false,
+                "label" : "",
+                "labelFont" : {
+                  "family" : "Roboto",
+                  "size" : 12,
+                  "sizeUnit" : "px",
+                  "style" : "normal",
+                  "weight" : "600",
+                  "lineHeight" : "1"
+                },
+                "labelColor" : "rgba(0, 0, 0, 0.54)",
+                "position" : "bottom",
+                "showTickLabels" : false,
+                "tickLabelFont" : {
+                  "family" : "Roboto",
+                  "size" : 10,
+                  "sizeUnit" : "px",
+                  "style" : "normal",
+                  "weight" : "400",
+                  "lineHeight" : "1"
+                },
+                "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                "ticksFormat" : { },
+                "showTicks" : false,
+                "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                "showLine" : false,
+                "lineColor" : "rgba(0, 0, 0, 0.54)",
+                "showSplitLines" : false,
+                "splitLinesColor" : "rgba(0, 0, 0, 0.12)"
+              },
+              "noAggregationBarWidthSettings" : {
+                "strategy" : "group",
+                "groupWidth" : {
+                  "relative" : true,
+                  "relativeWidth" : 2,
+                  "absoluteWidth" : 1000
+                },
+                "barWidth" : {
+                  "relative" : true,
+                  "relativeWidth" : 2,
+                  "absoluteWidth" : 1000
+                }
+              },
+              "showLegend" : true,
+              "legendLabelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : true,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "showTooltip" : true,
+              "tooltipTrigger" : "axis",
+              "tooltipValueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "16px"
+              },
+              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipShowDate" : true,
+              "tooltipDateFormat" : {
+                "format" : null,
+                "lastUpdateAgo" : false,
+                "custom" : false,
+                "auto" : true,
+                "autoDateFormatSettings" : { }
+              },
+              "tooltipDateFont" : {
+                "family" : "Roboto",
+                "size" : 11,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "tooltipDateColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipDateInterval" : true,
+              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
+              "tooltipBackgroundBlur" : 4,
+              "animation" : {
+                "animation" : true,
+                "animationThreshold" : 2000,
+                "animationDuration" : 500,
+                "animationEasing" : "cubicOut",
+                "animationDelay" : 0,
+                "animationDurationUpdate" : 300,
+                "animationEasingUpdate" : "cubicOut",
+                "animationDelayUpdate" : 0
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "#00000000",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              },
+              "padding" : "12px"
+            },
+            "title" : "Energy consumption",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "24px",
+              "fontWeight" : 700,
+              "padding" : "5px 10px 5px 0px"
+            },
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "#1F6BDD",
+            "useDashboardTimewindow" : false,
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : null,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : null
+            },
+            "titleColor" : null,
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : "",
+            "decimals" : null,
+            "noDataDisplayMessage" : "",
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : null,
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : null,
+              "displayTypePrefix" : true
+            },
+            "margin" : "",
+            "borderRadius" : "",
+            "iconSize" : "0px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f17f6d70-df4d-0a39-6406-80c212907ae8"
         }
       },
       "states" : {
@@ -8396,10 +8894,16 @@
                   "col" : 15
                 },
                 "e394e156-5d06-3e2c-b9d3-71504d4240f6" : {
-                  "sizeX" : 24,
+                  "sizeX" : 29,
                   "sizeY" : 1,
                   "row" : 0,
                   "col" : 0
+                },
+                "f17f6d70-df4d-0a39-6406-80c212907ae8" : {
+                  "sizeX" : 6,
+                  "sizeY" : 10,
+                  "row" : 1,
+                  "col" : 23
                 }
               },
               "gridSettings" : {
